@@ -1,0 +1,106 @@
+[
+  {
+    "event": "nv_enter",
+    "symbol": "nv_common_hw_init",
+    "text_address": "0xc9970",
+    "bytes": "f30f1efa",
+    "instruction": "endbr64 ",
+    "fetch": "cc=+0x89bc(+0x8f8(+0x10(%di))):x32 selector=+0x30800(+0x8f8(+0x10(%di))):x32 spi=+0x935c(+0x8f8(+0x10(%di))):x32 user=+0x89c0(+0x8f8(+0x10(%di))):x32 rlc=+0x3b14c(+0x8f8(+0x10(%di))):x32 limit=+0x3b150(+0x8f8(+0x10(%di))):x32"
+  },
+  {
+    "event": "psp_enter",
+    "symbol": "psp_hw_init",
+    "text_address": "0x136600",
+    "bytes": "f30f1efa",
+    "instruction": "endbr64 ",
+    "fetch": "cc=+0x89bc(+0x8f8(+0x10(%di))):x32 selector=+0x30800(+0x8f8(+0x10(%di))):x32 spi=+0x935c(+0x8f8(+0x10(%di))):x32 user=+0x89c0(+0x8f8(+0x10(%di))):x32 rlc=+0x3b14c(+0x8f8(+0x10(%di))):x32 limit=+0x3b150(+0x8f8(+0x10(%di))):x32"
+  },
+  {
+    "event": "psp_started",
+    "symbol": "psp_hw_init+0x104",
+    "text_address": "0x136704",
+    "bytes": "85c0",
+    "instruction": "test eax, eax",
+    "fetch": "rc=%ax:s32 cc=+0x89bc(+0x8f8(%r15)):x32 selector=+0x30800(+0x8f8(%r15)):x32 spi=+0x935c(+0x8f8(%r15)):x32 user=+0x89c0(+0x8f8(%r15)):x32 rlc=+0x3b14c(+0x8f8(%r15)):x32 limit=+0x3b150(+0x8f8(%r15)):x32"
+  },
+  {
+    "event": "fw_before",
+    "symbol": "psp_execute_ip_fw_load+0x76",
+    "text_address": "0x134646",
+    "bytes": "498b8fb8010000",
+    "instruction": "mov rcx, qword ptr [r15 + 0x1b8]",
+    "fetch": "fw_type=+0x28(%r12):u32 cc=+0x89bc(+0x8f8(+0(%r15))):x32 selector=+0x30800(+0x8f8(+0(%r15))):x32 spi=+0x935c(+0x8f8(+0(%r15))):x32 user=+0x89c0(+0x8f8(+0(%r15))):x32 rlc=+0x3b14c(+0x8f8(+0(%r15))):x32 limit=+0x3b150(+0x8f8(+0(%r15))):x32"
+  },
+  {
+    "event": "fw_after",
+    "symbol": "psp_execute_ip_fw_load+0x8b",
+    "text_address": "0x13465b",
+    "bytes": "89c5",
+    "instruction": "mov ebp, eax",
+    "fetch": "fw_type=+0x28(%r12):u32 rc=%ax:s32 cc=+0x89bc(+0x8f8(+0(%r15))):x32 selector=+0x30800(+0x8f8(+0(%r15))):x32 spi=+0x935c(+0x8f8(+0(%r15))):x32 user=+0x89c0(+0x8f8(+0(%r15))):x32 rlc=+0x3b14c(+0x8f8(+0(%r15))):x32 limit=+0x3b150(+0x8f8(+0(%r15))):x32"
+  },
+  {
+    "event": "smu_enter",
+    "symbol": "smu_hw_init",
+    "text_address": "0x38ba90",
+    "bytes": "f30f1efa",
+    "instruction": "endbr64 ",
+    "fetch": "cc=+0x89bc(+0x8f8(+0x10(%di))):x32 selector=+0x30800(+0x8f8(+0x10(%di))):x32 spi=+0x935c(+0x8f8(+0x10(%di))):x32 user=+0x89c0(+0x8f8(+0x10(%di))):x32 rlc=+0x3b14c(+0x8f8(+0x10(%di))):x32 limit=+0x3b150(+0x8f8(+0x10(%di))):x32"
+  },
+  {
+    "event": "gfx_enter",
+    "symbol": "gfx_v10_0_hw_init",
+    "text_address": "0x18ac70",
+    "bytes": "f30f1efa",
+    "instruction": "endbr64 ",
+    "fetch": "cc=+0x89bc(+0x8f8(+0x10(%di))):x32 selector=+0x30800(+0x8f8(+0x10(%di))):x32 spi=+0x935c(+0x8f8(+0x10(%di))):x32 user=+0x89c0(+0x8f8(+0x10(%di))):x32 rlc=+0x3b14c(+0x8f8(+0x10(%di))):x32 limit=+0x3b150(+0x8f8(+0x10(%di))):x32"
+  },
+  {
+    "event": "golden_done",
+    "symbol": "gfx_v10_0_hw_init+0x271",
+    "text_address": "0x18aee1",
+    "bytes": "8bb3a07d0200",
+    "instruction": "mov esi, dword ptr [rbx + 0x27da0]",
+    "fetch": "cc=+0x89bc(+0x8f8(%bx)):x32 selector=+0x30800(+0x8f8(%bx)):x32 spi=+0x935c(+0x8f8(%bx)):x32 user=+0x89c0(+0x8f8(%bx)):x32 rlc=+0x3b14c(+0x8f8(%bx)):x32 limit=+0x3b150(+0x8f8(%bx)):x32"
+  },
+  {
+    "event": "cu_cc_read",
+    "symbol": "gfx_v10_0_hw_init+0x1c7a",
+    "text_address": "0x18c8ea",
+    "bytes": "4189c7",
+    "instruction": "mov r15d, eax",
+    "fetch": "cc=%ax:x32 selector=+0x30800(+0x8f8(%bx)):x32 spi=+0x935c(+0x8f8(%bx)):x32 user=+0x89c0(+0x8f8(%bx)):x32 rlc=+0x3b14c(+0x8f8(%bx)):x32 limit=+0x3b150(+0x8f8(%bx)):x32"
+  },
+  {
+    "event": "cu_count_done",
+    "symbol": "gfx_v10_0_hw_init+0x1fdd",
+    "text_address": "0x18cc4d",
+    "bytes": "4489b35c730200",
+    "instruction": "mov dword ptr [rbx + 0x2735c], r14d",
+    "fetch": "count=%r14:u32 cc=+0x89bc(+0x8f8(%bx)):x32 selector=+0x30800(+0x8f8(%bx)):x32 spi=+0x935c(+0x8f8(%bx)):x32 user=+0x89c0(+0x8f8(%bx)):x32 rlc=+0x3b14c(+0x8f8(%bx)):x32 limit=+0x3b150(+0x8f8(%bx)):x32"
+  },
+  {
+    "event": "rlc_before",
+    "symbol": "gfx_v10_0_hw_init+0x2b0a",
+    "text_address": "0x18d77a",
+    "bytes": "4889df",
+    "instruction": "mov rdi, rbx",
+    "fetch": "cc=+0x89bc(+0x8f8(%bx)):x32 selector=+0x30800(+0x8f8(%bx)):x32 spi=+0x935c(+0x8f8(%bx)):x32 user=+0x89c0(+0x8f8(%bx)):x32 rlc=+0x3b14c(+0x8f8(%bx)):x32 limit=+0x3b150(+0x8f8(%bx)):x32"
+  },
+  {
+    "event": "rlc_after",
+    "symbol": "gfx_v10_0_hw_init+0x2b12",
+    "text_address": "0x18d782",
+    "bytes": "85c0",
+    "instruction": "test eax, eax",
+    "fetch": "rc=%ax:s32 cc=+0x89bc(+0x8f8(%bx)):x32 selector=+0x30800(+0x8f8(%bx)):x32 spi=+0x935c(+0x8f8(%bx)):x32 user=+0x89c0(+0x8f8(%bx)):x32 rlc=+0x3b14c(+0x8f8(%bx)):x32 limit=+0x3b150(+0x8f8(%bx)):x32"
+  },
+  {
+    "event": "driver_write",
+    "symbol": "amdgpu_device_wreg",
+    "text_address": "0xcf30",
+    "bytes": "f30f1efa",
+    "instruction": "endbr64 ",
+    "fetch": "reg=%si:x32 value=%dx:x32 caller=$stack0:symstr"
+  }
+]

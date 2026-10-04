@@ -1,0 +1,20 @@
+{
+  "upstream_commit": "20c9e6e5e4d1f49daff3c34beb28697ba4417e45",
+  "native_command": "menu native",
+  "afu_flags": [
+    "/P",
+    "/B",
+    "/N",
+    "/K",
+    "/RLC:E",
+    "/CLRCFG"
+  ],
+  "original_PUNSH_route_preserved": true,
+  "candidate_route_checks_afu_status": true,
+  "candidate_route_backup_before_flash": true,
+  "real_AFU_executed": false,
+  "binary_hashes": {
+    "AfuEfix64.efi": "a21bab5c87e80676d06b44716a93251f9961316ab6ad4d242b3b247586120d9a",
+    "BOOTX64.EFI": "8204279f882fba62611179bc7e141a4613c0bb3016078d84d89416727a6010ee"
+  }
+}

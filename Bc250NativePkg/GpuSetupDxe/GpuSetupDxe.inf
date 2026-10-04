@@ -1,0 +1,48 @@
+[Defines]
+  INF_VERSION = 0x0001001B
+  BASE_NAME = Bc250GpuSetupDxe
+  FILE_GUID = 390A9AD3-3F4E-4B4D-A810-C7D2B729FD39
+  MODULE_TYPE = DXE_DRIVER
+  VERSION_STRING = 0.1.0
+  ENTRY_POINT = Bc250GpuSetupEntry
+[Sources]
+  GpuSetup.c
+  Policy.c
+  NativeApply.c
+  core.c
+  post.c
+  install.c
+  GpuForms.vfr
+  GpuSetup.uni
+  ../Include/GpuConfig.h
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  Bc250NativePkg/Bc250NativePkg.dec
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  HiiLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  PrintLib
+[Guids]
+  gBc250GpuFormsetGuid
+  gBc250GpuVariableGuid
+  gEfiEventReadyToBootGuid
+[Protocols]
+  gEfiDevicePathProtocolGuid
+  gEfiHiiConfigAccessProtocolGuid
+  gEfiHiiConfigRoutingProtocolGuid
+  gEfiHiiDatabaseProtocolGuid
+  gEfiHiiStringProtocolGuid
+  gEfiFormBrowser2ProtocolGuid
+  gEfiPciIoProtocolGuid
+  gBc250ResetCaptureProtocolGuid
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -Wno-unused-function -Wno-unused-const-variable
+[Depex]
+  gBc250ResetCaptureProtocolGuid AND gEfiHiiDatabaseProtocolGuid AND gEfiHiiStringProtocolGuid AND gEfiHiiConfigRoutingProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid

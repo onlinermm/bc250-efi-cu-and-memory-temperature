@@ -1,0 +1,51 @@
+{
+  "format": "PE",
+  "machine": 34404,
+  "architecture": "X64",
+  "bytes": 6880,
+  "sha256": "6eb06f5fc9c454d4548426c888d90f666358a2407d015f551ea110c9b6b6efa9",
+  "entry_rva": 672,
+  "image_base": 0,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 672,
+      "raw_offset": 672,
+      "raw_bytes": 3616,
+      "virtual_bytes": 3613,
+      "executable": true
+    },
+    {
+      "name": ".data",
+      "rva": 4288,
+      "raw_offset": 4288,
+      "raw_bytes": 2272,
+      "virtual_bytes": 2264,
+      "executable": false
+    },
+    {
+      "name": "",
+      "rva": 6560,
+      "raw_offset": 6560,
+      "raw_bytes": 160,
+      "virtual_bytes": 156,
+      "executable": false
+    },
+    {
+      "name": ".xdata",
+      "rva": 6720,
+      "raw_offset": 6720,
+      "raw_bytes": 128,
+      "virtual_bytes": 116,
+      "executable": false
+    },
+    {
+      "name": ".reloc",
+      "rva": 6848,
+      "raw_offset": 6848,
+      "raw_bytes": 32,
+      "virtual_bytes": 12,
+      "executable": false
+    }
+  ]
+}

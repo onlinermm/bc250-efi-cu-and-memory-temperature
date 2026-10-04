@@ -1,0 +1,76 @@
+
+original-built.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .text:
+
+0003aa9c <umc_read_temp_per_chip-0x28>:
+   3aa9c:	053a24        	lsi	f2, a10, 20
+   3aa9f:	3a1c00        	lsi	f0, a12, 232
+   3aaa2:	200005        	call0	5aaa4 <umc_read_temp_per_chip+0x1ffe0>
+   3aaa5:	053a      	add.n	a0, a5, a3
+   3aaa7:	3a2c00        	lsi	f0, a12, 232
+   3aaaa:	340005        	call0	6eaac <umc_read_temp_per_chip+0x33fe8>
+   3aaad:	000012        	l8ui	a1, a0, 0
+   3aab0:	0ffc      	bnez.n	a15, 3aae4 <umc_read_temp_per_chip+0x20>
+   3aab2:	740000        	extui	a0, a0, 0, 8
+   3aab5:	002a      	add.n	a0, a0, a2
+   3aab7:	29f800        	lsi	f0, a8, 164
+   3aaba:	e40000        	extui	a0, a0, 0, 15
+   3aabd:	0f          	.byte 0xf
+   3aabe:	a80000        	lsi	f0, a0, 0x2a0
+   3aac1:	0f          	.byte 0xf
+	...
+
+0003aac4 <umc_read_temp_per_chip>:
+   3aac4:	004136        	entry	a1, 32
+   3aac7:	20a220        	or	a10, a2, a2
+   3aaca:	fff981        	l32r	a8, 3aab0 <umc_write+0x3803c>
+   3aacd:	0008e0        	callx8	a8
+   3aad0:	fff3b1        	l32r	a11, 3aa9c <umc_write+0x38028>
+   3aad3:	014ac0        	slli	a4, a10, 20
+   3aad6:	2d0c      	movi.n	a13, 2
+   3aad8:	0dcd      	mov.n	a12, a13
+   3aada:	20b4b0        	or	a11, a4, a11
+   3aadd:	0a0c      	movi.n	a10, 0
+   3aadf:	fff581        	l32r	a8, 3aab4 <umc_write+0x38040>
+   3aae2:	0008e0        	callx8	a8
+   3aae5:	ffeeb1        	l32r	a11, 3aaa0 <umc_write+0x3802c>
+   3aae8:	2d0c      	movi.n	a13, 2
+   3aaea:	05a0c2        	movi	a12, 5
+   3aaed:	20b4b0        	or	a11, a4, a11
+   3aaf0:	0a0c      	movi.n	a10, 0
+   3aaf2:	fff081        	l32r	a8, 3aab4 <umc_write+0x38040>
+   3aaf5:	0008e0        	callx8	a8
+   3aaf8:	ffeb31        	l32r	a3, 3aaa4 <umc_write+0x38030>
+   3aafb:	203430        	or	a3, a4, a3
+   3aafe:	2c0c      	movi.n	a12, 2
+   3ab00:	20b330        	or	a11, a3, a3
+   3ab03:	00a0a2        	movi	a10, 0
+   3ab06:	ffec81        	l32r	a8, 3aab8 <umc_write+0x38044>
+   3ab09:	0008e0        	callx8	a8
+   3ab0c:	ee5a66        	bnei	a10, 5, 3aafe <umc_read_temp_per_chip+0x3a>
+   3ab0f:	ffe631        	l32r	a3, 3aaa8 <umc_write+0x38034>
+   3ab12:	203430        	or	a3, a4, a3
+   3ab15:	2c0c      	movi.n	a12, 2
+   3ab17:	03bd      	mov.n	a11, a3
+   3ab19:	0a0c      	movi.n	a10, 0
+   3ab1b:	ffe781        	l32r	a8, 3aab8 <umc_write+0x38044>
+   3ab1e:	0008e0        	callx8	a8
+   3ab21:	ffe241        	l32r	a4, 3aaac <umc_write+0x38038>
+   3ab24:	ed1a47        	beq	a10, a4, 3ab15 <umc_read_temp_per_chip+0x51>
+   3ab27:	2c0c      	movi.n	a12, 2
+   3ab29:	20b330        	or	a11, a3, a3
+   3ab2c:	0a0c      	movi.n	a10, 0
+   3ab2e:	ffe281        	l32r	a8, 3aab8 <umc_write+0x38044>
+   3ab31:	0008e0        	callx8	a8
+   3ab34:	0abd      	mov.n	a11, a10
+   3ab36:	02ad      	mov.n	a10, a2
+   3ab38:	ffe181        	l32r	a8, 3aabc <umc_write+0x38048>
+   3ab3b:	0008e0        	callx8	a8
+   3ab3e:	1b0c      	movi.n	a11, 1
+   3ab40:	02ad      	mov.n	a10, a2
+   3ab42:	ffdf81        	l32r	a8, 3aac0 <umc_write+0x3804c>
+   3ab45:	0008e0        	callx8	a8
+   3ab48:	f01d      	retw.n
+	...

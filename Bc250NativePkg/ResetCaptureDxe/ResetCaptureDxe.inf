@@ -1,0 +1,23 @@
+[Defines]
+ INF_VERSION = 0x0001001B
+ BASE_NAME = Bc250ResetCaptureDxe
+ FILE_GUID = 8B04A91F-8968-4F69-9EE1-A0E44D49A265
+ MODULE_TYPE = DXE_DRIVER
+ VERSION_STRING = 0.1.0
+ ENTRY_POINT = Bc250ResetCaptureEntry
+[Sources]
+ ResetCaptureDxe.c
+[Packages]
+ MdePkg/MdePkg.dec
+ Bc250NativePkg/Bc250NativePkg.dec
+[LibraryClasses]
+ UefiDriverEntryPoint
+ UefiBootServicesTableLib
+ HobLib
+ BaseMemoryLib
+[Guids]
+ gBc250AmiNvramDxeFileGuid
+[Protocols]
+ gBc250ResetCaptureProtocolGuid
+[Depex]
+ BEFORE gBc250AmiNvramDxeFileGuid

@@ -1,0 +1,13 @@
+mode: No matching mode found to set
+BC250 Native 0.1.0 CANDIDATE: original PUNSH base, GPU + GDDR6 controls.
+Offline validated; first boot on this board has not been tested.
+GPU starts at Factory default; temperature patch starts Disabled.
+Press Enter to back up the installed ROM and flash this candidate.
+TEST pause bypassed
+AFU returned success. First boot and readback still require verification.
+Press Enter for a cold reset.
+TEST pause bypassed
+
+MOCK CALLS:
+\Firmware_Backup\bc250-before-native.rom /O     
+\Firmware\BC250_3.00_MeiMeiDXEv3-PUNSH-BC250-Native-0.1.0-CANDIDATE.rom /P /B /N /K /RLC:E /CLRCFG

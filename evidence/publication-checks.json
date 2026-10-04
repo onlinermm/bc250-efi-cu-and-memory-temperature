@@ -1,0 +1,31 @@
+{
+  "package": "BC250 Native Firmware 0.1.0 Research",
+  "date": "2026-10-04",
+  "publication_changes_only": true,
+  "production_source_byte_identical_to_delivered_candidate": true,
+  "production_efi_and_ffs_byte_identical_to_delivered_candidate": true,
+  "candidate_sha256": "38a3c0ddd15d292727e741bc0b3e2b9e3fe877eb9fb8c605a8521ab721bddf53",
+  "selected_exact_base_modules": 23,
+  "current_named_executable_inventory_records": 237,
+  "ia32_te_and_x64_pe_section_mapping_verified": true,
+  "current_ifr_export_parse_errors": 0,
+  "native_host_models_rerun_passed": true,
+  "gpu_exact_byte_reader_cases": 71,
+  "gpu_exact_byte_startup_footer_cases": 340,
+  "gpu_resource_regeneration_identical": true,
+  "temperature_rebuild": {
+    "toolchain": "xtensa-esp32-elf GCC 5.2.0",
+    "original_bytes": 176,
+    "bounded_bytes": 212,
+    "both_known_hashes_match": true
+  },
+  "smu_and_ip_discovery_match_final_base": true,
+  "hardware_flash_performed_by_publication_task": false,
+  "hardware_qualification_claims_not_expanded": true,
+  "curation": {
+    "historical_failed_tools_and_intermediate_roms_excluded": true,
+    "current_negative_tests_retained": true,
+    "early_factory_reference_logs_are_marked_successful_capture_excerpts": true
+  },
+  "checks": "Archive contents, text encoding, local links, exact resources and checksums are checked by tests/verify_publication.py and tests/package.py"
+}

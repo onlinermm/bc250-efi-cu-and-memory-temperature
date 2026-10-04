@@ -1,0 +1,85 @@
+Build environment: Linux-6.18.44-x86_64-with-glibc2.39
+SOURCE_DATE_EPOCH not set - using 1791062050
+Build start time: 00:14:10, Oct.04 2026
+
+WORKSPACE        = <edk2>
+EDK_TOOLS_PATH   = <edk2>/BaseTools
+CONF_PATH        = <edk2>/Conf
+PYTHON_COMMAND   = python3
+
+
+Processing meta-data .
+Architecture(s)  = X64
+Build target     = RELEASE
+Toolchain        = GCC
+
+Active Platform          = <edk2>/Bc250NativePkg/Bc250NativePkg.dsc
+ done!
+Building ... <edk2>/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiLib/UefiLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/BasePrintLib/BasePrintLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/BaseLib/BaseLib.inf [X64]
+Building ... <edk2>/MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf [X64]
+Building ... <edk2>/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/MdePkg/Library/DxeHobLib/DxeHobLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/Bc250NativePkg/GpuSetupDxe/GpuSetupDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/Bc250NativePkg/Tests/NativeTransport.inf [X64]
+Building ... <edk2>/Bc250NativePkg/Tests/MockNvram.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/Bc250NativePkg/Tests/NativeHarness.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... <edk2>/Bc250NativePkg/ResetCaptureDxe/ResetCaptureDxe.inf [X64]
+"gcc" -MMD -MF <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/NativeHarness.obj.deps -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=Bc250NativeHarnessStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -c -o <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/./NativeHarness.obj -I<edk2>/Bc250NativePkg/Tests -I<edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG -I<edk2>/MdePkg -I<edk2>/MdePkg/Include -I<edk2>/MdePkg/Test/UnitTest/Include -I<edk2>/MdePkg/Test/Mock/Include -I<edk2>/MdePkg/Library/MipiSysTLib/mipisyst/library/include -I<edk2>/MdePkg/Include/X64 -I<edk2>/MdeModulePkg -I<edk2>/MdeModulePkg/Include -I<edk2>/MdeModulePkg/Test/Mock/Include -I<edk2>/Bc250NativePkg -I<edk2>/Bc250NativePkg/Include <edk2>/Bc250NativePkg/Tests/NativeHarness.c
+make: Nothing to be done for 'tbuild'.
+rm -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.lib
+"gcc-ar" cr <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.lib  @<edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/object_files.lst
+"gcc" -o <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,_ModuleEntryPoint -u _ModuleEntryPoint -Wl,-Map,<edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os -z common-page-size=0x1000 -Wl,--start-group,@<edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/static_library_files.lst,--end-group -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=Bc250NativeHarnessStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=<edk2>/BaseTools/Scripts/GccBase.lds -Wno-error
+"objcopy"  <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.debug
+"objcopy" --strip-unneeded -R .eh_frame <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll
+"objcopy"  <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.debug <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativeHarness.debug
+"GenFw" -e UEFI_APPLICATION -o <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.efi <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/Bc250NativeHarness.dll
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.efi <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.efi <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativeHarness.efi
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/*.map <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT
+cp -p -f <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/*.pdb <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT
+cp: cannot stat '<edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/DEBUG/*.pdb': No such file or directory
+make: [GNUmakefile:364: <edk2>/Build/Bc250Native/RELEASE_GCC/X64/Bc250NativePkg/Tests/NativeHarness/OUTPUT/Bc250NativeHarness.efi] Error 1 (ignored)
+
+- Done -
+Build end time: 00:14:12, Oct.04 2026
+Build total time: 00:00:02
+

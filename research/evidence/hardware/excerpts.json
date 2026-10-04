@@ -1,0 +1,18 @@
+[
+  {
+    "file": "research/evidence/hardware/GPUAP005-capture.txt",
+    "original_log": "GPUAP005.TXT",
+    "original_sha256": "417f09897c090b7c865ffc7076462030176b72740e853b02da2294b1323eca47",
+    "retained_prefix_bytes": 17140,
+    "omitted_suffix": "Unrelated unsuccessful historical OS-loader attempt",
+    "publication_header_added": true
+  },
+  {
+    "file": "research/evidence/hardware/GPUAP006-capture.txt",
+    "original_log": "GPUAP006.TXT",
+    "original_sha256": "e71b51db28a31f1d80c5a96e57b78b2f73e1a75d7d37b236074c1722340dfe29",
+    "retained_prefix_bytes": 11879,
+    "omitted_suffix": "Unrelated unsuccessful historical OS-loader attempt",
+    "publication_header_added": true
+  }
+]

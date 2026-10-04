@@ -1,0 +1,16 @@
+PASS seed enabled preferences before reset/missing-HOB boot
+PASS install synthetic AMI reset HOB for OVMF test
+PASS read real DXE test firmware volume
+PASS ProcessFirmwareVolume accepts generated FFS/FV
+PASS DXE dispatcher starts BEFORE capture, mock Nvram and native HII
+PASS early reset capture protocol installed by FV dispatch
+PASS capture executed BEFORE mock NvramDxe
+PASS missing AMI HOB fails closed
+PASS locate native ConfigAccess interface
+PASS missing HOB or failed reset write displays safe defaults
+PASS missing capture or failed reset write prevents enabling
+PASS ReadyToBoot publishes volatile diagnostic
+PASS enabled features blocked safely on non-BC250 OVMF board
+PASS reset persistence outcome reported accurately
+PASS default/unsupported-board paths execute no SMU patch operations
+RESULT: 15 checks, 0 failures

@@ -1,0 +1,163 @@
+[
+  {
+    "name": "MeiMeiDXEv3_Menu_Driver",
+    "file": "research/bios/modules/MeiMeiDXEv3_Menu_Driver.pe",
+    "sha256": "1d8533d26cbfa4a74c91ce08ac5229adef56a6e316fb3ccb4ffba417255475b2",
+    "bytes": 28672,
+    "ffs_guid": "0ddde9e4-4a0c-4679-bedc-90a37610ab85"
+  },
+  {
+    "name": "NvramDxe",
+    "file": "research/bios/modules/NvramDxe.pe",
+    "sha256": "eebdaa0bad92ec544310952bd4312385f1e754a8822d0a5bb2f5887ca136587e",
+    "bytes": 39936,
+    "ffs_guid": "1807040d-5934-41a2-a088-8e0f777f71ab"
+  },
+  {
+    "name": "GnbDxe",
+    "file": "research/bios/modules/GnbDxe.pe",
+    "sha256": "6eb06f5fc9c454d4548426c888d90f666358a2407d015f551ea110c9b6b6efa9",
+    "bytes": 6880,
+    "ffs_guid": "1cf59bf9-e3f6-4d9d-bb94-8b857278bbc6"
+  },
+  {
+    "name": "CmosDxe",
+    "file": "research/bios/modules/CmosDxe.pe",
+    "sha256": "c952cb0f0b6e8d39c3f7021d1fc1460a7fc29d0143c1feade196df349dd80566",
+    "bytes": 13792,
+    "ffs_guid": "3237418a-478c-4700-b59f-768e2ccbc726"
+  },
+  {
+    "name": "NvramSmm",
+    "file": "research/bios/modules/NvramSmm.pe",
+    "sha256": "5e0d8f9526b388e9b7f50e0c38b6c44641e4b45204564a675033ca39b771abf7",
+    "bytes": 37696,
+    "ffs_guid": "447a1b58-8f3e-4658-abaa-9e7b2280b90a"
+  },
+  {
+    "name": "MeiMeiDXEv3_ColdBoot",
+    "file": "research/bios/modules/MeiMeiDXEv3_ColdBoot.pe",
+    "sha256": "bfb30809e283d03cde4508be3cd406a48562602465d6607b275716ddd9e04a38",
+    "bytes": 20480,
+    "ffs_guid": "6c98e4f3-9d8b-4e5a-b2e7-31a45b9c5d81"
+  },
+  {
+    "name": "AmdNbioSmuV10Dxe",
+    "file": "research/bios/modules/AmdNbioSmuV10Dxe.pe",
+    "sha256": "546a0689e607a3a87b8c437c7fe7191e55757f56b35792fb8d84f539844b500e",
+    "bytes": 33024,
+    "ffs_guid": "6f960c35-ffed-4778-99a1-4d998ce519b9"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Core_Unlock",
+    "file": "research/bios/modules/MeiMeiDXEv3_SMU_Core_Unlock.pe",
+    "sha256": "2bf4e0ab7de83ce84b089b0487b8c4172379dba258db3556dd62c1dfaa41a91a",
+    "bytes": 12288,
+    "ffs_guid": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d"
+  },
+  {
+    "name": "Setup",
+    "file": "research/bios/modules/Setup.pe",
+    "sha256": "51602c41dcbb87985a7cab40e299a4dceb64dc7268a54f4caf903ce3fac3627b",
+    "bytes": 169056,
+    "ffs_guid": "899407d7-99fe-43d8-9a21-79ec328cac21"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Patch",
+    "file": "research/bios/modules/MeiMeiDXEv3_SMU_Patch.pe",
+    "sha256": "f544a45cd277ef59dc3643741516d6acb49f8a9321f2e1f5e351974fd01f042f",
+    "bytes": 12288,
+    "ffs_guid": "9d4e5e12-3c7a-4f88-a2b7-0d8d6b7f2e41"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Unlock",
+    "file": "research/bios/modules/MeiMeiDXEv3_SMU_Unlock.pe",
+    "sha256": "0824d80ad9565e42f752a2a6ff947e19a9af896b80575090172538844059c64a",
+    "bytes": 12288,
+    "ffs_guid": "a3f8b2d5-7c4e-4f0a-b1d2-9e6f3c8a5b71"
+  },
+  {
+    "name": "MeiMeiDXEv3_ACPI_AutoInject",
+    "file": "research/bios/modules/MeiMeiDXEv3_ACPI_AutoInject.pe",
+    "sha256": "a83b82058e1725d967bdd881ae7caacc500146d0513a2f745d9921496f023038",
+    "bytes": 20480,
+    "ffs_guid": "a9981d14-6329-4698-ad20-173c4363dd30"
+  },
+  {
+    "name": "AMITSE",
+    "file": "research/bios/modules/AMITSE.pe",
+    "sha256": "978f8bc7ede95a59b4621bad44cc1c29f50a9bd3e64da6f3967d6ea8ed99633a",
+    "bytes": 328640,
+    "ffs_guid": "b1da0adf-4f77-4070-a88e-bffe1c60529a"
+  },
+  {
+    "name": "AmdNbioBaseARIDxe",
+    "file": "research/bios/modules/AmdNbioBaseARIDxe.pe",
+    "sha256": "8de29ee97daec1b0ce754fc19648d8c4a8c3d26709fbc2a751e3a5afc1f165db",
+    "bytes": 2080,
+    "ffs_guid": "d4f90895-a60b-4e97-b446-2855246f8930"
+  },
+  {
+    "name": "CbsSetupDxe",
+    "file": "research/bios/modules/CbsSetupDxe.pe",
+    "sha256": "9fae1341693fe1b89e6f070f8740c94228f5161cca701ac31425bc5d438533b3",
+    "bytes": 264160,
+    "ffs_guid": "f639d37e-02a1-4ba8-ad17-5c6c6e5e9322"
+  },
+  {
+    "name": "AmdNbioGfxARIDxe",
+    "file": "research/bios/modules/AmdNbioGfxARIDxe.pe",
+    "sha256": "a1b5855a339875f09cfaec8a1c17abf54251bab2c43ff577bc3cdf8711e2f61c",
+    "bytes": 13376,
+    "ffs_guid": "fa70afcc-3715-4d15-8699-f0df4cafc6d3"
+  },
+  {
+    "name": "GnbPei",
+    "file": "research/bios/modules/GnbPei.te",
+    "sha256": "05d1364a0861b85b6afd552c91778b7d4616c9651b5eef3c56ce99d09bae666d",
+    "bytes": 744,
+    "ffs_guid": "56fc768f-b603-4454-8083-bfe98d6084f9"
+  },
+  {
+    "name": "CmosPei",
+    "file": "research/bios/modules/CmosPei.te",
+    "sha256": "6efef942cadf271bbe1ae36b1b9dabfc85ec10196bb7fd4e6a3f1ae19c5f4839",
+    "bytes": 9352,
+    "ffs_guid": "654fe61a-2eda-4749-a76a-56ed7ade1cbe"
+  },
+  {
+    "name": "AmdNbioSmuV10Pei",
+    "file": "research/bios/modules/AmdNbioSmuV10Pei.te",
+    "sha256": "905b8be68afd1dce5453acef8273cbf94bdae6d41823c25438ace286348e2c80",
+    "bytes": 90672,
+    "ffs_guid": "7307bd0f-8b7a-4ba5-9af6-3997d1e32786"
+  },
+  {
+    "name": "NvramPei",
+    "file": "research/bios/modules/NvramPei.te",
+    "sha256": "cbc1def3ce53e947091d3bf1e950d78a4e78afbc69c67369124979736ab2116f",
+    "bytes": 9296,
+    "ffs_guid": "838dcf34-907b-4d55-9a4b-a0ef7167b5f4"
+  },
+  {
+    "name": "PlatformCustomizePei",
+    "file": "research/bios/modules/PlatformCustomizePei.te",
+    "sha256": "5b410845607fede6c7adf71907a805096fe7e64b879680e311145b1d84ace0ae",
+    "bytes": 4072,
+    "ffs_guid": "cc9f5b7e-254b-4f8a-a648-034a40aeda35"
+  },
+  {
+    "name": "AmdNbioGfxARIPei",
+    "file": "research/bios/modules/AmdNbioGfxARIPei.te",
+    "sha256": "63413be2ac290e584bbbeeba5eb573a94b66b9624c4e0ecbea145ded655245b8",
+    "bytes": 87048,
+    "ffs_guid": "d0ff5e04-1d07-491d-970e-e220a3b79611"
+  },
+  {
+    "name": "AmdNbioBaseARIPei",
+    "file": "research/bios/modules/AmdNbioBaseARIPei.te",
+    "sha256": "51d96c1e5a5e2c39f04fb962b0b5be686dea0a05eecbde829a4595fe3356884f",
+    "bytes": 105264,
+    "ffs_guid": "f95754c4-784d-4155-a05e-5c0ae2559ff8"
+  }
+]

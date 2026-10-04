@@ -1,0 +1,22 @@
+{
+  "Setup": {
+    "forms": 38,
+    "questions": 224,
+    "parse_errors": 0
+  },
+  "CbsSetupDxe": {
+    "forms": 71,
+    "questions": 1134,
+    "parse_errors": 0
+  },
+  "MeiMeiDXEv3_Menu_Driver": {
+    "forms": 2,
+    "questions": 13,
+    "parse_errors": 0
+  },
+  "Bc250GpuSetupDxe": {
+    "forms": 2,
+    "questions": 22,
+    "parse_errors": 0
+  }
+}

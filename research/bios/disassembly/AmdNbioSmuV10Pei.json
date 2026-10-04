@@ -1,0 +1,35 @@
+{
+  "format": "TE",
+  "machine": 332,
+  "architecture": "IA32",
+  "bytes": 90672,
+  "sha256": "905b8be68afd1dce5453acef8273cbf94bdae6d41823c25438ace286348e2c80",
+  "entry_rva": 576,
+  "image_base": 166236124,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 576,
+      "raw_offset": 176,
+      "raw_bytes": 87936,
+      "virtual_bytes": 87935,
+      "executable": true
+    },
+    {
+      "name": ".data",
+      "rva": 88512,
+      "raw_offset": 88112,
+      "raw_bytes": 2112,
+      "virtual_bytes": 2096,
+      "executable": false
+    },
+    {
+      "name": ".reloc",
+      "rva": 90624,
+      "raw_offset": 90224,
+      "raw_bytes": 448,
+      "virtual_bytes": 420,
+      "executable": false
+    }
+  ]
+}

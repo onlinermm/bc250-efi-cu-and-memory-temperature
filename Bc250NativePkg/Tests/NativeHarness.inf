@@ -1,0 +1,36 @@
+[Defines]
+  INF_VERSION = 0x0001001B
+  BASE_NAME = Bc250NativeHarness
+  FILE_GUID = BA43F4BC-56C6-47DC-8DF2-1E6F21AC5B06
+  MODULE_TYPE = UEFI_APPLICATION
+  ENTRY_POINT = GpuHarnessEntry
+[Sources]
+  NativeHarness.c
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  Bc250NativePkg/Bc250NativePkg.dec
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  HiiLib
+  DevicePathLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  PrintLib
+  DxeServicesTableLib
+[Guids]
+  gBc250GpuFormsetGuid
+  gBc250GpuVariableGuid
+  gEfiHobListGuid
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiDevicePathProtocolGuid
+  gEfiHiiConfigAccessProtocolGuid
+  gEfiHiiConfigRoutingProtocolGuid
+  gEfiFormBrowser2ProtocolGuid
+  gBc250ResetCaptureProtocolGuid

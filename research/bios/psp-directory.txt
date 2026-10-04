@@ -1,0 +1,33 @@
+=== AMD Embedded Firmware Structure @0x820000 sig=0x55AA55AA ===
+  IMC FW               ptr=0xFF8A0000 -> file 0x08A0000
+  xHCI FW              ptr=0xFF8B0000 -> file 0x08B0000
+  PSP dir (new)        ptr=0xFF8E0000 -> file 0x08E0000
+  BHD 17h-10           ptr=0xFFAB0000 -> file 0x0AB0000
+  SPI cfg bytes @+0x2C: ffffffffffffffffffffffffffffffffffffffff
+
+=== PSP Directory @0x8E0000 sig=$PSP entries=19 (entry size 16) ===
+  [ 0] type=0x01 PSP Boot Loader (off-chip BL)    off=0x08E0400 size=0xA800     sub=0  
+  [ 1] type=0x02 PSP SecureOS                     off=0x08EAC00 size=0x14350    sub=0  header_version_dword=0x001C0002 (byte tuple 0.28.0.2)
+  [ 2] type=0x08 SMU Firmware (MP1)               off=0x08FF000 size=0x40200    sub=0  header_version_dword=0x00580600 (byte tuple 0.88.6.0)
+  [ 3] type=0x09 AMD Secure Debug Key             off=0x093F200 size=0x440      sub=0  
+  [ 4] type=0x12 SMU Firmware (alt)               off=0x093F700 size=0x40200    sub=0  header_version_dword=0x00580600 (byte tuple 0.88.6.0)
+  [ 5] type=0x13 Debug Unlock                     off=0x097F900 size=0x2000     sub=0  header_version_dword=0x291C0001 (byte tuple 41.28.0.1)
+  [ 6] type=0x20 HW IP Config                     off=0x0981900 size=0x650      sub=0  header_version_dword=0x00000001 (byte tuple 0.0.0.1)
+  [ 7] type=0x24 Security Policy                  off=0x0982000 size=0x2E50     sub=0  header_version_dword=0x0B510016 (byte tuple 11.81.0.22)
+  [ 8] type=0x28 System Driver                    off=0x0984F00 size=0x1A770    sub=0  header_version_dword=0x001C0002 (byte tuple 0.28.0.2)
+  [ 9] type=0x30 ABL0 (AGESA BL0)                 off=0x099F700 size=0x440      sub=0  header_version_dword=0x21112600 (byte tuple 33.17.38.0)
+  [10] type=0x31 ABL1                             off=0x099FC00 size=0xBED0     sub=0  header_version_dword=0x21112600 (byte tuple 33.17.38.0)
+  [11] type=0x32 ABL2                             off=0x09ABB00 size=0x3F70     sub=0  header_version_dword=0x21112600 (byte tuple 33.17.38.0)
+  [12] type=0x33 ABL3                             off=0x09AFB00 size=0xA160     sub=0  header_version_dword=0x21112600 (byte tuple 33.17.38.0)
+  [13] type=0x34 ABL4                             off=0x09B9D00 size=0x9FE0     sub=0  header_version_dword=0x21112600 (byte tuple 33.17.38.0)
+  [14] type=0x44 MSMU                             off=0x09C3D00 size=0x6610     sub=0  header_version_dword=0x00000001 (byte tuple 0.0.0.1)
+  [15] type=0x45 type 0x45 (unknown)              off=0x09CA400 size=0x6E0      sub=0  header_version_dword=0x0B510116 (byte tuple 11.81.1.22)
+  [16] type=0x4F type 0x4F (unknown)              off=0x09CAB00 size=0x10200    sub=0  
+  [17] type=0x50 RIB                              off=0x09DAD00 size=0xDD0      sub=0  header_version_dword=0x301C0001 (byte tuple 48.28.0.1)
+  [18] type=0x51 type 0x51 (unknown)              off=0x09DBB00 size=0x740      sub=0  header_version_dword=0x301C0001 (byte tuple 48.28.0.1)
+
+=== BIOS Directory @0xAB0000 sig=$BHD entries=4 (entry size 24) ===
+  [ 0] type=0x60 APCB (PSP config block)          off=0x0AB1000 size=0x2000      
+  [ 1] type=0x61 APOB (AGESA output block)        off=0x0000000 size=0x0        dst=0x4000000  
+  [ 2] type=0x62 *** BIOS/UEFI image ***          off=0x0E02000 size=0x1FE000   dst=0x9E02000  
+  [ 3] type=0x63 APOB NV copy                     off=0x0AB3000 size=0x2000      

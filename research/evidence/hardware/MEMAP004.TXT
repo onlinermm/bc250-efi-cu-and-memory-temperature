@@ -1,0 +1,49 @@
+BC250 Memory EFI 0.1.0 EXPERIMENTAL - no flash writes, no SMU unlock exploit, single-chip ABI
+MODE=1 (0=original 1=bounded 2=skip)
+PAYLOAD name=bounded bytes=212 base=0003AA9C entry=0003AAC8 sha256=4ba2528c0441b6fd72c1e255af6dd14d16fbc0f831f9a75275a63a2e1233f328
+HOST id=13E01022
+BOARD_CHECK gpu=1 host=1
+CPU_REFERENCE_READ smn=0115A870 value=000000FF low8=FF
+FIRMWARE_GUARDS_PASS words=86 debug=opened-by-BIOS
+UPLOAD_BEGIN a=0003AAC8 b=000000D4
+PAYLOAD_READBACK_PASS a=0003AA9C b=000000D4
+HOOK_READBACK_PASS a=0000748C b=0003AAC8
+INSTALL_RESULT=0 (0=ready 1=blocked 2=restored 3=uncertain)
+TEMP chip=0 raw=00002828 code=40 celsius=40 saturation=0
+TEMP chip=1 raw=00002B2B code=43 celsius=46 saturation=0
+TEMP chip=2 raw=00002929 code=41 celsius=42 saturation=0
+TEMP chip=3 raw=00002A2A code=42 celsius=44 saturation=0
+TEMP chip=4 raw=00002B2B code=43 celsius=46 saturation=0
+TEMP chip=5 raw=00002A2A code=42 celsius=44 saturation=0
+TEMP chip=6 raw=00002C2C code=44 celsius=48 saturation=0
+TEMP chip=7 raw=00002828 code=40 celsius=40 saturation=0
+TEMP_SAMPLE_PASS chips=8 mailbox_alive=1
+MEM_PATCH_INSTALLED: host readback passed; Linux persistence NOT yet confirmed
+OS_VARIABLE name=BootNext status=Not Found size=0
+OS_VARIABLE name=BootOrder status=Success size=8 attributes=7
+OS_VARIABLE name=Boot0003 status=Success size=236 attributes=7
+OS_OPTION_RAW name=Boot0003 attr=1 path_bytes=134 size=236
+OS_OPTION_SKIP name=Boot0003 reason=invalid, legacy BBS, or unsupported multi-instance path
+OS_VARIABLE name=Boot0001 status=Success size=120 attributes=7
+OS_OPTION_RAW name=Boot0001 attr=1 path_bytes=94 size=120
+OS_PATH_HEAD name=Boot0001 type=04 subtype=01 node_bytes=42
+OS_HD_SHORT matches=1
+OS_FOUND index=0 source=Boot variable option=0001 name=UEFI OS path=\EFI\BOOT\BOOTX64.EFI
+OS_VARIABLE name=Boot0002 status=Success size=124 attributes=7
+OS_OPTION_RAW name=Boot0002 attr=1 path_bytes=104 size=124
+OS_PATH_HEAD name=Boot0002 type=04 subtype=01 node_bytes=42
+OS_HD_SHORT matches=1
+OS_FOUND index=1 source=Boot variable option=0002 name=Limine path=\EFI\LIMINE\LIMINE_X64.EFI
+OS_VARIABLE name=Boot0000 status=Success size=144 attributes=7
+OS_OPTION_RAW name=Boot0000 attr=9 path_bytes=122 size=144
+OS_OPTION_SKIP name=Boot0000 reason=invalid, legacy BBS, or unsupported multi-instance path
+OS_FILESYSTEMS status=Success count=2
+OS_FS index=0 fixed_nonself=0
+OS_FS index=1 fixed_nonself=1
+OS_FOUND index=2 source=Filesystem option=0000 name=Disk EFI loader path=\EFI\limine\limine_x64.efi
+OS_CHOICES=3
+OS_SELECTED index=1 path=\EFI\LIMINE\LIMINE_X64.EFI
+OS_LOAD=Success
+OS_VARIABLE name=BootCurrent status=Success size=2 attributes=6
+OS_BOOTCURRENT_SET=Success
+OS_START option=0002

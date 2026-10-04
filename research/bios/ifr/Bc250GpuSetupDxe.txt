@@ -1,0 +1,94 @@
+===== Native BC250 GPU & Memory =====
+strings: 46   IFR streams: 1
+
+--- stream @0xA068..0xA352 (105 opcodes) ---
+FORMSET 'BC250 GPU & Memory' guid=97DF2826-A81D-47DA-A061-18A3835139C0
+  DEFAULTSTORE[0] '<0>'
+  DEFAULTSTORE[0] 'English'
+  VARSTORE 0x0001 'Bc250GpuConfig' size=0x18 guid=DBD570A4-292F-4348-8B7E-A424755B531C
+  FORM id=0x1000 'BC250 GPU & Memory'
+    -- GPU Configuration --
+    ONEOF 'GPU profile' | var=Bc250GpuConfig+0x1 w=1B range=0..2 step=0 qid=0x0100
+        help: Factory default restores the captured factory configuration. All selects 40 CU. Custom selects WGP pairs per bank.
+      opt 'Factory default' = 0 [DEFAULT] [MFG]
+      opt 'Unlock all (40 CU)' = 1
+      opt 'Custom' = 2
+    TEXT 'Factory default: restore the captured factory GPU configuration.' : '<0>'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x0100)==2
+        EXPR not
+      REF -> 0x1001 'Edit WGP selection'
+    -- GDDR6 Memory --
+    -- Prerequisite: MeiMei > SMU Unlock must be enabled. --
+    ONEOF 'GDDR6 Temperature Patch' | var=Bc250GpuConfig+0x2 w=1B range=0..1 step=0 qid=0x0101
+        help: Enable temperature reading by the OS. Independent of the GPU CU profile. Requires SMU Unlock in MeiMei. Clear CMOS / Setup Defaults: Disabled.
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+    -- Clear CMOS / Setup Defaults: GPU = Factory default, temperature patch = Disabled. --
+    -- Saved settings apply on restart. Use a full power-off when changing GPU profiles. --
+  FORM id=0x1001 'Edit WGP selection'
+    -- Each WGP enables two CUs. Bank numbers are logical, not physical die positions. --
+    -- SE0 / SH0 --
+    CHECKBOX 'WGP 0 (CU 0-1)' | var=Bc250GpuConfig+0x4 qid=0x0200
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 1 (CU 2-3)' | var=Bc250GpuConfig+0x5 qid=0x0201
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 2 (CU 4-5)' | var=Bc250GpuConfig+0x6 qid=0x0202
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 3 (CU 6-7)' | var=Bc250GpuConfig+0x7 qid=0x0203
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    CHECKBOX 'WGP 4 (CU 8-9)' | var=Bc250GpuConfig+0x8 qid=0x0204
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    -- SE0 / SH1 --
+    CHECKBOX 'WGP 0 (CU 0-1)' | var=Bc250GpuConfig+0x9 qid=0x0205
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 1 (CU 2-3)' | var=Bc250GpuConfig+0xA qid=0x0206
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 2 (CU 4-5)' | var=Bc250GpuConfig+0xB qid=0x0207
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 3 (CU 6-7)' | var=Bc250GpuConfig+0xC qid=0x0208
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    CHECKBOX 'WGP 4 (CU 8-9)' | var=Bc250GpuConfig+0xD qid=0x0209
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    -- SE1 / SH0 --
+    CHECKBOX 'WGP 0 (CU 0-1)' | var=Bc250GpuConfig+0xE qid=0x020A
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 1 (CU 2-3)' | var=Bc250GpuConfig+0xF qid=0x020B
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 2 (CU 4-5)' | var=Bc250GpuConfig+0x10 qid=0x020C
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 3 (CU 6-7)' | var=Bc250GpuConfig+0x11 qid=0x020D
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    CHECKBOX 'WGP 4 (CU 8-9)' | var=Bc250GpuConfig+0x12 qid=0x020E
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    -- SE1 / SH1 --
+    CHECKBOX 'WGP 0 (CU 0-1)' | var=Bc250GpuConfig+0x13 qid=0x020F
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 1 (CU 2-3)' | var=Bc250GpuConfig+0x14 qid=0x0210
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 2 (CU 4-5)' | var=Bc250GpuConfig+0x15 qid=0x0211
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 1
+    CHECKBOX 'WGP 3 (CU 6-7)' | var=Bc250GpuConfig+0x16 qid=0x0212
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0
+    CHECKBOX 'WGP 4 (CU 8-9)' | var=Bc250GpuConfig+0x17 qid=0x0213
+        help: Checkbox = requested state. F:ON = factory enabled. F:OFF = factory locked. F:? = reference unavailable.
+      default[std] = 0

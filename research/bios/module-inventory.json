@@ -1,0 +1,1661 @@
+[
+  {
+    "name": "ACPI",
+    "ffs_guid": "16d0a23e-c09c-407d-a14a-ad058fdd0ca1",
+    "bytes": 30592,
+    "sha256": "d73a4c23e02fe16ad010b4c0f76e0b58aa369f8240482e47e8215608fb19a294",
+    "format": "PE"
+  },
+  {
+    "name": "AMITSE",
+    "ffs_guid": "b1da0adf-4f77-4070-a88e-bffe1c60529a",
+    "bytes": 328640,
+    "sha256": "978f8bc7ede95a59b4621bad44cc1c29f50a9bd3e64da6f3967d6ea8ed99633a",
+    "format": "PE"
+  },
+  {
+    "name": "AcpiModeEnable",
+    "ffs_guid": "750890a6-7acf-4f4f-81bd-b400c2bea95a",
+    "bytes": 8608,
+    "sha256": "49e103b8e8674541eb5308acbf7f0f05afbf1c2744bab8fb3057dba7b1cea39b",
+    "format": "PE"
+  },
+  {
+    "name": "AcpiS3SaveDxe",
+    "ffs_guid": "2bded685-f733-455f-a840-43a22b791fb3",
+    "bytes": 1248,
+    "sha256": "cfad87d90a2d5c2c82af720836323f75deedc9a6eb02db800149d61855d6f889",
+    "format": "PE"
+  },
+  {
+    "name": "Ahci",
+    "ffs_guid": "8f5a2e02-538c-4d59-b920-c4786acbc552",
+    "bytes": 32576,
+    "sha256": "cbd12c411fedb07a60501282000c9dd72aacb629b27ef99c9031acaafdce10e4",
+    "format": "PE"
+  },
+  {
+    "name": "AhciSmm",
+    "ffs_guid": "bc3245bd-b982-4f55-9f79-056ad7e987c5",
+    "bytes": 10624,
+    "sha256": "e288813163524754f4b26eb424a6ba50eb6a72b5cba48a2198a7684e17de053c",
+    "format": "PE"
+  },
+  {
+    "name": "AmdAcpiDxe",
+    "ffs_guid": "729b3079-8913-4e12-afef-2ca264799469",
+    "bytes": 16096,
+    "sha256": "4b87626749f193da41f714faff1e6720f6d1d6642dde6f9ab890499850803296",
+    "format": "PE"
+  },
+  {
+    "name": "AmdApcbObrDxe",
+    "ffs_guid": "5b2820bb-9a8a-443d-a84c-73b925c5727a",
+    "bytes": 19328,
+    "sha256": "e0bc6cb786469818ac6af66d7c2d06ffd5d9026ad550b651911e45334746604c",
+    "format": "PE"
+  },
+  {
+    "name": "AmdApcbObrSmm",
+    "ffs_guid": "97a03375-250d-4c59-93a8-f76796725e18",
+    "bytes": 28384,
+    "sha256": "3237d2836e5d3166c2fb00133ffee23f17a38d972d051ac66b8223e37e327535",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCcxVhAriDxe",
+    "ffs_guid": "3c9a095d-c3cb-4302-96e1-7105a7c46a69",
+    "bytes": 41216,
+    "sha256": "d9bc6337e3d039922016e95ed8be1fda5d7fb3e0250e43a6058d9c0d305997f0",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCcxVhAriPei",
+    "ffs_guid": "d3a6cf7c-2a13-4dcd-961f-b88c85aceb34",
+    "bytes": 18784,
+    "sha256": "973624f3cf5cae03f3ef42b9d8934f65b0586ec2bc9f4a3a387b84f7cea68942",
+    "format": "TE"
+  },
+  {
+    "name": "AmdCcxVhAriSmm",
+    "ffs_guid": "b759169b-61e2-4f92-9447-23e3dcd33cec",
+    "bytes": 15328,
+    "sha256": "419e9d6c325a227d821f20478d56b5686d37bbc301d7c551e0bf6918aed84b57",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmGpioInitDxe",
+    "ffs_guid": "71032d4b-4b91-4ec1-ad53-81827fb43108",
+    "bytes": 2848,
+    "sha256": "70a6130e9bfecf6477b652b3e9068845a547ec194de8c94f97e1d4a126cc58d5",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmGpioInitPeim",
+    "ffs_guid": "de3e049c-a218-4891-7469-4fc0ae853298",
+    "bytes": 4304,
+    "sha256": "392635bc56b241fee2c2b020994bc6e62c5b4a7656bd7e1c7e1d0fa4f285955b",
+    "format": "TE"
+  },
+  {
+    "name": "AmdCpmGpioInitSmm",
+    "ffs_guid": "cd1c556b-62bf-4eec-8e73-7731f8e847b2",
+    "bytes": 2752,
+    "sha256": "07cb9a2778723a75227ae5f3d56a8903bf7d46982e52eaeaf6942ee6641118f2",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmInitDxe",
+    "ffs_guid": "162793aa-0fe7-4010-9818-45f55c5ccc3e",
+    "bytes": 18304,
+    "sha256": "89a016d6a95be537a8ed363c4c363874f031ad5de8b3c6075b4170a5d0b820b7",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmInitPeim",
+    "ffs_guid": "d919136e-865c-4b10-b099-5d897cfede08",
+    "bytes": 14384,
+    "sha256": "25b14a638a177579f92feef7595040438aa8480ea623976df373315d35ca2ab2",
+    "format": "TE"
+  },
+  {
+    "name": "AmdCpmInitSmm",
+    "ffs_guid": "30af1245-a58e-4ef7-8c75-b725939b3b9f",
+    "bytes": 15200,
+    "sha256": "9cae175a00b6e1cf1ef17fed21c3a942a9d25224f09020e2c85cb09a8a2c48b6",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmOemInitDxe",
+    "ffs_guid": "b6b643b8-2b41-4a61-a224-d4f476ef580c",
+    "bytes": 1696,
+    "sha256": "2f0bb9d2aeae09fec47a6b277f32a23c43f0288a903a50d6cd8b0b867b1a165e",
+    "format": "PE"
+  },
+  {
+    "name": "AmdCpmOemInitPeim",
+    "ffs_guid": "d617467b-1ff7-403f-a87d-29f61c80ee7c",
+    "bytes": 6128,
+    "sha256": "ffce8c84718b7c4b053035e8901970109cb16702f0211327f177745c039b87ec",
+    "format": "TE"
+  },
+  {
+    "name": "AmdCpmOemSmm",
+    "ffs_guid": "b9b0f38d-1f27-4f46-9f44-42d694729882",
+    "bytes": 1984,
+    "sha256": "f3eb0d0389657ac9f40fbd554b0a1ea7c462595d213ac6b7280f45910dc94f58",
+    "format": "PE"
+  },
+  {
+    "name": "AmdErrorLogDxe",
+    "ffs_guid": "8624f36d-6de0-44c3-8322-74ad419d3a90",
+    "bytes": 2240,
+    "sha256": "76da20592893af493c96b581feeca9c3c80c4a255d735edc34fc1bd98ef63d11",
+    "format": "PE"
+  },
+  {
+    "name": "AmdErrorPei",
+    "ffs_guid": "a5c02c56-19a7-43b5-a0d0-04518a1ca69e",
+    "bytes": 1544,
+    "sha256": "c41fd9c5ac19437196e745a0a0c6c6984c46ed76f5a25e95b57529656b0275f5",
+    "format": "TE"
+  },
+  {
+    "name": "AmdFabricAriDxe",
+    "ffs_guid": "25075106-f537-4bd4-afa5-cff0e6f3b2a6",
+    "bytes": 28320,
+    "sha256": "b9702a29ed28cdd253b82a7a4b1ccd62ec318705b105b9d9939b212360bec929",
+    "format": "PE"
+  },
+  {
+    "name": "AmdFabricAriPei",
+    "ffs_guid": "09df88e2-0e05-4f28-a55f-0d62bfbcf59f",
+    "bytes": 96680,
+    "sha256": "c5b99650a442ed9be1cf3a62e7571f7eb163b9f80a60d4fcc7b3e9afe4506f78",
+    "format": "TE"
+  },
+  {
+    "name": "AmdIdsDebugPrintDxe",
+    "ffs_guid": "abfe2830-855b-4a98-94d6-eeb23d1ebf45",
+    "bytes": 11840,
+    "sha256": "e177833c8a196019762213622fea29e9fb16ed03cec7d4f601bc19573f85256f",
+    "format": "PE"
+  },
+  {
+    "name": "AmdIdsDebugPrintPei",
+    "ffs_guid": "239e812c-ad4a-4d5a-8bb9-169131c344bf",
+    "bytes": 8432,
+    "sha256": "e768208e3868225762605a8ed02375ff6309c0f27a169fdc1681f91a627d6591",
+    "format": "TE"
+  },
+  {
+    "name": "AmdMemAm4Pei",
+    "ffs_guid": "9ff8b817-d14c-4a43-9314-123da3960ad6",
+    "bytes": 5192,
+    "sha256": "1ef4e7b944672a9a48b6fcb16c4d35cb6d23bb8306429dc3eb10ee1d0c7bb5f8",
+    "format": "TE"
+  },
+  {
+    "name": "AmdMemSmbiosV2Dxe",
+    "ffs_guid": "ea7bf2cc-f154-4cc4-a725-6382c701fbfe",
+    "bytes": 3904,
+    "sha256": "6885edb4645292c62e1840be8913496d32273637bc9f018920c60a315e3222bc",
+    "format": "PE"
+  },
+  {
+    "name": "AmdMemSmbiosV2Pei",
+    "ffs_guid": "f6663081-02d1-4f52-b57c-fdad224941d4",
+    "bytes": 6288,
+    "sha256": "a70b4d80e8db0229069fe1c5b6f6709f868f0091cff66ea4e1b12e7639cf31a3",
+    "format": "TE"
+  },
+  {
+    "name": "AmdMemoryHobInfoPeim",
+    "ffs_guid": "5ead1d32-c38a-4508-8dcf-0b9918957a4c",
+    "bytes": 6472,
+    "sha256": "aad3f828ccef4cf8878cad8c9ee1e47743748f652a1ef54af04de759983b4619",
+    "format": "TE"
+  },
+  {
+    "name": "AmdNbioAlibARIDxe",
+    "ffs_guid": "28ab63a9-5fb0-4c93-9c44-0dd8a1e9101d",
+    "bytes": 26080,
+    "sha256": "cba4607ffcc4e981be73db9e16ad906f563b3a0eee8471880f4a8c7c9d886c93",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioBaseARIDxe",
+    "ffs_guid": "d4f90895-a60b-4e97-b446-2855246f8930",
+    "bytes": 2080,
+    "sha256": "8de29ee97daec1b0ce754fc19648d8c4a8c3d26709fbc2a751e3a5afc1f165db",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioBaseARIPei",
+    "ffs_guid": "f95754c4-784d-4155-a05e-5c0ae2559ff8",
+    "bytes": 105264,
+    "sha256": "51d96c1e5a5e2c39f04fb962b0b5be686dea0a05eecbde829a4595fe3356884f",
+    "format": "TE"
+  },
+  {
+    "name": "AmdNbioGfxARIDxe",
+    "ffs_guid": "fa70afcc-3715-4d15-8699-f0df4cafc6d3",
+    "bytes": 13376,
+    "sha256": "a1b5855a339875f09cfaec8a1c17abf54251bab2c43ff577bc3cdf8711e2f61c",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioGfxARIPei",
+    "ffs_guid": "d0ff5e04-1d07-491d-970e-e220a3b79611",
+    "bytes": 87048,
+    "sha256": "63413be2ac290e584bbbeeba5eb573a94b66b9624c4e0ecbea145ded655245b8",
+    "format": "TE"
+  },
+  {
+    "name": "AmdNbioIOMMUARIDxe",
+    "ffs_guid": "73f53712-2a64-4b86-961d-c25b63df198c",
+    "bytes": 21472,
+    "sha256": "3588d51cac5d586fb8e431cf4b242d4c6a7bb17d0693f14a14a392ac1e76b280",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioIOMMUARIPei",
+    "ffs_guid": "c59716ee-2d90-4b1d-9c36-16523e105689",
+    "bytes": 7600,
+    "sha256": "8bce36bd28d58e1057ff5759c3fa45eb95755637ce3a2dc16873f7d738f5e460",
+    "format": "TE"
+  },
+  {
+    "name": "AmdNbioPcieARIDxe",
+    "ffs_guid": "d7908ec2-227a-472f-8095-6a159dd723d2",
+    "bytes": 36000,
+    "sha256": "e0d4d44157774877b7181bdab4632a179ff032449201adacb3a2ff61a9246da0",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioPcieARIPei",
+    "ffs_guid": "2b9e5a05-686f-4e72-af0a-2d7baa61e918",
+    "bytes": 108776,
+    "sha256": "62b1398c4ba9b5a03ea533306cd8200257fac323c8fa688caa057667a5871312",
+    "format": "TE"
+  },
+  {
+    "name": "AmdNbioSmuV10Dxe",
+    "ffs_guid": "6f960c35-ffed-4778-99a1-4d998ce519b9",
+    "bytes": 33024,
+    "sha256": "546a0689e607a3a87b8c437c7fe7191e55757f56b35792fb8d84f539844b500e",
+    "format": "PE"
+  },
+  {
+    "name": "AmdNbioSmuV10Pei",
+    "ffs_guid": "7307bd0f-8b7a-4ba5-9af6-3997d1e32786",
+    "bytes": 90672,
+    "sha256": "905b8be68afd1dce5453acef8273cbf94bdae6d41823c25438ace286348e2c80",
+    "format": "TE"
+  },
+  {
+    "name": "AmdPspDxeV2",
+    "ffs_guid": "ed8fd9dc-2097-425e-b743-64efb99d5f0d",
+    "bytes": 14368,
+    "sha256": "554e1b4bc50d38578b09d58cc2fcdb0f460ad3c164eab9009be706a551dc1c92",
+    "format": "PE"
+  },
+  {
+    "name": "AmdPspP2CmboxV2",
+    "ffs_guid": "4759e93e-8f44-448f-88a1-bd97fc47bea5",
+    "bytes": 24512,
+    "sha256": "8d87b78dff82b2855c42105a70405de2acd101f8c4809648fdabd992517fd70a",
+    "format": "PE"
+  },
+  {
+    "name": "AmdPspPeiV2",
+    "ffs_guid": "0c556bff-b16a-439d-a3ec-1164378e2c2a",
+    "bytes": 11264,
+    "sha256": "1158720bbf95af537f3337ce8572359df84968ee465f5fabcbb036a839460d0e",
+    "format": "TE"
+  },
+  {
+    "name": "AmdPspSmmV2",
+    "ffs_guid": "6169ab1c-b05f-4d9c-afea-192911e41ce2",
+    "bytes": 24064,
+    "sha256": "0228ebbd214ddd5afa3a0a62f3cee8554704558b68fc51fbfc3c59cc0de2b0db",
+    "format": "PE"
+  },
+  {
+    "name": "AmdSmbiosDxe",
+    "ffs_guid": "52a9b223-fab8-4a24-aea6-461a59bd3f33",
+    "bytes": 15392,
+    "sha256": "a5f9422313bb163be28e8f4c20e25b1aefa3ac67c7ac45ce1ece107a7ff19772",
+    "format": "PE"
+  },
+  {
+    "name": "AmdSmmCommunication",
+    "ffs_guid": "64e6d006-e62a-481e-8f5a-3f76c9184741",
+    "bytes": 14304,
+    "sha256": "a5f8bb3677ecadeeb4a872d638968c9f9d110d6b13a1223770ef5a69f6607fdd",
+    "format": "PE"
+  },
+  {
+    "name": "AmdSmmControl",
+    "ffs_guid": "af0efe79-daaf-466d-ab91-06a8433639a3",
+    "bytes": 9216,
+    "sha256": "2f614cc047c15c5cdfb559bd562e9b1dc895069ec505e39da8dfa902e5bc2907",
+    "format": "PE"
+  },
+  {
+    "name": "AmdSocBl5AriDxe",
+    "ffs_guid": "0a9f795e-b9fc-4117-bc4e-138695d16562",
+    "bytes": 10144,
+    "sha256": "008e2638bd8f92cacb1f8eb10ea546c0f1ffb170802f83518ebd55b52099bb57",
+    "format": "PE"
+  },
+  {
+    "name": "AmdSocBl5AriPei",
+    "ffs_guid": "01c827c2-7765-42e9-b31c-e03e89a09113",
+    "bytes": 89416,
+    "sha256": "79e13211d5ae6b416311d67f735e68d946ea4045708d8463f7b92c495dff80b0",
+    "format": "TE"
+  },
+  {
+    "name": "AmdVersionDxe",
+    "ffs_guid": "29d40f30-e8bf-4803-88a6-4247a29a5318",
+    "bytes": 1120,
+    "sha256": "52974da80b184c918bf1f77aec7f3236f5064d951aa014cc78dd8cd6e1a18faa",
+    "format": "PE"
+  },
+  {
+    "name": "AmdVersionPei",
+    "ffs_guid": "70456853-d70e-496c-b6b1-cf88a30be1a9",
+    "bytes": 424,
+    "sha256": "5e8e76834579a29512adf3798d6ee9cc192a870c3caebe48246d553ac525eef8",
+    "format": "TE"
+  },
+  {
+    "name": "AmiAgesaDxe",
+    "ffs_guid": "1dfb7bfa-bf8e-4d11-9766-2fb0d0442310",
+    "bytes": 1824,
+    "sha256": "f1d2a369d102783c39c3283869b61d4499e3731fc6e8ffd321796ad3f6dc6191",
+    "format": "PE"
+  },
+  {
+    "name": "AmiAgesaPei",
+    "ffs_guid": "586032e3-1386-4ecc-b547-eb285e21066d",
+    "bytes": 1912,
+    "sha256": "2e40ead690966912df78c79047f8e6e439070678fe5a7f0a34e8824224f4b920",
+    "format": "TE"
+  },
+  {
+    "name": "AmiApcbLibInterface",
+    "ffs_guid": "c92c9385-631c-4ad6-abff-2c10e4d4010b",
+    "bytes": 9408,
+    "sha256": "4d65e6dc2ca83c8d7bed8812275b78e9821fd126cba413f94ba9390e91a56336",
+    "format": "PE"
+  },
+  {
+    "name": "AmiBoardInfo2",
+    "ffs_guid": "9f3a0016-ae55-4288-829d-d55fd3aac347",
+    "bytes": 4256,
+    "sha256": "3f43a97e44524c4072d296b172dc28b9d987081d1e0a2238bb1433153a851e13",
+    "format": "PE"
+  },
+  {
+    "name": "AmiPspRecovery",
+    "ffs_guid": "c937d89b-5f9c-4a1e-b10d-8f53d7474220",
+    "bytes": 384,
+    "sha256": "37d1369b813170d2150cc0044ddcea835aa3db0f9c663f6063b70f7ad8de5e91",
+    "format": "TE"
+  },
+  {
+    "name": "ArpDxe",
+    "ffs_guid": "529d3f93-e8e9-4e73-b1e1-bdf6a9d50113",
+    "bytes": 13568,
+    "sha256": "b121bd9facdb130b2317e558559f093534a4e324528ac39da4cf730104ff20ee",
+    "format": "PE"
+  },
+  {
+    "name": "BctBaseSmm",
+    "ffs_guid": "a3656ca9-e69f-4767-a9e5-6f01c6192eca",
+    "bytes": 36448,
+    "sha256": "6487b63dfc7e024aa98e48044e14d1699cb891078909ea3e4a1c6c97a98b4d26",
+    "format": "PE"
+  },
+  {
+    "name": "Bds",
+    "ffs_guid": "8f4b8f82-9b91-4028-86e6-f4db7d4c1dff",
+    "bytes": 60864,
+    "sha256": "9972ad42d4c600e2e84070b35213a74d1e5b3fea860a58f9554442620779aa2d",
+    "format": "PE"
+  },
+  {
+    "name": "BootScriptExecutorDxe",
+    "ffs_guid": "fa20568b-548b-4b2b-81ef-1ba08d4a3cec",
+    "bytes": 32352,
+    "sha256": "c6d31e6e00bfbc3eba57578981a533dca0c39069205974971ff3e0bd78d2978f",
+    "format": "PE"
+  },
+  {
+    "name": "CARSystemHubDxe",
+    "ffs_guid": "aa86d978-7e56-45cd-b19c-a9fa345b8e7a",
+    "bytes": 5792,
+    "sha256": "4fd04b58fdb3b1cc4372c6e4f825d6ae956a897f6f6f0e085a2a46d8eca8b795",
+    "format": "PE"
+  },
+  {
+    "name": "CARSystemHubPei",
+    "ffs_guid": "bebe9b6d-e525-43dc-bda1-8c673f9db9bc",
+    "bytes": 2728,
+    "sha256": "ee71967713cb92e3d2b614417532b388686e5f91d7220ef8c1a851320fa0f2bf",
+    "format": "TE"
+  },
+  {
+    "name": "CapsulePei",
+    "ffs_guid": "c779f6d8-7113-4aa1-9648-eb1633c7d53b",
+    "bytes": 6096,
+    "sha256": "45091113ac3e5d29c9c11ce03317d4ae8d6b906be2094038d28f931da7551472",
+    "format": "TE"
+  },
+  {
+    "name": "CapsuleRuntimeDxe",
+    "ffs_guid": "42857f0a-13f2-4b21-8a23-53d3f714b840",
+    "bytes": 5632,
+    "sha256": "5d5ddcec47a4a6ad0c5cdc1c41aeac8491dfa09ae66d361af3a7134afe9c4f3d",
+    "format": "PE"
+  },
+  {
+    "name": "CapsuleX64",
+    "ffs_guid": "f7fde4a6-294c-493c-b50f-9734553bb757",
+    "bytes": 14432,
+    "sha256": "f2e3f541af3c52b8448d17976d67879c8047282c68dd9b8f2f9c559cec2400c3",
+    "format": "TE"
+  },
+  {
+    "name": "CardinalSystemHubSmmInit",
+    "ffs_guid": "fb7d2203-6c7b-4262-b169-a3ddcb97639e",
+    "bytes": 16448,
+    "sha256": "38eb715e932f78eb832ef5dfcb3bd830a777aeb64e87f2993463de49d646108c",
+    "format": "PE"
+  },
+  {
+    "name": "CbsBaseDxe",
+    "ffs_guid": "8de29e5a-baba-4696-b07d-33e83d5ad811",
+    "bytes": 31168,
+    "sha256": "d2e9ba4e9da74fdbba1200be4e10620e065e0d7e4f437db28227bb3900f95866",
+    "format": "PE"
+  },
+  {
+    "name": "CbsBasePei",
+    "ffs_guid": "6cfdbb02-db4b-4c87-be13-b4e79e68ce51",
+    "bytes": 81520,
+    "sha256": "6ff112922ad824645f1e3171d18c79327cbbefe8b2af67cd74a108c7334ced77",
+    "format": "TE"
+  },
+  {
+    "name": "CbsSetupDxe",
+    "ffs_guid": "f639d37e-02a1-4ba8-ad17-5c6c6e5e9322",
+    "bytes": 264160,
+    "sha256": "9fae1341693fe1b89e6f070f8740c94228f5161cca701ac31425bc5d438533b3",
+    "format": "PE"
+  },
+  {
+    "name": "CmosDxe",
+    "ffs_guid": "3237418a-478c-4700-b59f-768e2ccbc726",
+    "bytes": 13792,
+    "sha256": "c952cb0f0b6e8d39c3f7021d1fc1460a7fc29d0143c1feade196df349dd80566",
+    "format": "PE"
+  },
+  {
+    "name": "CmosPei",
+    "ffs_guid": "654fe61a-2eda-4749-a76a-56ed7ade1cbe",
+    "bytes": 9352,
+    "sha256": "6efef942cadf271bbe1ae36b1b9dabfc85ec10196bb7fd4e6a3f1ae19c5f4839",
+    "format": "TE"
+  },
+  {
+    "name": "ConSplitter",
+    "ffs_guid": "628a497d-2bf6-4264-8741-069dbd3399d6",
+    "bytes": 24384,
+    "sha256": "3bf3d34a541298e50fdb6c612fce41b53e18c5e4978fac0398a3f864460a4eb9",
+    "format": "PE"
+  },
+  {
+    "name": "CpuDxe",
+    "ffs_guid": "e03abadf-e536-4e88-b3a0-b77f78eb34fe",
+    "bytes": 30080,
+    "sha256": "4fe9d6dc6dfee4a95d4170e3f902c80c8b6a8e34839e40df9f466042cd85354c",
+    "format": "PE"
+  },
+  {
+    "name": "CpuIo2Dxe",
+    "ffs_guid": "a19b1fe7-c1bc-49f8-875f-54a5d542443f",
+    "bytes": 2208,
+    "sha256": "95852565b4d7f004ec04bbbea4ac99ac7dd319db409c64f7edc6f249a42a0848",
+    "format": "PE"
+  },
+  {
+    "name": "CpuIo2Smm",
+    "ffs_guid": "a47ee2d8-f60e-42fd-8e58-7bd65ee4c29b",
+    "bytes": 2496,
+    "sha256": "375819eb45331b3002c08b4e0e5c86a49cd01c400413213ea121a45cdae61b3e",
+    "format": "PE"
+  },
+  {
+    "name": "CpuIoDxe",
+    "ffs_guid": "bae7599f-3c6b-43b7-bdf0-9ce07aa91aa6",
+    "bytes": 4608,
+    "sha256": "170bb81fd6c6af2b38d77b2b637347a5100e18fa78da278ee858ef1dabba1529",
+    "format": "PE"
+  },
+  {
+    "name": "CpuIoPei",
+    "ffs_guid": "ae265864-cf5d-41a8-913d-71c155e76442",
+    "bytes": 1752,
+    "sha256": "8f55548e5e083126a0d43438b3ba32c2303f9350ce9dbc0fec5de0379d2de9b0",
+    "format": "TE"
+  },
+  {
+    "name": "CpuPei",
+    "ffs_guid": "2bb5afa9-ff33-417b-8497-cb773c2b93bf",
+    "bytes": 10824,
+    "sha256": "69d0bca8e11d514200aca9b1856261ff82ee252c40a0449c841b44c249a04711",
+    "format": "TE"
+  },
+  {
+    "name": "CpuSetAgesaPcd",
+    "ffs_guid": "4df75915-6c88-4ef4-995d-834d866dbd20",
+    "bytes": 2992,
+    "sha256": "00816c19d891231cd60265f02f921fb7444031e23b262babb0d5e58359193099",
+    "format": "TE"
+  },
+  {
+    "name": "CpuSmm",
+    "ffs_guid": "5cebcde6-1096-4fe2-9921-5f8e25281a3e",
+    "bytes": 1696,
+    "sha256": "ceed10ef6a42f5fbfda874018f86088ed2df76a109adec148b79a73a07191622",
+    "format": "PE"
+  },
+  {
+    "name": "CpuSmm",
+    "ffs_guid": "9daecab8-afb8-40d3-80cd-3545d5025dbb",
+    "bytes": 9408,
+    "sha256": "60ac586e563192e6101a71b41e27ea1987a4124002f18702771b0a018d0e59f0",
+    "format": "PE"
+  },
+  {
+    "name": "CrbDxe",
+    "ffs_guid": "16271fca-55d9-4a33-93fc-5a3eb128deb6",
+    "bytes": 6752,
+    "sha256": "afa1e28a674b5eceb01790114b8c31a92af2a21baa952d434f1ad639360ddc3b",
+    "format": "PE"
+  },
+  {
+    "name": "CrbPei",
+    "ffs_guid": "0d1ed2f7-e92b-4562-92dd-5c82ec917eae",
+    "bytes": 2384,
+    "sha256": "30e770549a3fd9e27f39cba7efef5b45f17c4506bc2993f7246f55eaf6bd2950",
+    "format": "TE"
+  },
+  {
+    "name": "CrbSmi",
+    "ffs_guid": "221f1d4f-034c-4bea-b2bb-b7a9672b06d7",
+    "bytes": 4960,
+    "sha256": "9684e2eb2cb4ecaef978db7b0734cd24378f56a9b42aec2e09d319a19f8590a9",
+    "format": "PE"
+  },
+  {
+    "name": "CryptoDXE",
+    "ffs_guid": "77eb6c06-fd48-488b-a1b3-ae0a70801369",
+    "bytes": 59392,
+    "sha256": "7e192d707a0b13159e3c40b1bc257088142f2df86add9083fbf0cff1d175c554",
+    "format": "PE"
+  },
+  {
+    "name": "CryptoPPI",
+    "ffs_guid": "67451698-1825-4ac5-999d-f350cc7d5d72",
+    "bytes": 64960,
+    "sha256": "860378d8b98efb7a32e30754b4b94f55b4281112ed22d184bdf9bb9937a94ed2",
+    "format": "PE"
+  },
+  {
+    "name": "CryptoPkgTest",
+    "ffs_guid": "d4a88838-ebf4-48d7-9d97-ce6789fde0b7",
+    "bytes": 3296,
+    "sha256": "4502c000a5506a655b3779dbad3589bdb80130946bbd749cf37b87a1915bc3f0",
+    "format": "PE"
+  },
+  {
+    "name": "CryptoSMM",
+    "ffs_guid": "2ad511c7-1b60-4002-841d-2998ddc138ee",
+    "bytes": 65568,
+    "sha256": "d9a16a60a6368124763d5de141a5a14cf7bbe75d01b0d847c28f47c4c3ab50a9",
+    "format": "PE"
+  },
+  {
+    "name": "DataHubDxe",
+    "ffs_guid": "53bcc14f-c24f-434c-b294-8ed2d4cc1860",
+    "bytes": 2912,
+    "sha256": "e503b9c876ab19c3191e0557612df8da98316a1d5a8717f234a4a71a59c15455",
+    "format": "PE"
+  },
+  {
+    "name": "DevicePathDxe",
+    "ffs_guid": "9b680fce-ad6b-4f3a-b60b-f59899003443",
+    "bytes": 40448,
+    "sha256": "08cc9820cf7148820751acd9a4f159b51e16f8ca2fb8be1850bea36a75804531",
+    "format": "PE"
+  },
+  {
+    "name": "Dhcp4Dxe",
+    "ffs_guid": "94734718-0bbc-47fb-96a5-ee7a5ae6a2ad",
+    "bytes": 33184,
+    "sha256": "4eb18deb822d1a3c67c81f1dd7ebe9b388008dd0adb8cae03151c9d81d5b3c07",
+    "format": "PE"
+  },
+  {
+    "name": "Dhcp6Dxe",
+    "ffs_guid": "95e3669d-34be-4775-a651-7ea41b69d89e",
+    "bytes": 31648,
+    "sha256": "74f4a0283ffa613b43e6bb37e7c344cc94533c8686ac32594ccf44f00f8362e9",
+    "format": "PE"
+  },
+  {
+    "name": "DiskIoDxe",
+    "ffs_guid": "6b38f7b4-ad98-40e9-9093-aca2b5a253c4",
+    "bytes": 7840,
+    "sha256": "ba4132c228af117c81c3cc43f105f3901329c490d5556e3c61c106c7876c8142",
+    "format": "PE"
+  },
+  {
+    "name": "DnsDxe",
+    "ffs_guid": "b219e140-dffc-11e3-b956-0022681e6906",
+    "bytes": 40640,
+    "sha256": "93b48db685ee40b2225bc9a96571ad06d3c66153233000217d0f1381ac3e7900",
+    "format": "PE"
+  },
+  {
+    "name": "DpcDxe",
+    "ffs_guid": "a210f973-229d-4f4d-aa37-9895e6c9eaba",
+    "bytes": 2368,
+    "sha256": "7f0caeb9c588bb74bb5a0b55e10db9115aa147f750bf5c8c92f362c7928955f1",
+    "format": "PE"
+  },
+  {
+    "name": "DxeCore",
+    "ffs_guid": "d6a2cb7f-6a18-4e2f-b43b-9920a733700a",
+    "bytes": 104736,
+    "sha256": "2f1d8056b0da07081fc609e96ee669bfc9134d8ba4201ee170baef6ec18cd703",
+    "format": "PE"
+  },
+  {
+    "name": "DxeIpl",
+    "ffs_guid": "86d70125-baa3-4296-a62f-602bebbb9081",
+    "bytes": 13320,
+    "sha256": "17a64547bd9d7a7ecb14ae76ade14abf9a779b6bf1e832e5d8fe0ba69f5c7029",
+    "format": "TE"
+  },
+  {
+    "name": "EbcDxe",
+    "ffs_guid": "13ac6dd0-73d0-11d4-b06b-00aa00bd6de7",
+    "bytes": 14112,
+    "sha256": "f4776f100100ddb23c9b90c52ab2bc15b188d419e7a9a40bba2440693195d174",
+    "format": "PE"
+  },
+  {
+    "name": "EnglishDxe",
+    "ffs_guid": "cd3bafb6-50fb-4fe8-8e4e-ab74d2c1a600",
+    "bytes": 3008,
+    "sha256": "a66341b343801d7e54a4c8b6873812673f565ac3a3f34416344a03ca4a6f2b90",
+    "format": "PE"
+  },
+  {
+    "name": "EsrtDxe",
+    "ffs_guid": "999bd818-7df7-4a9a-a502-9b75033e6a0f",
+    "bytes": 6016,
+    "sha256": "681862dffcd18497c19afb9fcfeaa01b60c16c7ef39d7a999a32e1981b004361",
+    "format": "PE"
+  },
+  {
+    "name": "FanTuningDxe",
+    "ffs_guid": "fdacdb6c-acbc-4d87-8a59-83f539fc66fd",
+    "bytes": 15776,
+    "sha256": "da9c3b869d99562cd304b733e36fddc4395b25476b8b164b45125c3cf27d98fb",
+    "format": "PE"
+  },
+  {
+    "name": "FanTuningPei",
+    "ffs_guid": "57354f58-c310-4884-ab1c-d770510ba7d6",
+    "bytes": 5608,
+    "sha256": "7b4c4ccd8b47c1de849a700e2a0dee27df175f3368f793fc1d62f9f3fc772db3",
+    "format": "TE"
+  },
+  {
+    "name": "FastBootOption",
+    "ffs_guid": "0c989d41-f4b4-4244-9d7f-e9ffb4163273",
+    "bytes": 6496,
+    "sha256": "0b1096799a80e33068322599bb48191a7f2b7f2205477987812fd142c9ce0b57",
+    "format": "PE"
+  },
+  {
+    "name": "FastBootRuntime",
+    "ffs_guid": "80d7491a-f7d9-479d-a8f7-1b393b02ed66",
+    "bytes": 10240,
+    "sha256": "5c9859da1a78df22fd878d249481e13674cbc27c92714a1c9d03756a702272f2",
+    "format": "PE"
+  },
+  {
+    "name": "Fat",
+    "ffs_guid": "961578fe-b6b7-44c3-af35-6bc705cd2b1f",
+    "bytes": 27552,
+    "sha256": "4a3f6d42f838ca8f1fef3222970614bd438c628645654b8fe68e1199b6888d75",
+    "format": "PE"
+  },
+  {
+    "name": "FchDxe",
+    "ffs_guid": "eba8213f-c37e-4412-a0b8-cba3988f8655",
+    "bytes": 49024,
+    "sha256": "9adfd93323dfee12f87b7f6740a5ba5b51b000495155e181a86aa827f815ffe1",
+    "format": "PE"
+  },
+  {
+    "name": "FchDxeAux",
+    "ffs_guid": "da7f9fc8-6e01-4fd7-92d2-c2f5e91da422",
+    "bytes": 3040,
+    "sha256": "8b8a7aa7c303af273021fa4c7991a39fd495bf5838f6b87cb6b5d068a69e454b",
+    "format": "PE"
+  },
+  {
+    "name": "FchImcControl",
+    "ffs_guid": "81791caf-44ad-441f-b0a2-322ba8fc95ed",
+    "bytes": 3808,
+    "sha256": "f2ed4fd07b451b8efbaebd826763ee0da1eaa7fb9165086c390cfca40d8fb31a",
+    "format": "PE"
+  },
+  {
+    "name": "FchPcieWakeWA",
+    "ffs_guid": "660d3a7a-f429-4701-87fe-8ac1ccbe1d47",
+    "bytes": 2464,
+    "sha256": "7e60d64598a3e27c974a6483d1a224bfe6c02dbd106af048b9f7366e068bb03f",
+    "format": "PE"
+  },
+  {
+    "name": "FchPei",
+    "ffs_guid": "8f32fb7e-5ec0-4988-bcf2-201f56133e88",
+    "bytes": 26568,
+    "sha256": "08493ca078e74b050ffa85c9b80c50fb67b6f5fae6c467f9cb581af072f5fa08",
+    "format": "TE"
+  },
+  {
+    "name": "FchSmmDispatcher",
+    "ffs_guid": "b9dfd178-f195-4534-927b-f6dceb984d9d",
+    "bytes": 26560,
+    "sha256": "62210a1400850e86e636e295582a958dad89af801ab36bb219f42cc6e1c52deb",
+    "format": "PE"
+  },
+  {
+    "name": "FchSmmInit",
+    "ffs_guid": "5e992053-6667-4a37-9aa4-3f9b31ff0506",
+    "bytes": 48224,
+    "sha256": "42e781946f06aa2f96b645358e72131ec87beea8379803e3de46335f7699cb7d",
+    "format": "PE"
+  },
+  {
+    "name": "FlashDriver",
+    "ffs_guid": "cbc59c4a-383a-41eb-a8ee-4498aea567e4",
+    "bytes": 27648,
+    "sha256": "22f4359a142e9c830fa83c47d4eb55a3966c06aae6089fddf6853a4d72fc3d9d",
+    "format": "PE"
+  },
+  {
+    "name": "FlashDriverSmm",
+    "ffs_guid": "0c375a90-4c4c-4428-8ea0-531be8959bf7",
+    "bytes": 23552,
+    "sha256": "98ea449c36623142b3e0b9158f9cde32fcacaa88616645c3b578c40e5ee3046b",
+    "format": "PE"
+  },
+  {
+    "name": "FsRecovery",
+    "ffs_guid": "7ecd9c20-68b9-4a6f-b515-d64ff500b109",
+    "bytes": 14656,
+    "sha256": "a37764a206979cb34e1f90a91646606c3a00c86f951d3ad3fbd44c5920716f46",
+    "format": "PE"
+  },
+  {
+    "name": "GenericSio",
+    "ffs_guid": "8eef9ad2-463e-425f-a4fe-2f6783d6f97e",
+    "bytes": 28288,
+    "sha256": "f037edf1de5758d2bd6c1c64b7a4f56d7622fc50b22e681af40b288d2e948545",
+    "format": "PE"
+  },
+  {
+    "name": "GnbDxe",
+    "ffs_guid": "1cf59bf9-e3f6-4d9d-bb94-8b857278bbc6",
+    "bytes": 6880,
+    "sha256": "6eb06f5fc9c454d4548426c888d90f666358a2407d015f551ea110c9b6b6efa9",
+    "format": "PE"
+  },
+  {
+    "name": "GnbPei",
+    "ffs_guid": "56fc768f-b603-4454-8083-bfe98d6084f9",
+    "bytes": 744,
+    "sha256": "05d1364a0861b85b6afd552c91778b7d4616c9651b5eef3c56ce99d09bae666d",
+    "format": "TE"
+  },
+  {
+    "name": "GraphicsConsole",
+    "ffs_guid": "43e7abdd-e352-4cfb-a230-4cdc1d350e5c",
+    "bytes": 21696,
+    "sha256": "2739c97eddea5fbb1b7b28964e122d3f9d9c1e9957ebacb48f037138ab6d7d7e",
+    "format": "PE"
+  },
+  {
+    "name": "HardwareSignatureEntry",
+    "ffs_guid": "b7ee4835-84ce-4b15-bf52-2d11574ce470",
+    "bytes": 10432,
+    "sha256": "5f4a7a74c500021c6d80c3cffea81b3a3173bec661d4edf02245366bbb436dcb",
+    "format": "PE"
+  },
+  {
+    "name": "HiiDatabase",
+    "ffs_guid": "348c4d62-bfbd-4882-9ece-c80bb1c4783b",
+    "bytes": 98048,
+    "sha256": "489fc01869bd5c9f12221b5cf246e5a90737870b8571f2e0b7dc65f9eae456ea",
+    "format": "PE"
+  },
+  {
+    "name": "HttpBootDxe",
+    "ffs_guid": "ecebcb00-d9c8-11e4-af3d-8cdcd426c973",
+    "bytes": 58816,
+    "sha256": "5fb4e80fc8acb47554420cc5032429e8010d4a4ffff3ce5a668d34a4397466d1",
+    "format": "PE"
+  },
+  {
+    "name": "HttpDxe",
+    "ffs_guid": "2366c20f-e15a-11e3-8bf1-e4115b28bc50",
+    "bytes": 26784,
+    "sha256": "3ae5c5f87f097be6b235d893ce5fc55395e1277104f7ac7ef196f60f7cba1149",
+    "format": "PE"
+  },
+  {
+    "name": "HttpUtilitiesDxe",
+    "ffs_guid": "22ea234f-e72a-11e4-91f9-28d2447c4829",
+    "bytes": 4064,
+    "sha256": "d43995e6e33f39c6ee791bb6dab624a353ac1b28e2c9b32e3d3126ba5e478e06",
+    "format": "PE"
+  },
+  {
+    "name": "ISL69247",
+    "ffs_guid": "6e6d2018-28d0-4ad3-beb3-b48e4981707d",
+    "bytes": 4264,
+    "sha256": "3e1f753a627922d16e5a638a527e39f4dd26242144edae25b0ac849db6421e34",
+    "format": "TE"
+  },
+  {
+    "name": "ISL95712",
+    "ffs_guid": "02544be0-2cb9-4b75-8111-cd8cdc07b837",
+    "bytes": 3624,
+    "sha256": "c0cc17d2d54f9cde65f471d2971596837b024d4764a28b33286032cfa95d43a9",
+    "format": "TE"
+  },
+  {
+    "name": "IdeBusBoard",
+    "ffs_guid": "00364a4c-6a0a-4f08-8ffd-0937f3dbb13e",
+    "bytes": 2784,
+    "sha256": "671575888e9d2bd372fd4aa4bbf91b9028dbee77163b6d04915823ee2c4dac59",
+    "format": "PE"
+  },
+  {
+    "name": "IdeBusSrc",
+    "ffs_guid": "aaecdc89-2a49-46f1-a163-f7979c039998",
+    "bytes": 34176,
+    "sha256": "4d641ea5245b348974c56c26ab047ab001d253960a2c6e8ef371effc355f0b33",
+    "format": "PE"
+  },
+  {
+    "name": "IdeRecovery",
+    "ffs_guid": "10c22623-db6f-4721-aa30-4c12af4230a7",
+    "bytes": 5440,
+    "sha256": "a6fa8f4b8566cbd02c36eed80a934ecb229683d4dfb65fc2d7faca352bfbf025",
+    "format": "PE"
+  },
+  {
+    "name": "Ip4Dxe",
+    "ffs_guid": "9fb1a1f3-3b71-4324-b39a-745cbb015fff",
+    "bytes": 61696,
+    "sha256": "0721c0deb5af0a582286ead6d9da062502f6a1faa1f4e1a1b4e1e8049bc161e3",
+    "format": "PE"
+  },
+  {
+    "name": "Ip6Dxe",
+    "ffs_guid": "5bedb5cc-d830-4eb2-8742-2d4cc9b54f2c",
+    "bytes": 78880,
+    "sha256": "563d7af58418b9616223241ef014d56162eefbe78018a1cea64211b4469e3598",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_ACPI_AutoInject",
+    "ffs_guid": "a9981d14-6329-4698-ad20-173c4363dd30",
+    "bytes": 20480,
+    "sha256": "a83b82058e1725d967bdd881ae7caacc500146d0513a2f745d9921496f023038",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_ColdBoot",
+    "ffs_guid": "6c98e4f3-9d8b-4e5a-b2e7-31a45b9c5d81",
+    "bytes": 20480,
+    "sha256": "bfb30809e283d03cde4508be3cd406a48562602465d6607b275716ddd9e04a38",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_Menu_Driver",
+    "ffs_guid": "0ddde9e4-4a0c-4679-bedc-90a37610ab85",
+    "bytes": 28672,
+    "sha256": "1d8533d26cbfa4a74c91ce08ac5229adef56a6e316fb3ccb4ffba417255475b2",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Core_Unlock",
+    "ffs_guid": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "bytes": 12288,
+    "sha256": "2bf4e0ab7de83ce84b089b0487b8c4172379dba258db3556dd62c1dfaa41a91a",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Patch",
+    "ffs_guid": "9d4e5e12-3c7a-4f88-a2b7-0d8d6b7f2e41",
+    "bytes": 12288,
+    "sha256": "f544a45cd277ef59dc3643741516d6acb49f8a9321f2e1f5e351974fd01f042f",
+    "format": "PE"
+  },
+  {
+    "name": "MeiMeiDXEv3_SMU_Unlock",
+    "ffs_guid": "a3f8b2d5-7c4e-4f0a-b1d2-9e6f3c8a5b71",
+    "bytes": 12288,
+    "sha256": "0824d80ad9565e42f752a2a6ff947e19a9af896b80575090172538844059c64a",
+    "format": "PE"
+  },
+  {
+    "name": "MemDetect",
+    "ffs_guid": "15cf24a9-f9ab-46d0-8dcf-83664c632fd8",
+    "bytes": 4832,
+    "sha256": "6ba86d23491b370f63bfd04307ab0ee82e2aa5bf0f3c9e216c8d71e039630f13",
+    "format": "TE"
+  },
+  {
+    "name": "MnpDxe",
+    "ffs_guid": "025bbfc7-e6a9-4b8b-82ad-6815a1aeaf4a",
+    "bytes": 28928,
+    "sha256": "2c4761be206eca286b45a4f8819d7be69c205e64a493daeaf80965b0c9e1dfdc",
+    "format": "PE"
+  },
+  {
+    "name": "Mtftp4Dxe",
+    "ffs_guid": "dc3641b8-2fa8-4ed3-bc1f-f9962a03454b",
+    "bytes": 31136,
+    "sha256": "2bb759be09f83b5538f5d82b2543db554362529be545f8f31eca7ec38074253e",
+    "format": "PE"
+  },
+  {
+    "name": "Mtftp6Dxe",
+    "ffs_guid": "99f03b99-98d8-49dd-a8d3-3219d0ffe41e",
+    "bytes": 31488,
+    "sha256": "39911136e449d900a39ab3b8c8003fecb97d861c442caa4cd5ca4ad32c081c0f",
+    "format": "PE"
+  },
+  {
+    "name": "NCT6686DPeiInit",
+    "ffs_guid": "9029f23e-e1ee-40d1-9382-36dd61a63eaa",
+    "bytes": 1568,
+    "sha256": "f648720f09ab96a1b692c3ae795899fc69a28a84f18a1c9893604cb70f3a5634",
+    "format": "TE"
+  },
+  {
+    "name": "NTFS",
+    "ffs_guid": "768bedfd-7b4b-4c9f-b2ff-6377e3387243",
+    "bytes": 22944,
+    "sha256": "116a755488773c3aab230dc805d1f5418329e21df1df4060b808068c1b4a4b9a",
+    "format": "PE"
+  },
+  {
+    "name": "NbDxe",
+    "ffs_guid": "e4ecd0b2-e277-4f2b-becb-e4d75c9a812e",
+    "bytes": 13088,
+    "sha256": "741b3e575c5c7aa8597a716fe4982664725e84a38da7c0c896c8e11f5e48f5ce",
+    "format": "PE"
+  },
+  {
+    "name": "NbPei",
+    "ffs_guid": "79aa6086-035a-4ad9-a89a-a6d5aa27f0e2",
+    "bytes": 1352,
+    "sha256": "7ce155eea0eb4e8156afd346627b2a6e1df2fc8f71875e18beb1718ddc66cc68",
+    "format": "TE"
+  },
+  {
+    "name": "NetworkStackSetupScreen",
+    "ffs_guid": "21891a9e-763e-4377-8841-8d5c90d88c51",
+    "bytes": 2880,
+    "sha256": "5d5df30f45ebf19fb32da62b917e1e811d78a0b5899fd40d432d0e0699d0b6b9",
+    "format": "PE"
+  },
+  {
+    "name": "Nvme",
+    "ffs_guid": "634e8db5-c432-43be-a653-9ca2922cc458",
+    "bytes": 29696,
+    "sha256": "67a94f675aa8c19a5802cd72c1fdc4eb9bf2cdd8ae3cc7802e300daa7cc4eeec",
+    "format": "PE"
+  },
+  {
+    "name": "NvmeDynamicSetup",
+    "ffs_guid": "668706b2-bcfc-4ad4-a185-75e79f3fe169",
+    "bytes": 17600,
+    "sha256": "8910d2625b501ff9a75d610ba2206acf4dcb3f71ced6da5b804ae86c27c9a927",
+    "format": "PE"
+  },
+  {
+    "name": "NvmeSmm",
+    "ffs_guid": "e5e2c9d9-5bf5-497e-8860-94f81a09ade0",
+    "bytes": 10976,
+    "sha256": "fbe94f53c5b6b135b4c2b9ec74753a1ddc10fedbea09aaf4d1fba9d5d41b28f5",
+    "format": "PE"
+  },
+  {
+    "name": "NvramDxe",
+    "ffs_guid": "1807040d-5934-41a2-a088-8e0f777f71ab",
+    "bytes": 39936,
+    "sha256": "eebdaa0bad92ec544310952bd4312385f1e754a8822d0a5bb2f5887ca136587e",
+    "format": "PE"
+  },
+  {
+    "name": "NvramPei",
+    "ffs_guid": "838dcf34-907b-4d55-9a4b-a0ef7167b5f4",
+    "bytes": 9296,
+    "sha256": "cbc1def3ce53e947091d3bf1e950d78a4e78afbc69c67369124979736ab2116f",
+    "format": "TE"
+  },
+  {
+    "name": "NvramSmm",
+    "ffs_guid": "447a1b58-8f3e-4658-abaa-9e7b2280b90a",
+    "bytes": 37696,
+    "sha256": "5e0d8f9526b388e9b7f50e0c38b6c44641e4b45204564a675033ca39b771abf7",
+    "format": "PE"
+  },
+  {
+    "name": "OA2",
+    "ffs_guid": "952821aa-eacd-465b-b478-5429dfc9a747",
+    "bytes": 4640,
+    "sha256": "501c767e17f39377768514625a42a9fc4d180a9e249c9144f131123128e02bf5",
+    "format": "PE"
+  },
+  {
+    "name": "OA3",
+    "ffs_guid": "76d5cf91-0c55-434e-97c2-d2825c82e610",
+    "bytes": 6464,
+    "sha256": "f04739a4063d67e303270c94abab007734086f4fb01ebe9577c9bfe876bc46f3",
+    "format": "PE"
+  },
+  {
+    "name": "OA3_SMM",
+    "ffs_guid": "8434da1f-5ceb-402e-a93c-038cbe0f3f0e",
+    "bytes": 5024,
+    "sha256": "aa6b75ea485374879b16e2a16787e2ce45d79c4a2c6d45fd346d935e3ba9f44e",
+    "format": "PE"
+  },
+  {
+    "name": "OEMBOARDDxe",
+    "ffs_guid": "08738acd-605c-43e2-b99c-8ce236d3b865",
+    "bytes": 3264,
+    "sha256": "a762c5eb6d68b1b3c7adfefd112d98ba1eb58a2922e84b170a0ab3c8776017ac",
+    "format": "PE"
+  },
+  {
+    "name": "OEMBOARDPei",
+    "ffs_guid": "4cbb6611-3608-492b-92a7-dd92fd6fe4fe",
+    "bytes": 2952,
+    "sha256": "c0e1480ca2ae074110a95560811545615a991ac9d09d72ab44b29704f98c5ac6",
+    "format": "TE"
+  },
+  {
+    "name": "OEMBOARDSmm",
+    "ffs_guid": "a211c720-0671-4cf1-914f-3b2cb97d5b8c",
+    "bytes": 5152,
+    "sha256": "6b2e794fddebb37c4e058bf7516bc6949efa0fc85a8d1293edc89ce6c7705849",
+    "format": "PE"
+  },
+  {
+    "name": "Ofbd",
+    "ffs_guid": "57e56594-ce95-46ad-9531-3c49310ca7ce",
+    "bytes": 7520,
+    "sha256": "dbb20722e4c344cb787dbb6b4c8c33578abd9ac74e88ff26c4b51cea1f20d95c",
+    "format": "PE"
+  },
+  {
+    "name": "PartitionDxe",
+    "ffs_guid": "1fa1f39e-feff-4aae-bd7b-38a070a3b609",
+    "bytes": 14912,
+    "sha256": "d70f42726da8d72a7d6eac7d6c192f455b99759d72eb547857b3a65b72a7854c",
+    "format": "PE"
+  },
+  {
+    "name": "PataController",
+    "ffs_guid": "d7770c0b-90f7-4fd0-b1f2-b15b5cda1ce3",
+    "bytes": 16896,
+    "sha256": "7d6f61be239950044e5e8be53f00c0a6e237858be9ee0b74753698940d118210",
+    "format": "PE"
+  },
+  {
+    "name": "PcatSingleSegmentPciCfg2Pei",
+    "ffs_guid": "4f1f379f-2a62-48bb-ac34-d3f135c6e2b7",
+    "bytes": 1240,
+    "sha256": "eab6e773b262d1cce5a73df6832a849cb28310202653104c1a5f70b0522c151a",
+    "format": "TE"
+  },
+  {
+    "name": "PcdDxe",
+    "ffs_guid": "80cf7257-87ab-47f9-a3fe-d50b76d89541",
+    "bytes": 11648,
+    "sha256": "c8bb4c592b5f98ca3ce2ed64ce8a2f935c836f26279793adcfebe436ab5b7d47",
+    "format": "PE"
+  },
+  {
+    "name": "PcdPeim",
+    "ffs_guid": "9b3ada4f-ae56-4c24-8dea-f03b7558ae50",
+    "bytes": 5304,
+    "sha256": "ab509a6d18b896a56934f56e1a8b8b90fe8ff84f210cc3f83e145c41b82aea02",
+    "format": "TE"
+  },
+  {
+    "name": "PciBus",
+    "ffs_guid": "3c1de39f-d207-408a-aacc-731cfb7f1dd7",
+    "bytes": 71264,
+    "sha256": "0fb8ddcaeb478576a692f9115f8e33a108c27d29c91c8dce24e80fe89f7ed3a6",
+    "format": "PE"
+  },
+  {
+    "name": "PciDxeInit",
+    "ffs_guid": "502b04f3-71ab-47b4-beae-4736ea190aa4",
+    "bytes": 6176,
+    "sha256": "4669fe7de87ebe696269adea85579f38e90ee2d380c869e6335359731d9119a1",
+    "format": "PE"
+  },
+  {
+    "name": "PciRootBridge",
+    "ffs_guid": "80e66e0a-ccd1-43fa-a7b1-2d5ee0f13910",
+    "bytes": 30016,
+    "sha256": "904653780c70427e0a4e6f33da089be122766f67edb393e428175f6c4acd5125",
+    "format": "PE"
+  },
+  {
+    "name": "PciTableInit",
+    "ffs_guid": "def30e37-7aec-4f69-91a2-cf099e2729f2",
+    "bytes": 2088,
+    "sha256": "25746f8b7d73a3feab1e88672a60699a3cd2846e93de8a373a8709676ce083b7",
+    "format": "TE"
+  },
+  {
+    "name": "PeiCore",
+    "ffs_guid": "52c05b14-0b98-496c-bc3b-04b50211d680",
+    "bytes": 20600,
+    "sha256": "e3aae31cd48e9a5cc95e6c45d970f071df7d827adce2467ddadeb66f02d63874",
+    "format": "TE"
+  },
+  {
+    "name": "PeiRamBootCacheRdy",
+    "ffs_guid": "a6a3a962-c591-4701-9d25-73d0226d89dc",
+    "bytes": 672,
+    "sha256": "6bd4ae7bc9c10b1a79e3eecb0b1ec41c385c8340d0abf847f573a49c0f9c5c80",
+    "format": "PE"
+  },
+  {
+    "name": "PeiRamBootDxe",
+    "ffs_guid": "534f73cf-0937-418a-90c7-4f1079dcaed1",
+    "bytes": 4064,
+    "sha256": "76b5e14aeb93931cb81db50176b0704f84d6e4d3dfe40f82ce00e0d09a961d9d",
+    "format": "PE"
+  },
+  {
+    "name": "PeiRamBootPei",
+    "ffs_guid": "08efd15d-ec55-4023-b648-7ba40df7d05d",
+    "bytes": 3856,
+    "sha256": "e202ac7f7953deac52b53d4aab995563a9fcf5b9151b91cb869c07e7edf39ca7",
+    "format": "TE"
+  },
+  {
+    "name": "PeriodicSmiControl",
+    "ffs_guid": "87ea012d-cbad-44c1-8431-61193a060941",
+    "bytes": 4448,
+    "sha256": "3522889438cce3e367324fe229ea8caea3e35e88a22997f1e65d50a76fcbc25e",
+    "format": "PE"
+  },
+  {
+    "name": "PiSmmCommunicationPei",
+    "ffs_guid": "5f0cab3e-f820-4fd3-b5f1-4568ada0acc6",
+    "bytes": 720,
+    "sha256": "824be9696fe036ed7de3508de154bedb4380c9f2135e48b8548fd58c270644bf",
+    "format": "TE"
+  },
+  {
+    "name": "PiSmmCommunicationSmm",
+    "ffs_guid": "e21f35a8-42ff-4050-82d6-93f7cdfa7073",
+    "bytes": 3040,
+    "sha256": "413ef59f82469bd5532818161780a86f1c08676a230cbb072c42453335ff4a2b",
+    "format": "PE"
+  },
+  {
+    "name": "PiSmmCore",
+    "ffs_guid": "e94f54cd-81eb-47ed-aec3-856f5dc157a9",
+    "bytes": 30528,
+    "sha256": "590d07cb6c18869febc95bbe05946cbbc163c710fd51f99dfa0589683c0d0f80",
+    "format": "PE"
+  },
+  {
+    "name": "PiSmmIpl",
+    "ffs_guid": "2fa2a6da-11d5-4dc3-999a-749648b03c56",
+    "bytes": 14848,
+    "sha256": "f875d7f85c20da9eba07c2c47e778de73d062909ef6eed3ebef4a1a0172e1ec3",
+    "format": "PE"
+  },
+  {
+    "name": "PlatformCustomizePei",
+    "ffs_guid": "cc9f5b7e-254b-4f8a-a648-034a40aeda35",
+    "bytes": 4072,
+    "sha256": "5b410845607fede6c7adf71907a805096fe7e64b879680e311145b1d84ace0ae",
+    "format": "TE"
+  },
+  {
+    "name": "PlatformMemoryConfigurationPei",
+    "ffs_guid": "ff30fa10-ee1d-455d-971f-34b97d20679c",
+    "bytes": 128,
+    "sha256": "6a1ab7fe72ad3ee0e8f9238e2ba2d166c97e44812761e6d16a725525e1817085",
+    "format": "TE"
+  },
+  {
+    "name": "PlatformToDriver",
+    "ffs_guid": "3780b594-32a4-4593-b8ce-8a3f404f61f4",
+    "bytes": 1472,
+    "sha256": "f78e93bf57d5460a356515d30228339da09f7fbefb150381d910aa5f93e6c77d",
+    "format": "PE"
+  },
+  {
+    "name": "Ps2Main",
+    "ffs_guid": "5fecef6b-5fa4-4570-8163-0cf72a9c04c5",
+    "bytes": 20896,
+    "sha256": "ad73e54f640f6dd78b125f1c4ad5d909be6c6ced8826b6f41aac4730c2a45247",
+    "format": "PE"
+  },
+  {
+    "name": "PspDxe",
+    "ffs_guid": "7b668a4f-45e1-4a26-8dec-81a4a1e58888",
+    "bytes": 13952,
+    "sha256": "73f374d80f09d79927d32e98d01c32b7edb2321541ffaced73c80293592e2bc5",
+    "format": "PE"
+  },
+  {
+    "name": "PspPlatform",
+    "ffs_guid": "8ba016cd-3ee3-4934-9bee-aed08ea572b9",
+    "bytes": 1408,
+    "sha256": "48199863fd80d467f02e3e18388b2eabbbd4ee8d2e5a9fc10a8e105fc1bd6908",
+    "format": "PE"
+  },
+  {
+    "name": "PspResource",
+    "ffs_guid": "369de372-ab36-4ce1-8e45-8806b76dd70f",
+    "bytes": 12608,
+    "sha256": "5fc986c26b8e745f89d86d6e0437d1059c0ac35ee2b723dbda14bfe26768a5dd",
+    "format": "PE"
+  },
+  {
+    "name": "PspS3Smm",
+    "ffs_guid": "5ea17abd-7b30-441d-83ae-3b73c1564b42",
+    "bytes": 18368,
+    "sha256": "9af3d4af1a4a838ad308ed862c17c0689adcf29520d09dc4a6db681c69d224ff",
+    "format": "PE"
+  },
+  {
+    "name": "ReFlash",
+    "ffs_guid": "70e1a818-0be1-4449-bfd4-9ef68c7f02a8",
+    "bytes": 38176,
+    "sha256": "01a7193d2d87a171c0cc91521fd64841e45a9d8e5563e728aa5a982ed0449ef1",
+    "format": "PE"
+  },
+  {
+    "name": "RealtekLanDxeDxe",
+    "ffs_guid": "8e47929c-c80e-40ce-b013-807fefc94110",
+    "bytes": 1216,
+    "sha256": "adaa78018ac13551957c9ade332ffd94669c031f817ba9b3f121591575368ba5",
+    "format": "PE"
+  },
+  {
+    "name": "RealtekUefiDriver",
+    "ffs_guid": "eb53fcad-3071-4bab-980c-6e4a379255f3",
+    "bytes": 153400,
+    "sha256": "e8c6cf703a77ff1a2384ad0ae9e3fd44ba45ee0896b3a94fea78c9a46db3869f",
+    "format": "PE"
+  },
+  {
+    "name": "Recovery",
+    "ffs_guid": "dacf705c-71df-497d-aabe-10186b2e1dde",
+    "bytes": 2784,
+    "sha256": "3810b57ccf3cac98d66b901400b202ed395ad44e975aa31d18ae0dc32f629057",
+    "format": "PE"
+  },
+  {
+    "name": "RomLayoutDxe",
+    "ffs_guid": "ab7ed12e-1d78-4635-ab87-23f00a911ec7",
+    "bytes": 3168,
+    "sha256": "b5400e808ec4b9aa94c734f65437af4086f052428e4906318435c7d2e6c43847",
+    "format": "PE"
+  },
+  {
+    "name": "RomLayoutPei",
+    "ffs_guid": "7eb7126d-c45e-4bd0-9357-7f507c5c9cf9",
+    "bytes": 3576,
+    "sha256": "e7d221ed0b725d40e0ab6a6d94f5052c452625d6a0668470bf3e807082a84791",
+    "format": "TE"
+  },
+  {
+    "name": "RsdpPlus",
+    "ffs_guid": "8f3f1de2-2fe4-4d5c-a8ec-49e8cca17ebc",
+    "bytes": 8672,
+    "sha256": "0607aa4379b1d58f4801b0f03d0a424a727b3d88efb908411fe3bf6612eccd40",
+    "format": "PE"
+  },
+  {
+    "name": "RuntimeDxe",
+    "ffs_guid": "b601f8c4-43b7-4784-95b1-f4226cb40cee",
+    "bytes": 6656,
+    "sha256": "0b32fb44071695172557fafe4cd196e7b2a18512829e9e7731fca319bc285af1",
+    "format": "PE"
+  },
+  {
+    "name": "RuntimeSmm",
+    "ffs_guid": "4a6d890f-93c3-4b6d-a67d-5f2c4dce347b",
+    "bytes": 4256,
+    "sha256": "38e7e1024f45025c4ce0a44eb384d92b3c7cde639ebb89caac2600c99d311c13",
+    "format": "PE"
+  },
+  {
+    "name": "S3Resume2Pei",
+    "ffs_guid": "89e549b0-7cfe-449d-9ba3-10d8b2312d71",
+    "bytes": 5416,
+    "sha256": "d0dd189cea85c9865c40f976635acd3e9321cb858903feee9b1e93d227587341",
+    "format": "TE"
+  },
+  {
+    "name": "S3SaveStateDxe",
+    "ffs_guid": "bdce85bb-fbaa-4f4e-9264-501a2c249581",
+    "bytes": 13504,
+    "sha256": "e0770fa9e6b56381e53453abf0dade40c12f9a3e711024a58b3875737699fe2b",
+    "format": "PE"
+  },
+  {
+    "name": "SataController",
+    "ffs_guid": "510df6a1-b6c1-4948-aee7-59f220f898bd",
+    "bytes": 16896,
+    "sha256": "0f8399ab45e80629e4431900df4029c71333bda8e60300fbc3d900d4d09f28c4",
+    "format": "PE"
+  },
+  {
+    "name": "SbDxe",
+    "ffs_guid": "b7d19491-e55a-470d-8508-85a5dfa41974",
+    "bytes": 19648,
+    "sha256": "4b9d66aa46b83e627c320df08302721bef0e2e9044b5ad74ee00e59f18828abe",
+    "format": "PE"
+  },
+  {
+    "name": "SbInterfaceDxe",
+    "ffs_guid": "d7e6abc1-971b-461b-b5e4-3c3766267ad9",
+    "bytes": 18016,
+    "sha256": "6bd6898006941ad91c784182c9049c8ebaf2474738123fabe865b78f5586d957",
+    "format": "PE"
+  },
+  {
+    "name": "SbInterfacePei",
+    "ffs_guid": "7cc1667c-ccb8-4c50-80ba-d44a3b667415",
+    "bytes": 6136,
+    "sha256": "9c3de774835b3ada1a8a749e6b2fadb60708692c7e1d780af99f161bb97ae07c",
+    "format": "TE"
+  },
+  {
+    "name": "SbPei",
+    "ffs_guid": "c1fbd624-27ea-40d1-aa48-94c3dc5c7e0d",
+    "bytes": 5760,
+    "sha256": "ac72a3b20e49ecd89bda9ef23cbdb8910be1421181c8deb9b700cf96530a3c81",
+    "format": "TE"
+  },
+  {
+    "name": "SbRun",
+    "ffs_guid": "e23f86e1-056e-4888-b685-cfcd67c179d4",
+    "bytes": 15360,
+    "sha256": "49e976ead0338aca9d093d178b10e5cd2271bd8a046eaaa972bba5bd66568ebd",
+    "format": "PE"
+  },
+  {
+    "name": "SbRunSmm",
+    "ffs_guid": "c99e42d0-4964-4b09-b924-4a59e13e4f04",
+    "bytes": 13312,
+    "sha256": "39b78b664887c84ea84808d19a45d909fc94ea94418c6d9fb735ec54afd89fea",
+    "format": "PE"
+  },
+  {
+    "name": "SecurityStubDxe",
+    "ffs_guid": "f80697e9-7fd6-4665-8646-88e33ef71dfc",
+    "bytes": 5984,
+    "sha256": "9b014f049b54d78529600114a2d1dc0005997fbcae2facddd8f8dcd45038c6fa",
+    "format": "PE"
+  },
+  {
+    "name": "Setup",
+    "ffs_guid": "899407d7-99fe-43d8-9a21-79ec328cac21",
+    "bytes": 169056,
+    "sha256": "51602c41dcbb87985a7cab40e299a4dceb64dc7268a54f4caf903ce3fac3627b",
+    "format": "PE"
+  },
+  {
+    "name": "SioDxeInit",
+    "ffs_guid": "4e82091e-32a1-4689-8a00-cde41ed63cdd",
+    "bytes": 6976,
+    "sha256": "13ba455c441c1ea269000b5060cf03bd6f65e638743d7b8c98b661211867415c",
+    "format": "PE"
+  },
+  {
+    "name": "SioDynamicSetup",
+    "ffs_guid": "1830a6dd-e03d-4bc0-b115-94d91950fe4a",
+    "bytes": 27392,
+    "sha256": "03f359d8a52521033a21b9231c442af2c33d6b0b2f22def772a609c7703de375",
+    "format": "PE"
+  },
+  {
+    "name": "SleepSmi",
+    "ffs_guid": "6298fe18-d5ef-42b7-bb0c-2953283f5704",
+    "bytes": 9376,
+    "sha256": "3004a8268b47d26d41411be9c6491558ac7e1df13ae331d0f5085b8b1af01e19",
+    "format": "PE"
+  },
+  {
+    "name": "SmBusDxe",
+    "ffs_guid": "ba28936b-4051-48cf-a5cd-b63d7bfca84a",
+    "bytes": 12448,
+    "sha256": "bafbdcaa691d5f2c5ded5da4ce2d324a30f394de2ad9d9abefecd3faba3588a0",
+    "format": "PE"
+  },
+  {
+    "name": "SmBusPei",
+    "ffs_guid": "7ab0f90a-bdf8-4010-a434-4329fb61330d",
+    "bytes": 4592,
+    "sha256": "e2a0b655a09b8f6665602ef4f861e57cc46a97a30b535fa21347c69d10be8b84",
+    "format": "TE"
+  },
+  {
+    "name": "SmBusSmm",
+    "ffs_guid": "87c3e993-b28d-4226-89c9-120dbc92acbf",
+    "bytes": 13184,
+    "sha256": "44b9e44d8885d31a7ecd55c7e4c8b0537bee0ce6ff02df5d7988714ca28de3a1",
+    "format": "PE"
+  },
+  {
+    "name": "Smbios",
+    "ffs_guid": "b13edd38-684c-41ed-a305-d7b7e32497df",
+    "bytes": 27488,
+    "sha256": "bb6f3dab767bed85b32ad9b4c6fb12f93d0229df08c2fab439b7ba6d38cb7698",
+    "format": "PE"
+  },
+  {
+    "name": "SmbiosBoard",
+    "ffs_guid": "cef68c66-06ab-4fb3-a3ed-5ffa885b5725",
+    "bytes": 5760,
+    "sha256": "488f370982b1f9fae5f5630a4c22f8691fc09917e6bf25e03d4248cf8aca5341",
+    "format": "PE"
+  },
+  {
+    "name": "SmbiosDmiEdit",
+    "ffs_guid": "e2a74738-8934-48f5-8412-99e948c8dc1b",
+    "bytes": 22432,
+    "sha256": "3af697d1c69af1916837a846325b43fd53ddd46e8e7dc8d820f889a3a2972f9a",
+    "format": "PE"
+  },
+  {
+    "name": "SmiFlash",
+    "ffs_guid": "bc327dbd-b982-4f55-9f79-056ad7e987c5",
+    "bytes": 26752,
+    "sha256": "c44fa437b0324fa813982318708e529b702b7d3e932d16bd5f668bc40e2168fa",
+    "format": "PE"
+  },
+  {
+    "name": "SmiFlashDxe",
+    "ffs_guid": "bb8c2cf3-a5e3-49ef-941b-4a01fac6fd5f",
+    "bytes": 4608,
+    "sha256": "dead57e6697bf2282c924f9a2c6c80defd9e391a2effb0e7d87de3d024d7f690",
+    "format": "PE"
+  },
+  {
+    "name": "SmmChildDispatcher2",
+    "ffs_guid": "e53734a3-e594-4c25-b1a2-081445650f7f",
+    "bytes": 6176,
+    "sha256": "e9cbe71883d698b89b22c32ab1ac62088daf6be2f391a87a3ed3edc1acf4bd08",
+    "format": "PE"
+  },
+  {
+    "name": "SmmGenericSio",
+    "ffs_guid": "2486829b-d3f3-47ec-827a-fc104907fc5c",
+    "bytes": 11776,
+    "sha256": "207198666177ffa80a8a553ca88b8cfe0722acf877812faa12597a8ac3763b79",
+    "format": "PE"
+  },
+  {
+    "name": "SmmLockBox",
+    "ffs_guid": "33fb3535-f15e-4c17-b303-5eb94595ecb6",
+    "bytes": 4032,
+    "sha256": "6d5d35ed30d7370fc9b36a12989e21281b70a011305e0151ac315898a3f4ed90",
+    "format": "PE"
+  },
+  {
+    "name": "SmmPciRbIo",
+    "ffs_guid": "37a01080-2346-4a54-9900-d22b7b687c22",
+    "bytes": 8992,
+    "sha256": "92671d2adef63ef674f0869e8760f64399b94f06c8cfef0f3ea3938965b2922e",
+    "format": "PE"
+  },
+  {
+    "name": "SmmS3SaveState",
+    "ffs_guid": "2d59f041-53a4-40d0-a6cd-844dc0dfef17",
+    "bytes": 12832,
+    "sha256": "3329a9fbc888c5e200e47b940294e44ff1e373e511042a99e3cc19e60e67d43f",
+    "format": "PE"
+  },
+  {
+    "name": "SnpDxe",
+    "ffs_guid": "a2f436ea-a127-4ef8-957c-8048606ff670",
+    "bytes": 23168,
+    "sha256": "61482da0a98f73e5b4b127f0f263bb01fa31c15e38d7c70ea89da3cb85850b96",
+    "format": "PE"
+  },
+  {
+    "name": "StatusCodeDxe",
+    "ffs_guid": "61422d26-81ec-47ff-b6cf-939eaee73fba",
+    "bytes": 22016,
+    "sha256": "53b3a4d9252937059e1436a974dfb6409ab0a72ad31e91a64fe46a6c3e7a1a89",
+    "format": "PE"
+  },
+  {
+    "name": "StatusCodePei",
+    "ffs_guid": "e9dd7f62-25ec-4f9d-a4ab-aad20bf59a10",
+    "bytes": 10816,
+    "sha256": "2f7f8494107c8fb9d4df3b3790b0272dc65ad82c2483286976e020e6e1db97d8",
+    "format": "TE"
+  },
+  {
+    "name": "StatusCodeSmm",
+    "ffs_guid": "db08f6ca-3048-4cd8-9b1f-20bed33ecfe7",
+    "bytes": 16352,
+    "sha256": "6e1c49c855c0f1aa45d3496e35337af9caac1f92a5c550c6a6c3cabe2dc2bec7",
+    "format": "PE"
+  },
+  {
+    "name": "TcpDxe",
+    "ffs_guid": "1a7e4468-2f55-4a56-903c-01265eb7622b",
+    "bytes": 50464,
+    "sha256": "ebb61e94294bad2837fa3f95bd114d288772233df4420da9a3fef3e4319b214d",
+    "format": "PE"
+  },
+  {
+    "name": "TimestampDxe",
+    "ffs_guid": "c10194e7-deb2-4af4-9eee-bffde4d7d4c7",
+    "bytes": 1664,
+    "sha256": "8c96247042e4247025d7d4c8d56aa3c4472b5d0709bf960f8a6a7a1c4c5ba1dc",
+    "format": "PE"
+  },
+  {
+    "name": "Udp4Dxe",
+    "ffs_guid": "6d6963ab-906d-4a65-a7ca-bd40e5d6af2b",
+    "bytes": 29216,
+    "sha256": "80593d46a9ae045ba8ad39aa9dd56032783900aacb0af86d75e97c4693017d91",
+    "format": "PE"
+  },
+  {
+    "name": "Udp6Dxe",
+    "ffs_guid": "d912c7bc-f098-4367-92ba-e911083c7b0e",
+    "bytes": 28640,
+    "sha256": "2b859e744af73c3cbf8416ae94d561943ca81b76c43b34773784b7c816470476",
+    "format": "PE"
+  },
+  {
+    "name": "UefiPxeBcDxe",
+    "ffs_guid": "b95e9fda-26de-48d2-8807-1f9107ac5e3a",
+    "bytes": 62912,
+    "sha256": "f74802d4dd670eaa20c1951c50658072d350a1288cda93c2df25001caf12283f",
+    "format": "PE"
+  },
+  {
+    "name": "Uhcd",
+    "ffs_guid": "580dd900-385d-11d7-883a-00500473d4eb",
+    "bytes": 55616,
+    "sha256": "11b620c52cea166299304083ba0dd09553dbbceed92b2061ff5fde8acde39ad8",
+    "format": "PE"
+  },
+  {
+    "name": "Usb3PortProtectWA",
+    "ffs_guid": "0170e28d-a11d-48dd-9c3d-6959b144f952",
+    "bytes": 10592,
+    "sha256": "d4f4bba485f11f21403651f49bf99133be2c096ba87d2e01f3da4bccfdd193c9",
+    "format": "PE"
+  },
+  {
+    "name": "UsbPei",
+    "ffs_guid": "39e8ca1a-7a69-4a73-834a-d06381933286",
+    "bytes": 28160,
+    "sha256": "9ab79c5d64cc5478ebb1ab616d7af3cda4212f807ce744716ebca607d3720311",
+    "format": "PE"
+  },
+  {
+    "name": "UsbRtDxe",
+    "ffs_guid": "171f43dc-c4d9-47a6-9641-65ddcdd5aa30",
+    "bytes": 105664,
+    "sha256": "301513b93e0417bf39bb3f721149b874266871af194e024aeefc04d7940c4dad",
+    "format": "PE"
+  },
+  {
+    "name": "UsbRtSmm",
+    "ffs_guid": "04eaaaa1-29a1-11d7-8838-00500473d4eb",
+    "bytes": 118208,
+    "sha256": "6011e29ef191fcdb5ee5d4559979f0ce9d06ba0ebe20e59e26242cb39417f854",
+    "format": "PE"
+  }
+]

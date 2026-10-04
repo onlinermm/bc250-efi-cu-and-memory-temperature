@@ -1,0 +1,46 @@
+{
+  "candidate_sha256": "38a3c0ddd15d292727e741bc0b3e2b9e3fe877eb9fb8c605a8521ab721bddf53",
+  "efi_checks": 198,
+  "efi_failures": 0,
+  "modes": {
+    "A": {
+      "checks": 8,
+      "failures": 0
+    },
+    "N": {
+      "checks": 36,
+      "failures": 0
+    },
+    "R": {
+      "checks": 37,
+      "failures": 0
+    },
+    "M": {
+      "checks": 15,
+      "failures": 0
+    },
+    "D": {
+      "checks": 37,
+      "failures": 0
+    },
+    "F": {
+      "checks": 16,
+      "failures": 0
+    },
+    "P": {
+      "checks": 37,
+      "failures": 0
+    },
+    "T": {
+      "checks": 12,
+      "failures": 0
+    }
+  },
+  "native_host_tests_passed": true,
+  "flash_script_mock_cases": 6,
+  "flash_script_mock_cases_failed": 0,
+  "real_AFU_executed": false,
+  "original_apriori_negative_control_passed": true,
+  "new_apriori_capture_before_nvram_tested": true,
+  "hardware_firmware_flash_tested": false
+}

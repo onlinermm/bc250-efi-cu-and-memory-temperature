@@ -1,0 +1,2526 @@
+HII strings from the exact PUNSH CbsSetupDxe.pe.
+0001: English
+0002: 
+0003: AMD CBS
+0004: Vh Common Options
+0005: Vh Debug Options
+0006: DF Common Options
+0007: DF Debug Options
+0008: NBIO Common Options
+0009: NBIO Debug Options
+000a: UMC Common Options
+000b: UMC Debug Options
+000c: SMU Debug Options
+000d: SOC Debug Options
+000e: Combo CBS
+000f: No help string
+0010: 0
+0011: 1
+0012: 2
+0013: 3
+0014: 4
+0015: Unknown
+0016: RedirectForReturnDis
+0017: From a workaround for GCC/C000005 issue for XV Core on CZ A0, setting MSRC001_1029 Decode Configuration (DE_CFG) bit 14 [DecfgNoRdrctForReturns] to 1
+0018: Auto
+0019: L2 TLB Associativity
+001a: 0 - L2 TLB ways [11:8] are fully associative.  1 - =L2 TLB ways [11:8] are 4K-only.
+001b: Platform First Error Handling
+001c: Enable/disable PFEH, cloak individual banks, and mask deferred error interrupts from each bank.
+001d: Enable
+001e: Disable
+001f: Core Performance Boost
+0020: Disable CPB
+0021: Disabled
+0022: Global C-state Control
+0023: Controls IO based C-state generation and DF C-states.
+0024: Enabled
+0025: Core/Thread Enablement
+0026: WARNING - S3 is NOT SUPPORTED on systems where cores/threads have been removed/disabled.
+0027: Legal Disclaimer
+0028: Downcore control
+0029: Sets the number of cores to be used. Once this option has been used to remove any cores, a POWER CYCLE is required in order for future selections to take effect.
+002a: ONE (1 + 0)
+002b: TWO (1 + 1)
+002c: TWO (2 + 0)
+002d: THREE (3 + 0)
+002e: FOUR (2 + 2)
+002f: FOUR (4 + 0)
+0030: SIX (3 + 3)
+0031: SMTEN
+0032: Can be used to disable symmetric multithreading. To re-enable SMT, a POWER CYCLE is needed after selecting the 'Auto' option. WARNING - S3 is NOT SUPPORTED on systems where SMT is disabled.
+0033: NumEncryptedGuests
+0034: Number of encrypted guests supported
+simultaneously
+0035: 14
+0036: 30
+0037: 253
+0038: 509
+0039: SEV-ES ASID Space Limit
+003a: SEV VMs using ASIDs below the SEV-ES ASID Space Limit must enable the SEV-ES feature. The valid values for this field are from 1 - NumEncryptedGuests in Dec.
+003b: CPU Debug Control
+003c: General Processor Control
+003d: Power Management Debug Options
+003e: Memory Hole
+003f: MCA0_CTL_MASK Control
+0040: Manual allows for overriding MCA_CTL_MASK for bank 0.
+0041: Manual
+0042: MCA0_CTL_MASK_LOW
+0043: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 0.
+0044: MCA0_CTL_MASK_HIGH
+0045: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 0.
+0046: MCA1_CTL_MASK Control
+0047: Manual allows for overriding MCA_CTL_MASK for bank 1.
+0048: MCA1_CTL_MASK_LOW
+0049: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 1.
+004a: MCA1_CTL_MASK_HIGH
+004b: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 1.
+004c: MCA2_CTL_MASK Control
+004d: Manual allows for overriding MCA_CTL_MASK for bank 2.
+004e: MCA2_CTL_MASK_LOW
+004f: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 2.
+0050: MCA2_CTL_MASK_HIGH
+0051: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 2.
+0052: MCA3_CTL_MASK Control
+0053: Manual allows for overriding MCA_CTL_MASK for bank 3.
+0054: MCA3_CTL_MASK_LOW
+0055: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 3.
+0056: MCA3_CTL_MASK_HIGH
+0057: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 3.
+0058: MCA4_CTL_MASK Control
+0059: Manual allows for overriding MCA_CTL_MASK for bank 4.
+005a: MCA4_CTL_MASK_LOW
+005b: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 4.
+005c: MCA4_CTL_MASK_HIGH
+005d: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 4.
+005e: MCA5_CTL_MASK Control
+005f: Manual allows for overriding MCA_CTL_MASK for bank 5.
+0060: MCA5_CTL_MASK_LOW
+0061: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 5.
+0062: MCA5_CTL_MASK_HIGH
+0063: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 5.
+0064: MCA6_CTL_MASK Control
+0065: Manual allows for overriding MCA_CTL_MASK for bank 6.
+0066: MCA6_CTL_MASK_LOW
+0067: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 6.
+0068: MCA6_CTL_MASK_HIGH
+0069: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 6.
+006a: MCA7_CTL_MASK Control
+006b: Manual allows for overriding MCA_CTL_MASK for bank 7.
+006c: MCA7_CTL_MASK_LOW
+006d: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 7.
+006e: MCA7_CTL_MASK_HIGH
+006f: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 7.
+0070: MCA8_CTL_MASK Control
+0071: Manual allows for overriding MCA_CTL_MASK for bank 8.
+0072: MCA8_CTL_MASK_LOW
+0073: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 8.
+0074: MCA8_CTL_MASK_HIGH
+0075: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 8.
+0076: MCA9_CTL_MASK Control
+0077: Manual allows for overriding MCA_CTL_MASK for bank 9.
+0078: MCA9_CTL_MASK_LOW
+0079: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 9.
+007a: MCA9_CTL_MASK_HIGH
+007b: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 9.
+007c: MCA10_CTL_MASK Control
+007d: Manual allows for overriding MCA_CTL_MASK for bank 10.
+007e: MCA10_CTL_MASK_LOW
+007f: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 10.
+0080: MCA10_CTL_MASK_HIGH
+0081: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 10.
+0082: MCA11_CTL_MASK Control
+0083: Manual allows for overriding MCA_CTL_MASK for bank 11.
+0084: MCA11_CTL_MASK_LOW
+0085: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 11.
+0086: MCA11_CTL_MASK_HIGH
+0087: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 11.
+0088: MCA12_CTL_MASK Control
+0089: Manual allows for overriding MCA_CTL_MASK for bank 12.
+008a: MCA12_CTL_MASK_LOW
+008b: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 12.
+008c: MCA12_CTL_MASK_HIGH
+008d: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 12.
+008e: MCA13_CTL_MASK Control
+008f: Manual allows for overriding MCA_CTL_MASK for bank 13.
+0090: MCA13_CTL_MASK_LOW
+0091: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 13.
+0092: MCA13_CTL_MASK_HIGH
+0093: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 13.
+0094: MCA14_CTL_MASK Control
+0095: Manual allows for overriding MCA_CTL_MASK for bank 14.
+0096: MCA14_CTL_MASK_LOW
+0097: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 14.
+0098: MCA14_CTL_MASK_HIGH
+0099: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 14.
+009a: MCA15_CTL_MASK Control
+009b: Manual allows for overriding MCA_CTL_MASK for bank 15.
+009c: MCA15_CTL_MASK_LOW
+009d: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 15.
+009e: MCA15_CTL_MASK_HIGH
+009f: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 15.
+00a0: MCA16_CTL_MASK Control
+00a1: Manual allows for overriding MCA_CTL_MASK for bank 16.
+00a2: MCA16_CTL_MASK_LOW
+00a3: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 16.
+00a4: MCA16_CTL_MASK_HIGH
+00a5: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 16.
+00a6: MCA17_CTL_MASK Control
+00a7: Manual allows for overriding MCA_CTL_MASK for bank 17.
+00a8: MCA17_CTL_MASK_LOW
+00a9: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 17.
+00aa: MCA17_CTL_MASK_HIGH
+00ab: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 17.
+00ac: MCA18_CTL_MASK Control
+00ad: Manual allows for overriding MCA_CTL_MASK for bank 18.
+00ae: MCA18_CTL_MASK_LOW
+00af: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 18.
+00b0: MCA18_CTL_MASK_HIGH
+00b1: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 18.
+00b2: MCA19_CTL_MASK Control
+00b3: Manual allows for overriding MCA_CTL_MASK for bank 19.
+00b4: MCA19_CTL_MASK_LOW
+00b5: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 19.
+00b6: MCA19_CTL_MASK_HIGH
+00b7: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 19.
+00b8: MCA20_CTL_MASK Control
+00b9: Manual allows for overriding MCA_CTL_MASK for bank 20.
+00ba: MCA20_CTL_MASK_LOW
+00bb: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 20.
+00bc: MCA20_CTL_MASK_HIGH
+00bd: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 20.
+00be: MCA21_CTL_MASK Control
+00bf: Manual allows for overriding MCA_CTL_MASK for bank 21.
+00c0: MCA21_CTL_MASK_LOW
+00c1: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 21.
+00c2: MCA21_CTL_MASK_HIGH
+00c3: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 21.
+00c4: MCA22_CTL_MASK Control
+00c5: Manual allows for overriding MCA_CTL_MASK for bank 22.
+00c6: MCA22_CTL_MASK_LOW
+00c7: Value to program the lower 32 bits of the MCA_CTL_MASK for bank 22.
+00c8: MCA22_CTL_MASK_HIGH
+00c9: Value to program the upper 32 bits of the MCA_CTL_MASK for bank 22.
+00ca: MCG_CTL Control
+00cb: Manual allows for overriding MCG_CTL for bank 22.
+00cc: MCG_CTL Value
+00cd: Value to program the lower 32 bits of the MCG_CTL MSR.
+00ce: MCA0_CTL Control
+00cf: Manual allows for overriding MCA_CTL for bank 0.
+00d0: MCA0_CTL_LOW
+00d1: Value to program the lower 32 bits of the MCA_CTL for bank 0.
+00d2: MCA0_CTL_HIGH
+00d3: Value to program the upper 32 bits of the MCA_CTL for bank 0.
+00d4: MCA1_CTL Control
+00d5: Manual allows for overriding MCA_CTL for bank 1.
+00d6: MCA1_CTL_LOW
+00d7: Value to program the lower 32 bits of the MCA_CTL for bank 1.
+00d8: MCA1_CTL_HIGH
+00d9: Value to program the upper 32 bits of the MCA_CTL for bank 1.
+00da: MCA2_CTL Control
+00db: Manual allows for overriding MCA_CTL for bank 2.
+00dc: MCA2_CTL_LOW
+00dd: Value to program the lower 32 bits of the MCA_CTL for bank 2.
+00de: MCA2_CTL_HIGH
+00df: Value to program the upper 32 bits of the MCA_CTL for bank 2.
+00e0: MCA3_CTL Control
+00e1: Manual allows for overriding MCA_CTL for bank 3.
+00e2: MCA3_CTL_LOW
+00e3: Value to program the lower 32 bits of the MCA_CTL for bank 3.
+00e4: MCA3_CTL_HIGH
+00e5: Value to program the upper 32 bits of the MCA_CTL for bank 3.
+00e6: MCA4_CTL Control
+00e7: Manual allows for overriding MCA_CTL for bank 4.
+00e8: MCA4_CTL_LOW
+00e9: Value to program the lower 32 bits of the MCA_CTL for bank 4.
+00ea: MCA4_CTL_HIGH
+00eb: Value to program the upper 32 bits of the MCA_CTL for bank 4.
+00ec: MCA5_CTL Control
+00ed: Manual allows for overriding MCA_CTL for bank 5.
+00ee: MCA5_CTL_LOW
+00ef: Value to program the lower 32 bits of the MCA_CTL for bank 5.
+00f0: MCA5_CTL_HIGH
+00f1: Value to program the upper 32 bits of the MCA_CTL for bank 5.
+00f2: MCA6_CTL Control
+00f3: Manual allows for overriding MCA_CTL for bank 6.
+00f4: MCA6_CTL_LOW
+00f5: Value to program the lower 32 bits of the MCA_CTL for bank 6.
+00f6: MCA6_CTL_HIGH
+00f7: Value to program the upper 32 bits of the MCA_CTL for bank 6.
+00f8: MCA7_CTL Control
+00f9: Manual allows for overriding MCA_CTL for bank 7.
+00fa: MCA7_CTL_LOW
+00fb: Value to program the lower 32 bits of the MCA_CTL for bank 7.
+00fc: MCA7_CTL_HIGH
+00fd: Value to program the upper 32 bits of the MCA_CTL for bank 7.
+00fe: MCA8_CTL Control
+00ff: Manual allows for overriding MCA_CTL for bank 8.
+0100: MCA8_CTL_LOW
+0101: Value to program the lower 32 bits of the MCA_CTL for bank 8.
+0102: MCA8_CTL_HIGH
+0103: Value to program the upper 32 bits of the MCA_CTL for bank 8.
+0104: MCA9_CTL Control
+0105: Manual allows for overriding MCA_CTL for bank 9.
+0106: MCA9_CTL_LOW
+0107: Value to program the lower 32 bits of the MCA_CTL for bank 9.
+0108: MCA9_CTL_HIGH
+0109: Value to program the upper 32 bits of the MCA_CTL for bank 9.
+010a: MCA10_CTL Control
+010b: Manual allows for overriding MCA_CTL for bank 10.
+010c: MCA10_CTL_LOW
+010d: Value to program the lower 32 bits of the MCA_CTL for bank 10.
+010e: MCA10_CTL_HIGH
+010f: Value to program the upper 32 bits of the MCA_CTL for bank 10.
+0110: MCA11_CTL Control
+0111: Manual allows for overriding MCA_CTL for bank 11.
+0112: MCA11_CTL_LOW
+0113: Value to program the lower 32 bits of the MCA_CTL for bank 11.
+0114: MCA11_CTL_HIGH
+0115: Value to program the upper 32 bits of the MCA_CTL for bank 11.
+0116: MCA12_CTL Control
+0117: Manual allows for overriding MCA_CTL for bank 12.
+0118: MCA12_CTL_LOW
+0119: Value to program the lower 32 bits of the MCA_CTL for bank 12.
+011a: MCA12_CTL_HIGH
+011b: Value to program the upper 32 bits of the MCA_CTL for bank 12.
+011c: MCA13_CTL Control
+011d: Manual allows for overriding MCA_CTL for bank 13.
+011e: MCA13_CTL_LOW
+011f: Value to program the lower 32 bits of the MCA_CTL for bank 13.
+0120: MCA13_CTL_HIGH
+0121: Value to program the upper 32 bits of the MCA_CTL for bank 13.
+0122: MCA14_CTL Control
+0123: Manual allows for overriding MCA_CTL for bank 14.
+0124: MCA14_CTL_LOW
+0125: Value to program the lower 32 bits of the MCA_CTL for bank 14.
+0126: MCA14_CTL_HIGH
+0127: Value to program the upper 32 bits of the MCA_CTL for bank 14.
+0128: MCA15_CTL Control
+0129: Manual allows for overriding MCA_CTL for bank 15.
+012a: MCA15_CTL_LOW
+012b: Value to program the lower 32 bits of the MCA_CTL for bank 15.
+012c: MCA15_CTL_HIGH
+012d: Value to program the upper 32 bits of the MCA_CTL for bank 15.
+012e: MCA16_CTL Control
+012f: Manual allows for overriding MCA_CTL for bank 16.
+0130: MCA16_CTL_LOW
+0131: Value to program the lower 32 bits of the MCA_CTL for bank 16.
+0132: MCA16_CTL_HIGH
+0133: Value to program the upper 32 bits of the MCA_CTL for bank 16.
+0134: MCA17_CTL Control
+0135: Manual allows for overriding MCA_CTL for bank 17.
+0136: MCA17_CTL_LOW
+0137: Value to program the lower 32 bits of the MCA_CTL for bank 17.
+0138: MCA17_CTL_HIGH
+0139: Value to program the upper 32 bits of the MCA_CTL for bank 17.
+013a: MCA18_CTL Control
+013b: Manual allows for overriding MCA_CTL for bank 18.
+013c: MCA18_CTL_LOW
+013d: Value to program the lower 32 bits of the MCA_CTL for bank 18.
+013e: MCA18_CTL_HIGH
+013f: Value to program the upper 32 bits of the MCA_CTL for bank 18.
+0140: MCA19_CTL Control
+0141: Manual allows for overriding MCA_CTL for bank 19.
+0142: MCA19_CTL_LOW
+0143: Value to program the lower 32 bits of the MCA_CTL for bank 19.
+0144: MCA19_CTL_HIGH
+0145: Value to program the upper 32 bits of the MCA_CTL for bank 19.
+0146: MCA20_CTL Control
+0147: Manual allows for overriding MCA_CTL for bank 20.
+0148: MCA20_CTL_LOW
+0149: Value to program the lower 32 bits of the MCA_CTL for bank 20.
+014a: MCA20_CTL_HIGH
+014b: Value to program the upper 32 bits of the MCA_CTL for bank 20.
+014c: MCA21_CTL Control
+014d: Manual allows for overriding MCA_CTL for bank 21.
+014e: MCA21_CTL_LOW
+014f: Value to program the lower 32 bits of the MCA_CTL for bank 21.
+0150: MCA21_CTL_HIGH
+0151: Value to program the upper 32 bits of the MCA_CTL for bank 21.
+0152: MCA22_CTL Control
+0153: Manual allows for overriding MCA_CTL for bank 22.
+0154: MCA22_CTL_LOW
+0155: Value to program the lower 32 bits of the MCA_CTL for bank 22.
+0156: MCA22_CTL_HIGH
+0157: Value to program the upper 32 bits of the MCA_CTL for bank 22.
+0158: CR4.MCE Control
+0159: Set / clear CR4.MCE bit.
+015a: Clear
+015b: Set
+015c: BTHB Core 0 Hole Size
+015d: Buffer size
+015e: 1 MB
+015f: 2 MB
+0160: 4 MB
+0161: 8 MB
+0162: BTHB Core 1 Hole Size
+0163: Buffer size
+0164: BTHB Core 2 Hole Size
+0165: Buffer size
+0166: BTHB Core 3 Hole Size
+0167: Buffer size
+0168: BTHB Core 4 Hole Size
+0169: Buffer size
+016a: BTHB Core 5 Hole Size
+016b: Buffer size
+016c: BTHB Core 6 Hole Size
+016d: Buffer size
+016e: BTHB Core 7 Hole Size
+016f: Buffer size
+0170: uCode Patching
+0171: Enable or disable microcode patching. If disabled, no microcode patches will be loaded. If enabled, only patches that apply to the installed processor will be loaded.
+0172: Sync Flood on MCA
+0173: Enable or disable BIOS Sync Flood on MCA.
+0174: Enable Redirect Shutdown to HDT
+0175: No help string
+0176: Enable Redirect int1 int3 to HDT
+0177: redirect debug exceptions and breakpoints to HDT
+0178: Exception Breakpoint Control
+0179: Enable:
+  Set MSRC001_1018[8]=0x1
+  Set MSRC001_100A[17]=1
+Disable:
+  Set MSRC001_1018[8]=0x0
+  Set MSRC001_100A[17]=0
+017a: Exception Vector
+017b: Specifies an exception vector
+017c: LBR
+017d: 1=Enable last branch record.
+017e: HDT OUT
+017f: No help string
+0180: ABL BreakPoint
+0181: Enable : Enable Break Point Function for ABL
+Disable : Disable Break Point Function for ABL
+Auto : Keep default behavior
+0182: ABL ConsoleOut
+0183: Enable : Enable ConsoleOut Function for ABL
+Disable : Disable ConsoleOut Function for ABL
+Auto : Keep default behavior
+0184: Enalbed
+0185: HDT Breakpoint 1 (x86 AGESA start)
+0186: Setting this option to enabled will cause the BIOS to force the system into HDT mode just before DRAM init, right after the backend code for the memory timing options is run and immediately before the DRAM enable bit is set. All of the registers for DCT init will be programmed, but the DRAM Init bit will not have been set yet.
+0187: HDT Breakpoint 2 (Before PCI init)
+0188: Setting this option to enabled will cause the BIOS to force the system into HDT mode just before PCI initialization.
+0189: HDT Breakpoint 3 (Before OS)
+018a: Setting this option to enabled will cause the BIOS to force the system into HDT mode very late in POST.
+018b: Core Watchdog Timer Disable
+018c: Enable or disable CPU Watchdog Timer
+018d: ACPI WHEA
+018e: Controls activation of CPU Machine Check Setting
+018f: L3 way locking
+0190: Number of ways allocated to trace data in the L3M.
+0191: Two
+0192: Six
+0193: Ten
+0194: Fourteen
+0195: L2 Range Lock Enable
+0196: L2 Range Lock Enable
+0197: L3 Range Lock Enable
+0198: L3 Range Lock Enable
+0199: RdRand
+019a: Disable RdRand instruction
+019b: RdSeed
+019c: Disable RdSeed instruction
+019d: SMEE
+019e: Control secure memory encryption enable
+019f: SMM Lock
+01a0: Can be used to keep SmmLock disabled
+01a1: Report Responsible Victim
+01a2: Control ChL3Cfg0[ReportResponsibleVic]
+01a3: Report Shared Victim
+01a4: Control ChL3Cfg0[ReportSharedVic]
+01a5: Spec DRAM Rd Dis
+01a6: Control ChL3Cfg1[SpecDramRdDis]
+01a7: CacheLock Disable
+01a8: Control LS_CFG[LsCfgDisCacheLock]
+01a9: SpecLockMap Disable
+01aa: Control LS_CFG[LsCfgDisSpecLockMap]
+01ab: Disable uop Cache
+01ac: Control IC_CFG[IcCfgDisOc]
+01ad: Disable L1 Region HW Prefetcher
+01ae: Control DC_CFG[DisRegionHwPf]
+01af: Disable L1 Stride HW Prefetcher
+01b0: Control DC_CFG[DisStrideHwPf]
+01b1: Disable L1 Stream HW Prefetcher
+01b2: Control DC_CFG[DisStreamHwPf]
+01b3: Disable L1 HW Prefetcher
+01b4: Control DC_CFG[DisHwPf]
+01b5: Disable MemRenaming
+01b6: Control DE_CFG[DecfgMemRenameDisable]
+01b7: Disable Recent
+01b8: Control BP_CFG[DIS_RECENT]
+01b9: Disable L2 Pf Low Arb Pri
+01ba: Control L2_CFG[DisableL2PfLowArbPriority]
+01bb: L2 Stream Prefetcher
+01bc: Control L2_PFCFG[EnableStreamPf]
+01bd: L2 Stride Prefetcher
+01be: Control L2_PFCFG[EnableStridePf]
+01bf: L2 Max Stride Distance
+01c0: Control L2_PFCFG[MaxStrideDist]
+01c1: 20 Strides
+01c2: 16 Strides
+01c3: 12 Strides
+01c4: 8 Strides
+01c5: Page Pf Hint Dis
+01c6: Control L2_PFCFG[DisablePagePfHint]
+01c7: L2 Max Stream Distance
+01c8: Control L2_PFCFG[MaxStreamDist]
+01c9: 31 Lines
+01ca: 24 Lines
+01cb: 16 Lines
+01cc: 8 Lines
+01cd: L2 Page Pf Distance
+01ce: Control L2_PFCFG[PagePfDist]
+01cf: 20 Lines
+01d0: 28 Lines
+01d1: Stream Throttle Control
+01d2: Control L2_PFCFG[StreamThrottleControl]
+01d3: Off
+01d4: On
+01d5: Update Imm
+01d6: Update 128 rsp
+01d7: Disable Spec TLB Reload
+01d8: Control DC_CFG[DisSpecTlbRld]
+01d9: Stack Engine Disable
+01da: Control DE_CFG[DecfgStackEngineDisable]
+01db: Mem File Disable
+01dc: Control DE_CFG[DecfgMemfileDisable]
+01dd: Mesh Gate Level
+01de: Control ChL3Cfg0[MeshGateLvl]
+01df: Request
+01e0: Memory
+01e1: Dataflow
+01e2: DelayedWakeEn
+01e3: Control ChL3Cfg0[DelayedWakeEn]
+01e4: Delayed Wake Count
+01e5: Control ChL3Cfg0[DelayedWakeCount]
+01e6: 64 Victims
+01e7: 128 Victims
+01e8: 256 Victims
+01e9: 512 Victims
+01ea: 1024 Victims
+01eb: 2048 Victims
+01ec: 4096 Victims
+01ed: Unlimited
+01ee: Mesh Gate Hold
+01ef: Control ChL3Cfg1[MeshGateHold]
+01f0: L2EvictForceDcBackprobe
+01f1: Control L2_CFG[L2EvictForceDcBackprobe]
+01f2: L2WcbXrqSerializeTidAgnostic
+01f3: Control L2_CFG[L2WcbXrqSerializeTidAgnostic]
+01f4: DisableLsReqPfPromotion
+01f5: Control L2_CFG[DisableLsReqPfPromotion]
+01f6: TdPickThrottleEnable
+01f7: Control L2_CFG[TdPickThrottleEnable]
+01f8: DisableAllEarlyVbTokenRet
+01f9: Control L2_CFG[DisableAllEarlyVbTokenRet]
+01fa: L2 Up Down Prefetcher
+01fb: Control L2_PFCFG[EnableUpDownPf]
+01fc: FP_CFG: MSC_CAC_TH
+01fd: Control FP_CFG[MSC_CAC_TH]
+01fe: FP_CFG: RET_DISACCF
+01ff: Control FP_CFG[RET_DISACCF]
+0200: FP_CFG: RET_ADVTOK_RET
+0201: Control FP_CFG[RET_ADVTOK_RET]
+0202: FP_CFG: SCE_THROTTLE_X87
+0203: Control FP_CFG[SCE_THROTTLE_X87]
+0204: FP_CFG: SCE_ENABLE_RRT
+0205: Control FP_CFG[SCE_ENABLE_RRT]
+0206: FP_CFG: SCE_ALWAYS_THROTTLE
+0207: Control FP_CFG[SCE_ALWAYS_THROTTLE]
+0208: 0/8
+0209: 1/8
+020a: 2/8
+020b: 4/8
+020c: FP_CFG: SCE_LIVELOCK_THRESH
+020d: Control FP_CFG[SCE_LIVELOCK_THRESH]
+020e: 16
+020f: 32
+0210: 64
+0211: 128
+0212: FP_CFG: SCE_DIDT_TH_ENABLE
+0213: Control FP_CFG[SCE_DIDT_TH_ENABLE]
+0214: FP_CFG: SCE_DIDT_INJ_F_ENABLE
+0215: Control FP_CFG[SCE_DIDT_INJ_F_ENABLE]
+0216: FP_CFG: SCE_DIDT_INJ_R_ENABLE
+0217: Control FP_CFG[SCE_DIDT_INJ_R_ENABLE]
+0218: FP_CFG: SCE_DIDT_TH_SCHEME
+0219: Control FP_CFG[SCE_DIDT_TH_SCHEME]
+021a: React
+021b: Preset
+021c: FP_CFG: SCE_DIDT_TIMECONST
+021d: Control FP_CFG[SCE_DIDT_TIMECONST]
+021e: 8
+021f: FP_CFG: SCE_DIDT_TH_THRESH
+0220: Control FP_CFG[SCE_DIDT_TH_THRESH]
+0221: Regular
+0222: Low
+0223: FP_CFG: SCE_DIDT_INJ_THRESH
+0224: Control FP_CFG[SCE_DIDT_INJ_THRESH]
+0225: Med Low
+0226: Med High
+0227: High
+0228: L2 Stream Throttle Disable
+0229: Control L2_PFCFG[L2StreamThrottleDisable]
+022a: BP Prefetch Disable
+022b: Control BP_CFG[BpCfgDisPf]
+022c: BP Disable
+022d: Control BP_CFG[DIS_L1BTB]
+022e: OC Token Bypass Disable
+022f: Control IC_CFG[IcCfgDisOcTokenBypass]
+0230: OcInterPickGroupFusionDisable
+0231: Control DE_CFG[DecfgOcInterPickGroupFusionDisable]
+0232: EX_CFG: FORCE_EXSCBUSY_GATER
+0233: Control EX_CFG[FORCE_EXSCBUSY_GATER]
+0234: TW_CFG: CohMemTypesOnly
+0235: Control TW_CFG[TwCfgCohMemTypesOnly]
+0236: Locks to only schedule non-spec
+0237: Control LS_CFG[LsCfgScnLockNs]
+0238: ResyncOoOLdOnL1Evict
+0239: Control LS_CFG[LsCfgResyncOoOLdOnL1Evict]
+023a: MemFile2EGS Disable
+023b: Control LS_CFG[LsCfgDisMemfile2EGS]
+023c: SpecWcReq Disable
+023d: Control LS_CFG[LsCfgDisSpecWcReq]
+023e: ForceAllSbex
+023f: Control LS_CFG[LsCfgForceAllSbex]
+0240: DisLiveLockIgnMabIdxBlk
+0241: Control LS_CFG2[DisLiveLockIgnMabIdxBlk]
+0242: DisStIgnMabIdxBlk
+0243: Control LS_CFG2[DisStIgnMabIdxBlk]
+0244: DisDcTagPaDcVFatalErr
+0245: Control LS_CFG2[DisDcTagPaDcVFatalErr]
+0246: WrSzLkUpDis
+0247: Control ChL3Cfg0[WrSzLkUpDis]
+0248: No Data Access Enable
+0249: No help string
+024a: LBR Extension Enable
+024b: No help string
+024c: Disable Page Coalescing
+024d: No help string
+024e: Enable Forced Page Coalescing
+024f: No help string
+0250: Local APIC Mode
+0251: No help string
+0252: xAPIC
+0253: x2APIC
+0254: Core Dynamic Pwr Monitor (DPM) Control
+0255: Auto = Use default settings for Core DPM
+Manual = User can set custom settings for Core DPM
+0256: Core DPM Enable
+0257: This control enables/disables the CAC accumulators in the Core.
+ 0 = Core DPM disabled (DPM_CFG[CfgLocked] = 0)
+ 1 = Core DPM enabled (DPM_CFG[CfgLocked] = 1)
+0258: Core MSR Access Enable
+0259: This control enables/disables the MSR Access in the Core.
+ 0 = Core MSR Access ENABLED (DPM_CFG[MsrAccessDisable] = 0)
+ 1 = Core MSR Access DISABLED (DPM_CFG[MsrAccessDisable] = 1)
+025a: BTC Control
+025b: This turns on/off BTC workload/calibration - this will be off and default GB used early in program. Auto = BTC Enabled, Disable = BTC disabled
+025c: ACPI _PSS
+025d: Enable / disable the P-state object declaration to the OS.
+025e: Memory Hole on Die 0
+025f: in MB
+0260: Disable DF sync flood propagation
+0261: Control DF::PIEConfig[DisSyncFloodProp]
+0262: Sync flood disabled
+0263: Sync flood enabled
+0264: System probe filter
+0265: Controls whether or not the probe filter is enabled. Has no effect on parts where the probe filter is fuse disabled.
+0266: Memory interleaving
+0267: Controls fabric level memory interleaving (AUTO, none, channel, die, socket). Note that channel, die, and socket has requirements on memory populations and it will be ignored if the memory doesn't support the selected option.
+0268: None
+0269: Channel
+026a: Die
+026b: Socket
+026c: Memory interleaving size
+026d: Controls the memory interleaving size. The valid values are AUTO, 256 bytes, 512 bytes, 1 Kbytes or 2Kbytes. This determines the starting address of the interleave (bit 8, 9, 10 or 11).
+026e: 256 Bytes
+026f: 512 Bytes
+0270: 1 KB
+0271: 2 KB
+0272: Channel interleaving hash
+0273: Controls whether or not the address bits are hashed during channel interleave mode. This field should not be used unless the interleaving is set to channel and the interleaving size is 256 or 512 bytes.
+0274: Freeze DF module queues on error
+0275: Controls DF::DfGlobalCtrl[DisImmSyncFloodOnFatalError]
+Disabling this option sets DF:DfGlobalCtrl[DisImmSyncFloodOnFatalError]
+0276: Core master request ordering
+0277: Can be used to force TgtStart/TgtDone ordering on all ReqBlockLevel 2 read or write sized requests.
+0278: Always Ordered
+0279: I/O master request ordering
+027a: Can be used to disable the Target Start shortcut.
+027b: Medium grain clock gating
+027c: Controls the MGCG feature.
+027d: Enabled - no hyst
+027e: Enabled - 1FCLK hyst
+027f: Enabled - 2FCLK hyst
+0280: Enabled - 3FCLK hyst
+0281: Enabled - 4FCLK hyst
+0282: Enabled - 5FCLK hyst
+0283: Enabled - 6FCLK hyst
+0284: Enabled - 7FCLK hyst
+0285: Enabled - 8FLCK hyst
+0286: Enabled - 9FCLK hyst
+0287: Enabled - 10FCLK hyst
+0288: Enabled - 11FCLK hyst
+0289: Enabled - 15FCLK hyst
+028a: Enabled - 31FCLK hyst
+028b: Enabled - 63FCLK hyst
+028c: Disable MemCancel
+028d: Controls DF::CCMConfig1[DisAllMemCancel]
+028e: Force off
+028f: Force on
+0290: Disable migratory probes
+0291: Controls DF::CoherentSlaveConfigA1[DisPrbMig]
+0292: Stop on SPF error detect
+0293: Controls DF::SpfModeControl0[StopOnProtErrDet]
+0294: Stop
+0295: Continue
+0296: Disable TCDX bypasses
+0297: Controls TCDX bypasses DF::TCDXConfig[BypassEnable]
+0298: F1/F fetch probes - remote
+0299: Controls DF::SpfModeControl0[DisSrcDieFetchRmtSkt]
+029a: F1/F fetch probes - local
+029b: Controls DF::SpfModeControl0[DisSrcDieFetchLclSkt]
+029c: F1/F fetch probes - on die
+029d: Controls DF::SpfModeControl0[DisTgtDieFetch]
+029e: Disable SPF ways
+029f: Can be used to disable ways of each bank. (DF::SpfWayDisable0 and Df::SpfWayDisable1). All four banks will be programmed the same way.
+02a0: All ways enabled
+02a1: 1 way disabled
+02a2: 2 ways disabled
+02a3: 4 ways disabled
+02a4: 8 ways disabled
+02a5: 11 ways disabled
+02a6: I/O request bus lock control
+02a7: Can be used to force bus locks on all IO non-posted requests, not just atomics (DF::IOMConfig[EnReqBusLock])
+02a8: IOM PerfMon Ctrl - PrbRsp
+02a9: Controls DF:IOMConfig[LatMonFtiPrbRsp]
+02aa: TgtDone
+02ab: PrbRsp
+02ac: IOM PerfMon Ctrl - TgtSel
+02ad: Controls DF:IOMConfig[LatMonTgtSel]
+02ae: DRAM
+02af: I/O
+02b0: Interrupts
+02b1: Sys mgmt
+02b2: Fence
+02b3: Flush
+02b4: IOS rsp
+02b5: Others
+02b6: Watchdog Timer Control
+02b7: Controls DF watchdog timers (DF::DfGlobalCtrl[WDTBaseSel])
+02b8: Disable I/O bus lock involvement
+02b9: Controls whether IOM participates (is locked by) bus locks (DF::PIEConfig[DisIOMLock])
+02ba: PIE PRQ broadcast limit
+02bb: Controls DF::PIEConfig[PrqBcstWRspLmt]
+02bc: No limit
+02bd: 5
+02be: 6
+02bf: 7
+02c0: Limit maximum I/O requests
+02c1: Limit the number of non-posted I/O requests from masters.  Select the master to limit.
+02c2: IOM
+02c3: CCM
+02c4: Both
+02c5: Max I/O request limit
+02c6: Specify the number of non-posted I/O requests from the masters specified above.  The value specified will be applied directly to DF::MasterRequestControl[MstIoNpActReqLmt].  Note that '0' means that no limit is imposed.
+02c7: CCM LL thresh control
+02c8: Controls DF::MasterLLAndLPRequestPriorityThr[LLElvPriReqThr]. 
+02c9: CCM LL thresh
+02ca: Specify the value for DF::MasterLLAndLPRequestPriorityThr[LLElvPriReqThr]
+02cb: CCM LL cumulative thresh control
+02cc: Controls DF::MasterLLAndLPRequestPriorityThr[LLCumElvPriReqThr]. 
+02cd: CCM LL cumulative thresh
+02ce: Specify the value for DF::MasterLLAndLPRequestPriorityThr[LLCumElvPriReqThr].
+02cf: CCM LP thresh control
+02d0: Controls DF::MasterLLAndLPRequestPriorityThr[LPElvPriReqThr]. 
+02d1: CCM LP thresh
+02d2: Specify the value for DF::MasterLLAndLPRequestPriorityThr[LPElvPriReqThr]
+02d3: CCM LP cumulative thresh control
+02d4: Controls DF::MasterLLAndLPRequestPriorityThr[LPCumElvPriReqThr].
+02d5: CCM LP cumulative thresh
+02d6: Specify the value for DF::MasterLLAndLPRequestPriorityThr[LPCumElvPriReqThr].
+02d7: CCM bypass control
+02d8: Controls DF::CCMConfig[DisPrbReqByp, DisPrbRspByp, DisCcmReqQByp, DisCcmRspDQByp, DisCcmRspDataByp]
+02d9: IOS resp bypass control
+02da: Controls DF::IOMConfig[DisIosRspBypass]
+02db: CS bypass control
+02dc: Controls DF::CoherentSlaveConfigA1[DisRspByp, DisReqByp]
+02dd: TgtStart control
+02de: Controls whether or not the coherent slave sends a TgtStart packet (DF::CoherentSlaveConfigA1[DisTgtStrt])
+02df: PC6 hint FCH GMI prop ctrl
+02e0: Controls DF::DfPc6ServiceControl[PropagateFchHintToGmi]
+02e1: DF picker load step control
+02e2: Controls DF::PwrMgtCfg0[PickLoadStepCstateEn]
+02e3: DF clock gating control
+02e4: Controls DF::PwrMgtCfg0[ClkGateDis]
+02e5: DF Pstate change quiesce ctrl
+02e6: Controls DF::PstateS3Control[DfPstateChgDisableQuiesce]
+02e7: DF Cstate clk pwr down ctrl
+02e8: Controls DF::CstateControl[DfCstateClkPwrDnEn]
+02e9: DF Cstate self refresh ctrl
+02ea: Controls DF::CstateControl[DfCstateSelfRefrEn]
+02eb: DF Cstate GMI pwr dn ctrl
+02ec: Controls DF::CstateControl[DfCstateGmiPwrDnEn]
+02ed: DF Cstate xGMI pwr dn ctrl
+02ee: Controls DF::CstateControl[DfCstateXGmiPwrDnEn]
+02ef: GMI / xGMI link error injection
+02f0: Inject GMI / xGMI link errors periodically.  Check the hardware config for which options are valid.  In the single link options, 'S' is socket and 'D' is internal die.
+02f1: All GMI links
+02f2: All xGMI links
+02f3: All links (GMI + xGMI)
+02f4: S0: D0-D1
+02f5: S0: D0-D2
+02f6: S0: D0-D3
+02f7: S0: D1-D2
+02f8: S0: D1-D3
+02f9: S0: D2-D3
+02fa: S1: D0-D1
+02fb: S1: D0-D2
+02fc: S1: D0-D3
+02fd: S1: D1-D2
+02fe: S1: D1-D3
+02ff: S1: D2-D3
+0300: S0: D0 xGMI
+0301: S0: D1 xGMI
+0302: S0: D2 xGMI
+0303: S0: D3 xGMI
+0304: Reduce credits - request
+0305: Reduce request credits
+0306: Reduce credits
+0307: Reduce credits - probe
+0308: Reduce probe credits
+0309: Reduce credits - response
+030a: Reduce response credits
+030b: Disable load-step controls
+030c: Sets DF::LoadStepHystCtl to all zero when DISABLE is selected. Use GRA to force a specific value into LoadStepHystCtl.
+030d: DBGU_DF trace to DRAM
+030e: Control DBGU DF tracing to DRAM
+030f: 16 MB
+0310: 64 MB
+0311: 256 MB
+0312: DF TCB IOMS trace to DRAM
+0313: Control DF TCB IOMS trace to DRAM.
+0314: DF TCB IOCS trace to DRAM
+0315: Control DF TCB IOCS trace to DRAM
+0316: CPU Masters receive probe responses
+0317: No help string
+0318: I/O Masters receive probe responses
+0319: No help string
+031a: Breakpoint before DF credit release
+031b: No help string
+031c: IOM Rogue Mode
+031d: No help string
+031e: Instruction Based Sampling Control
+031f: No help string
+0320: Local vector table offset valid
+0321: No help string
+0322: Local vector table offset
+0323: No help string
+0324: GFX Configuration
+0325: NB Configuration
+0326: PCIe Configuration
+0327: Audio IOs
+0328: Audio IOs control
+0329: HDA and SoundWire(Mini)
+032a: mHDA and SoundWire (Mini)
+032b: SoundWire and HDA(Mini)
+032c: SoundWire  mHDA(Mini)
+032d: I2S/TDM
+032e: DISABLE AUDIO IOs
+032f: Soundwire
+0330: USB Configuration Options
+0331: Integrated Graphics Controller
+0332: Enable Integrated Graphics controller
+0333: Forces
+0334: UMA Mode
+0335: UMA Mode
+0336: UMA_SPECIFIED
+0337: UMA_AUTO
+0338: UMA Frame buffer Size
+0339: Set UMA FB size
+033a: 256M
+033b: 512M
+033c: 1G
+033d: 2G
+033e: 3G
+033f: 4G
+0340: 5G
+0341: 6G
+0342: 7G
+0343: 8G
+0344: 12G
+0345: NB Azalia
+0346: Enable Integrate HD Audio controller
+0347: IOMMU
+0348: No help string
+0349: IOMMU Page Table Format
+034a: Indicates the page table format used by IOMMU.0= IOMMU uses existing AMD64 long mode format. 1= IOMMU uses unified guest page table format
+034b: IOMMU Smallest Translation Unit Size
+034c: Indicates the smallest translation unit supported by IOMMU. 0 = 4KB (bring-up mode). 1 = 16KB (production mode)
+034d: NB Legacy SB Msg Support
+034e: Legacy msg conversion and routing to PCIE0PortA. AMD Bring-up SB = Legacy SB w/wo switch. Production = No SB, no legacy msg conversion
+034f: Production
+0350: AMD Bring-up SB
+0351: XHCI0 controller enable
+0352: Enable or disable USB3 controller.
+0353: XHCI0 USB31DP port0 SuperSpeed Link Speed Limit
+0354: Limit USB31DP combo port0 SuperSpeed gen2 to gen1. Disabled by default
+0355: Disabled(Port0)
+0356: Enabled(Port0)
+0357: XHCI0 USB2.0 Port0 Overcurrent Mapping
+0358: XHCI0 overcurrent pin to USB2.0 port0 select. Disabled by default
+0359: OC0
+035a: OC1
+035b: XHCI0 USB2.0 Port1 Overcurrent Mapping
+035c: XHCI0 overcurrent pin to USB2.0 port1 select. Disabled by default
+035d: XHCI0 USB31DP port0 Overcurrent Mapping
+035e: XHCI0 overcurrent pin to USB31DP combo port0 select. Disabled by default
+035f: XHCI0 USB2.0 Port0/1 Battery Charging Enable
+0360: Enable Battery Charging feature on HC0 USB2.0 ports.Disabled by default
+0361: Disabled(Port0/1)
+0362: Enabled(Port1)
+0363: Enabled(Port0/1)
+0364: XHCI1 controller enable
+0365: Enable or disable USB3 controller.
+0366: XHCI1 USB3.1 Port0/1 SuperSpeed Link Speed Limit
+0367: Limit USB3.x port0/1 SuperSpeed gen2 to gen1 operation.Disabled by default
+0368: XHCI1 USB2.0 Port0 Overcurrent Mapping
+0369: XHCI1 overcurrent pin to USB2.0 port0 select. Disabled by default
+036a: OC2
+036b: OC3
+036c: XHCI1 USB2.0 Port1 Overcurrent Mapping
+036d: XHCI1 overcurrent pin to USB2.0 port1 select. Disabled by default
+036e: XHCI1 USB3.1 port0 Overcurrent Mapping
+036f: XHCI1 overcurrent pin to USB31 port0 select. Disabled by default
+0370: XHCI1 USB3.1 port1 Overcurrent Mapping
+0371: XHCI1 overcurrent pin to USB31 port1 select. Disabled by default
+0372: XHCI1 USB2.0 Port0/1 Battery Charging Enable
+0373: Enable Battery Charging feature on HC1 USB2.0 ports.Disabled by default
+0374: SOC USB S3 WakeUp
+0375: SoC USB S3 function enable/disable
+0376: USB PHY ref_clk Stop in S3/S4/S5
+0377: select between stopping USB PHY ref_clk in system S3/S4/S5 states (default) and not stopping USB PHY ref_clk in the system low power states for wake support.  The option covers both USB0 and USB1.
+0378: non-Stop
+0379: GFX Configuration-int
+037a: PCIe Configuration-int
+037b: PMM - General
+037c: PCIe Remapping
+037d: USB Debug Options
+037e: DBGU_NBIO trace to DRAM
+037f: Control DBGU NBIO trace to DRAM
+0380: DBGU_NBIO Port 80 Tracing
+0381: Control DBGU_NBIO Diagnostic Port 80 Write Tracing
+0382: DBGU_NBIO Port 80 Destination
+0383: Selects the destination for Port 80 tracing
+0384: Trace to DRB
+0385: Trace to DRAM
+0386: DBGU_NBIO Port 80 Timestamps
+0387: No help string
+0388: DBGU_IO trace0 to DRAM
+0389: Control DBGU IO0 trace to DRAM
+038a: DBGU_IO trace1 to DRAM
+038b: Control DBGU IO1 trace to DRAM
+038c: DBGU_IO trace2 to DRAM
+038d: Control DBGU IO2 trace to DRAM
+038e: DBGU_GFX trace to DRAM
+038f: Control DBGU GFX trace to DRAM
+0390: USB DBGCLK Enable
+0391: No help string
+0392: GFX CUs/RB Control
+0393: GFX CUs/RB Control
+0394: InactiveCUs
+0395: InactiveCUs
+0396: Display interface spread spectrum
+0397: PCIe Memory Power Shut Down in L1
+0398: No help string
+0399: PCIe Memory Power Deep Sleep in L1
+039a: No help string
+039b: PCIe AtomicOps Support
+039c: No help string
+039d: GOP Serial Port Log Control
+039e: No help string
+039f: Display Spread Spectrum Control
+03a0: Control SSC for dedicated DP port
+03a1: Display Spread Spectrum Percentage
+03a2: Unit of 0.001%, example:
+0x190 (Dec:400) = spread of about -0.4% downspread
+03a3: PCIe Port0
+03a4: DXIO Tuneable Speed Sets
+03a5: AER Configuration
+03a6: PCIe Lanes Topology
+03a7: Speed Mode(PCIe Port0)
+03a8: Set PCIe port speed and capability
+03a9: Maximum speed
+03aa: GEN1
+03ab: GEN2
+03ac: GEN3
+03ad: Link ASPM(PCIe Port0)
+03ae: Enable port ASPM
+03af: L0s
+03b0: L1
+03b1: L0s and L1
+03b2: Poweroff Phy Lanes and PLL in L1(Pcie Port0)
+03b3: Poweroff Phy Lanes and PLL in L1
+03b4: L1 Immediate ACK(PCIe Port0)
+03b5: L1 Immediate ACK
+03b6: TX De-emphasis(PCIe Port0)
+03b7: TX De-emphasis
+03b8: 6.0 dB
+03b9: 3.5 dB
+03ba: TX Margin(PCIe Port0)
+03bb: TX Margin
+03bc: Equalization Search Mode(PCIe Port0)
+03bd: Set Equalization Search Mode
+03be: Gradient Search
+03bf: Exhaustive Search
+03c0: Exhaustive Search + 3x3
+03c1: Preset Search
+03c2: Disable Gen3 EQ Phase2/3 (PCIe Port0)
+03c3: Disable Gen3 EQ Phase2/3
+03c4: SPC(PCIe Port0)
+03c5: Downstream Tx Preset(PCIe Port0)
+03c6: Set downstream Tx preset
+03c7: P0
+03c8: P1
+03c9: P2
+03ca: P3
+03cb: P4
+03cc: P5
+03cd: P6
+03ce: P7
+03cf: P8
+03d0: P9
+03d1: P10
+03d2: Upstream Tx Preset(PCIe Port0)
+03d3: Set upstream Tx preset
+03d4: Downstream Rx Preset Hint(PCIe Port0)
+03d5: Set downstream Rx preset hint
+03d6: Upstream Rx Preset Hint(PCIe Port0)
+03d7: Set upstream Rx preset hint
+03d8: Bypass Gen3 EQ(PCIe Port0)
+03d9: Bypass Gen3 EQ
+03da: Enable 3x3 Search(PCIe Port0)
+03db: Enable 3x3 Search
+03dc: Enable Safe Search(PCIe Port0)
+03dd: Enable Safe Search
+03de: SRIS_SRNS(PCIe Port0)
+03df: SRIS_SRNS
+03e0: SRIS_EN(PCIe Port0)
+03e1: SRIS_EN
+03e2: SRIS_AUTODETECT_EN(PCIe Port0)
+03e3: SRIS_EN
+03e4: SRIS_LOWER_SKP_SUPPORT(PCIe Port0)
+03e5: SRIS_EN
+03e6: Max_Payload_Size(Port0)
+03e7: Max_Payload_Size
+03e8: MAX_PAYLOAD_128
+03e9: MAX_PAYLOAD_256
+03ea: MAX_PAYLOAD_512
+03eb: MAX_PAYLOAD_1024
+03ec: MAX_PAYLOAD_2048
+03ed: MAX_PAYLOAD_4096
+03ee: Gen2(PCIe Port0)
+03ef: SPC
+03f0: 1 sym
+03f1: 2 sym
+03f2: TXEQ
+03f3: TX SWING
+03f4: RXEQ
+03f5: RX LOS
+03f6: rxX_los_threshold[2:0] valid value: 0~7, auto:0xFF
+03f7: LOS BOOST
+03f8: CDR
+03f9: txX_eq_pre[5:0] GEN1
+03fa: valid value: 0~0x3f, auto:0xFF
+03fb: txX_eq_pre[5:0] GEN2
+03fc: valid value: 0~0x3f, auto:0xFF
+03fd: txX_eq_pre[5:0] GEN3
+03fe: valid value: 0~0x3f, auto:0xFF
+03ff: txX_eq_main[5:0] GEN1
+0400: valid value: 0~0x3f, auto:0xFF
+0401: txX_eq_main[5:0] GEN2
+0402: valid value: 0~0x3f, auto:0xFF
+0403: txX_eq_main[5:0] GEN3
+0404: valid value: 0~0x3f, auto:0xFF
+0405: txX_eq_post[5:0] GEN1
+0406: valid value: 0~0x3f, auto:0xFF
+0407: txX_eq_post[5:0] GEN2
+0408: valid value: 0~0x3f, auto:0xFF
+0409: txX_eq_post[5:0] GEN3
+040a: valid value: 0~0x3f, auto:0xFF
+040b: txX_iboost_lvl[3:0] GEN1
+040c: valid value: 0~0xf, auto:0xFF
+040d: txX_iboost_lvl[3:0] GEN2
+040e: valid value: 0~0xf, auto:0xFF
+040f: txX_iboost_lvl[3:0] GEN3
+0410: valid value: 0~0xf, auto:0xFF
+0411: txX_vboost_en GEN1
+0412: No help string
+0413: txX_vboost_en GEN2
+0414: No help string
+0415: txX_vboost_en GEN3
+0416: No help string
+0417: rxX_eq_att_lvl[2:0] GEN1
+0418: valid value: 0~7, auto:0xFF
+0419: rxX_eq_att_lvl[2:0] GEN2
+041a: valid value: 0~7, auto:0xFF
+041b: rxX_eq_att_lvl[2:0] GEN3
+041c: valid value: 0~7, auto:0xFF
+041d: rxX_eq_vga1_gain[3:0] GEN1
+041e: valid value: 0~0xf, auto:0xFF
+041f: rxX_eq_vga1_gain[3:0] GEN2
+0420: valid value: 0~0xf, auto:0xFF
+0421: rxX_eq_vga1_gain[3:0] GEN3
+0422: valid value: 0~0xf, auto:0xFF
+0423: rxX_eq_vga2_gain[3:0] GEN1
+0424: valid value: 0~0xf, auto:0xFF
+0425: rxX_eq_vga2_gain[3:0] GEN2
+0426: valid value: 0~0xf, auto:0xFF
+0427: rxX_eq_vga2_gain[3:0] GEN3
+0428: valid value: 0~0xf, auto:0xFF
+0429: rxX_eq_ctle_pole[2:0] GEN1
+042a: valid value: 0~7, auto:0xFF
+042b: rxX_eq_ctle_pole[2:0] GEN2
+042c: valid value: 0~7, auto:0xFF
+042d: rxX_eq_ctle_pole[2:0] GEN3
+042e: valid value: 0~7, auto:0xFF
+042f: rxX_eq_ctle_boost[4:0] GEN1
+0430: valid value: 0~0x1f, auto:0xFF
+0431: rxX_eq_ctle_boost[4:0] GEN2
+0432: valid value: 0~0x1f, auto:0xFF
+0433: rxX_eq_ctle_boost[4:0] GEN3
+0434: valid value: 0~0x1f, auto:0xFF
+0435: rxX_eq_dfe_tap1[7:0] GEN1
+0436: valid value: 0~0xff, auto:0xFFFF
+0437: rxX_eq_dfe_tap1[7:0] GEN2
+0438: valid value: 0~0xff, auto:0xFFFF
+0439: rxX_eq_dfe_tap1[7:0] GEN3
+043a: valid value: 0~0xff, auto:0xFFFF
+043b: rx_vref_ctrl[4:0]
+043c: valid value: 0~0x1f, auto:0xFF
+043d: tx_vboost_lvl[2:0] for GEN1
+043e: valid value: 0~7, auto:0xFF
+043f: tx_vboost_lvl[2:0] for GEN2
+0440: valid value: 0~7, auto:0xFF
+0441: tx_vboost_lvl[2:0] for GEN3
+0442: valid value: 0~7, auto:0xFF
+0443: SSC_OFF_FRUG1 [2:0]
+0444: valid value: 0~7, auto:0xFF
+0445: SSC_OFF_PHUG1 [2:0]
+0446: valid value: 0~7, auto:0xFF
+0447: AER(Dev1Func1)
+0448: AER Dev1Func1
+0449: AER Dev2Func1
+044a: Correctable Errors(Dev1Func1)
+044b: UnCorrectable Errors(Dev1Func1)
+044c: Bad TLP(Dev1Func1)
+044d: No help string
+044e: Bad DLLP Status(Dev1Func1)
+044f: No help string
+0450: Replay Number Rollover Status(Dev1Func1)
+0451: No help string
+0452: Replay Timer Timeout Status(Dev1Func1)
+0453: No help string
+0454: Data Link Protocol Error status Mask(Dev1Func1)
+0455: No help string
+0456: Data Link Protocol Error status Severity(Dev1Func1)
+0457: No help string
+0458: non-fatal
+0459: fatal
+045a: Poisoned TLP Status Mask(Dev1Func1)
+045b: No help string
+045c: Poisoned TLP Status Severity(Dev1Func1)
+045d: No help string
+045e: Completion Timeout Status Mask(Dev1Func1)
+045f: No help string
+0460: Completion Timeout Status Severity(Dev1Func1)
+0461: No help string
+0462: Completer Abort Status Mask(Dev1Func1)
+0463: No help string
+0464: Completer Abort Status Severity(Dev1Func1)
+0465: No help string
+0466: Unexpected Completion Status Mask(Dev1Func1)
+0467: No help string
+0468: Unexpected Completion Status Severity(Dev1Func1)
+0469: No help string
+046a: Malformed TLP Status Mask(Dev1Func1)
+046b: No help string
+046c: Malformed TLP Status Severity(Dev1Func1)
+046d: No help string
+046e: ECRC Error Status Mask(Dev1Func1)
+046f: No help string
+0470: ECRC Error Status Severity(Dev1Func1)
+0471: No help string
+0472: Unsupported Request Error Status Mask(Dev1Func1)
+0473: No help string
+0474: Unsupported Request Error Status Severity(Dev1Func1)
+0475: No help string
+0476: PCIe lanes topology
+0477: Set PCIe lanes Topology
+0478: Dev1Func1 Engine type
+0479: set the engine type
+047a: Unused Engine
+047b: Pcie Engine
+047c: SATA Engine
+047d: Ethernet Engine
+047e: Dev1Func1 Start Lane ID
+047f: [255] - Not allocated
+Start - End Lane ID
+ 0       0, 1, 3
+ 1       0, 1
+ 2       2, 3
+ 3       0, 2, 3
+ 4       4, 5, 7, 11
+ 5       4, 5
+ 6       6, 7
+ 7       4, 6, 7
+ 8       8, 9, 11, 15
+ 9       8, 9
+ 10      10, 11
+ 11      4, 8, 10, 11
+ 12      12, 13, 15
+ 13      12, 13
+ 14      14, 15
+ 15      8, 12, 14, 15
+
+Cannot assign overlapping groups of lanes between ports.
+0480: Dev1Func1 End Lane ID
+0481: [255] - Not allocated
+Start - End Lane ID
+ 0       0, 1, 3
+ 1       0, 1
+ 2       2, 3
+ 3       0, 2, 3
+ 4       4, 5, 7, 11
+ 5       4, 5
+ 6       6, 7
+ 7       4, 6, 7
+ 8       8, 9, 11, 15
+ 9       8, 9
+ 10      10, 11
+ 11      4, 8, 10, 11
+ 12      12, 13, 15
+ 13      12, 13
+ 14      14, 15
+ 15      8, 12, 14, 15
+
+Cannot assign overlapping groups of lanes between ports.
+0482: NBIO Global CG Override
+0483: No help string
+0484: MMHUB Light Sleep
+0485: MMHUB Light Sleep Enable
+0486: ATHUB Clock Gating
+0487: ATHUB CLK Gating Enable/Disable
+0488: IOHC LCLK Clock Gating
+0489: LCLK Gating (IOC)
+048a: IOMMU L1 Clock Gating
+048b: IOMMU L1 LCLK Gating
+048c: IOMMU L2 Clock Gating
+048d: IOMMU L2 LCLK Gating
+048e: NBIF MGCG
+048f: nBIF MCGC
+0490: NBIF MGCG Hysteresis
+0491: No help string
+0492: SHUB MGCG
+0493: SHUB (NGDC) MGCG
+0494: SHUB MGCG Hysteresis
+0495: No help string
+0496: IOHC Global CG Control
+0497: No help string
+0498:   IOHC CG Hysteresis
+0499: No help string
+049a:   IOHC CG CTRL0 CLK0
+049b: No help string
+049c:   IOHC CG CTRL0 CLK1
+049d: No help string
+049e:   IOHC CG CTRL0 CLK2
+049f: No help string
+04a0:   IOHC CG CTRL0 CLK3
+04a1: No help string
+04a2:   IOHC CG CTRL0 CLK4
+04a3: No help string
+04a4:   IOHC CG CTRL0 CLK5
+04a5: No help string
+04a6:   IOHC CG CTRL0 CLK6
+04a7: No help string
+04a8:   IOHC CG CTRL0 CLK7
+04a9: No help string
+04aa:   IOHC CG CTRL0 CLK8
+04ab: No help string
+04ac:   IOHC CG CTRL0 CLK9
+04ad: No help string
+04ae:   IOHC CG CTRL1 CLK0
+04af: No help string
+04b0:   IOHC CG CTRL1 CLK1
+04b1: No help string
+04b2:   IOHC CG CTRL1 CLK2
+04b3: No help string
+04b4:   IOHC CG CTRL1 CLK3
+04b5: No help string
+04b6:   IOHC CG CTRL1 CLK4
+04b7: No help string
+04b8:   IOHC CG CTRL1 CLK5
+04b9: No help string
+04ba:   IOHC CG CTRL1 CLK6
+04bb: No help string
+04bc:   IOHC CG CTRL1 CLK7
+04bd: No help string
+04be:   IOHC CG CTRL1 CLK8
+04bf: No help string
+04c0:   IOHC CG CTRL1 CLK9
+04c1: No help string
+04c2:   IOHC CG CTRL2 CLK0
+04c3: No help string
+04c4:   IOHC CG CTRL2 CLK1
+04c5: No help string
+04c6:   IOHC CG CTRL2 CLK2
+04c7: No help string
+04c8:   IOHC CG CTRL2 CLK3
+04c9: No help string
+04ca:   IOHC CG CTRL2 CLK4
+04cb: No help string
+04cc:   IOHC CG CTRL2 CLK5
+04cd: No help string
+04ce:   IOHC CG CTRL2 CLK6
+04cf: No help string
+04d0:   IOHC CG CTRL2 CLK7
+04d1: No help string
+04d2:   IOHC CG CTRL2 CLK8
+04d3: No help string
+04d4:   IOHC CG CTRL2 CLK9
+04d5: No help string
+04d6: SW Device ID Remapping
+04d7: SW Device ID Remapping
+04d8: PBr0 DevFnMap
+04d9: No help string
+04da: D1F1
+04db: D1F2
+04dc: D1F3
+04dd: D1F4
+04de: D1F5
+04df: D1F6
+04e0: D1F7
+04e1: ComboPHY and USB3.1PHY Adjustments
+04e2: Enable VC7 traffic on USB-HC0
+04e3: No help string
+04e4: XHCI0 ComboPHY TX Termination Adjustments
+04e5: XHCI0 comboPHY TX termination adjustments : VALUE = 0~7.
+04e6: XHCI0 ComboPHY RX Termination Adjustments
+04e7: XHCI0 comboPHY RX termination adjustments : VALUE = 0~7.
+04e8: XHCI0 ComboPHY VBOOST Adjustments
+04e9: XHCI0 comboPHY VBOOST adjustments : VALUE = 0~7.
+04ea: XHCI1 USB3.1PHY TX Termination Adjustments
+04eb: XHCI1 USB3.1 PHY TX termination adjustments : VALUE = 0~7.
+04ec: XHCI1 USB3.1PHY RX Termination Adjustments
+04ed: XHCI1 USB3.1 PHY RX termination adjustments : VALUE = 0~7.
+04ee: XHCI1 USB3.1PHY VBOOST Adjustments
+04ef: XHCI1 USB3.1PHY VBOOST adjustments : VALUE = 0~7.
+04f0: GDDR6 Common Options
+04f1: DRAM Memory Mapping
+04f2: DRAM Timing Configuration
+04f3: Security
+04f4: I Accept
+04f5: Memory Clock Speed
+04f6: Set the memory clock frequency.
+04f7: 125MHz
+04f8: 225MHz
+04f9: 250MHz
+04fa: 400MHz
+04fb: 450MHz
+04fc: 500MHz
+04fd: 750MHz
+04fe: 850MHz
+04ff: 1000MHz
+0500: 1250MHz
+0501: 1330MHz
+0502: 1375MHz
+0503: 1500MHz
+0504: 1600MHz
+0505: 1650MHz
+0506: 1700MHz
+0507: 1750MHz
+0508: 1800MHz
+0509: 1850MHz
+050a: 1900MHz
+050b: 1950MHz
+050c: 2000MHz
+050d: Tcl
+050e: Sets the tCL time.
+050f: 8 Clk
+0510: 9 Clk
+0511: 0Ah Clk
+0512: 0Bh Clk
+0513: 0Ch Clk
+0514: 0Dh Clk
+0515: 0Eh Clk
+0516: 0Fh Clk
+0517: 10h Clk
+0518: 11h Clk
+0519: 12h Clk
+051a: 13h Clk
+051b: 14h Clk
+051c: 15h Clk
+051d: 16h Clk
+051e: 17h Clk
+051f: 18h Clk
+0520: 19h Clk
+0521: 1Ah Clk
+0522: 1Bh Clk
+0523: 1Ch Clk
+0524: 1Dh Clk
+0525: 1Eh Clk
+0526: 1Fh Clk
+0527: 20h Clk
+0528: 21h Clk
+0529: Tras
+052a: Specify the min RAS# active time.
+052b: 22h Clk
+052c: 23h Clk
+052d: 24h Clk
+052e: 25h Clk
+052f: 26h Clk
+0530: 27h Clk
+0531: 28h Clk
+0532: 29h Clk
+0533: 2Ah Clk
+0534: 2Bh Clk
+0535: 2Ch Clk
+0536: 2Dh Clk
+0537: 2Eh Clk
+0538: 2Fh Clk
+0539: 30h Clk
+053a: 31h Clk
+053b: 32h Clk
+053c: 33h Clk
+053d: 34h Clk
+053e: 35h Clk
+053f: 36h Clk
+0540: 37h Clk
+0541: 38h Clk
+0542: 39h Clk
+0543: 3Ah Clk
+0544: Trcdrd
+0545: This sets the RAS# Active to CAS# read/write delay.
+0546: Trcdwr
+0547: This sets the RAS# Active to CAS# read/write delay.
+0548: 0xA Clk
+0549: 0xB Clk
+054a: 0xC Clk
+054b: 0xD Clk
+054c: 0xE Clk
+054d: 0xF Clk
+054e: TrpAb
+054f: Specify the row precharge time.
+0550: TrpPb
+0551: Specify the row precharge time.
+0552: 0 Clk
+0553: 1 Clk
+0554: 2 Clk
+0555: 3 Clk
+0556: 4 Clk
+0557: 5 Clk
+0558: 6 Clk
+0559: 7 Clk
+055a: TrcAb
+055b: Specify the row precharge time.
+055c: 3Bh Clk
+055d: 3Ch Clk
+055e: 3Dh Clk
+055f: 3Eh Clk
+0560: 3Fh Clk
+0561: 40h Clk
+0562: 41h Clk
+0563: 42h Clk
+0564: 43h Clk
+0565: 44h Clk
+0566: 45h Clk
+0567: 46h Clk
+0568: 47h Clk
+0569: 48h Clk
+056a: 49h Clk
+056b: 4Ah Clk
+056c: 4Bh Clk
+056d: 4Ch Clk
+056e: 4Dh Clk
+056f: 4Eh Clk
+0570: 4Fh Clk
+0571: 50h Clk
+0572: 51h Clk
+0573: 52h Clk
+0574: 53h Clk
+0575: 54h Clk
+0576: 55h Clk
+0577: 56h Clk
+0578: 57h Clk
+0579: 58h Clk
+057a: 59h Clk
+057b: 5Ah Clk
+057c: TrcPb
+057d: Specify the row precharge time.
+057e: TrrdL
+057f: Specify the row-to-row delay.
+0580: TrrdS
+0581: No help string
+0582: Trtp
+0583: Specifies the read CAS# to precharge time.
+0584: TFaw
+0585: No help string
+0586: Tref Control
+0587: No help string
+0588: Tref
+0589: Specify the tRef time.
+058a: TrfcPb Control
+058b: No help string
+058c: TrfcPb
+058d: DRAM Trfc Timing
+058e: Trfc Control
+058f: No help string
+0590: Trfc
+0591: DRAM Trfc Timing
+0592: TSME
+0593: Transparent SME: AddrTweakEn = 1; ForceEncrEn =1; DataEncrEn = 0
+0594: BankGroupSwap
+0595: No help string
+0596: CPU Mode
+0597: APU Mode
+0598: Address Hash Bank
+0599: Enable or disable bank address hashing
+059a: GDDR6 Debug Options
+059b: GDDR6 DRAM Timing Configuration
+059c: GDDR6 DRAM Controller Configuration
+059d: GDDR6 Diagnostic and Debug Features
+059e: DRAM Timing User Controls
+059f: DRAM Timing User Controls
+05a0: UclkDiv1M0
+05a1: UclkDiv1 option, relative to FCLK.
+05a2: UclkDiv1M1
+05a3: No help string
+05a4: UclkDiv1M2
+05a5: No help string
+05a6: UclkDiv1M3
+05a7: No help string
+05a8: Trdwr
+05a9: This sets the tWRTTO time.
+05aa: Twrrd
+05ab: Specify the write to read delay when accessing different DIMMs.
+05ac: TwtrL
+05ad: Specify the write to read delay when accessing the same DIMM.
+05ae: TwtrS
+05af: No help string
+05b0: TwrwrSc
+05b1: write to write timing same DIMM same chip select.
+05b2: TwrwrSd
+05b3: write to write timing same DIMM same chip select.
+05b4: TwrwrDd
+05b5: write to write timing same DIMM same chip select.
+05b6: TrdrdSc
+05b7: write to write timing same DIMM same chip select.
+05b8: TrdrdSd
+05b9: write to write timing same DIMM same chip select.
+05ba: TrdrdDd
+05bb: write to write timing same DIMM same chip select.
+05bc: Tcksrx Control
+05bd: No help string
+05be: Tcksrx
+05bf: No help string
+05c0: Tcksre Control
+05c1: No help string
+05c2: Tcksre
+05c3: No help string
+05c4: Tpd Control
+05c5: No help string
+05c6: Tpd
+05c7: No help string
+05c8: DRAM Power Options
+05c9: RAS
+05ca: Address Command Tristate Enable
+05cb: 1=Tristate the address, command, and bank buses when a Deselect command is issued.
+05cc: Cmd2T
+05cd: Select between 1T and 2T mode on ADDR/CMD
+05ce: 1T
+05cf: 2T
+05d0: Data Scramble
+05d1: No help string
+05d2: On DIMM Temperature Sensor Enable
+05d3: Enables the monitoring of the EVENT_L pin and indicates whether the on DIMM temperature sensors of the DIMMs on a channel are enabled.
+05d4: CmdThrottleMode Control
+05d5: Control command throttle mode.
+05d6: CmdThrottleMode
+05d7: Control command throttle mode.
+05d8: Write CRC Enable
+05d9: No help string
+05da: Gear Down Mode
+05db: No help string
+05dc: DRAM Hardware History Mechanism
+05dd: Disable DRAM Hardware History Mechanism: UMC_CH::EccCtrl[EccHardwareHistoryEn]. Default should be to set this to 1 if EccCtrl[EccSymbolSize]==x8
+05de: DRAM Parity
+05df: No help string
+05e0: RCD Parity
+05e1: No help string
+05e2: AddrTweakEn Control
+05e3: SMNx00050144 [Data Control] (DataCtrl)31:16 AddrTweakEn. Read-write. Reset: 0. Per key field that controls if encryption algorithm uses the physical address or not. Simple AES versus AES+Locality
+05e4: AddrTweakTMEn
+05e5: No help string
+05e6: Data Encryption
+05e7: 8 DataEncrEn. Read-write. Reset: 0. 0=Disable. 1=Enable. Enables data encryption. -SMNx00050144 [Data Control] (DataCtrl) Bit 8
+05e8: Force Encryption
+05e9: SMNx00050144 [Data Control] (DataCtrl) Bit 11 11 ForceEncrEn. Read-write. Reset: 0. 0=Disable. 1=Enable. Force region 0 data encryption for all requests.
+05ea: UMC Key 0
+05eb: No help string
+05ec: DRAM Fine Granularity Refresh
+05ed: No help string
+05ee: Fixed 1X
+05ef: Fixed 2X
+05f0: Fixed 4X
+05f1: OTF 2X
+05f2: OTF 4X
+05f3: CABI Enable
+05f4: No help string
+05f5: DBI Enable
+05f6: No help string
+05f7: Disable Data Masking
+05f8: Disable (DM) Data Masking feature.
+05f9: Disable Address Tweak
+05fa: No help string
+05fb: Scramble Control
+05fc: No help string
+05fd: Scramble Enable
+05fe: No help string
+05ff: Scramble Key
+0600: No help string
+0601: Power Down Enable
+0602: Enable or disable GDDR5 power down mode.
+0603: Power Down Mode
+0604: Set the DDR power down mode
+0605: Chip Select
+0606: Power Down Delay Control
+0607: No help string
+0608: Power Down Delay
+0609: No help string
+060a: Aggressive Power Down Enable
+060b: No help string
+060c: Aggressive Power Down Delay Control
+060d: No help string
+060e: Aggressive Power Down Delay
+060f: Specifies a hysteresis count from the last DRAM activity for the DCT to close pages prior to precharge power down.
+0610: Phy Power Saving
+0611: Enable or disable DRAM Phy power savings.
+0612: Power Down Phy Power Save Disable
+0613: 1= Disable phy clock gating during precharge power down. 0=Enable phy clock gating during precharge power down to save power.
+0614: All Memory Clks Enable
+0615: This allows selection of all memory clocks enable
+0616: All CKE Enable
+0617: No help string
+0618: All CS Enable
+0619: No help string
+061a: Memory P-state
+061b: No help string
+061c: MBIST
+061d: Post Package Repair
+061e: DRAM Address Command Parity Retry
+061f: UMC_CH::RecCtrl[RecEn][0] and UMC_CH::RecCtrl[MaxParRply].
+0620: Max Parity Error Replay
+0621: No help string
+0622: EDC Enable
+0623: No help string
+0624: Enable EDC Replay
+0625: No help string
+0626: Inject TX Command Parity Errors
+0627: DF is requesting a UMC CBS option for injecting TX command parity errors as this will generate RETRANSMIT commands.
+0628: UMCCTRL_MISC Control
+0629: UMCCONFIG Control
+062a: MRx Control
+062b: Hybrid All-bank/Per-X-bank refresh Control
+062c: No help string
+062d: Hybrid
+062e: Only all-bank
+062f: Per-X-bank refresh Control
+0630: No help string
+0631: Per-2-bank
+0632: Per-bank
+0633: RefAb insertion period
+0634: No help string
+0635: Auto-Calibration Control
+0636: No help string
+0637: Additional CAS-CAS Delay Cycles Control
+0638: No help string
+0639: Additional CAS-CAS Delay Cycles
+063a: No help string
+063b: Additional Read to Write Turnaround Cycles Control
+063c: No help string
+063d: Additional Read to Write Turnaround Cycles
+063e: No help string
+063f: VMEMP Voltage Control
+0640: No help string
+0641: 0.7V
+0642: 0.725V
+0643: 0.75V
+0644: 0.775V
+0645: 0.8V
+0646: 0.825V
+0647: 0.85V
+0648: 0.875V
+0649: 0.9V
+064a: 0.925V
+064b: 0.95V
+064c: 0.975V
+064d: 1.0V
+064e: 1.025V
+064f: 1.05V
+0650: 1.075V
+0651: 1.1V
+0652: APUDFE Training Control
+0653: No help string
+0654: UMCCTRL_MISC Control
+0655: No help string
+0656: UMCCTRL_MISC0 Mask
+0657: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+0658: UMCCTRL_MISC1 Mask
+0659: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+065a: UMCCTRL_MISC2 Mask
+065b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+065c: UMCCTRL_MISC3 Mask
+065d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+065e: UMCCTRL_MISC4 Mask
+065f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+0660: UMCCTRL_MISC5 Mask
+0661: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+0662: UMCCTRL_MISC6 Mask
+0663: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+0664: UMCCTRL_MISC9 Mask
+0665: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Hi Mask to 0x7000, and set Low Mask to 0x000F.
+0666: UMCCTRL_MISC0 Value
+0667: No help string
+0668: UMCCTRL_MISC1 Value
+0669: No help string
+066a: UMCCTRL_MISC2 Value
+066b: No help string
+066c: UMCCTRL_MISC3 Value
+066d: No help string
+066e: UMCCTRL_MISC4 Value
+066f: No help string
+0670: UMCCTRL_MISC5 Value
+0671: No help string
+0672: UMCCTRL_MISC6 Value
+0673: No help string
+0674: UMCCTRL_MISC9 Value
+0675: No help string
+0676: UMCCONFIG0-15 Control
+0677: No help string
+0678: UMCCONFIG0 Mask
+0679: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+067a: UMCCONFIG1 Mask
+067b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+067c: UMCCONFIG2 Mask
+067d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+067e: UMCCONFIG3 Mask
+067f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0680: UMCCONFIG4 Mask
+0681: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0682: UMCCONFIG5 Mask
+0683: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0684: UMCCONFIG6 Mask
+0685: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0686: UMCCONFIG7 Mask
+0687: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0688: UMCCONFIG8 Mask
+0689: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+068a: UMCCONFIG9 Mask
+068b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+068c: UMCCONFIG10 Mask
+068d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+068e: UMCCONFIG11 Mask
+068f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0690: UMCCONFIG12 Mask
+0691: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0692: UMCCONFIG13 Mask
+0693: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0694: UMCCONFIG14 Mask
+0695: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0696: UMCCONFIG15 Mask
+0697: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0698: UMCCONFIG0 Value
+0699: No help string
+069a: UMCCONFIG1 Value
+069b: No help string
+069c: UMCCONFIG2 Value
+069d: No help string
+069e: UMCCONFIG3 Value
+069f: No help string
+06a0: UMCCONFIG4 Value
+06a1: No help string
+06a2: UMCCONFIG5 Value
+06a3: No help string
+06a4: UMCCONFIG6 Value
+06a5: No help string
+06a6: UMCCONFIG7 Value
+06a7: No help string
+06a8: UMCCONFIG8 Value
+06a9: No help string
+06aa: UMCCONFIG9 Value
+06ab: No help string
+06ac: UMCCONFIG10 Value
+06ad: No help string
+06ae: UMCCONFIG11 Value
+06af: No help string
+06b0: UMCCONFIG12 Value
+06b1: No help string
+06b2: UMCCONFIG13 Value
+06b3: No help string
+06b4: UMCCONFIG14 Value
+06b5: No help string
+06b6: UMCCONFIG15 Value
+06b7: No help string
+06b8: UMCCONFIG16-3x Control
+06b9: No help string
+06ba: UMCCONFIG16 Mask
+06bb: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06bc: UMCCONFIG17 Mask
+06bd: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06be: UMCCONFIG18 Mask
+06bf: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06c0: UMCCONFIG19 Mask
+06c1: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06c2: UMCCONFIG20 Mask
+06c3: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06c4: UMCCONFIG21 Mask
+06c5: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06c6: UMCCONFIG22 Mask
+06c7: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06c8: UMCCONFIG23 Mask
+06c9: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06ca: UMCCONFIG24 Mask
+06cb: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06cc: UMCCONFIG25 Mask
+06cd: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06ce: UMCCONFIG26 Mask
+06cf: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06d0: UMCCONFIG27 Mask
+06d1: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06d2: UMCCONFIG28 Mask
+06d3: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06d4: UMCCONFIG29 Mask
+06d5: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06d6: UMCCONFIG30 Mask
+06d7: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06d8: UMCCONFIG31 Mask
+06d9: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06da: UMCCONFIG32 Mask
+06db: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06dc: UMCCONFIG33 Mask
+06dd: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06de: UMCCONFIG34 Mask
+06df: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06e0: UMCCONFIG35 Mask
+06e1: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06e2: UMCCONFIG36 Mask
+06e3: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+06e4: UMCCONFIG16 Value
+06e5: No help string
+06e6: UMCCONFIG17 Value
+06e7: No help string
+06e8: UMCCONFIG18 Value
+06e9: No help string
+06ea: UMCCONFIG19 Value
+06eb: No help string
+06ec: UMCCONFIG20 Value
+06ed: No help string
+06ee: UMCCONFIG21 Value
+06ef: No help string
+06f0: UMCCONFIG22 Value
+06f1: No help string
+06f2: UMCCONFIG23 Value
+06f3: No help string
+06f4: UMCCONFIG24 Value
+06f5: No help string
+06f6: UMCCONFIG25 Value
+06f7: No help string
+06f8: UMCCONFIG26 Value
+06f9: No help string
+06fa: UMCCONFIG27 Value
+06fb: No help string
+06fc: UMCCONFIG28 Value
+06fd: No help string
+06fe: UMCCONFIG29 Value
+06ff: No help string
+0700: UMCCONFIG30 Value
+0701: No help string
+0702: UMCCONFIG31 Value
+0703: No help string
+0704: UMCCONFIG32 Value
+0705: No help string
+0706: UMCCONFIG33 Value
+0707: No help string
+0708: UMCCONFIG34 Value
+0709: No help string
+070a: UMCCONFIG35 Value
+070b: No help string
+070c: UMCCONFIG36 Value
+070d: No help string
+070e: UMCCONFIG19 Control
+070f: No help string
+0710: UMCCONFIG19 UMC Select
+0711: No help string
+0712: All UMCs
+0713: Per UMC
+0714: UMCCONFIG19 Mask UMC0
+0715: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0716: UMCCONFIG19 Mask UMC1
+0717: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0718: UMCCONFIG19 Mask UMC2
+0719: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+071a: UMCCONFIG19 Mask UMC3
+071b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+071c: UMCCONFIG19 Mask UMC4
+071d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+071e: UMCCONFIG19 Mask UMC5
+071f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0720: UMCCONFIG19 Mask UMC6
+0721: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0722: UMCCONFIG19 Mask UMC7
+0723: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0724: UMCCONFIG19 Value UMC0
+0725: No help string
+0726: UMCCONFIG19 Value UMC1
+0727: No help string
+0728: UMCCONFIG19 Value UMC2
+0729: No help string
+072a: UMCCONFIG19 Value UMC3
+072b: No help string
+072c: UMCCONFIG19 Value UMC4
+072d: No help string
+072e: UMCCONFIG19 Value UMC5
+072f: No help string
+0730: UMCCONFIG19 Value UMC6
+0731: No help string
+0732: UMCCONFIG19 Value UMC7
+0733: No help string
+0734: UMCCONFIG20 Control
+0735: No help string
+0736: UMCCONFIG20 UMC Select
+0737: No help string
+0738: UMCCONFIG20 Mask UMC0
+0739: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+073a: UMCCONFIG20 Mask UMC1
+073b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+073c: UMCCONFIG20 Mask UMC2
+073d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+073e: UMCCONFIG20 Mask UMC3
+073f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0740: UMCCONFIG20 Mask UMC4
+0741: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0742: UMCCONFIG20 Mask UMC5
+0743: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0744: UMCCONFIG20 Mask UMC6
+0745: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0746: UMCCONFIG20 Mask UMC7
+0747: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0748: UMCCONFIG20 Value UMC0
+0749: No help string
+074a: UMCCONFIG20 Value UMC1
+074b: No help string
+074c: UMCCONFIG20 Value UMC2
+074d: No help string
+074e: UMCCONFIG20 Value UMC3
+074f: No help string
+0750: UMCCONFIG20 Value UMC4
+0751: No help string
+0752: UMCCONFIG20 Value UMC5
+0753: No help string
+0754: UMCCONFIG20 Value UMC6
+0755: No help string
+0756: UMCCONFIG20 Value UMC7
+0757: No help string
+0758: UMCCONFIG30 Control
+0759: No help string
+075a: UMCCONFIG30 UMC Select
+075b: No help string
+075c: UMCCONFIG30 Mask UMC0
+075d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+075e: UMCCONFIG30 Mask UMC1
+075f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0760: UMCCONFIG30 Mask UMC2
+0761: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0762: UMCCONFIG30 Mask UMC3
+0763: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0764: UMCCONFIG30 Mask UMC4
+0765: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0766: UMCCONFIG30 Mask UMC5
+0767: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0768: UMCCONFIG30 Mask UMC6
+0769: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+076a: UMCCONFIG30 Mask UMC7
+076b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+076c: UMCCONFIG30 Value UMC0
+076d: No help string
+076e: UMCCONFIG30 Value UMC1
+076f: No help string
+0770: UMCCONFIG30 Value UMC2
+0771: No help string
+0772: UMCCONFIG30 Value UMC3
+0773: No help string
+0774: UMCCONFIG30 Value UMC4
+0775: No help string
+0776: UMCCONFIG30 Value UMC5
+0777: No help string
+0778: UMCCONFIG30 Value UMC6
+0779: No help string
+077a: UMCCONFIG30 Value UMC7
+077b: No help string
+077c: UMCCONFIG97-107 Control
+077d: No help string
+077e: UMCCONFIG97 Mask
+077f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0780: UMCCONFIG98 Mask
+0781: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0782: UMCCONFIG99 Mask
+0783: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0784: UMCCONFIG100 Mask
+0785: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0786: UMCCONFIG101 Mask
+0787: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0788: UMCCONFIG102 Mask
+0789: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+078a: UMCCONFIG103 Mask
+078b: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+078c: UMCCONFIG104 Mask
+078d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+078e: UMCCONFIG105 Mask
+078f: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0790: UMCCONFIG106 Mask
+0791: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0792: UMCCONFIG107 Mask
+0793: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0794: UMCCONFIG97 Value
+0795: No help string
+0796: UMCCONFIG98 Value
+0797: No help string
+0798: UMCCONFIG99 Value
+0799: No help string
+079a: UMCCONFIG100 Value
+079b: No help string
+079c: UMCCONFIG101 Value
+079d: No help string
+079e: UMCCONFIG102 Value
+079f: No help string
+07a0: UMCCONFIG103 Value
+07a1: No help string
+07a2: UMCCONFIG104 Value
+07a3: No help string
+07a4: UMCCONFIG105 Value
+07a5: No help string
+07a6: UMCCONFIG106 Value
+07a7: No help string
+07a8: UMCCONFIG107 Value
+07a9: No help string
+07aa: DFE RX Value Control
+07ab: No help string
+07ac: DFE RX Value UMC0 Channel0
+07ad: No help string
+07ae: DFE RX Value UMC1 Channel0
+07af: No help string
+07b0: DFE RX Value UMC2 Channel0
+07b1: No help string
+07b2: DFE RX Value UMC3 Channel0
+07b3: No help string
+07b4: DFE RX Value UMC4 Channel0
+07b5: No help string
+07b6: DFE RX Value UMC5 Channel0
+07b7: No help string
+07b8: DFE RX Value UMC6 Channel0
+07b9: No help string
+07ba: DFE RX Value UMC7 Channel0
+07bb: No help string
+07bc: DFE RX Value UMC0 Channel1
+07bd: No help string
+07be: DFE RX Value UMC1 Channel1
+07bf: No help string
+07c0: DFE RX Value UMC2 Channel1
+07c1: No help string
+07c2: DFE RX Value UMC3 Channel1
+07c3: No help string
+07c4: DFE RX Value UMC4 Channel1
+07c5: No help string
+07c6: DFE RX Value UMC5 Channel1
+07c7: No help string
+07c8: DFE RX Value UMC6 Channel1
+07c9: No help string
+07ca: DFE RX Value UMC7 Channel1
+07cb: No help string
+07cc: MR0 Control
+07cd: No help string
+07ce: MR0 MP0 Mask
+07cf: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07d0: MR0 MP0 Value
+07d1: No help string
+07d2: MR0 MP1 Mask
+07d3: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07d4: MR0 MP1 Value
+07d5: No help string
+07d6: MR0 MP2 Mask
+07d7: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07d8: MR0 MP2 Value
+07d9: No help string
+07da: MR0 MP3 Mask
+07db: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07dc: MR0 MP3 Value
+07dd: No help string
+07de: MR3 Control
+07df: No help string
+07e0: MR3 MP0 Mask
+07e1: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07e2: MR3 MP0 Value
+07e3: No help string
+07e4: MR3 MP1 Mask
+07e5: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07e6: MR3 MP1 Value
+07e7: No help string
+07e8: MR3 MP2 Mask
+07e9: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07ea: MR3 MP2 Value
+07eb: No help string
+07ec: MR3 MP3 Mask
+07ed: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07ee: MR3 MP3 Value
+07ef: No help string
+07f0: MR4 Control
+07f1: No help string
+07f2: MR4 MP0 Mask
+07f3: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07f4: MR4 MP0 Value
+07f5: No help string
+07f6: MR4 MP1 Mask
+07f7: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07f8: MR4 MP1 Value
+07f9: No help string
+07fa: MR4 MP2 Mask
+07fb: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+07fc: MR4 MP2 Value
+07fd: No help string
+07fe: MR4 MP3 Mask
+07ff: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0800: MR4 MP3 Value
+0801: No help string
+0802: MR8 Control
+0803: No help string
+0804: MR8 MP0 Mask
+0805: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0806: MR8 MP0 Value
+0807: No help string
+0808: MR8 MP1 Mask
+0809: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+080a: MR8 MP1 Value
+080b: No help string
+080c: MR8 MP2 Mask
+080d: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+080e: MR8 MP2 Value
+080f: No help string
+0810: MR8 MP3 Mask
+0811: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0812: MR8 MP3 Value
+0813: Mask means indicate the bit field want to change. For example, program bit 28-30 and bit 0-3, please set Mask to 0x7000000F.
+0814: Slew Rate Control
+0815: No help string
+0816: SMU Features
+0817: SMU Debug
+0818: CCLK_CONTROLLER
+0819: FEATURE_CCLK_CONTROLLER_MASK
+081a: GFXCLK_EFFECTIVE_FREQ
+081b: FEATURE_GFXCLK_EFFECTIVE_FRE_MASK
+081c: DATA_CALCULATION
+081d: FEATURE_DATA_CALCULATION_MASK
+081e: THERMAL
+081f: FEATURE_THERMAL_MASK
+0820: PLL_POWER_DOWN
+0821: FEATURE_PLL_POWER_DOWN_MASK
+0822: FCLK_DPM
+0823: FEATURE_FCLK_DPM_MASK
+0824: GFX_DPM
+0825: FEATURE_GFX_DPM_MASK
+0826: DS_GFXCLK
+0827: FEATURE_DS_GFXCLK_MASK
+0828: DS_SOCCLK
+0829: FEATURE_DS_SOCCLK_MASK
+082a: DS_LCLK
+082b: FEATURE_DS_LCLK_MASK
+082c: CORE_CSTATES
+082d: FEATURE_CORE_CSTATES_BIT
+082e: G6_SSC
+082f: FEATURE_G6_SSC_BIT
+0830: RM
+0831: FEATURE_RM_MASK
+0832: SOC_DPM
+0833: FEATURE_SOC_DPM_MASK
+0834: DS_SMNCLK
+0835: FEATURE_DS_SMNCLK_MASK
+0836: DS_MP1CLK
+0837: FEATURE_DS_MP1CLK_MASK
+0838: DS_MP0CLK
+0839: FEATURE_DS_MP0CLK_MASK
+083a: SMU CG
+083b: FEATURE_MGCG_MASK
+083c: DS_FUSE_SRAM
+083d: FEATURE_DS_FUSE_SRAM_MASK
+083e: GFX_CKS
+083f: FEATURE_GFX_CKS_MASK
+0840: FP_THROTTLING
+0841: FEATURE_FP_THROTTLING_MASK
+0842: PROCHOT
+0843: FEATURE_PROCHOT_MASK
+0844: CPUOFF
+0845: FEATURE_CPUOFF_MASK
+0846: UMC_THROTTLE
+0847: FEATURE_UMC_THROTTLE_MASK
+0848: DF_THROTTLE
+0849: FEATURE_DF_THROTTLE_MASK
+084a: DS_MP3FCLK
+084b: FEATURE_DS_FCLK_MASK
+084c: DS_SHUBCLK
+084d: FEATURE_DS_SHUBCLK_MASK
+084e: TDC
+084f: FEATURE_APM_MASK, Legacy APM_BIT
+0850: UMC_CAL_SHARING
+0851: FEATURE_UMC_CAL_SHARING_MASK
+0852: DFLL_BTC_CALIBRATION
+0853: FEATURE_DFLL_BTC_CALIBRATION_MASK
+0854: EDC
+0855: FEATURE_EDC_MASK
+0856: DLDO
+0857: FEATURE_DLDO_MASK
+0858: MEAS_DRAM_BLACKOUT
+0859: FEATURE_MEAS_DRAM_BLACKOUT_MASK
+085a: PPT
+085b: FEATURE_PPT_MASK
+085c: STAPM
+085d: FEATURE_STAPM_MASK
+085e: CSTATE_BOOST
+085f: CSTATE_BOOST
+0860: Mode Config
+0861: Gfx Config
+0862: DFLL effective frequency tuning
+0863: G6 Mem SS configuration
+0864: Thermal Control
+0865: Auto = Use the default TctlMax
+Manual = User can set customized TctlMax
+0866: TctlMax
+0867: Maximum operating temperature [Tctrl]
+0868: TctlMax_Core
+0869: Modify process Core thermal throttling threshold value (Default is 100 Deg)
+086a: TctlMax_Gfx
+086b: Modify process GFX thermal throttling threshold value (Default is 100 Deg)
+086c: PROCHOT Control
+086d: Auto = Use the default PROCHOT deassertion ramp time
+Manual = User can set customized PROCHOT deassertion ramp time
+086e: PROCHOT Deassertion Ramp Time
+086f: PROCHOT deassertion ramp time [ms]
+0870: GfxAvfsFtoVMargin Control
+0871: No help string
+0872: GfxAvfsFtoVMargin
+0873: Used in GFX FtoV AVFS curve [mV]  
+0874: Core Dldo Psm Margin Control
+0875: Manual = User can set customized Dldo Psm Margin
+0876: Core Dldo Psm Margin
+0877: Specify the PSM offset to apply to the DLDOs -- signed integer [1 PSM count ~ 1.8mV]
+ 0 = Invalid value.
+0878: Core DLDO Bypass
+0879: 0 = Normal Regulation
+1 = Bypass to VDDCR_CPU
+087a: Gfx Stretch Thresh Control
+087b: CbsDbgCbsDbgGfxStretchThreshCtl
+087c: Gfx Stretch Thresh
+087d: No help string
+087e: Gfx Stretch Amount Control
+087f: CbsDbgCbsDbgGfxStretchAmountEnCtl
+0880: Gfx Stretch Amount
+0881: CbsDbgCbsDbgGfxStretchAmountEnCtl=Manual
+0882: AvfsCoeffTable_Override
+0883: 0 = use fuses, 1 = override
+0884: FcwSlewFrac Control
+0885: Auto = Use default FcwSlewFrac.L3FidTotalSteps
+Manual = User can set custom FcwSlewFrac.L3FidTotalSteps
+0886: FcwSlewFrac
+0887: Specify the FcwSlewFrac.L3FidTotalSteps to use
+0888: CC1Dis
+0889: 0: Use POR default
+1: Disable CC1 for debug use
+
+088a: VDDCR_VDD Voltage Offset Control
+088b: Manual = User can set customized VDDCR_VDD Voltage Offset
+088c: VDDCR_VDD Voltage Offset
+088d: Specify the voltage offset to apply to VDDCR_VDD -- signed integer [mV]
+088e: VDDCR_GFX Voltage Offset Control
+088f: Manual = User can set customized VDDCR_GFX Voltage Offset
+0890: VDDCR_GFX Voltage Offset
+0891: Specify the voltage offset to apply to VDDCR_GFX-- signed integer [mV]
+0892: HTC
+0893: HTC Control
+0894: ThermTrip
+0895: ThermTrip Control
+0896: AllocateDramBuffer Control
+0897: Auto = No not allocate a DRAM buffer/n Menual = Allocate DRAM buffer
+0898: AllocateDramBuffer
+0899: 0 = No not allocate a DRAM buffer
+any non-zero value = Allocate DRAM buffer to size in MB defined in the setting
+089a: AVFS coeffients
+089b: CBS Telemetry setup
+089c: CPU DC BTC
+089d: Enable CPU DC BTC. Disabled by default
+089e: CPU DC BTC Set voltage in mV
+089f: Bits 15:0
+08a0: CPU DC BTC error offset in mV
+08a1: Bits 31:16
+08a2: GFX DC BTC
+08a3: Enable GFX DC BTC. Disabled by default
+08a4: GFX DC BTC Set voltage in mV
+08a5: Bits 15:0
+08a6: GFX DC BTC error offset in mV
+08a7: Bits 31:16
+08a8: CPU Clock Override Control
+08a9: CPU Clock = Input value * 25MHz
+08aa: Force CPU Frequency
+08ab: ForceCclkFrequency(MHz) eg. 3600 = 3.6Ghz
+08ac: DF Clock Override Control
+08ad: When you try to override FCLK, please make sure FCLK > UCLK and Memory P-state is disabled.
+08ae: DF Clock Override
+08af: When you try to override FCLK, please make sure FCLK > UCLK and Memory P-state is disabled.
+08b0: Spread Spectrum for PLL0
+08b1: Enable -0.5% Spread Spectrum for PLL0 (SMN/MP0/MP1/MP3/MP4CPU/MP4/ZCN/SHUBCLK)
+08b2: Spread Spectrum for PLL1
+08b3: Enable -0.5% Spread Spectrum for PLL1 (USBDBG/USBHOST/L/A/DLDO/SOCCLK)
+08b4: Spread Spectrum for PLL6
+08b5: Enable -0.5% Spread Spectrum for PLL6 (D/DCF/VCLK)
+08b6: Spread Spectrum for PLL7
+08b7: Enable -0.5% Spread Spectrum for PLL7 (GFXCLK-PLL)
+08b8: CpuCksDisable
+08b9: CpuCksDisable
+08ba: C0ResidencyCtrl
+08bb: C0ResidencyCtrl
+08bc: FAST_PPT_LIMIT
+08bd: Power [mWatts] (fPPT)
+08be: SLOW_PPT_LIMIT
+08bf: Power [mWatts] (sPPT)
+08c0: SLOW_PPT_TIME_CONSTANT
+08c1: Time constant (seconds)
+08c2: VRM_CURRENT_LIMIT
+08c3: Current [mA] (VDDCR_VDD TDC)
+08c4: VRM_MAXIMUM_CURRENT_LIMIT
+08c5: Current [mA] (VDDCR_VDD EDC)
+08c6: Enable Async mode for CCX-DF VDCI
+08c7: Enable Spread Spectrum for PLL7 (GFXCLK - PLL)
+08c8: Predictive Mode
+08c9: Async Mode
+08ca: GfxCLKFreq Control
+08cb: No help string
+08cc: Native Mode GfxCLKFreq
+08cd: Specify the Native Mode GFX clock freq -- in Dec  [MHZ]
+08ce: Native Split GL Mode GfxCLKFreq
+08cf: Specify the Native Split GL Mode GFX clock freq -- in Dec  [MHZ]
+08d0: Native Split PVL Mode GfxCLKFreq
+08d1: Specify the Native Split PVL Mode GFX clock freq -- in Dec  [MHZ]
+08d2: Multimedia 4K Mode GfxCLKFreq
+08d3: Specify the Multimedia 4K Mode GFX clock freq -- in Dec  [MHZ]
+08d4: Multimedia 2K Mode GfxCLKFreq
+08d5: Specify the Multimedia 2K Mode GFX clock freq -- in Dec  [MHZ]
+08d6: Navigation 4K Mode GfxCLKFreq
+08d7: Specify the Navigation 4K Mode GfxCLKFreq GFX clock freq -- in Dec  [MHZ]
+08d8: Navigation 2K Mode GfxCLKFreq
+08d9: Specify the Navigation 2K Mode GFX clock freq -- in Dec  [MHZ]
+08da: GfxClkDfll
+08db: 1: Gfx CLK uses DFLL, 0: Gfx CLK use original DFS.
+08dc: Gfx CLK use original DFS
+08dd: Gfx CLK uses DFLL
+08de: GfxDfllApccEn
+08df: No help string
+08e0: GfxDfllApccTrig
+08e1: No help string
+08e2: GfxDfllFreq Control
+08e3: No help string
+08e4: GfxDfllFreqMeasInRefClkCycles
+08e5: In number of 100mHZ reference clock cycles. [0 is default value, will not override if user input is 0].
+08e6: GfxDfllFDelta
+08e7:  Compensate measured effective frequency[ mHZ,] [0 is default value, will not override if user input is 0].
+08e8: AC Vol margin Control
+08e9: No help string
+08ea: MaxAcmarg
+08eb: maximum AC Vol margin added to Vol (in 6.25mv tick, 1 = 6.25mv). [0 is default value, will not override if user input is 0].
+08ec: MinAcmarg
+08ed: minimum AC Vol margin added to Vol (in 6.25mv tick, 1 = 6.25mv). [0 is default value, will not override if user input is 0].
+08ee: G6 Mem SS Cfg Control
+08ef: No help string
+08f0: Uclk Spread Percentage
+08f1: SMU requests UclkSpreadPercentage = 0.75 x 16 = 0xC if user want to test -0.75% G6 SSC
+08f2: Umc Auto Cal Interval
+08f3: No help string
+08f4: AVFS Control
+08f5: Auto = Use the default AVFS coefficients
+Manual = User can set customized AVFS coefficients
+08f6: CorePsfTemp
+08f7: Unsigned integer [Q8.24] --> 8 integer bits; 24 fractional bits
+08f8: CorePsfFreq2
+08f9: No help string
+08fa: CorePsfFreq
+08fb: No help string
+08fc: CorePsfConst
+08fd: No help string
+08fe: GfxPsfTemp
+08ff: Signed integer [Q8.24] --> 1 sign bit; 7 integer bits; 24 fractional bits
+0900: GfxPsfFreq2
+0901: No help string
+0902: GfxPsfFreq
+0903: No help string
+0904: GfxPsfConst
+0905: No help string
+0906: Telemetry Control
+0907: Auto = Use default telemetry settings
+Manual = User can set custom telemetry settings
+0908: VDDCR_VDD Telemetry slope
+0909: Specify the VDDCR_VDD telemetry current slope
+090a: VDDCR_VDD Telemetry Offset Sign (positive/negative)
+090b: Positive: VDDCR_VDD Telemetry Current Offset is positive value
+Negative: VDDCR_VDD Telemetry Current Offset is negative value
+090c: Positive
+090d: Negative
+090e: VDDCR_VDD Telemetry Offset Value (mA)
+090f: Specify the VDDCR_SOC telemetry current offset[mA]
+0910: VDDCR_SOC Telemetry slope
+0911: Specify the VDDCR_SOC telemetry current slope
+0912: VDDCR_SOC Telemetry Offset Sign (positive/negative)
+0913: Positive: VDDCR_SOC Telemetry Current Offset is positive value
+Negative: VDDCR_SOC Telemetry Current Offset is negative value
+0914: VDDCR_SOC Telemetry Offset Value (mA)
+0915: Specify the VDDCR_SOC telemetry current offset [mA]
+0916: VDDCR_GFX Telemetry slope
+0917: Specify the VDDCR_GFX telemetry current slope
+0918: VDDCR_GFX Telemetry Offset Sign (positive/negative)
+0919: Positive: VDDCR_GFX Telemetry Current Offset is positive value
+Negative: VDDCR_GFX Telemetry Current Offset is negative value
+091a: VDDCR_GFX Telemetry Offset Value (mA)
+091b: Specify the VDDCR_GFXtelemetry offset [mA]
+091c: GRA Options
+091d: User Control GRA Group 1
+091e: User Control GRA Group 2
+091f: User Control GRA Group 3
+0920: User Control GRA Group 4
+0921: User Control GRA Group 5
+0922: User Control GRA Group 6
+0923: GRA Group 1
+0924: Enable or disable GRA Group 1
+0925: GRA Register Type
+0926: Type of register, includes PCI, MSR or MMIO
+0927: PCI
+0928: MSR
+0929: MMIO
+092a: PCI Indirect
+092b: GMMX
+092c: SMN
+092d: DF
+092e: GRA When to Write
+092f: When to modify the value specified by this option
+0930: Very Early - After Reset
+0931: Early - before Memory Init
+0932: Late - Before PCI Init
+0933: Very Late - Before OS Boot
+0934: GRA Gen Reg Node
+0935: Applied to all nodes or a single node
+0936: All Nodes
+0937: Enter Bus_Device
+0938: GRA Bus
+0939: Decide whether this generic option should be applied to all buses or a single bus
+093a: GRA Device
+093b: Applied to all devices or a single device
+093c: GRA Function
+093d: This is to select the function of register to set
+093e: GRA Offset
+093f: If type=PCIIndirectReg, this offset specify the dataport. e.g. F0x64_12, x64 is the dataport
+0940: GRA Gen Reg Core
+0941: Decide whether this generic option should be applied to all cores or a single core
+0942: All Cores
+0943: Specify Node_Core
+0944: GRA Node
+0945: Decide whether this generic option should be applied to specify node
+0946: GRA Core
+0947: Decide whether this generic option should be applied to specify core
+0948: GRA MSR Address High
+0949: This is to input the MSR address of register to set [31:16]
+094a: GRA MSR Address Low
+094b: This is to input the MSR address of register to set [15:0]
+094c: GRA MMIO Address High
+094d: This is to input the MMIO address [31:16]
+094e: GRA MMIO Address Low
+094f: This is to input the MMIO address [15:0]
+0950: GRA PCI Indirect Register Offset[31:16]
+0951: High portion of PCI Indirect Register Offset. e.g. D0F0xBC_xE03000A8 E030 is the high portion
+0952: GRA PCI Indirect Register Offset[15:0]
+0953: Low portion of PCI Indirect Register Offset. e.g. D0F0xBC_xE03000A8 00a8 is the Low portion
+0954: GRA PCI Indirect Register Write Enable Bit
+0955: Some PCI Indirect Register need set WriteEnable bit before write
+0956: Bit0
+0957: Bit2
+0958: Bit3
+0959: Bit4
+095a: Bit5
+095b: Bit1
+095c: Bit6
+095d: Bit7
+095e: Bit8
+095f: Bit9
+0960: Bit10
+0961: Bit11
+0962: Bit12
+0963: Bit13
+0964: Bit14
+0965: Bit15
+0966: Bit16
+0967: Bit17
+0968: Bit18
+0969: Bit19
+096a: Bit20
+096b: Bit21
+096c: Bit22
+096d: Bit23
+096e: Bit24
+096f: Bit25
+0970: Bit26
+0971: Bit27
+0972: Bit28
+0973: Bit29
+0974: Bit30
+0975: Bit31
+0976: GRA GMMX Offset[31:16]
+0977: High portion of GMMX register e.g. GMMX12345678 1234 is the high portion
+0978: GRA GMMX Offset[15:0]
+0979: Low portion of GMMX register e.g. GMMX12345678 1234 is the low portion
+097a: GRA SMN Address High
+097b: This is to input the SMN address of register to set [31:16]
+097c: GRA SMN Address Low
+097d: This is to input the SMN address of register to set [15:0]
+097e: GRA DF Instance
+097f: Enter the instance ID of the of the fabric device to apply the setting to, or 0xFF for broadcast.  Note that standard PCI can alternatively be used for broadcast.
+0980: GRA Mask Value [63:48]
+0981: This is to input the mask value of register to setMask Value [63:48]
+0982: GRA Mask Value [47:32]
+0983: This is to input the mask value of register to set [47:32]
+0984: GRA Mask Value [31:16]
+0985: This is to input the mask value of register to set [31:16]
+0986: GRA Mask Value [15:0]
+0987: This is to input the mask value of register to set [15:0]
+0988: GRA Or Value [63:48]
+0989: This is to input the Or value of register to set [63:48]
+098a: GRA Or Value [47:32]
+098b: This is to input the Or value of register to set [47:32]
+098c: GRA Or Value [31:16]
+098d: This is to input the Or value of register to set [31:16]
+098e: GRA Or Value [15:0]
+098f: This is to input the Or value of register to set [15:0]
+0990: GRA Group 2
+0991: Enable or disable GRA Group 2
+0992: GRA Group 3
+0993: Enable or disable GRA Group 3
+0994: GRA Group 4
+0995: Enable or disable GRA Group 4
+0996: GRA Group 5
+0997: Enable or disable GRA Group 5
+0998: GRA Group 6
+0999: Enable or disable GRA Group 6

@@ -1,0 +1,142 @@
+===== MeiMeiDXEv3_Menu_Driver =====
+strings: 47   IFR streams: 1
+
+--- stream @0x5038..0x5407 (159 opcodes) ---
+FORMSET 'MeiMeiDXEv3 Menu' guid=B38377E3-42C0-4A6F-94E8-4BDF62359FC9
+  GUID_OP 0F0B1735-87A0-4193-B266-538C38AF48CE +3B
+  GUID_OP 0F0B1735-87A0-4193-B266-538C38AF48CE +3B
+  DEFAULTSTORE[0] '<0>'
+  DEFAULTSTORE[0] 'English'
+  VARSTORE_EFI 0x0001 'MeiMeiDXEv3AcpiVar' size=0x1 attr=0x7 guid=49CC168D-E8B0-4613-A807-16969986726F
+  VARSTORE_EFI 0x0002 'MeiMeiDXEv3SmuUnlockVar' size=0x1 attr=0x7 guid=49CC168D-E8B0-4613-A807-16969986726F
+  VARSTORE_EFI 0x0003 'MeiMeiDXEv3SmuPatchVar' size=0x1 attr=0x7 guid=49CC168D-E8B0-4613-A807-16969986726F
+  VARSTORE_EFI 0x0004 'MeiMeiDXEv3CoreVar' size=0x9 attr=0x7 guid=49CC168D-E8B0-4613-A807-16969986726F
+  FORM id=0x0001 'MeiMeiDXEv3 Menu'
+    -- Patch Options --
+    TEXT '' : '<0>'
+    CHECKBOX 'ACPI Patch' | var=MeiMeiDXEv3AcpiVar+0x0 qid=0x0001
+        help: Enable the ACPI patch.
+    -- SMU Options --
+    TEXT '' : '<0>'
+    CHECKBOX 'SMU Unlock' | var=MeiMeiDXEv3SmuUnlockVar+0x0 qid=0x0002
+        help: Required for all options below.
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x0002)==1
+        EXPR not
+      CHECKBOX 'SMU Reporting Patch' | var=MeiMeiDXEv3SmuPatchVar+0x0 qid=0x0003
+          help: Patches SMU for 8 Core Reporting
+    -- Core Options --
+    TEXT '' : '<0>'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x0002)==1
+        EXPR not
+      ONEOF 'Core Unlock' | var=MeiMeiDXEv3CoreVar+0x0 w=1B range=0..2 step=0 qid=0x0004
+          help: Disabled - Disable the core unlock and use the factory core mask. Enabled - Enable the unlock for all cores. Custom = Enable using cores set in Individual Core Options.
+        opt 'Disabled' = 0
+        opt 'All Cores' = 1
+        opt 'Custom' = 2
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x0004)==2
+        EXPR not
+      REF -> 0x0002 'Individual Core Options'
+  FORM id=0x0002 'Individual Cores'
+    -- CCX0 --
+    TEXT '' : '<0>'
+    CHECKBOX 'Core 0' | var=MeiMeiDXEv3CoreVar+0x1 qid=0x1100
+        help: Enable Core 0 (CCX0: Cores 0-3). CCX0 must keep at least one core enabled, and CCX1 must have the same number of cores enabled as CCX0 or be empty.
+    CHECKBOX 'Core 1' | var=MeiMeiDXEv3CoreVar+0x2 qid=0x1101
+        help: Enable Core 1 (CCX0: Cores 0-3). CCX0 must keep at least one core enabled, and CCX1 must have the same number of cores enabled as CCX0 or be empty.
+    CHECKBOX 'Core 2' | var=MeiMeiDXEv3CoreVar+0x3 qid=0x1102
+        help: Enable Core 2 (CCX0: Cores 0-3). CCX0 must keep at least one core enabled, and CCX1 must have the same number of cores enabled as CCX0 or be empty.
+    CHECKBOX 'Core 3' | var=MeiMeiDXEv3CoreVar+0x4 qid=0x1103
+        help: Enable Core 3 (CCX0: Cores 0-3). CCX0 must keep at least one core enabled, and CCX1 must have the same number of cores enabled as CCX0 or be empty.
+    TEXT '' : '<0>'
+    -- CCX1 --
+    TEXT '' : '<0>'
+    CHECKBOX 'Core 4' | var=MeiMeiDXEv3CoreVar+0x5 qid=0x1104
+        help: Enable Core 4 (CCX1: Cores 4-7). CCX1 must have the same number of cores enabled as CCX0 or be empty, and CCX0 must keep at least one core enabled.
+    CHECKBOX 'Core 5' | var=MeiMeiDXEv3CoreVar+0x6 qid=0x1105
+        help: Enable Core 5 (CCX1: Cores 4-7). CCX1 must have the same number of cores enabled as CCX0 or be empty, and CCX0 must keep at least one core enabled.
+    CHECKBOX 'Core 6' | var=MeiMeiDXEv3CoreVar+0x7 qid=0x1106
+        help: Enable Core 6 (CCX1: Cores 4-7). CCX1 must have the same number of cores enabled as CCX0 or be empty, and CCX0 must keep at least one core enabled.
+    CHECKBOX 'Core 7' | var=MeiMeiDXEv3CoreVar+0x8 qid=0x1107
+        help: Enable Core 7 (CCX1: Cores 4-7). CCX1 must have the same number of cores enabled as CCX0 or be empty, and CCX0 must keep at least one core enabled.
+    TEXT '' : '<0>'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x1100)
+        EXPR q(0x1101)
+        ADD raw=
+        EXPR q(0x1102)
+        ADD raw=
+        EXPR q(0x1103)
+        ADD raw=
+        EXPR 1
+        EXPR ge
+        EXPR q(0x1104)
+        EXPR q(0x1105)
+        ADD raw=
+        EXPR q(0x1106)
+        ADD raw=
+        EXPR q(0x1107)
+        ADD raw=
+        EXPR 0
+        EXPR equal
+        EXPR q(0x1104)
+        EXPR q(0x1105)
+        ADD raw=
+        EXPR q(0x1106)
+        ADD raw=
+        EXPR q(0x1107)
+        ADD raw=
+        EXPR q(0x1100)
+        EXPR q(0x1101)
+        ADD raw=
+        EXPR q(0x1102)
+        ADD raw=
+        EXPR q(0x1103)
+        ADD raw=
+        EXPR equal
+        EXPR or
+        EXPR and
+        EXPR not
+      -- Valid Core Configuration --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x1100)
+        EXPR q(0x1101)
+        ADD raw=
+        EXPR q(0x1102)
+        ADD raw=
+        EXPR q(0x1103)
+        ADD raw=
+        EXPR 1
+        EXPR ge
+        EXPR q(0x1104)
+        EXPR q(0x1105)
+        ADD raw=
+        EXPR q(0x1106)
+        ADD raw=
+        EXPR q(0x1107)
+        ADD raw=
+        EXPR 0
+        EXPR equal
+        EXPR q(0x1104)
+        EXPR q(0x1105)
+        ADD raw=
+        EXPR q(0x1106)
+        ADD raw=
+        EXPR q(0x1107)
+        ADD raw=
+        EXPR q(0x1100)
+        EXPR q(0x1101)
+        ADD raw=
+        EXPR q(0x1102)
+        ADD raw=
+        EXPR q(0x1103)
+        ADD raw=
+        EXPR equal
+        EXPR or
+        EXPR and
+      -- Invalid Core Configuration --
+      TEXT 'CCX0 must keep at least one core enabled, and CCX1 must have the same number of cores enabled as CCX0 or be empty.' : '<0>'
+    TEXT '' : '<0>'
+    ACTION 'Restore Factory Core Mask' qid=0x5001

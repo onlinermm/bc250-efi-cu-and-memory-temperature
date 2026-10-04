@@ -1,0 +1,36 @@
+[Defines]
+ INF_VERSION = 0x0001001B
+ BASE_NAME = Bc250NativeTransportHarness
+ FILE_GUID = 64DA1EF5-4138-4730-88CB-D776F2C8850B
+ MODULE_TYPE = UEFI_APPLICATION
+ ENTRY_POINT = NativeTransportEntry
+[Sources]
+ NativeTransport.c
+ ../GpuSetupDxe/core.c
+ ../GpuSetupDxe/post.c
+ ../GpuSetupDxe/install.c
+ ../GpuSetupDxe/Policy.c
+[Packages]
+ MdePkg/MdePkg.dec
+ MdeModulePkg/MdeModulePkg.dec
+ Bc250NativePkg/Bc250NativePkg.dec
+[LibraryClasses]
+ UefiApplicationEntryPoint
+ UefiBootServicesTableLib
+ UefiRuntimeServicesTableLib
+ UefiLib
+ BaseLib
+ BaseMemoryLib
+ MemoryAllocationLib
+ PrintLib
+ DevicePathLib
+[Guids]
+ gBc250GpuVariableGuid
+ gEfiEventReadyToBootGuid
+[Protocols]
+ gBc250ResetCaptureProtocolGuid
+ gEfiPciIoProtocolGuid
+ gEfiLoadedImageProtocolGuid
+ gEfiSimpleFileSystemProtocolGuid
+[BuildOptions]
+ GCC:*_*_*_CC_FLAGS = -Wno-unused-function -Wno-unused-const-variable

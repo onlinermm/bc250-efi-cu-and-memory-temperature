@@ -1,0 +1,23 @@
+[Defines]
+ INF_VERSION = 0x0001001B
+ BASE_NAME = Bc250MockNvram
+ FILE_GUID = 1807040D-5934-41A2-A088-8E0F777F71AB
+ MODULE_TYPE = DXE_DRIVER
+ ENTRY_POINT = MockNvramEntry
+[Sources]
+ MockNvram.c
+[Packages]
+ MdePkg/MdePkg.dec
+ Bc250NativePkg/Bc250NativePkg.dec
+[LibraryClasses]
+ UefiDriverEntryPoint
+ UefiBootServicesTableLib
+ UefiRuntimeServicesTableLib
+ BaseMemoryLib
+ HobLib
+[Guids]
+ gBc250GpuVariableGuid
+[Protocols]
+ gBc250ResetCaptureProtocolGuid
+[Depex]
+ TRUE

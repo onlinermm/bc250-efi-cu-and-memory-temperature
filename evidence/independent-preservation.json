@@ -1,0 +1,13 @@
+{
+  "independent_parser": "uefi-firmware-parser",
+  "preserved_original_files_checked": 1025,
+  "preserved_executable_records": 299,
+  "changed_original_files": [],
+  "apriori_metadata_and_duplicate_padding_excluded_from_path_comparison": true,
+  "raw_padding_and_all_192_non_apriori_files_checked_by_container_builder": true,
+  "new_efi_and_depex_match_build": true,
+  "new_driver_hashes": {
+    "Bc250ResetCaptureDxe": "4a0f718a76e9fee7ef5696d1f1699d1372c8b1df23b3bc5713f42f46da335e13",
+    "Bc250GpuSetupDxe": "db12c2be8592cfb8f9efd3581120c8081397e96cbe485631d70868314efc253d"
+  }
+}

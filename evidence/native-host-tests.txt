@@ -1,0 +1,5 @@
+PASS native memory disable: empty, original, bounded, unknown rejection, all disable transaction fault points
+PASS installer C: known images, idempotence, cold-boot variant guard, all transaction fault points, unknown code/vector, log guard, corruption/rollback
+PASS 3520 removal fault cases plus original/new/legacy/unknown ownership checks.
+PASS 3022 installer cases; 603 successful operations; staged-code safety, cache separation, rollback order, pre/post failures, fatal transport and logging cancellation.
+PASS 5996 GPU reader cases; 869 begin / 75 read / 262 restore operations; allowed addresses, read/write, cache separation, rollback, cancellation, fatal transport.

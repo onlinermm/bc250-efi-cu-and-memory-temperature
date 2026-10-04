@@ -1,0 +1,13 @@
+PASS native SMN restores original PCI aperture
+PASS native Q3 touches arg0 only
+PASS Q3 neighboring argument words unchanged
+PASS native Q2 carries all six words
+PASS allocate valid dedicated test DMA page
+PASS native DMA read accepts staging code2 only after acknowledged load
+PASS native DMA read accepts staging code3
+PASS mailbox rejection is acknowledged and not retried
+PASS native timeout exhausts global budget and latches transport
+PASS timeout prohibits further mailbox commands
+PASS PCI data failure still restores aperture and latches transport
+PASS failed PCI transport prohibits further writes
+RESULT: 12 checks, 0 failures

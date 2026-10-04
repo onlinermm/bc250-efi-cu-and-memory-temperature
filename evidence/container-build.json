@@ -1,0 +1,78 @@
+{
+  "candidate_sha256": "38a3c0ddd15d292727e741bc0b3e2b9e3fe877eb9fb8c605a8521ab721bddf53",
+  "base_sha256": "8ee5ded06eb1bfd3aedff8a3512e9843c42bd2d71d6b84f5cdcddfdcf591a3c3",
+  "image_bytes": 16777216,
+  "original_inner_bytes": 4427776,
+  "candidate_inner_bytes": 4493312,
+  "original_module_count": 193,
+  "candidate_module_count": 196,
+  "original_ffs_bytes": 1365084,
+  "candidate_ffs_bytes": 1380315,
+  "changed_range": [
+    "0xae0078",
+    "0xc31058"
+  ],
+  "apriori": {
+    "original_offset": "0x78",
+    "original_guid_count": 9,
+    "candidate_guid_count": 10,
+    "original_guids": [
+      "61422d26-81ec-47ff-b6cf-939eaee73fba",
+      "db08f6ca-3048-4cd8-9b1f-20bed33ecfe7",
+      "80cf7257-87ab-47f9-a3fe-d50b76d89541",
+      "cbc59c4a-383a-41eb-a8ee-4498aea567e4",
+      "1807040d-5934-41a2-a088-8e0f777f71ab",
+      "80d7491a-f7d9-479d-a8f7-1b393b02ed66",
+      "534f73cf-0937-418a-90c7-4f1079dcaed1",
+      "3237418a-478c-4700-b59f-768e2ccbc726",
+      "16271fca-55d9-4a33-93fc-5a3eb128deb6"
+    ],
+    "candidate_guids": [
+      "61422d26-81ec-47ff-b6cf-939eaee73fba",
+      "db08f6ca-3048-4cd8-9b1f-20bed33ecfe7",
+      "80cf7257-87ab-47f9-a3fe-d50b76d89541",
+      "cbc59c4a-383a-41eb-a8ee-4498aea567e4",
+      "8b04a91f-8968-4f69-9ee1-a0e44d49a265",
+      "1807040d-5934-41a2-a088-8e0f777f71ab",
+      "80d7491a-f7d9-479d-a8f7-1b393b02ed66",
+      "534f73cf-0937-418a-90c7-4f1079dcaed1",
+      "3237418a-478c-4700-b59f-768e2ccbc726",
+      "16271fca-55d9-4a33-93fc-5a3eb128deb6"
+    ],
+    "old_slot_same_length_padding": true,
+    "all_original_executable_files_unchanged": true
+  },
+  "added_modules": [
+    {
+      "name": "Bc250ResetCaptureDxe",
+      "guid": "8b04a91f-8968-4f69-9ee1-a0e44d49a265",
+      "ffs_sha256": "bd5abae683c38bcbaf57334762b6f890867c87ee87eb97b41623380f5c70bcdd",
+      "efi_sha256": "4a0f718a76e9fee7ef5696d1f1699d1372c8b1df23b3bc5713f42f46da335e13",
+      "size": 12340
+    },
+    {
+      "name": "Bc250GpuSetupDxe",
+      "guid": "390a9ad3-3f4e-4b4d-a810-c7d2b729fd39",
+      "ffs_sha256": "96a77616ba8c6b642b9254605f0f210feadc4673178c64e3ae99c6f7f1b2fd59",
+      "efi_sha256": "db12c2be8592cfb8f9efd3581120c8081397e96cbe485631d70868314efc253d",
+      "size": 53388
+    }
+  ],
+  "checks": {
+    "exact_base": true,
+    "image_16MiB": true,
+    "fv_block_map": true,
+    "fv_header_checksums": true,
+    "ffs_checksums": true,
+    "original_192_non_apriori_ffs_bytes_and_positions_preserved": true,
+    "only_two_new_dxe_drivers": true,
+    "apriori_metadata_only_relocated_and_extended": true,
+    "original_apriori_order_preserved": true,
+    "capture_immediately_before_nvram_in_apriori": true,
+    "all_bytes_outside_dxe_container_preserved": true,
+    "lzma_roundtrip": true,
+    "early_BEFORE_nvram_depex": true,
+    "mock_not_in_candidate": true
+  },
+  "hardware_flash_tested": false
+}

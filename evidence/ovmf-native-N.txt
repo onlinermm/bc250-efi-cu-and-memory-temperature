@@ -1,0 +1,37 @@
+PASS install synthetic AMI reset HOB for OVMF test
+PASS read real DXE test firmware volume
+PASS ProcessFirmwareVolume accepts generated FFS/FV
+PASS DXE dispatcher starts BEFORE capture, mock Nvram and native HII
+PASS early reset capture protocol installed by FV dispatch
+PASS capture executed BEFORE mock NvramDxe
+PASS mock consumed reset bit after immutable capture
+PASS captured reset/defaults policy matches original flag
+PASS locate native ConfigAccess interface
+PASS default boot creates no persistent preferences
+PASS ExtractConfig full request
+PASS preferences resolve to Factory default
+PASS save All through RouteConfig
+PASS stored schema and NV+BS attributes
+PASS save nonuniform Custom profile
+PASS custom bank choices persisted exactly
+PASS empty bank rejected on submit
+PASS rejected save preserves previous record
+PASS edit callback requests no reset or submit
+PASS draft callback does not persist changes
+PASS unknown schema rejected
+PASS temperature enabled with GPU Factory default
+PASS memory option independent of CU unlock
+PASS GPU All enabled with temperature disabled
+PASS invalid temperature option rejected
+PASS HII Setup Defaults applied
+PASS Setup Defaults restores both options to disabled
+PASS factory labels unknown without a captured reference
+PASS load captured 24-CU board reference into preview storage
+PASS factory-enabled WGP marked independently of checkbox
+PASS factory-locked WGP marked independently of checkbox
+PASS submit final independent boot-test configuration
+PASS ReadyToBoot publishes volatile diagnostic
+PASS enabled features blocked safely on non-BC250 OVMF board
+PASS reset persistence outcome reported accurately
+PASS default/unsupported-board paths execute no SMU patch operations
+RESULT: 36 checks, 0 failures

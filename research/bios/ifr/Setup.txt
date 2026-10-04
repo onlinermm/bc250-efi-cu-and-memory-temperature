@@ -1,0 +1,1993 @@
+===== Setup =====
+strings: 1755   IFR streams: 1
+
+--- stream @0xFB58..0x13817 (2473 opcodes) ---
+FORMSET 'Setup' guid=7B59104A-C00D-4158-87FF-F04D6396A915
+  GUID_OP 0F0B1735-87A0-4193-B266-538C38AF48CE +3B
+  GUID_OP 0F0B1735-87A0-4193-B266-538C38AF48CE +3B
+  DEFAULTSTORE[0] '<0>'
+  DEFAULTSTORE[2] 'English'
+  VARSTORE 0x0001 'Setup' size=0x1D3 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x0002 'PlatformLang' size=0x2 guid=8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+  VARSTORE 0x0003 'PlatformLangCodes' size=0x2 guid=8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+  VARSTORE 0x0004 'SystemAccess' size=0x1 guid=E770BB69-BCB4-4D04-9E97-23FF9456FEAC
+  VARSTORE 0x0005 'AMICallback' size=0x2 guid=9CF0F18E-7C7D-49DE-B5AA-BBBAD6B21007
+  VARSTORE 0x0006 'AMITSESetup' size=0x51 guid=C811FA38-42C8-4579-A9BB-60E94EDDFB34
+  VARSTORE 0x0007 'BootManager' size=0x2 guid=B4909CF3-7B93-4751-9BD8-5BA8220B9BB2
+  VARSTORE 0x0008 'Timeout' size=0x2 guid=8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+  VARSTORE 0x0009 'BootOrder' size=0x2 guid=8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+  VARSTORE 0x000A 'AddBootOption' size=0x11C guid=19D96D3F-6A6A-47D2-B195-7B2432DA3BE2
+  VARSTORE 0x000B 'DelBootOption' size=0x2 guid=F6C73719-F34C-479C-B32F-277FCBBCFE4F
+  VARSTORE 0x000C 'LegacyDev' size=0x2 guid=A56074DB-65FE-45F7-BD21-2D2BDD8E9652
+  VARSTORE 0x000D 'LegacyGroup' size=0x2 guid=A56074DB-65FE-45F7-BD21-2D2BDD8E9652
+  VARSTORE 0x000E 'LegacyDevOrder' size=0x2 guid=A56074DB-65FE-45F7-BD21-2D2BDD8E9652
+  VARSTORE 0x000F 'BootNowCount' size=0x2 guid=052E6EB0-F240-42C5-8309-45874545C6B4
+  VARSTORE 0x0010 'Shell' size=0x2 guid=C57AD6B7-0515-40A8-9D21-551652854E37
+  VARSTORE 0x0011 'DynamicPageCount' size=0x2 guid=B63BF800-F267-4F55-9217-E97FB3B69846
+  VARSTORE 0x0012 'DriverHlthEnable' size=0x2 guid=0885F288-418C-4BE1-A6AF-8BAD61DA08FE
+  VARSTORE 0x0013 'DriverHealthCount' size=0x2 guid=7459A7D4-6533-4480-BBA7-79E25A4443C9
+  VARSTORE 0x0014 'DrvHealthCtrlCnt' size=0x2 guid=58279C2D-FB19-466E-B42E-CD437016DC25
+  VARSTORE 0x0015 'SetupCpuFeatures' size=0x7 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x0016 'DriverManager' size=0x2 guid=C0B4FB05-15E5-4588-9FE9-B3D39C067715
+  VARSTORE 0x0017 'DriverOrder' size=0x2 guid=8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+  VARSTORE 0x0018 'NewOptionPolicy' size=0x1 guid=69ECC1BE-A981-446D-8EB6-AF0E53D06CE8
+  VARSTORE 0x0019 'NetworkStackVar' size=0x9 guid=D1405D16-7AFC-4695-BB12-41459D3695A2
+  VARSTORE 0x001A 'UsbMassDevNum' size=0x2 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x001B 'UsbMassDevValid' size=0x10 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x001C 'UsbControllerNum' size=0x4 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x001D 'UsbSupport' size=0x21 guid=EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9
+  VARSTORE 0x001E 'SbNvramVar' size=0x1 guid=393C4833-402F-4BD5-BF5A-1F5CD8681444
+  FORM id=0x2710 'Setup'
+    REF -> 0x2711 'Main'
+    REF -> 0x2712 'Advanced'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x2713 'Chipset'
+    REF -> 0x2714 'Security'
+    REF -> 0x2715 'Boot'
+    REF -> 0x2716 'Save & Exit'
+  FORM id=0x2711 'Main'
+    -- BIOS Information --
+    TEXT 'BIOS Vendor' : 'N/A'
+    TEXT 'Core Version' : 'N/A'
+    TEXT 'Compliancy' : 'N/A'
+    TEXT 'Project Version' : 'N/A'
+    TEXT 'Build Date and Time' : 'N/A'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EC)==0
+      TEXT 'Access Level' : 'User'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      TEXT 'Access Level' : 'Administrator'
+    --  --
+    -- Memory Information --
+    TEXT 'Total Memory' : 'N/A'
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010F)==65535
+      ONEOF 'System Language' | var=PlatformLang+0x0 w=2B range=0..1 step=0 qid=0x0007
+          help: Choose the system default language
+        opt '' = 0
+        opt '' = 1
+        default[std] = 0
+        default[mfg] = 0
+    REF -> 0x28E8 'Main'
+    --  --
+    DATE raw=1600170009000000ffff0010
+      default[std] = ?
+    TIME raw=180019000a000000ffff0010
+      default[std] = ?
+  FORM id=0x28E8 'Main'
+    TEXT 'BIOS Version' : ''
+    TEXT 'Build Date' : 'N/A'
+    TEXT 'Processor Type' : ''
+    --  --
+    TEXT 'Total Memory' : ''
+    --  --
+    DATE raw=160017000b000000ffff0010
+      default[std] = ?
+    TIME raw=180019000c000000ffff0010
+      default[std] = ?
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010F)==65535
+      ONEOF 'System Language' | var=PlatformLang+0x0 w=2B range=0..1 step=0 qid=0x000D
+          help: Choose the system default language
+        opt '' = 0 [DEFAULT]
+        opt '' = 1
+  FORM id=0x2712 'Advanced'
+    REF -> 0x2717 'AMD Firmware Version'
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=0e010100ffff
+      REF -> 0x2712 ''
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=0d010100ffff
+      REF -> 0x2718 'Driver Health'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x271C 'PSP Firmware Version'
+    REF -> 0x271D 'ACPI Settings'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x271E 'Demo Board'
+    REF -> 0x2856 'Hardware Monitor'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x2858 'CPU Configuration'
+    REF -> 0x285A 'CPU Configuration'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x0001 'SIO Configuration'
+    REF -> 0x2860 'PCI Subsystem Settings'
+    REF -> 0x2865 'Network Stack Configuration'
+    REF -> 0x0001 'NVMe Configuration'
+    REF -> 0x286A 'USB Configuration'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      REF -> 0x28DB 'Advanced CPU Settings'
+      REF -> 0x28DC 'USB Configuration'
+    REF -> 0x28DD 'SATA Configuration'
+    REF -> 0x28EA 'Voltage Configuration'
+  FORM id=0x2717 'AMD Firmware Version'
+    -- AMD Firmware Version --
+    --  --
+    TEXT 'AGESA Version' : ''
+    TEXT 'PSP BootLoader Version' : ''
+    --  --
+    TEXT 'ABL Version' : ''
+    TEXT 'APCB Version' : ''
+    TEXT 'APOB Version' : ''
+    --  --
+    TEXT 'Ucode Patch Version' : ''
+    --  --
+    TEXT 'SMU FW Version' : ''
+    --  --
+  FORM id=0x2718 'Driver Health'
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=0c010100ffff
+      REF -> 0x2719 ''
+  FORM id=0x2719 'Driver Health'
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=0b010100ffff
+      REF -> 0x2719 ''
+  FORM id=0x271C 'PSP Firmware Version'
+    TEXT 'PSP Firmware Version' : '<0>'
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==0
+      -- -------PSP Directory Level 1 Region------- --
+      TEXT 'SMU FW Version' : 'N/A'
+      TEXT 'ABL Version' : 'N/A'
+      TEXT 'PSP BootLoader Version' : 'N/A'
+      TEXT 'APCB Version' : 'N/A'
+      TEXT 'APOB Version' : 'N/A'
+      TEXT 'APPB Version' : 'N/A'
+      --  --
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR 1
+        -- -------PSP Directory Level 2 Region(Updatable)--- --
+        TEXT 'PSP BootLoader Version' : 'N/A'
+        TEXT 'PSP Secure OS Version' : 'N/A'
+        TEXT 'SMU FW Version' : 'N/A'
+        TEXT 'ABL Version' : 'N/A'
+        TEXT 'APCB Version' : 'N/A'
+        TEXT 'APOB Version' : 'N/A'
+        TEXT 'APPB Version' : 'N/A'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==1
+      TEXT 'PSP BootLoader Version' : 'N/A'
+      TEXT 'PSP Secure OS Version' : 'N/A'
+      TEXT 'SMU FW Version' : 'N/A'
+  FORM id=0x271D 'ACPI Settings'
+    -- ACPI Settings --
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      CHECKBOX 'Enable ACPI Auto Configuration' | var=Setup+0x8 qid=0x0022
+          help: Enables or Disables BIOS ACPI Auto Configuration.
+        default[std] = 0
+        default[mfg] = 0
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0022)==1
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        CHECKBOX 'Enable Hibernation' | var=Setup+0xC qid=0x0023
+            help: Enables or Disables System ability to Hibernate (OS/S4 Sleep State). This option may not be effective with some operating systems.
+          default[std] = 1
+          default[mfg] = 1
+        CHECKBOX 'Lock Legacy Resources' | var=Setup+0xB qid=0x0024
+            help: Enables or Disables Lock of Legacy Resources
+          default[std] = 0
+          default[mfg] = 0
+  FORM id=0x271E 'Demo Board'
+    ONEOF 'Onboard PCIE LAN PXE ROM' | var=Setup+0xF w=1B range=0..1 step=0 qid=0x0025
+        help: The Onboard PCIE LAN PXE ROM
+      opt 'Disabled' = 0
+      opt 'Enabled' = 1 [DEFAULT] [MFG]
+    ONEOF 'AMD CRB EHCI Debug port switch' | var=Setup+0x12 w=1B range=0..1 step=0 qid=0x0026
+        help: To select. 0 - disable debug port.   1 - enable EHCI debug port for WHCK - Debug Capability Test
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+    --  --
+  FORM id=0x2856 'Hardware Monitor'
+    -- Pc Health Status --
+    --  --
+    TEXT 'CPU Temperature' : 'N/A'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x00EF)==11
+        ACTION 'CPU Temperature' qid=0x2855
+    TEXT 'MB Temperature' : 'N/A'
+    --  --
+    TEXT 'Fan 1 Speed' : ': N/A'
+    TEXT 'Fan 2 Speed' : ': N/A'
+    TEXT 'Fan 3 Speed' : ': N/A'
+    TEXT 'Fan 4 Speed' : ': N/A'
+    TEXT 'Fan 5 Speed' : ': N/A'
+    --  --
+    TEXT 'CPU Vcore Voltage' : 'N/A'
+    TEXT '+ 5.00V' : 'N/A'
+    TEXT '+ 12.00V' : 'N/A'
+    TEXT 'VMEMIO' : 'N/A'
+    TEXT 'VDDC_GFX' : 'N/A'
+    TEXT 'VDDC_SOC' : 'N/A'
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Fan Setting' | var=Setup+0x13 w=1B range=0..4 step=0 qid=0x2774
+          help: Select a fan mode for Fan, or choose Customize to set 5 CPU temperatures and assign a respective fan speed for each temperature.
+        opt 'Customize' = 0
+        opt 'Standard Mode' = 2 [DEFAULT] [MFG]
+        opt 'Full Speed' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x2774)==0
+        EXPR not
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        NUMERIC 'Temperature 1' | var=Setup+0x15 w=1B range=20..100 step=1 qid=0x2723
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 60
+        NUMERIC 'Fan Speed for Temperature 1' | var=Setup+0x1A w=1B range=0..100 step=1 qid=0x2728
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 70
+        NUMERIC 'Temperature 2' | var=Setup+0x16 w=1B range=20..100 step=1 qid=0x2724
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 70
+        NUMERIC 'Fan Speed for Temperature 2' | var=Setup+0x1B w=1B range=0..100 step=1 qid=0x2729
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 80
+        NUMERIC 'Temperature 3' | var=Setup+0x17 w=1B range=20..100 step=1 qid=0x2725
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 80
+        NUMERIC 'Fan Speed for Temperature 3' | var=Setup+0x1C w=1B range=0..100 step=1 qid=0x272A
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 90
+        NUMERIC 'Temperature 4' | var=Setup+0x18 w=1B range=20..100 step=1 qid=0x2726
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 80
+        NUMERIC 'Fan Speed for Temperature 4' | var=Setup+0x1D w=1B range=0..100 step=1 qid=0x272B
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 90
+        NUMERIC 'Critical Temperature' | var=Setup+0x19 w=1B range=60..100 step=1 qid=0x2727
+            help: FFSGUID:DD9EE903-68AF-40c8-B16E-1B0BC11B85F2
+          default[std] = 85
+    --  --
+  FORM id=0x2858 'CPU Configuration'
+    -- CPU Configuration --
+    --  --
+    --  --
+    --  --
+    --  --
+    ONEOF 'PSS Support' | var=Setup+0xAC w=1B range=0..1 step=0 qid=0x0027
+        help: Enable/disable the generation of ACPI _PPC, _PSS, and _PCT objects.
+      opt 'Disabled' = 0
+      opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==1
+      ONEOF 'PSTATE Adjustment' | var=Setup+0xAD w=1B range=0..7 step=0 qid=0x0028
+          help: Provide to adjust startup P-state level
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+        opt 'PState 4' = 4
+        opt 'PState 5' = 5
+        opt 'PState 6' = 6
+        opt 'PState 7' = 7
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==0
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..0 step=0 qid=0x0029
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==1
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..1 step=0 qid=0x002A
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==2
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..2 step=0 qid=0x002B
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==3
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..3 step=0 qid=0x002C
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==4
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..4 step=0 qid=0x002D
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+        opt 'PState 4' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==5
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..5 step=0 qid=0x002E
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+        opt 'PState 4' = 4
+        opt 'PState 5' = 5
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==6
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..6 step=0 qid=0x002F
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+        opt 'PState 4' = 4
+        opt 'PState 5' = 5
+        opt 'PState 6' = 6
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x010A)==7
+        EXPR not
+        EXPR q(0x0027)==0
+        EXPR or
+      ONEOF 'PPC Adjustment' | var=Setup+0xAF w=1B range=0..7 step=0 qid=0x0030
+          help: Provide to adjust _PPC object.
+        opt 'PState 0' = 0 [DEFAULT] [MFG]
+        opt 'PState 1' = 1
+        opt 'PState 2' = 2
+        opt 'PState 3' = 3
+        opt 'PState 4' = 4
+        opt 'PState 5' = 5
+        opt 'PState 6' = 6
+        opt 'PState 7' = 7
+    ONEOF 'NX Mode' | var=Setup+0xB1 w=1B range=0..1 step=0 qid=0x0031
+        help: Enable/disable No-execute page protection Function
+      opt 'Disabled' = 0
+      opt 'Enabled' = 1 [DEFAULT] [MFG]
+    ONEOF 'SVM Mode' | var=Setup+0xB0 w=1B range=0..1 step=0 qid=0x0032
+        help: Enable/disable CPU Virtualization
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==1
+      ONEOF 'CPB Mode' | var=Setup+0xB3 w=1B range=0..1 step=0 qid=0x0033
+          help: Enable/disable CPB
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==1
+      ONEOF 'C6 Mode' | var=Setup+0xB2 w=1B range=0..1 step=0 qid=0x0034
+          help: Enable/disable C6
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    REF -> 0x2859 'Node 0 Information'
+  FORM id=0x2859 'Node 0 Information'
+    --  --
+    --  --
+    --  --
+    --  --
+    --  --
+    --  --
+    --  --
+    -- Microcode Not loaded --
+    --  --
+    -- --------- Cache per core --------- --
+    --  --
+    --  --
+    --  --
+    --  --
+  FORM id=0x285A 'CPU Configuration'
+    -- CPU Configuration --
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SVM Mode' | var=Setup+0xB0 w=1B range=0..1 step=0 qid=0x0036
+          help: Enable/disable CPU Virtualization
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'IOMMU' | var=Setup+0xD2 w=1B range=0..1 step=0 qid=0x0037
+          help: Enable/Disable IOMMU Support
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+  FORM id=0x2860 'PCI Subsystem Settings'
+    TEXT 'PCI Bus Driver Version' : '00.00'
+    --  --
+    -- PCI Devices Common Settings: --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'PCI Latency Timer' | var=Setup+0xDC w=1B range=32..248 step=0 qid=0x0038
+            help: Value to be programmed into PCI Latency Timer Register.
+          opt '32 PCI Bus Clocks' = 32 [DEFAULT] [MFG]
+          opt '64 PCI Bus Clocks' = 64
+          opt '96 PCI Bus Clocks' = 96
+          opt '128 PCI Bus Clocks' = 128
+          opt '160 PCI Bus Clocks' = 160
+          opt '192 PCI Bus Clocks' = 192
+          opt '224 PCI Bus Clocks' = 224
+          opt '248 PCI Bus Clocks' = 248
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'PCI-X Latency Timer' | var=Setup+0xE0 w=1B range=32..248 step=0 qid=0x0039
+            help: Value to be programmed into PCI Latency Timer Register.
+          opt '32 PCI Bus Clocks' = 32
+          opt '64 PCI Bus Clocks' = 64 [DEFAULT] [MFG]
+          opt '96 PCI Bus Clocks' = 96
+          opt '128 PCI Bus Clocks' = 128
+          opt '160 PCI Bus Clocks' = 160
+          opt '192 PCI Bus Clocks' = 192
+          opt '224 PCI Bus Clocks' = 224
+          opt '248 PCI Bus Clocks' = 248
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'VGA Palette Snoop' | var=Setup+0xDD w=1B range=0..1 step=0 qid=0x003A
+            help: Enables or Disables VGA Palette Registers Snooping.
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+          opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'PERR# Generation' | var=Setup+0xDE w=1B range=0..1 step=0 qid=0x003B
+            help: Enables or Disables PCI Device to Generate PERR#.
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+          opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SERR# Generation' | var=Setup+0xDF w=1B range=0..1 step=0 qid=0x003C
+            help: Enables or Disables PCI Device to Generate SERR#.
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+          opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Above 4G Decoding' | var=Setup+0xDA w=1B range=0..1 step=0 qid=0x003D
+            help: Enables or Disables 64bit capable Devices to be Decoded in Above 4G Address Space (Only if System Supports 64 bit PCI Decoding).
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SR-IOV Support' | var=Setup+0xDB w=1B range=0..1 step=0 qid=0x003E
+            help: If system has SR-IOV capable PCIe Devices, this option Enables or Disables Single Root IO Virtualization Support.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 0
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Don't Reset VC-TC Mapping' | var=Setup+0xED w=1B range=0..1 step=0 qid=0x003F
+            help: If system has Vitrtual Channels, Software can reset Traffic Class mapping through Virtual Channels, to it's default state. Setting this option to Enabled will not modify VC Resources.
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+          opt 'Enabled' = 1
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        REF -> 0x2861 'PCI Express Settings'
+  FORM id=0x2861 'PCI Express Settings'
+    -- PCI Express Device Register Settings --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Relaxed Ordering' | var=Setup+0xE1 w=1B range=0..1 step=0 qid=0x0041
+          help: Enables or Disables PCI Express Device Relaxed Ordering.
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Extended Tag' | var=Setup+0xE2 w=1B range=0..1 step=0 qid=0x0042
+          help: If ENABLED allows Device to use 8-bit Tag field as a requester.
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'No Snoop' | var=Setup+0xE3 w=1B range=0..1 step=0 qid=0x0043
+          help: Enables or Disables PCI Express Device No Snoop option.
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Maximum Payload' | var=Setup+0xE4 w=1B range=0..55 step=0 qid=0x0044
+          help: Set Maximum Payload of PCI Express Device or allow System BIOS to select the value.
+        opt 'Auto' = 55 [DEFAULT] [MFG]
+        opt '128 Bytes' = 0
+        opt '256 Bytes' = 1
+        opt '512 Bytes' = 2
+        opt '1024 Bytes' = 3
+        opt '2048 Bytes' = 4
+        opt '4096 Bytes' = 5
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Maximum Read Request' | var=Setup+0xE5 w=1B range=0..55 step=0 qid=0x0045
+          help: Set Maximum Read Request Size of PCI Express Device or allow System BIOS to select the value.
+        opt 'Auto' = 55 [DEFAULT] [MFG]
+        opt '128 Bytes' = 0
+        opt '256 Bytes' = 1
+        opt '512 Bytes' = 2
+        opt '1024 Bytes' = 3
+        opt '2048 Bytes' = 4
+        opt '4096 Bytes' = 5
+    --  --
+    -- PCI Express Link Register Settings --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'ASPM Support' | var=Setup+0xE6 w=1B range=0..55 step=0 qid=0x0046
+          help: Set the ASPM Level: Force L0s - Force all links to L0s State AUTO - BIOS auto configure DISABLE - Disables ASPM
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Auto' = 55
+        opt 'Force L0s' = 1
+    -- WARNING: Enabling ASPM may cause some --
+    -- PCI-E devices to fail --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Extended Synch' | var=Setup+0xE7 w=1B range=0..1 step=0 qid=0x0047
+          help: If ENABLED allows generation of Extended Synchronization patterns.
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Link Training Retry' | var=Setup+0xE8 w=1B range=0..5 step=0 qid=0x0048
+          help: Defines number of Retry Attempts software will take to retrain the link if previous training attempt was unsuccessful.
+        opt 'Disabled' = 0
+        opt '2' = 2
+        opt '3' = 3
+        opt '5' = 5 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      NUMERIC 'Link Training Timeout (uS)' | var=Setup+0xE9 w=2B range=10..10000 step=10 qid=0x0049
+          help: Defines number of Microseconds software will wait before polling 'Link Training' bit in Link Status register. Value range from 10 to 10000 uS.
+        default[std] = 1000
+        default[mfg] = 1000
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Unpopulated Links' | var=Setup+0xEB w=1B range=0..1 step=0 qid=0x004A
+          help: In order to save power, software will disable unpopulated PCI Express links, if this option set to 'Disable Link'.
+        opt 'Keep Link ON' = 0 [DEFAULT] [MFG]
+        opt 'Disabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 0
+        EXPR 0
+        EXPR equal
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Restore PCIE Registers' | var=Setup+0xEC w=1B range=0..255 step=0 qid=0x004B
+            help: On non-PCI Express aware OS's (Pre Windows Vista) some devices may not be correctly reinitialized after S3. Enabling this restors PCI Express device configurations on S3 resume. Warning: Enabling this may cause issues with other hardware after S3 resume.
+          opt 'Enabled' = 255
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+  FORM id=0x2865 'Network Stack Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Network Stack' | var=NetworkStackVar+0x0 w=1B range=0..1 step=0 qid=0x004C
+          help: Enable/Disable UEFI Network Stack
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1
+        default[std] = 0
+        default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x004C)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Ipv4 PXE Support' | var=NetworkStackVar+0x1 w=1B range=0..1 step=0 qid=0x004D
+            help: Enable/Disable IPv4 PXE boot support. If disabled, IPv4 PXE boot support will not be available.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+        ONEOF 'Ipv4 HTTP Support' | var=NetworkStackVar+0x6 w=1B range=0..1 step=0 qid=0x004E
+            help: Enable/Disable IPv4 HTTP boot support. If disabled, IPv4 HTTP boot support will not be available.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x004C)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Ipv6 PXE Support' | var=NetworkStackVar+0x2 w=1B range=0..1 step=0 qid=0x004F
+            help: Enable/Disable IPv6 PXE boot support. If disabled, IPv6 PXE boot support will not be available.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+        ONEOF 'Ipv6 HTTP Support' | var=NetworkStackVar+0x7 w=1B range=0..1 step=0 qid=0x0050
+            help: Enable/Disable IPv6 HTTP boot support. If disabled, IPv6 HTTP boot support will not be available.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1
+          default[std] = 0
+          default[mfg] = 0
+        ONEOF 'IP6 Configuration Policy' | var=NetworkStackVar+0x8 w=1B range=0..1 step=0 qid=0x0051
+            help: Set IP6 Configuration Policy
+          opt 'Automatic' = 1
+          opt 'Manual' = 0
+          default[std] = 1
+          default[mfg] = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x004C)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        NUMERIC 'PXE boot wait time' | var=NetworkStackVar+0x4 w=1B range=0..5 step=1 qid=0x0052
+            help: Wait time to press ESC key to abort the PXE boot
+          default[std] = 0
+          default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x004C)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        NUMERIC 'Media detect count' | var=NetworkStackVar+0x5 w=1B range=1..50 step=1 qid=0x0053
+            help: Number of times presence of media will be checked
+          default[std] = 1
+          default[mfg] = 1
+  FORM id=0x286A 'USB Configuration'
+    -- USB Configuration --
+    --  --
+    TEXT 'USB Module Version' : '00.00'
+    --  --
+    TEXT 'USB Controllers:' : '<0>'
+    -- N/A --
+    TEXT 'USB Devices:' : '<0>'
+    -- N/A --
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==q(0x0054)
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'USB Support' | var=UsbSupport+0x0 w=1B range=0..1 step=0 qid=0x0054
+            help: USB Support Parameters
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Legacy USB Support' | var=UsbSupport+0x1 w=1B range=0..2 step=0 qid=0x0055
+            help: Enables Legacy USB support. AUTO option disables legacy support if no USB devices are connected. DISABLE option will keep USB devices available only for EFI applications.
+          opt 'Enabled' = 0 [DEFAULT] [MFG]
+          opt 'Disabled' = 1
+          opt 'Auto' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'USB 2.0 Controller Mode' | var=UsbSupport+0x1E w=1B range=0..1 step=0 qid=0x0056
+            help: Configures the USB 2.0 controller in HiSpeed (480Mbps) or FullSpeed (12Mbps).
+          opt 'HiSpeed' = 1 [DEFAULT] [MFG]
+          opt 'FullSpeed' = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'XHCI Legacy Support' | var=UsbSupport+0x1A w=1B range=0..1 step=0 qid=0x0057
+            help: Enable/Disable XHCI Controller Legacy support.
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+          opt 'Disabled' = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0106)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'XHCI Hand-off' | var=UsbSupport+0x1B w=1B range=0..1 step=0 qid=0x0058
+            help: This is a workaround for OSes without XHCI hand-off support. The XHCI ownership change should be claimed by XHCI driver.
+          opt 'Enabled' = 1
+          opt 'Disabled' = 0
+          default[std] = 1
+          default[mfg] = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0107)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'EHCI Hand-off' | var=UsbSupport+0x2 w=1B range=0..1 step=0 qid=0x0059
+            help: This is a workaround for OSes without EHCI hand-off support. The EHCI ownership change should be claimed by EHCI driver.
+          opt 'Disabled' = 0 [DEFAULT] [MFG]
+          opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0109)==0
+          EXPR q(0x0108)==0
+          EXPR and
+          EXPR q(0x0107)==0
+          EXPR and
+          EXPR q(0x0106)==0
+          EXPR and
+          EXPR or
+        ONEOF 'USB Mass Storage Driver Support' | var=UsbSupport+0x1F w=1B range=0..1 step=0 qid=0x005A
+            help: Enable/Disable USB Mass Storage Driver Support.
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    --  --
+    TEXT 'USB hardware delays and time-outs:' : '<0>'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0109)==0
+          EXPR q(0x0108)==0
+          EXPR and
+          EXPR q(0x0107)==0
+          EXPR and
+          EXPR q(0x0106)==0
+          EXPR and
+          EXPR or
+        ONEOF 'USB transfer time-out' | var=UsbSupport+0x9 w=1B range=1..20 step=0 qid=0x005B
+            help: The time-out value for Control, Bulk, and Interrupt transfers.
+          opt '1 sec' = 1
+          opt '5 sec' = 5
+          opt '10 sec' = 10
+          opt '20 sec' = 20 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0109)==0
+          EXPR q(0x0108)==0
+          EXPR and
+          EXPR q(0x0107)==0
+          EXPR and
+          EXPR q(0x0106)==0
+          EXPR and
+          EXPR or
+        ONEOF 'Device reset time-out' | var=UsbSupport+0x8 w=1B range=0..3 step=0 qid=0x005C
+            help: USB mass storage device Start Unit command time-out.
+          opt '10 sec' = 0
+          opt '20 sec' = 1 [DEFAULT] [MFG]
+          opt '30 sec' = 2
+          opt '40 sec' = 3
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+        EXPR q(0x0109)==0
+        EXPR q(0x0108)==0
+        EXPR and
+        EXPR q(0x0107)==0
+        EXPR and
+        EXPR q(0x0106)==0
+        EXPR and
+        EXPR or
+      ONEOF 'Device power-up delay' | var=UsbSupport+0x1C w=1B range=0..1 step=0 qid=0x005D
+          help: Maximum time the device will take before it properly reports itself to the Host Controller. 'Auto' uses default value: for a Root port it is 100 ms, for a Hub port the delay is taken from Hub descriptor.
+        opt 'Auto' = 0 [DEFAULT] [MFG]
+        opt 'Manual' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x005D)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0109)==0
+          EXPR q(0x0108)==0
+          EXPR and
+          EXPR q(0x0107)==0
+          EXPR and
+          EXPR q(0x0106)==0
+          EXPR and
+          EXPR or
+        NUMERIC 'Device power-up delay in seconds' | var=UsbSupport+0x1D w=1B range=1..40 step=1 qid=0x005E
+            help: Delay range is 1..40 seconds, in one second increments
+          default[std] = 5
+          default[mfg] = 5
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0105)==0
+        EXPR or
+      TEXT 'Mass Storage Devices:' : '<0>'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0104)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xA w=1B range=0..4 step=0 qid=0x005F
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0103)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xB w=1B range=0..4 step=0 qid=0x0060
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0102)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xC w=1B range=0..4 step=0 qid=0x0061
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0101)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xD w=1B range=0..4 step=0 qid=0x0062
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x0100)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xE w=1B range=0..4 step=0 qid=0x0063
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FF)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0xF w=1B range=0..4 step=0 qid=0x0064
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FE)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x10 w=1B range=0..4 step=0 qid=0x0065
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FD)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x11 w=1B range=0..4 step=0 qid=0x0066
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FC)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x12 w=1B range=0..4 step=0 qid=0x0067
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FB)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x13 w=1B range=0..4 step=0 qid=0x0068
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00FA)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x14 w=1B range=0..4 step=0 qid=0x0069
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00F9)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x15 w=1B range=0..4 step=0 qid=0x006A
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00F8)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x16 w=1B range=0..4 step=0 qid=0x006B
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00F7)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x17 w=1B range=0..4 step=0 qid=0x006C
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00F6)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x18 w=1B range=0..4 step=0 qid=0x006D
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0054)==0
+        EXPR q(0x00F5)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+          EXPR q(0x0055)==1
+          EXPR or
+        ONEOF 'N/A' | var=UsbSupport+0x19 w=1B range=0..4 step=0 qid=0x006E
+            help: Mass storage device emulation type. 'AUTO' enumerates devices according to their media format. Optical drives are emulated as 'CDROM', drives with no media will be emulated according to a drive type.
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Floppy' = 1
+          opt 'Forced FDD' = 2
+          opt 'Hard Disk' = 3
+          opt 'CD-ROM' = 4
+    TEXT '' : '<0>'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x00EF)==11
+        ACTION '' qid=0x286B
+  FORM id=0x28DB 'Advanced CPU Settings'
+    ONEOF 'Cooler and Quieter operation' | var=Setup+0x1C4 w=4B range=72000..88000 step=0 qid=0x006F
+        help: Disable for highest performance.
+      opt 'Disabled' = 88000
+      opt 'Enabled' = 72000 [DEFAULT] [MFG]
+    ONEOF 'SVM Mode' | var=Setup+0xB0 w=1B range=0..1 step=0 qid=0x0070
+        help: Enable/disable CPU Virtualization
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+    ONEOF 'IOMMU' | var=Setup+0xD2 w=1B range=0..1 step=0 qid=0x0071
+        help: Enable/Disable IOMMU Support
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+  FORM id=0x28DC 'USB Configuration'
+    ONEOF 'USB mode' | var=Setup+0x1C8 w=1B range=0..1 step=0 qid=0x0072
+        help: Indicates The Highest Allowable Speed Of The USB3.
+      opt 'GEN1' = 0
+      opt 'Auto' = 1 [DEFAULT] [MFG]
+  FORM id=0x28DD 'SATA Configuration'
+    -- SATA Configuration --
+    --  --
+    TEXT 'SATA Port0' : 'Not Present'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR 1
+      TEXT 'SATA Port1' : 'Not Present'
+      TEXT 'SATA Port2' : 'Not Present'
+      TEXT 'SATA Port3' : 'Not Present'
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x0088)==1
+          EXPR q(0x0085)==0
+          EXPR q(0x0085)==1
+          EXPR or
+          EXPR q(0x0085)==3
+          EXPR or
+          EXPR q(0x0085)==4
+          EXPR or
+          EXPR q(0x0085)==5
+          EXPR or
+          EXPR and
+        TEXT 'SATA Port4' : 'Not Present'
+        TEXT 'SATA Port5' : 'Not Present'
+  FORM id=0x28EA 'Voltage Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'VCORE Fix Voltage' | var=Setup+0x1C9 w=1B range=0..1 step=0 qid=0x0073
+          help: Input voltage for the processor by the external voltage regulator.
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x0073)==0
+        NUMERIC 'Voltage(mV)' | var=Setup+0x1CA w=2B range=700..1250 step=1 qid=0x0074
+            help: System may be damaged or reduce its life cycle when overvoltage.
+          default[std] = 900
+      ONEOF 'VCORE Loadline' | var=Setup+0x1CC w=1B range=0..5 step=0 qid=0x0075
+        opt 'Disabled' = 0
+        opt '0.2 Ohm' = 1
+        opt '0.3 Ohm' = 2 [DEFAULT] [MFG]
+        opt '0.4 Ohm' = 3
+        opt '0.5 Ohm' = 4
+        opt '0.6 Ohm' = 5
+      ONEOF 'GFX Fix Voltage' | var=Setup+0x1CD w=1B range=0..1 step=0 qid=0x0076
+          help: Input voltage for the processor by the external voltage regulator.
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x0076)==0
+        NUMERIC 'Voltage(mV)' | var=Setup+0x1CE w=2B range=700..1250 step=1 qid=0x0077
+            help: System may be damaged or reduce its life cycle when overvoltage.
+          default[std] = 900
+      ONEOF 'GFX Loadline' | var=Setup+0x1D0 w=1B range=0..5 step=0 qid=0x0078
+        opt 'Disabled' = 0
+        opt '0.2 Ohm' = 1
+        opt '0.3 Ohm' = 2 [DEFAULT] [MFG]
+        opt '0.4 Ohm' = 3
+        opt '0.5 Ohm' = 4
+        opt '0.6 Ohm' = 5
+      ONEOF 'MEMIO Fix Voltage' | var=Setup+0x1D1 w=1B range=0..1 step=0 qid=0x0079
+          help: Input voltage for the processor by the external voltage regulator.
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR q(0x0079)==0
+        ONEOF 'Voltage' | var=Setup+0x1D2 w=1B range=8..41 step=0 qid=0x007A
+            help: System may be damaged or reduce its life cycle when overvoltage.
+          opt '1.20 V' = 8
+          opt '1.25 V' = 14
+          opt '1.30 V' = 19
+          opt '1.35 V' = 30 [DEFAULT] [MFG]
+          opt '1.40 V' = 36
+          opt '1.45 V' = 41
+  FORM id=0x2713 'Chipset'
+    REF -> 0x7005 'GFX Configuration'
+    REF -> 0x285C 'North Bridge'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      EXPR or
+    --  --
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR true
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR true
+      SUPPRESS_IF { (postfix expression follows)
+        EXPR true
+  FORM id=0x285C 'North Bridge'
+    -- North Bridge Configuration --
+    --  --
+    -- Memory Information --
+    --  --
+    -- N/A --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F4)==1
+      REF -> 0x285E 'Memory Configuration'
+  FORM id=0x285E 'Memory Configuration'
+    -- Memory Configuration --
+    --  --
+    --  --
+    ONEOF 'Memory Clock' | var=Setup+0xD7 w=1B range=0..5 step=0 qid=0x007E
+        help: This Option Allows User to select different Memory Clock. Default value is 800Mhz.
+      opt 'Auto' = 0 [DEFAULT] [MFG]
+      opt '1333MHz' = 1
+      opt '1600MHz' = 2
+      opt '1866MHz' = 3
+      opt '2133MHz' = 4
+      opt '2400MHz' = 5
+    ONEOF 'Bank Interleaving' | var=Setup+0xD5 w=1B range=0..1 step=0 qid=0x007F
+        help: Enable/Disable Bank Interleaving
+      opt 'Disabled' = 0
+      opt 'Enabled' = 1 [DEFAULT] [MFG]
+    ONEOF 'Channel Interleaving' | var=Setup+0xD6 w=1B range=0..1 step=0 qid=0x0080
+        help: Enable/Disable Channel Interleaving
+      opt 'Disabled' = 0
+      opt 'Enabled' = 1 [DEFAULT] [MFG]
+    ONEOF 'Memory Clear' | var=Setup+0xD8 w=1B range=0..1 step=0 qid=0x0081
+        help: Enable/Disable Memory Clear function
+      opt 'Disabled' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+  FORM id=0x28C2 'South Bridge'
+    TEXT 'AMD Reference code Version :' : 'Not Present'
+    --  --
+    REF -> 0x28C4 'SB USB Configuration'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00F3)==0
+      REF -> 0x28DA 'IMC Fan Control'
+  FORM id=0x28C3 'SB SATA Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'OnChip SATA Channel' | var=Setup+0x118 w=1B range=0..1 step=0 qid=0x0084
+          help: Enable / Disable Serial ATA
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0084)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'OnChip SATA Type' | var=Setup+0x119 w=1B range=0..6 step=0 qid=0x0085
+            help: Native IDE /n RAID /n AHCI /n AHCI /n Legacy IDE /n IDE->AHCI /n HyperFlash
+          opt 'Native IDE' = 0
+          opt 'RAID' = 1
+          opt 'AHCI' = 2 [DEFAULT] [MFG]
+          opt 'Legacy IDE' = 3
+          opt 'IDE->AHCI' = 4
+          opt 'AHCI as ID 7804' = 5
+          opt 'IDE->AHCI as ID 7804' = 6
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0085)==0
+        EXPR q(0x0085)==1
+        EXPR or
+        EXPR q(0x0085)==2
+        EXPR or
+        EXPR q(0x0085)==3
+        EXPR or
+        EXPR q(0x0085)==4
+        EXPR or
+        EXPR q(0x0085)==5
+        EXPR or
+        EXPR q(0x0085)==6
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'RAID Type' | var=Setup+0x11A w=1B range=0..1 step=0 qid=0x0086
+            help: RAID or RAID5
+          opt 'RAID' = 0 [DEFAULT] [MFG]
+          opt 'RAID5' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0084)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'OnChip IDE mode' | var=Setup+0x11B w=1B range=0..1 step=0 qid=0x0087
+            help: Sata IDE Controller Mode
+          opt 'Legacy mode' = 0 [DEFAULT] [MFG]
+          opt 'Native mode' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0084)==0
+        EXPR q(0x0085)==2
+        EXPR or
+        EXPR q(0x0085)==5
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SATA IDE Combined Mode' | var=Setup+0x11C w=1B range=0..1 step=0 qid=0x0088
+            help: SATA IDE Controller Combined Mode
+          opt 'Enabled' = 0 [DEFAULT] [MFG]
+          opt 'Disabled' = 1
+  FORM id=0x28C4 'SB USB Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'XHCI Controller 0' | var=Setup+0x11D w=1B range=0..1 step=0 qid=0x0089
+          help: XHCI ENABLE Help
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'XHCI0 PORT 1' | var=Setup+0x135 w=1B range=0..1 step=0 qid=0x008A
+            help: XHCI0 PORT 1 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'XHCI Controller 1' | var=Setup+0x11E w=1B range=0..1 step=0 qid=0x008B
+            help: XHCI ENABLE Help
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==0
+        EXPR q(0x008B)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'XHCI1 PORT 0' | var=Setup+0x136 w=1B range=0..1 step=0 qid=0x008C
+            help: XHCI1 PORT 0 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'XHCI1 PORT 1' | var=Setup+0x137 w=1B range=0..1 step=0 qid=0x008D
+            help: XHCI1 PORT 1 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'OHCI HC(Bus 0 Dev 18 Fn 0)' | var=Setup+0x11F w=1B range=0..1 step=0 qid=0x008E
+          help: OHCI HC(Bus 0 Dev 18 Fn 0) Enable/Disable
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x008E)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'EHCI HC(Bus 0 Dev 18 Fn 2)' | var=Setup+0x120 w=1B range=0..1 step=0 qid=0x008F
+            help: EHCI HC(Bus 0 Dev 18 Fn 2) Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x008E)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'USB PORT 0' | var=Setup+0x126 w=1B range=0..1 step=0 qid=0x0090
+            help: USB PORT 0 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 1' | var=Setup+0x127 w=1B range=0..1 step=0 qid=0x0091
+            help: USB PORT 1 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 2' | var=Setup+0x128 w=1B range=0..1 step=0 qid=0x0092
+            help: USB PORT 2 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 3' | var=Setup+0x129 w=1B range=0..1 step=0 qid=0x0093
+            help: USB PORT 3 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 4' | var=Setup+0x12A w=1B range=0..1 step=0 qid=0x0094
+            help: USB PORT 4 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==1
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'OHCI HC(Bus 0 Dev 22 Fn 0)' | var=Setup+0x123 w=1B range=0..1 step=0 qid=0x0095
+            help: OHCI HC(Bus 0 Dev 22 Fn 0) Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==1
+        EXPR q(0x0095)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'EHCI HC(Bus 0 Dev 22 Fn 2)' | var=Setup+0x124 w=1B range=0..1 step=0 qid=0x0096
+            help: EHCI HC(Bus 0 Dev 22 Fn 2) Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x0089)==1
+        EXPR q(0x0095)==0
+        EXPR or
+        EXPR q(0x0096)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'USB PORT 11' | var=Setup+0x131 w=1B range=0..1 step=0 qid=0x0097
+            help: USB PORT 11 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 12' | var=Setup+0x132 w=1B range=0..1 step=0 qid=0x0098
+            help: USB PORT 12 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        ONEOF 'USB PORT 13' | var=Setup+0x133 w=1B range=0..1 step=0 qid=0x0099
+            help: USB PORT 13 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+        --  --
+  FORM id=0x28C6 'SB GPP Port Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SB GPP Function' | var=Setup+0x13E w=1B range=0..1 step=0 qid=0x009A
+          help: SB GPP Function Enable/Disable
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x009A)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'GPP Port Link Configuration' | var=Setup+0x13F w=1B range=0..4 step=0 qid=0x009B
+            help: GPP Port Link Configuration
+          opt 'x4 mode' = 0
+          opt '2:2 mode' = 2
+          opt '2:1:1 mode' = 3 [DEFAULT] [MFG]
+          opt '1:1:1:1 mode' = 4
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x009A)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'GPP Link ASPM' | var=Setup+0x141 w=1B range=0..3 step=0 qid=0x009C
+            help: GPP Link ASPM Configuration
+          opt 'Disabled' = 0
+          opt 'L0s' = 1
+          opt 'L1' = 2
+          opt 'L0s+L1' = 3 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x009A)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'GPP Gen2' | var=Setup+0x142 w=1B range=0..1 step=0 qid=0x009D
+            help: GPP Gen2 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x009A)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'UMI Gen2' | var=Setup+0x143 w=1B range=0..1 step=0 qid=0x009E
+            help: UMI Gen2 Enable/Disable
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'GPP HW Compliance Mode' | var=Setup+0x144 w=1B range=0..4 step=0 qid=0x009F
+          help: GPP HW Compliance Mode
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Port A' = 1
+        opt 'Port B' = 2
+        opt 'Port C' = 3
+        opt 'Port D' = 4
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SB GPP LANE REVERSAL' | var=Setup+0x145 w=1B range=0..1 step=0 qid=0x00A0
+          help: SB GPP LANE REVERSAL Enable/Disable
+        opt 'Disabled' = 0 [DEFAULT] [MFG]
+        opt 'Enabled' = 1
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'UMI PHY PLL Power Down' | var=Setup+0x146 w=1B range=0..1 step=0 qid=0x00A1
+          help: UMI PHY PLL Power Down
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SB GPP PHY PLL Power Down' | var=Setup+0x147 w=1B range=0..1 step=0 qid=0x00A2
+          help: SB GPP PHY PLL Power Down
+        opt 'Disabled' = 0
+        opt 'Enabled' = 1 [DEFAULT] [MFG]
+  FORM id=0x28C7 'SB IR Configuration'
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'IR Config' | var=Setup+0x148 w=1B range=0..3 step=0 qid=0x00A3
+          help: Infrared (IR) Configuration
+        opt 'Disabled' = 0
+        opt 'RX & TX0 Only' = 1
+        opt 'RX & TX1 Only' = 2
+        opt 'RX, TX0, and TX1' = 3 [DEFAULT] [MFG]
+  FORM id=0x28C8 'SB SD Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SD MODE' | var=Setup+0x149 w=1B range=0..3 step=0 qid=0x00A4
+          help: SD MODE
+        opt 'Disabled' = 0
+        opt 'ADMA' = 1 [DEFAULT] [MFG]
+        opt 'DMA' = 2
+        opt 'PIO' = 3
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SD Trace Length' | var=Setup+0x14A w=1B range=4..7 step=0 qid=0x00A5
+          help: SD trace length (inches)
+        opt 'Less 6' = 4 [DEFAULT] [MFG]
+        opt 'Between 6 and 11' = 6
+        opt 'Greater 11' = 7
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SD SPEED' | var=Setup+0x14B w=1B range=0..1 step=0 qid=0x00A6
+          help: SD SPEED
+        opt 'Low' = 0
+        opt 'High' = 1 [DEFAULT] [MFG]
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'SD BitWidth' | var=Setup+0x14C w=1B range=0..1 step=0 qid=0x00A7
+          help: SD BitWidth
+        opt '32Bit' = 0
+        opt '64Bit' = 1 [DEFAULT] [MFG]
+  FORM id=0x28C9 'SB HD Azalia Configuration'
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'HD Audio Azalia Device' | var=Setup+0x14E w=1B range=0..2 step=0 qid=0x00A8
+          help: HD Audio Azalia Device
+        opt 'Auto' = 0
+        opt 'Disabled' = 1
+        opt 'Enabled' = 2 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        CHECKBOX 'HD Onboard PIN Config' | var=Setup+0x14F qid=0x00A9
+            help: Azalia Controller SDIN Pin Configuration
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+        EXPR q(0x00A9)==0
+        EXPR or
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'Azalia Front Panel' | var=Setup+0x150 w=1B range=0..2 step=0 qid=0x00AA
+            help: Azalia Controller Front Panel Configuration
+          opt 'Auto' = 0 [DEFAULT] [MFG]
+          opt 'Disabled' = 1
+          opt 'Enabled' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SDIN0 Pin Config' | var=Setup+0x151 w=1B range=0..2 step=0 qid=0x00AB
+            help: Program SDIN0 As Azalia SDIN Pin Or GPIO Pin
+          opt 'GPIO' = 0
+          opt 'Azalia' = 2 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SDIN1 Pin Config' | var=Setup+0x152 w=1B range=0..2 step=0 qid=0x00AC
+            help: Program SDIN1 As Azalia SDIN Pin Or GPIO Pin
+          opt 'GPIO' = 0
+          opt 'Azalia' = 2 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SDIN2 Pin Config' | var=Setup+0x153 w=1B range=0..2 step=0 qid=0x00AD
+            help: Program SDIN2 As Azalia SDIN Pin Or GPIO Pin
+          opt 'GPIO' = 0
+          opt 'Azalia' = 2 [DEFAULT] [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        ONEOF 'SDIN3 Pin Config' | var=Setup+0x154 w=1B range=0..2 step=0 qid=0x00AE
+            help: Program SDIN3 As Azalia SDIN Pin Or GPIO Pin
+          opt 'GPIO' = 0 [DEFAULT] [MFG]
+          opt 'Azalia' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00A8)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        CHECKBOX 'Azalia Snoop' | var=Setup+0x155 qid=0x00AF
+            help: Azalia Controller Snoop Feature Configuration
+          default[std] = 0
+          default[mfg] = 0
+  FORM id=0x28DA 'IMC Fan Control'
+    -- IMC Fan Control --
+    --  --
+    ONEOF 'IMC Fan Control' | var=Setup+0x1AD w=1B range=0..2 step=0 qid=0x00B0
+      opt 'By Jumper' = 0 [DEFAULT] [MFG]
+      opt 'Enabled' = 1
+      opt 'Disabled' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00B0)==2
+      NUMERIC 'CPU Thermal Zone 1' | var=Setup+0x1AE w=1B range=0..255 step=1 qid=0x00B1
+          help: Warning! Please follow board design to select
+        default[std] = 53
+        default[mfg] = 53
+      NUMERIC 'CPU Thermal Zone 2' | var=Setup+0x1AF w=1B range=0..255 step=1 qid=0x00B2
+          help: Warning! Please follow board design to select
+        default[std] = 14
+        default[mfg] = 14
+      NUMERIC 'CPU Hysteresis' | var=Setup+0x1B0 w=1B range=0..255 step=1 qid=0x00B3
+          help: CPU Hysteresis Information
+        default[std] = 84
+        default[mfg] = 84
+      NUMERIC 'CPU Fan PWM Stepping %' | var=Setup+0x1B1 w=1B range=0..100 step=1 qid=0x00B4
+          help: Fan PWM Stepping Rate In Unit Of PWM Level Percentage
+        default[std] = 1
+        default[mfg] = 1
+      NUMERIC 'CPU Fan PWM Ramping Rate' | var=Setup+0x1B2 w=1B range=0..100 step=1 qid=0x00B5
+          help: Fan PWM Ramping Rate In 5ms Unit
+        default[std] = 0
+        default[mfg] = 0
+      --  --
+      NUMERIC 'CPU _AC0' | var=Setup+0x1B3 w=1B range=0..100 step=1 qid=0x00B6
+          help: Integrated The Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 70
+        default[mfg] = 70
+      NUMERIC 'CPU _AC1' | var=Setup+0x1B4 w=1B range=0..100 step=1 qid=0x00B7
+          help: Integrated The 2nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 60
+        default[mfg] = 60
+      NUMERIC 'CPU _AC2' | var=Setup+0x1B5 w=1B range=0..100 step=1 qid=0x00B8
+          help: Integrated The 3nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AC3' | var=Setup+0x1B6 w=1B range=0..100 step=1 qid=0x00B9
+          help: Integrated The 4nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AC4' | var=Setup+0x1B7 w=1B range=0..100 step=1 qid=0x00BA
+          help: Integrated The 5nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AC5' | var=Setup+0x1B8 w=1B range=0..100 step=1 qid=0x00BB
+          help: Integrated The 6nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AC6' | var=Setup+0x1B9 w=1B range=0..100 step=1 qid=0x00BC
+          help: Integrated The 7nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AC7' | var=Setup+0x1BA w=1B range=0..100 step=1 qid=0x00BD
+          help: Integrated The 8nd Highest Temperature Threshold In Degrees Of Celsius
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _CRT' | var=Setup+0x1BB w=1B range=0..255 step=1 qid=0x00BE
+          help: CPU _CRT
+        default[std] = 105
+        default[mfg] = 105
+      --  --
+      NUMERIC 'CPU _AL0' | var=Setup+0x1BC w=1B range=0..100 step=1 qid=0x00BF
+          help: AL0 PWM Level In Percentage (0 - 100%)
+        default[std] = 100
+        default[mfg] = 100
+      NUMERIC 'CPU _AL1' | var=Setup+0x1BD w=1B range=0..100 step=1 qid=0x00C0
+          help: AL1 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL2' | var=Setup+0x1BE w=1B range=0..100 step=1 qid=0x00C1
+          help: AL2 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL3' | var=Setup+0x1BF w=1B range=0..100 step=1 qid=0x00C2
+          help: AL3 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL4' | var=Setup+0x1C0 w=1B range=0..100 step=1 qid=0x00C3
+          help: AL4 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL5' | var=Setup+0x1C1 w=1B range=0..100 step=1 qid=0x00C4
+          help: AL5 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL6' | var=Setup+0x1C2 w=1B range=0..100 step=1 qid=0x00C5
+          help: AL6 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+      NUMERIC 'CPU _AL7' | var=Setup+0x1C3 w=1B range=0..100 step=1 qid=0x00C6
+          help: AL7 PWM Level In Percentage (0 - 100%)
+        default[std] = 0
+        default[mfg] = 0
+  FORM id=0x2714 'Security'
+    -- Password Description --
+    --  --
+    -- If ONLY the Administrator's password is set, --
+    -- then this only limits access to Setup and is --
+    -- only asked for when entering Setup. --
+    -- If ONLY the User's password is set, then this --
+    -- is a power on password and must be entered to --
+    -- boot or enter Setup. In Setup the User will --
+    -- have Administrator rights. --
+    -- The password length must be --
+    -- in the following range: --
+    TEXT 'Minimum length' : 'N/A'
+    TEXT 'Maximum length' : 'N/A'
+    --  --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      PASSWORD 'Administrator Password' var=AMITSESetup+0x28
+    PASSWORD 'User Password' var=AMITSESetup+0x0
+  FORM id=0x2715 'Boot'
+    -- Boot Configuration --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      NUMERIC 'Setup Prompt Timeout' | var=Timeout+0x0 w=2B range=0..65535 step=1 qid=0x00C9
+          help: Number of seconds to wait for setup activation key. 65535(0xFFFF) means indefinite waiting.
+        default[std] = 1
+        default[mfg] = 1
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      ONEOF 'Bootup NumLock State' | var=Setup+0x0 w=1B range=0..1 step=0 qid=0x00CA
+          help: Select the keyboard NumLock state
+        opt 'On' = 1
+        opt 'Off' = 0
+        default[std] = 1
+        default[mfg] = 1
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      CHECKBOX 'Quiet Boot' | var=AMITSESetup+0x50 qid=0x00CB
+          help: Enables or disables Quiet Boot option
+        default[std] = 1
+        default[mfg] = 1
+    --  --
+    -- Boot Option Priorities --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=ee000100ffff
+      ONEOF 'Boot Option #%d' | var=BootOrder+0x0 w=2B range=0..1 step=0 qid=0x00CC
+          help: Sets the system boot order
+        opt '' = 0
+        opt '' = 1
+        default[std] = 0
+        default[mfg] = 0
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      ONEOF 'Fast Boot' | var=Setup+0x1 w=1B range=0..1 step=0 qid=0x00CD
+          help: Enables or disables boot with initialization of a minimal set of devices required to launch active boot option. Has no effect for BBS boot options.
+        default[std] = 0
+        opt 'Disabled' = 0 [MFG]
+        opt 'Enabled' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00CD)==0
+        ONEOF 'SATA Support' | var=Setup+0x2 w=1B range=0..1 step=0 qid=0x00CE
+            help: If Last Boot HDD Only, Only last boot HDD device will be available in Post. If All Sata Devices, all SATA devices will be available in OS and Post.
+          default[std] = 0
+          opt 'Last Boot HDD Only' = 0
+          opt 'All Sata Devices' = 1 [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00CD)==1
+        ONEOF 'VGA Support' | var=Setup+0x3 w=1B range=0..1 step=0 qid=0x00CF
+            help: If Auto, only install Legacy OpRom with Legacy OS and logo would NOT be shown during post. Efi driver will still be installed with EFI OS.
+          default[std] = 1
+          opt 'Auto' = 0
+          opt 'EFI Driver' = 1 [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00CD)==0
+        ONEOF 'USB Support' | var=Setup+0x4 w=1B range=0..2 step=0 qid=0x00D0
+            help: If Disabled, all USB devices will NOT be available until after OS boot. If Partial Initial, USB Mass Storage and specific USB port/device will NOT be available before OS boot. If Enabled, all USB devices will be available in OS and Post.
+          default[std] = 1
+          opt 'Disabled' = 0
+          opt 'Full Initial' = 1 [MFG]
+          opt 'Partial Initial' = 2
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00CD)==0
+        ONEOF 'PS2 Devices Support' | var=Setup+0x5 w=1B range=0..1 step=0 qid=0x00D1
+            help: If Disabled, PS2 devices will be skipped.
+          default[std] = 1
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00CD)==0
+        ONEOF 'NetWork Stack Driver Support' | var=Setup+0x7 w=1B range=0..1 step=0 qid=0x00D2
+            help: If Disabled, NetWork Stack Driver will be skipped.
+          default[std] = 0
+          opt 'Disabled' = 0
+          opt 'Enabled' = 1 [MFG]
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00CD)==0
+      ONEOF 'Redirection Support' | var=Setup+0x6 w=1B range=0..1 step=0 qid=0x00D3
+          help: If disable, Redirection function will be disabled.
+        default[std] = 0
+        opt 'Disabled' = 0 [MFG]
+        opt 'Enabled' = 1
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=f20001000000
+      -- Driver Option Priorities --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=f2000100ffff
+      ONEOF 'Driver Option #%d' | var=DriverOrder+0x0 w=2B range=0..1 step=0 qid=0x00D4
+          help: Sets the system driver order
+        opt '' = 0 [DEFAULT] [MFG]
+        opt '' = 1
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR true
+      ONEOF 'New Boot Option Policy' | var=NewOptionPolicy+0x0 w=1B range=0..2 step=0 qid=0x00D5
+          help: Controls the placement of newly detected UEFI boot options
+        default[std] = 1
+        opt 'Default' = 0
+        opt 'Place First' = 1
+        opt 'Place Last' = 2
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=f1000100ffff
+      REF -> 0x271A ''
+  FORM id=0x271A 'Boot'
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=f0000100ffff
+      ONEOF 'Boot Option #%d' | var=LegacyDevOrder+0x0 w=2B range=0..1 step=0 qid=0x00D7
+          help: Sets the system boot order
+        opt '' = 0
+        opt '' = 1
+        default[std] = 0
+        default[mfg] = 0
+  FORM id=0x2716 'Save & Exit'
+    -- Save Options --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==1
+      REF -> 0x2716 'Save Changes and Exit'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==2
+      REF -> 0x2716 'Discard Changes and Exit'
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==9
+      REF -> 0x2716 'Save Changes and Reset'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==10
+      REF -> 0x2716 'Discard Changes and Reset'
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==3
+      REF -> 0x2716 'Save Changes'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==4
+      REF -> 0x2716 'Discard Changes'
+    --  --
+    -- Default Options --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==5
+      REF -> 0x2716 'Restore Defaults'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==6
+      REF -> 0x2716 'Save as User Defaults'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==7
+      REF -> 0x2716 'Restore User Defaults'
+    --  --
+    -- Boot Override --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=ee000100ffff
+      REF -> 0x2716 ''
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=ed0001000100
+      REF -> 0x2716 'Launch EFI Shell from filesystem device'
+    REF -> 0x28E9 'Save & Exit'
+  FORM id=0x28E9 'Save & Exit'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==9
+      REF -> 0x28E9 'Save Changes and Exit'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==2
+      REF -> 0x28E9 'Discard Changes and Exit'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==4
+      REF -> 0x28E9 'Discard Changes'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==5
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        REF -> 0x28E9 'Restore Defaults'
+    --  --
+    -- Default Options --
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==6
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        REF -> 0x2716 'Save as User Defaults'
+    SUPPRESS_IF { (postfix expression follows)
+      EXPR q(0x00EF)==7
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        REF -> 0x2716 'Restore User Defaults'
+    --  --
+    -- Boot Override --
+    GRAY_OUT_IF { (postfix expression follows)
+      EXPR q(0x00EC)==1
+      SUPPRESS_IF { (postfix expression follows)
+        EQ_ID_VAL_LIST raw=ee000100ffff
+        REF -> 0x28E9 ''
+    --  --
+    SUPPRESS_IF { (postfix expression follows)
+      EQ_ID_VAL_LIST raw=ed0001000100
+      GRAY_OUT_IF { (postfix expression follows)
+        EXPR q(0x00EC)==1
+        REF -> 0x28E9 'Launch EFI Shell from filesystem device'
+    DISABLE_IF { (postfix expression follows)
+      EXPR true
+      NUMERIC '<0>' | var=SystemAccess+0x0 w=1B range=0..255 step=0 qid=0x00EC
+          help: <0>
+      NUMERIC '<0>' | var=Shell+0x0 w=2B range=0..65535 step=0 qid=0x00ED
+          help: <0>
+      NUMERIC '<0>' | var=BootManager+0x0 w=2B range=0..65535 step=0 qid=0x00EE
+          help: <0>
+      NUMERIC '<0>' | var=AMICallback+0x0 w=2B range=0..65535 step=0 qid=0x00EF
+          help: <0>
+      NUMERIC '<0>' | var=LegacyGroup+0x0 w=2B range=0..65535 step=0 qid=0x00F0
+          help: <0>
+      NUMERIC '<0>' | var=LegacyDev+0x0 w=2B range=0..65535 step=0 qid=0x00F1
+          help: <0>
+      NUMERIC '<0>' | var=DriverManager+0x0 w=2B range=0..65535 step=0 qid=0x00F2
+          help: <0>
+      NUMERIC '<0>' | var=Setup+0x1AC w=1B range=0..255 step=0 qid=0x00F3
+          help: <0>
+      NUMERIC '<0>' | var=Setup+0xB4 w=1B range=0..255 step=0 qid=0x00F4
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xF w=1B range=0..255 step=0 qid=0x00F5
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xE w=1B range=0..255 step=0 qid=0x00F6
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xD w=1B range=0..255 step=0 qid=0x00F7
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xC w=1B range=0..255 step=0 qid=0x00F8
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xB w=1B range=0..255 step=0 qid=0x00F9
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0xA w=1B range=0..255 step=0 qid=0x00FA
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x9 w=1B range=0..255 step=0 qid=0x00FB
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x8 w=1B range=0..255 step=0 qid=0x00FC
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x7 w=1B range=0..255 step=0 qid=0x00FD
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x6 w=1B range=0..255 step=0 qid=0x00FE
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x5 w=1B range=0..255 step=0 qid=0x00FF
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x4 w=1B range=0..255 step=0 qid=0x0100
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x3 w=1B range=0..255 step=0 qid=0x0101
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x2 w=1B range=0..255 step=0 qid=0x0102
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x1 w=1B range=0..255 step=0 qid=0x0103
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevValid+0x0 w=1B range=0..255 step=0 qid=0x0104
+          help: <0>
+      NUMERIC '<0>' | var=UsbMassDevNum+0x0 w=1B range=0..255 step=0 qid=0x0105
+          help: <0>
+      NUMERIC '<0>' | var=UsbControllerNum+0x3 w=1B range=0..255 step=0 qid=0x0106
+          help: <0>
+      NUMERIC '<0>' | var=UsbControllerNum+0x2 w=1B range=0..255 step=0 qid=0x0107
+          help: <0>
+      NUMERIC '<0>' | var=UsbControllerNum+0x1 w=1B range=0..255 step=0 qid=0x0108
+          help: <0>
+      NUMERIC '<0>' | var=UsbControllerNum+0x0 w=1B range=0..255 step=0 qid=0x0109
+          help: <0>
+      NUMERIC '<0>' | var=Setup+0xAE w=1B range=0..255 step=0 qid=0x010A
+          help: <0>
+      NUMERIC '<0>' | var=DrvHealthCtrlCnt+0x0 w=2B range=0..65535 step=0 qid=0x010B
+          help: <0>
+      NUMERIC '<0>' | var=DriverHealthCount+0x0 w=2B range=0..65535 step=0 qid=0x010C
+          help: <0>
+      NUMERIC '<0>' | var=DriverHlthEnable+0x0 w=2B range=0..65535 step=0 qid=0x010D
+          help: <0>
+      NUMERIC '<0>' | var=DynamicPageCount+0x0 w=2B range=0..65535 step=0 qid=0x010E
+          help: <0>
+      NUMERIC '<0>' | var=PlatformLangCodes+0x0 w=2B range=0..65535 step=0 qid=0x010F
+          help: <0>
+FIND raw=0104340000003400000000000000000000000000000000000000000000000000000000000000000000000100656e2d5553001445006e0067006c0069007300680000001400001445006e00610062006c00650064000000
+EQ_ID_VAL_LIST raw=0069007300610062006c00650064000000144100750074006f0000001453006500740075007000000014530065007400750070000000144d00610069006e00000014

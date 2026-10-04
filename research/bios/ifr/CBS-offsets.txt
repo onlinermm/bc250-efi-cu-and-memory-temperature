@@ -1,0 +1,1135 @@
+Current PUNSH CBS question inventory; offsets belong to the named varstore.
+ONEOF 'Combo CBS' | var=AmdSetup+0x0 w=1B range=0..5 step=0 qid=0x0002
+ONEOF 'RedirectForReturnDis' | var=AmdSetup+0x1 w=1B range=0..255 step=0 qid=0x0003
+ONEOF 'L2 TLB Associativity' | var=AmdSetup+0x2 w=1B range=0..3 step=0 qid=0x0004
+ONEOF 'Platform First Error Handling' | var=AmdSetup+0x3 w=1B range=0..3 step=0 qid=0x0005
+ONEOF 'Core Performance Boost' | var=AmdSetup+0x4 w=1B range=0..1 step=0 qid=0x0006
+ONEOF 'Global C-state Control' | var=AmdSetup+0x5 w=1B range=0..3 step=0 qid=0x0007
+ONEOF 'Downcore control' | var=AmdSetup+0x7 w=1B range=0..7 step=0 qid=0x0009
+ONEOF 'SMTEN' | var=AmdSetup+0x8 w=1B range=0..1 step=0 qid=0x000A
+ONEOF 'NumEncryptedGuests' | var=AmdSetup+0x9 w=4B range=14..509 step=0 qid=0x000B
+NUMERIC 'SEV-ES ASID Space Limit' | var=AmdSetup+0xD w=4B range=1..509 step=0 qid=0x000C
+ONEOF 'MCA0_CTL_MASK Control' | var=AmdSetup+0x11 w=1B range=0..1 step=0 qid=0x0011
+NUMERIC 'MCA0_CTL_MASK_LOW' | var=AmdSetup+0x12 w=4B range=0..4294967295 step=0 qid=0x0012
+NUMERIC 'MCA0_CTL_MASK_HIGH' | var=AmdSetup+0x16 w=4B range=0..4294967295 step=0 qid=0x0013
+ONEOF 'MCA1_CTL_MASK Control' | var=AmdSetup+0x1A w=1B range=0..1 step=0 qid=0x0014
+NUMERIC 'MCA1_CTL_MASK_LOW' | var=AmdSetup+0x1B w=4B range=0..4294967295 step=0 qid=0x0015
+NUMERIC 'MCA1_CTL_MASK_HIGH' | var=AmdSetup+0x1F w=4B range=0..4294967295 step=0 qid=0x0016
+ONEOF 'MCA2_CTL_MASK Control' | var=AmdSetup+0x23 w=1B range=0..1 step=0 qid=0x0017
+NUMERIC 'MCA2_CTL_MASK_LOW' | var=AmdSetup+0x24 w=4B range=0..4294967295 step=0 qid=0x0018
+NUMERIC 'MCA2_CTL_MASK_HIGH' | var=AmdSetup+0x28 w=4B range=0..4294967295 step=0 qid=0x0019
+ONEOF 'MCA3_CTL_MASK Control' | var=AmdSetup+0x2C w=1B range=0..1 step=0 qid=0x001A
+NUMERIC 'MCA3_CTL_MASK_LOW' | var=AmdSetup+0x2D w=4B range=0..4294967295 step=0 qid=0x001B
+NUMERIC 'MCA3_CTL_MASK_HIGH' | var=AmdSetup+0x31 w=4B range=0..4294967295 step=0 qid=0x001C
+ONEOF 'MCA4_CTL_MASK Control' | var=AmdSetup+0x35 w=1B range=0..1 step=0 qid=0x001D
+NUMERIC 'MCA4_CTL_MASK_LOW' | var=AmdSetup+0x36 w=4B range=0..4294967295 step=0 qid=0x001E
+NUMERIC 'MCA4_CTL_MASK_HIGH' | var=AmdSetup+0x3A w=4B range=0..4294967295 step=0 qid=0x001F
+ONEOF 'MCA5_CTL_MASK Control' | var=AmdSetup+0x3E w=1B range=0..1 step=0 qid=0x0020
+NUMERIC 'MCA5_CTL_MASK_LOW' | var=AmdSetup+0x3F w=4B range=0..4294967295 step=0 qid=0x0021
+NUMERIC 'MCA5_CTL_MASK_HIGH' | var=AmdSetup+0x43 w=4B range=0..4294967295 step=0 qid=0x0022
+ONEOF 'MCA6_CTL_MASK Control' | var=AmdSetup+0x47 w=1B range=0..1 step=0 qid=0x0023
+NUMERIC 'MCA6_CTL_MASK_LOW' | var=AmdSetup+0x48 w=4B range=0..4294967295 step=0 qid=0x0024
+NUMERIC 'MCA6_CTL_MASK_HIGH' | var=AmdSetup+0x4C w=4B range=0..4294967295 step=0 qid=0x0025
+ONEOF 'MCA7_CTL_MASK Control' | var=AmdSetup+0x50 w=1B range=0..1 step=0 qid=0x0026
+NUMERIC 'MCA7_CTL_MASK_LOW' | var=AmdSetup+0x51 w=4B range=0..4294967295 step=0 qid=0x0027
+NUMERIC 'MCA7_CTL_MASK_HIGH' | var=AmdSetup+0x55 w=4B range=0..4294967295 step=0 qid=0x0028
+ONEOF 'MCA8_CTL_MASK Control' | var=AmdSetup+0x59 w=1B range=0..1 step=0 qid=0x0029
+NUMERIC 'MCA8_CTL_MASK_LOW' | var=AmdSetup+0x5A w=4B range=0..4294967295 step=0 qid=0x002A
+NUMERIC 'MCA8_CTL_MASK_HIGH' | var=AmdSetup+0x5E w=4B range=0..4294967295 step=0 qid=0x002B
+ONEOF 'MCA9_CTL_MASK Control' | var=AmdSetup+0x62 w=1B range=0..1 step=0 qid=0x002C
+NUMERIC 'MCA9_CTL_MASK_LOW' | var=AmdSetup+0x63 w=4B range=0..4294967295 step=0 qid=0x002D
+NUMERIC 'MCA9_CTL_MASK_HIGH' | var=AmdSetup+0x67 w=4B range=0..4294967295 step=0 qid=0x002E
+ONEOF 'MCA10_CTL_MASK Control' | var=AmdSetup+0x6B w=1B range=0..1 step=0 qid=0x002F
+NUMERIC 'MCA10_CTL_MASK_LOW' | var=AmdSetup+0x6C w=4B range=0..4294967295 step=0 qid=0x0030
+NUMERIC 'MCA10_CTL_MASK_HIGH' | var=AmdSetup+0x70 w=4B range=0..4294967295 step=0 qid=0x0031
+ONEOF 'MCA11_CTL_MASK Control' | var=AmdSetup+0x74 w=1B range=0..1 step=0 qid=0x0032
+NUMERIC 'MCA11_CTL_MASK_LOW' | var=AmdSetup+0x75 w=4B range=0..4294967295 step=0 qid=0x0033
+NUMERIC 'MCA11_CTL_MASK_HIGH' | var=AmdSetup+0x79 w=4B range=0..4294967295 step=0 qid=0x0034
+ONEOF 'MCA12_CTL_MASK Control' | var=AmdSetup+0x7D w=1B range=0..1 step=0 qid=0x0035
+NUMERIC 'MCA12_CTL_MASK_LOW' | var=AmdSetup+0x7E w=4B range=0..4294967295 step=0 qid=0x0036
+NUMERIC 'MCA12_CTL_MASK_HIGH' | var=AmdSetup+0x82 w=4B range=0..4294967295 step=0 qid=0x0037
+ONEOF 'MCA13_CTL_MASK Control' | var=AmdSetup+0x86 w=1B range=0..1 step=0 qid=0x0038
+NUMERIC 'MCA13_CTL_MASK_LOW' | var=AmdSetup+0x87 w=4B range=0..4294967295 step=0 qid=0x0039
+NUMERIC 'MCA13_CTL_MASK_HIGH' | var=AmdSetup+0x8B w=4B range=0..4294967295 step=0 qid=0x003A
+ONEOF 'MCA14_CTL_MASK Control' | var=AmdSetup+0x8F w=1B range=0..1 step=0 qid=0x003B
+NUMERIC 'MCA14_CTL_MASK_LOW' | var=AmdSetup+0x90 w=4B range=0..4294967295 step=0 qid=0x003C
+NUMERIC 'MCA14_CTL_MASK_HIGH' | var=AmdSetup+0x94 w=4B range=0..4294967295 step=0 qid=0x003D
+ONEOF 'MCA15_CTL_MASK Control' | var=AmdSetup+0x98 w=1B range=0..1 step=0 qid=0x003E
+NUMERIC 'MCA15_CTL_MASK_LOW' | var=AmdSetup+0x99 w=4B range=0..4294967295 step=0 qid=0x003F
+NUMERIC 'MCA15_CTL_MASK_HIGH' | var=AmdSetup+0x9D w=4B range=0..4294967295 step=0 qid=0x0040
+ONEOF 'MCA16_CTL_MASK Control' | var=AmdSetup+0xA1 w=1B range=0..1 step=0 qid=0x0041
+NUMERIC 'MCA16_CTL_MASK_LOW' | var=AmdSetup+0xA2 w=4B range=0..4294967295 step=0 qid=0x0042
+NUMERIC 'MCA16_CTL_MASK_HIGH' | var=AmdSetup+0xA6 w=4B range=0..4294967295 step=0 qid=0x0043
+ONEOF 'MCA17_CTL_MASK Control' | var=AmdSetup+0xAA w=1B range=0..1 step=0 qid=0x0044
+NUMERIC 'MCA17_CTL_MASK_LOW' | var=AmdSetup+0xAB w=4B range=0..4294967295 step=0 qid=0x0045
+NUMERIC 'MCA17_CTL_MASK_HIGH' | var=AmdSetup+0xAF w=4B range=0..4294967295 step=0 qid=0x0046
+ONEOF 'MCA18_CTL_MASK Control' | var=AmdSetup+0xB3 w=1B range=0..1 step=0 qid=0x0047
+NUMERIC 'MCA18_CTL_MASK_LOW' | var=AmdSetup+0xB4 w=4B range=0..4294967295 step=0 qid=0x0048
+NUMERIC 'MCA18_CTL_MASK_HIGH' | var=AmdSetup+0xB8 w=4B range=0..4294967295 step=0 qid=0x0049
+ONEOF 'MCA19_CTL_MASK Control' | var=AmdSetup+0xBC w=1B range=0..1 step=0 qid=0x004A
+NUMERIC 'MCA19_CTL_MASK_LOW' | var=AmdSetup+0xBD w=4B range=0..4294967295 step=0 qid=0x004B
+NUMERIC 'MCA19_CTL_MASK_HIGH' | var=AmdSetup+0xC1 w=4B range=0..4294967295 step=0 qid=0x004C
+ONEOF 'MCA20_CTL_MASK Control' | var=AmdSetup+0xC5 w=1B range=0..1 step=0 qid=0x004D
+NUMERIC 'MCA20_CTL_MASK_LOW' | var=AmdSetup+0xC6 w=4B range=0..4294967295 step=0 qid=0x004E
+NUMERIC 'MCA20_CTL_MASK_HIGH' | var=AmdSetup+0xCA w=4B range=0..4294967295 step=0 qid=0x004F
+ONEOF 'MCA21_CTL_MASK Control' | var=AmdSetup+0xCE w=1B range=0..1 step=0 qid=0x0050
+NUMERIC 'MCA21_CTL_MASK_LOW' | var=AmdSetup+0xCF w=4B range=0..4294967295 step=0 qid=0x0051
+NUMERIC 'MCA21_CTL_MASK_HIGH' | var=AmdSetup+0xD3 w=4B range=0..4294967295 step=0 qid=0x0052
+ONEOF 'MCA22_CTL_MASK Control' | var=AmdSetup+0xD7 w=1B range=0..1 step=0 qid=0x0053
+NUMERIC 'MCA22_CTL_MASK_LOW' | var=AmdSetup+0xD8 w=4B range=0..4294967295 step=0 qid=0x0054
+NUMERIC 'MCA22_CTL_MASK_HIGH' | var=AmdSetup+0xDC w=4B range=0..4294967295 step=0 qid=0x0055
+ONEOF 'MCG_CTL Control' | var=AmdSetup+0xE0 w=1B range=0..1 step=0 qid=0x0056
+NUMERIC 'MCG_CTL Value' | var=AmdSetup+0xE1 w=4B range=0..8388607 step=0 qid=0x0057
+ONEOF 'MCA0_CTL Control' | var=AmdSetup+0xE5 w=1B range=0..1 step=0 qid=0x0058
+NUMERIC 'MCA0_CTL_LOW' | var=AmdSetup+0xE6 w=4B range=0..4294967295 step=0 qid=0x0059
+NUMERIC 'MCA0_CTL_HIGH' | var=AmdSetup+0xEA w=4B range=0..4294967295 step=0 qid=0x005A
+ONEOF 'MCA1_CTL Control' | var=AmdSetup+0xEE w=1B range=0..1 step=0 qid=0x005B
+NUMERIC 'MCA1_CTL_LOW' | var=AmdSetup+0xEF w=4B range=0..4294967295 step=0 qid=0x005C
+NUMERIC 'MCA1_CTL_HIGH' | var=AmdSetup+0xF3 w=4B range=0..4294967295 step=0 qid=0x005D
+ONEOF 'MCA2_CTL Control' | var=AmdSetup+0xF7 w=1B range=0..1 step=0 qid=0x005E
+NUMERIC 'MCA2_CTL_LOW' | var=AmdSetup+0xF8 w=4B range=0..4294967295 step=0 qid=0x005F
+NUMERIC 'MCA2_CTL_HIGH' | var=AmdSetup+0xFC w=4B range=0..4294967295 step=0 qid=0x0060
+ONEOF 'MCA3_CTL Control' | var=AmdSetup+0x100 w=1B range=0..1 step=0 qid=0x0061
+NUMERIC 'MCA3_CTL_LOW' | var=AmdSetup+0x101 w=4B range=0..4294967295 step=0 qid=0x0062
+NUMERIC 'MCA3_CTL_HIGH' | var=AmdSetup+0x105 w=4B range=0..4294967295 step=0 qid=0x0063
+ONEOF 'MCA4_CTL Control' | var=AmdSetup+0x109 w=1B range=0..1 step=0 qid=0x0064
+NUMERIC 'MCA4_CTL_LOW' | var=AmdSetup+0x10A w=4B range=0..4294967295 step=0 qid=0x0065
+NUMERIC 'MCA4_CTL_HIGH' | var=AmdSetup+0x10E w=4B range=0..4294967295 step=0 qid=0x0066
+ONEOF 'MCA5_CTL Control' | var=AmdSetup+0x112 w=1B range=0..1 step=0 qid=0x0067
+NUMERIC 'MCA5_CTL_LOW' | var=AmdSetup+0x113 w=4B range=0..4294967295 step=0 qid=0x0068
+NUMERIC 'MCA5_CTL_HIGH' | var=AmdSetup+0x117 w=4B range=0..4294967295 step=0 qid=0x0069
+ONEOF 'MCA6_CTL Control' | var=AmdSetup+0x11B w=1B range=0..1 step=0 qid=0x006A
+NUMERIC 'MCA6_CTL_LOW' | var=AmdSetup+0x11C w=4B range=0..4294967295 step=0 qid=0x006B
+NUMERIC 'MCA6_CTL_HIGH' | var=AmdSetup+0x120 w=4B range=0..4294967295 step=0 qid=0x006C
+ONEOF 'MCA7_CTL Control' | var=AmdSetup+0x124 w=1B range=0..1 step=0 qid=0x006D
+NUMERIC 'MCA7_CTL_LOW' | var=AmdSetup+0x125 w=4B range=0..4294967295 step=0 qid=0x006E
+NUMERIC 'MCA7_CTL_HIGH' | var=AmdSetup+0x129 w=4B range=0..4294967295 step=0 qid=0x006F
+ONEOF 'MCA8_CTL Control' | var=AmdSetup+0x12D w=1B range=0..1 step=0 qid=0x0070
+NUMERIC 'MCA8_CTL_LOW' | var=AmdSetup+0x12E w=4B range=0..4294967295 step=0 qid=0x0071
+NUMERIC 'MCA8_CTL_HIGH' | var=AmdSetup+0x132 w=4B range=0..4294967295 step=0 qid=0x0072
+ONEOF 'MCA9_CTL Control' | var=AmdSetup+0x136 w=1B range=0..1 step=0 qid=0x0073
+NUMERIC 'MCA9_CTL_LOW' | var=AmdSetup+0x137 w=4B range=0..4294967295 step=0 qid=0x0074
+NUMERIC 'MCA9_CTL_HIGH' | var=AmdSetup+0x13B w=4B range=0..4294967295 step=0 qid=0x0075
+ONEOF 'MCA10_CTL Control' | var=AmdSetup+0x13F w=1B range=0..1 step=0 qid=0x0076
+NUMERIC 'MCA10_CTL_LOW' | var=AmdSetup+0x140 w=4B range=0..4294967295 step=0 qid=0x0077
+NUMERIC 'MCA10_CTL_HIGH' | var=AmdSetup+0x144 w=4B range=0..4294967295 step=0 qid=0x0078
+ONEOF 'MCA11_CTL Control' | var=AmdSetup+0x148 w=1B range=0..1 step=0 qid=0x0079
+NUMERIC 'MCA11_CTL_LOW' | var=AmdSetup+0x149 w=4B range=0..4294967295 step=0 qid=0x007A
+NUMERIC 'MCA11_CTL_HIGH' | var=AmdSetup+0x14D w=4B range=0..4294967295 step=0 qid=0x007B
+ONEOF 'MCA12_CTL Control' | var=AmdSetup+0x151 w=1B range=0..1 step=0 qid=0x007C
+NUMERIC 'MCA12_CTL_LOW' | var=AmdSetup+0x152 w=4B range=0..4294967295 step=0 qid=0x007D
+NUMERIC 'MCA12_CTL_HIGH' | var=AmdSetup+0x156 w=4B range=0..4294967295 step=0 qid=0x007E
+ONEOF 'MCA13_CTL Control' | var=AmdSetup+0x15A w=1B range=0..1 step=0 qid=0x007F
+NUMERIC 'MCA13_CTL_LOW' | var=AmdSetup+0x15B w=4B range=0..4294967295 step=0 qid=0x0080
+NUMERIC 'MCA13_CTL_HIGH' | var=AmdSetup+0x15F w=4B range=0..4294967295 step=0 qid=0x0081
+ONEOF 'MCA14_CTL Control' | var=AmdSetup+0x163 w=1B range=0..1 step=0 qid=0x0082
+NUMERIC 'MCA14_CTL_LOW' | var=AmdSetup+0x164 w=4B range=0..4294967295 step=0 qid=0x0083
+NUMERIC 'MCA14_CTL_HIGH' | var=AmdSetup+0x168 w=4B range=0..4294967295 step=0 qid=0x0084
+ONEOF 'MCA15_CTL Control' | var=AmdSetup+0x16C w=1B range=0..1 step=0 qid=0x0085
+NUMERIC 'MCA15_CTL_LOW' | var=AmdSetup+0x16D w=4B range=0..4294967295 step=0 qid=0x0086
+NUMERIC 'MCA15_CTL_HIGH' | var=AmdSetup+0x171 w=4B range=0..4294967295 step=0 qid=0x0087
+ONEOF 'MCA16_CTL Control' | var=AmdSetup+0x175 w=1B range=0..1 step=0 qid=0x0088
+NUMERIC 'MCA16_CTL_LOW' | var=AmdSetup+0x176 w=4B range=0..4294967295 step=0 qid=0x0089
+NUMERIC 'MCA16_CTL_HIGH' | var=AmdSetup+0x17A w=4B range=0..4294967295 step=0 qid=0x008A
+ONEOF 'MCA17_CTL Control' | var=AmdSetup+0x17E w=1B range=0..1 step=0 qid=0x008B
+NUMERIC 'MCA17_CTL_LOW' | var=AmdSetup+0x17F w=4B range=0..4294967295 step=0 qid=0x008C
+NUMERIC 'MCA17_CTL_HIGH' | var=AmdSetup+0x183 w=4B range=0..4294967295 step=0 qid=0x008D
+ONEOF 'MCA18_CTL Control' | var=AmdSetup+0x187 w=1B range=0..1 step=0 qid=0x008E
+NUMERIC 'MCA18_CTL_LOW' | var=AmdSetup+0x188 w=4B range=0..4294967295 step=0 qid=0x008F
+NUMERIC 'MCA18_CTL_HIGH' | var=AmdSetup+0x18C w=4B range=0..4294967295 step=0 qid=0x0090
+ONEOF 'MCA19_CTL Control' | var=AmdSetup+0x190 w=1B range=0..1 step=0 qid=0x0091
+NUMERIC 'MCA19_CTL_LOW' | var=AmdSetup+0x191 w=4B range=0..4294967295 step=0 qid=0x0092
+NUMERIC 'MCA19_CTL_HIGH' | var=AmdSetup+0x195 w=4B range=0..4294967295 step=0 qid=0x0093
+ONEOF 'MCA20_CTL Control' | var=AmdSetup+0x199 w=1B range=0..1 step=0 qid=0x0094
+NUMERIC 'MCA20_CTL_LOW' | var=AmdSetup+0x19A w=4B range=0..4294967295 step=0 qid=0x0095
+NUMERIC 'MCA20_CTL_HIGH' | var=AmdSetup+0x19E w=4B range=0..4294967295 step=0 qid=0x0096
+ONEOF 'MCA21_CTL Control' | var=AmdSetup+0x1A2 w=1B range=0..1 step=0 qid=0x0097
+NUMERIC 'MCA21_CTL_LOW' | var=AmdSetup+0x1A3 w=4B range=0..4294967295 step=0 qid=0x0098
+NUMERIC 'MCA21_CTL_HIGH' | var=AmdSetup+0x1A7 w=4B range=0..4294967295 step=0 qid=0x0099
+ONEOF 'MCA22_CTL Control' | var=AmdSetup+0x1AB w=1B range=0..1 step=0 qid=0x009A
+NUMERIC 'MCA22_CTL_LOW' | var=AmdSetup+0x1AC w=4B range=0..4294967295 step=0 qid=0x009B
+NUMERIC 'MCA22_CTL_HIGH' | var=AmdSetup+0x1B0 w=4B range=0..4294967295 step=0 qid=0x009C
+ONEOF 'CR4.MCE Control' | var=AmdSetup+0x1B4 w=1B range=0..3 step=0 qid=0x009D
+ONEOF 'BTHB Core 0 Hole Size' | var=AmdSetup+0x1B5 w=1B range=0..4 step=0 qid=0x009E
+ONEOF 'BTHB Core 1 Hole Size' | var=AmdSetup+0x1B6 w=1B range=0..4 step=0 qid=0x009F
+ONEOF 'BTHB Core 2 Hole Size' | var=AmdSetup+0x1B7 w=1B range=0..4 step=0 qid=0x00A0
+ONEOF 'BTHB Core 3 Hole Size' | var=AmdSetup+0x1B8 w=1B range=0..4 step=0 qid=0x00A1
+ONEOF 'BTHB Core 4 Hole Size' | var=AmdSetup+0x1B9 w=1B range=0..4 step=0 qid=0x00A2
+ONEOF 'BTHB Core 5 Hole Size' | var=AmdSetup+0x1BA w=1B range=0..4 step=0 qid=0x00A3
+ONEOF 'BTHB Core 6 Hole Size' | var=AmdSetup+0x1BB w=1B range=0..4 step=0 qid=0x00A4
+ONEOF 'BTHB Core 7 Hole Size' | var=AmdSetup+0x1BC w=1B range=0..4 step=0 qid=0x00A5
+ONEOF 'uCode Patching' | var=AmdSetup+0x1BD w=1B range=0..1 step=0 qid=0x00A6
+ONEOF 'Sync Flood on MCA' | var=AmdSetup+0x1BE w=1B range=0..3 step=0 qid=0x00A7
+ONEOF 'Enable Redirect Shutdown to HDT' | var=AmdSetup+0x1BF w=1B range=0..1 step=0 qid=0x00A8
+ONEOF 'Enable Redirect int1 int3 to HDT' | var=AmdSetup+0x1C0 w=1B range=0..1 step=0 qid=0x00A9
+ONEOF 'Exception Breakpoint Control' | var=AmdSetup+0x1C1 w=1B range=1..255 step=0 qid=0x00AA
+NUMERIC 'Exception Vector' | var=AmdSetup+0x1C2 w=1B range=0..255 step=0 qid=0x00AB
+ONEOF 'LBR' | var=AmdSetup+0x1C3 w=1B range=0..3 step=0 qid=0x00AC
+ONEOF 'HDT OUT' | var=AmdSetup+0x1C4 w=1B range=0..1 step=0 qid=0x00AD
+ONEOF 'ABL BreakPoint' | var=AmdSetup+0x1C5 w=1B range=0..3 step=0 qid=0x00AE
+ONEOF 'ABL ConsoleOut' | var=AmdSetup+0x1C6 w=1B range=0..3 step=0 qid=0x00AF
+ONEOF 'HDT Breakpoint 1 (x86 AGESA start)' | var=AmdSetup+0x1C7 w=1B range=0..1 step=0 qid=0x00B0
+ONEOF 'HDT Breakpoint 2 (Before PCI init)' | var=AmdSetup+0x1C8 w=1B range=0..1 step=0 qid=0x00B1
+ONEOF 'HDT Breakpoint 3 (Before OS)' | var=AmdSetup+0x1C9 w=1B range=0..1 step=0 qid=0x00B2
+ONEOF 'Core Watchdog Timer Disable' | var=AmdSetup+0x1CA w=1B range=0..3 step=0 qid=0x00B3
+ONEOF 'ACPI WHEA' | var=AmdSetup+0x1CB w=1B range=0..3 step=0 qid=0x00B4
+ONEOF 'L3 way locking' | var=AmdSetup+0x1CC w=1B range=0..7 step=0 qid=0x00B5
+ONEOF 'L2 Range Lock Enable' | var=AmdSetup+0x1CD w=1B range=0..255 step=0 qid=0x00B6
+ONEOF 'L3 Range Lock Enable' | var=AmdSetup+0x1CE w=1B range=0..255 step=0 qid=0x00B7
+ONEOF 'RdRand' | var=AmdSetup+0x1CF w=1B range=0..1 step=0 qid=0x00B8
+ONEOF 'RdSeed' | var=AmdSetup+0x1D0 w=1B range=0..1 step=0 qid=0x00B9
+ONEOF 'SMEE' | var=AmdSetup+0x1D1 w=1B range=0..3 step=0 qid=0x00BA
+ONEOF 'SMM Lock' | var=AmdSetup+0x1D2 w=1B range=0..1 step=0 qid=0x00BB
+ONEOF 'Report Responsible Victim' | var=AmdSetup+0x1D3 w=1B range=0..3 step=0 qid=0x00BC
+ONEOF 'Report Shared Victim' | var=AmdSetup+0x1D4 w=1B range=0..3 step=0 qid=0x00BD
+ONEOF 'Spec DRAM Rd Dis' | var=AmdSetup+0x1D5 w=1B range=0..3 step=0 qid=0x00BE
+ONEOF 'CacheLock Disable' | var=AmdSetup+0x1D6 w=1B range=0..3 step=0 qid=0x00BF
+ONEOF 'SpecLockMap Disable' | var=AmdSetup+0x1D7 w=1B range=0..3 step=0 qid=0x00C0
+ONEOF 'Disable uop Cache' | var=AmdSetup+0x1D8 w=1B range=0..3 step=0 qid=0x00C1
+ONEOF 'Disable L1 Region HW Prefetcher' | var=AmdSetup+0x1D9 w=1B range=0..3 step=0 qid=0x00C2
+ONEOF 'Disable L1 Stride HW Prefetcher' | var=AmdSetup+0x1DA w=1B range=0..3 step=0 qid=0x00C3
+ONEOF 'Disable L1 Stream HW Prefetcher' | var=AmdSetup+0x1DB w=1B range=0..3 step=0 qid=0x00C4
+ONEOF 'Disable L1 HW Prefetcher' | var=AmdSetup+0x1DC w=1B range=0..3 step=0 qid=0x00C5
+ONEOF 'Disable MemRenaming' | var=AmdSetup+0x1DD w=1B range=0..3 step=0 qid=0x00C6
+ONEOF 'Disable Recent' | var=AmdSetup+0x1DE w=1B range=0..3 step=0 qid=0x00C7
+ONEOF 'Disable L2 Pf Low Arb Pri' | var=AmdSetup+0x1DF w=1B range=0..3 step=0 qid=0x00C8
+ONEOF 'L2 Stream Prefetcher' | var=AmdSetup+0x1E0 w=1B range=0..3 step=0 qid=0x00C9
+ONEOF 'L2 Stride Prefetcher' | var=AmdSetup+0x1E1 w=1B range=0..3 step=0 qid=0x00CA
+ONEOF 'L2 Max Stride Distance' | var=AmdSetup+0x1E2 w=1B range=0..7 step=0 qid=0x00CB
+ONEOF 'Page Pf Hint Dis' | var=AmdSetup+0x1E3 w=1B range=0..3 step=0 qid=0x00CC
+ONEOF 'L2 Max Stream Distance' | var=AmdSetup+0x1E4 w=1B range=0..7 step=0 qid=0x00CD
+ONEOF 'L2 Page Pf Distance' | var=AmdSetup+0x1E5 w=1B range=0..7 step=0 qid=0x00CE
+ONEOF 'Stream Throttle Control' | var=AmdSetup+0x1E6 w=1B range=0..7 step=0 qid=0x00CF
+ONEOF 'Disable Spec TLB Reload' | var=AmdSetup+0x1E7 w=1B range=0..3 step=0 qid=0x00D0
+ONEOF 'Stack Engine Disable' | var=AmdSetup+0x1E8 w=1B range=0..3 step=0 qid=0x00D1
+ONEOF 'Mem File Disable' | var=AmdSetup+0x1E9 w=1B range=0..3 step=0 qid=0x00D2
+ONEOF 'Mesh Gate Level' | var=AmdSetup+0x1EA w=1B range=0..7 step=0 qid=0x00D3
+ONEOF 'DelayedWakeEn' | var=AmdSetup+0x1EB w=1B range=0..3 step=0 qid=0x00D4
+ONEOF 'Delayed Wake Count' | var=AmdSetup+0x1EC w=1B range=0..15 step=0 qid=0x00D5
+NUMERIC 'Mesh Gate Hold' | var=AmdSetup+0x1ED w=1B range=0..3 step=0 qid=0x00D6
+ONEOF 'L2EvictForceDcBackprobe' | var=AmdSetup+0x1EE w=1B range=0..3 step=0 qid=0x00D7
+ONEOF 'L2WcbXrqSerializeTidAgnostic' | var=AmdSetup+0x1EF w=1B range=0..3 step=0 qid=0x00D8
+ONEOF 'DisableLsReqPfPromotion' | var=AmdSetup+0x1F0 w=1B range=0..3 step=0 qid=0x00D9
+ONEOF 'TdPickThrottleEnable' | var=AmdSetup+0x1F1 w=1B range=0..3 step=0 qid=0x00DA
+ONEOF 'DisableAllEarlyVbTokenRet' | var=AmdSetup+0x1F2 w=1B range=0..3 step=0 qid=0x00DB
+ONEOF 'L2 Up Down Prefetcher' | var=AmdSetup+0x1F3 w=1B range=0..3 step=0 qid=0x00DC
+NUMERIC 'FP_CFG: MSC_CAC_TH' | var=AmdSetup+0x1F4 w=1B range=0..31 step=0 qid=0x00DD
+ONEOF 'FP_CFG: RET_DISACCF' | var=AmdSetup+0x1F5 w=1B range=0..3 step=0 qid=0x00DE
+NUMERIC 'FP_CFG: RET_ADVTOK_RET' | var=AmdSetup+0x1F6 w=1B range=0..7 step=0 qid=0x00DF
+ONEOF 'FP_CFG: SCE_THROTTLE_X87' | var=AmdSetup+0x1F7 w=1B range=0..3 step=0 qid=0x00E0
+ONEOF 'FP_CFG: SCE_ENABLE_RRT' | var=AmdSetup+0x1F8 w=1B range=0..3 step=0 qid=0x00E1
+ONEOF 'FP_CFG: SCE_ALWAYS_THROTTLE' | var=AmdSetup+0x1F9 w=1B range=0..7 step=0 qid=0x00E2
+ONEOF 'FP_CFG: SCE_LIVELOCK_THRESH' | var=AmdSetup+0x1FA w=1B range=0..7 step=0 qid=0x00E3
+ONEOF 'FP_CFG: SCE_DIDT_TH_ENABLE' | var=AmdSetup+0x1FB w=1B range=0..3 step=0 qid=0x00E4
+ONEOF 'FP_CFG: SCE_DIDT_INJ_F_ENABLE' | var=AmdSetup+0x1FC w=1B range=0..3 step=0 qid=0x00E5
+ONEOF 'FP_CFG: SCE_DIDT_INJ_R_ENABLE' | var=AmdSetup+0x1FD w=1B range=0..3 step=0 qid=0x00E6
+ONEOF 'FP_CFG: SCE_DIDT_TH_SCHEME' | var=AmdSetup+0x1FE w=1B range=0..3 step=0 qid=0x00E7
+ONEOF 'FP_CFG: SCE_DIDT_TIMECONST' | var=AmdSetup+0x1FF w=1B range=0..7 step=0 qid=0x00E8
+ONEOF 'FP_CFG: SCE_DIDT_TH_THRESH' | var=AmdSetup+0x200 w=1B range=0..3 step=0 qid=0x00E9
+ONEOF 'FP_CFG: SCE_DIDT_INJ_THRESH' | var=AmdSetup+0x201 w=1B range=0..7 step=0 qid=0x00EA
+ONEOF 'L2 Stream Throttle Disable' | var=AmdSetup+0x202 w=1B range=0..3 step=0 qid=0x00EB
+ONEOF 'BP Prefetch Disable' | var=AmdSetup+0x203 w=1B range=0..3 step=0 qid=0x00EC
+ONEOF 'BP Disable' | var=AmdSetup+0x204 w=1B range=0..3 step=0 qid=0x00ED
+ONEOF 'OC Token Bypass Disable' | var=AmdSetup+0x205 w=1B range=0..3 step=0 qid=0x00EE
+ONEOF 'OcInterPickGroupFusionDisable' | var=AmdSetup+0x206 w=1B range=0..3 step=0 qid=0x00EF
+ONEOF 'EX_CFG: FORCE_EXSCBUSY_GATER' | var=AmdSetup+0x207 w=1B range=0..3 step=0 qid=0x00F0
+ONEOF 'TW_CFG: CohMemTypesOnly' | var=AmdSetup+0x208 w=1B range=0..3 step=0 qid=0x00F1
+ONEOF 'Locks to only schedule non-spec' | var=AmdSetup+0x209 w=1B range=0..3 step=0 qid=0x00F2
+ONEOF 'ResyncOoOLdOnL1Evict' | var=AmdSetup+0x20A w=1B range=0..3 step=0 qid=0x00F3
+ONEOF 'MemFile2EGS Disable' | var=AmdSetup+0x20B w=1B range=0..3 step=0 qid=0x00F4
+ONEOF 'SpecWcReq Disable' | var=AmdSetup+0x20C w=1B range=0..3 step=0 qid=0x00F5
+ONEOF 'ForceAllSbex' | var=AmdSetup+0x20D w=1B range=0..3 step=0 qid=0x00F6
+ONEOF 'DisLiveLockIgnMabIdxBlk' | var=AmdSetup+0x20E w=1B range=0..3 step=0 qid=0x00F7
+ONEOF 'DisStIgnMabIdxBlk' | var=AmdSetup+0x20F w=1B range=0..3 step=0 qid=0x00F8
+ONEOF 'DisDcTagPaDcVFatalErr' | var=AmdSetup+0x210 w=1B range=0..3 step=0 qid=0x00F9
+ONEOF 'WrSzLkUpDis' | var=AmdSetup+0x211 w=1B range=0..3 step=0 qid=0x00FA
+ONEOF 'No Data Access Enable' | var=AmdSetup+0x212 w=1B range=0..15 step=0 qid=0x00FB
+ONEOF 'LBR Extension Enable' | var=AmdSetup+0x213 w=1B range=0..15 step=0 qid=0x00FC
+ONEOF 'Disable Page Coalescing' | var=AmdSetup+0x214 w=1B range=0..15 step=0 qid=0x00FD
+ONEOF 'Enable Forced Page Coalescing' | var=AmdSetup+0x215 w=1B range=0..15 step=0 qid=0x00FE
+ONEOF 'Local APIC Mode' | var=AmdSetup+0x216 w=1B range=0..255 step=0 qid=0x00FF
+ONEOF 'Core Dynamic Pwr Monitor (DPM) Control' | var=AmdSetup+0x217 w=1B range=0..1 step=0 qid=0x0100
+ONEOF 'Core DPM Enable' | var=AmdSetup+0x218 w=1B range=0..1 step=0 qid=0x0101
+ONEOF 'Core MSR Access Enable' | var=AmdSetup+0x219 w=1B range=0..1 step=0 qid=0x0102
+ONEOF 'BTC Control' | var=AmdSetup+0x21A w=1B range=0..1 step=0 qid=0x0103
+ONEOF 'ACPI _PSS' | var=AmdSetup+0x21B w=1B range=0..3 step=0 qid=0x0104
+NUMERIC 'Memory Hole on Die 0' | var=AmdSetup+0x21C w=4B range=0..4294967295 step=0 qid=0x0105
+ONEOF 'Disable DF sync flood propagation' | var=AmdSetup+0x220 w=1B range=0..3 step=0 qid=0x0106
+ONEOF 'System probe filter' | var=AmdSetup+0x221 w=1B range=0..3 step=0 qid=0x0107
+ONEOF 'Memory interleaving' | var=AmdSetup+0x222 w=1B range=0..7 step=0 qid=0x0108
+ONEOF 'Memory interleaving size' | var=AmdSetup+0x223 w=1B range=0..7 step=0 qid=0x0109
+ONEOF 'Channel interleaving hash' | var=AmdSetup+0x224 w=1B range=0..3 step=0 qid=0x010A
+ONEOF 'Freeze DF module queues on error' | var=AmdSetup+0x225 w=1B range=0..3 step=0 qid=0x010B
+ONEOF 'Core master request ordering' | var=AmdSetup+0x226 w=1B range=0..1 step=0 qid=0x010C
+ONEOF 'I/O master request ordering' | var=AmdSetup+0x227 w=1B range=0..1 step=0 qid=0x010D
+ONEOF 'Medium grain clock gating' | var=AmdSetup+0x228 w=1B range=0..31 step=0 qid=0x010E
+ONEOF 'Disable MemCancel' | var=AmdSetup+0x229 w=1B range=0..3 step=0 qid=0x010F
+ONEOF 'Disable migratory probes' | var=AmdSetup+0x22A w=1B range=0..3 step=0 qid=0x0110
+ONEOF 'Stop on SPF error detect' | var=AmdSetup+0x22B w=1B range=0..3 step=0 qid=0x0111
+ONEOF 'Disable TCDX bypasses' | var=AmdSetup+0x22C w=1B range=0..3 step=0 qid=0x0112
+ONEOF 'F1/F fetch probes - remote' | var=AmdSetup+0x22D w=1B range=0..3 step=0 qid=0x0113
+ONEOF 'F1/F fetch probes - local' | var=AmdSetup+0x22E w=1B range=0..3 step=0 qid=0x0114
+ONEOF 'F1/F fetch probes - on die' | var=AmdSetup+0x22F w=1B range=0..3 step=0 qid=0x0115
+ONEOF 'Disable SPF ways' | var=AmdSetup+0x230 w=1B range=0..7 step=0 qid=0x0116
+ONEOF 'I/O request bus lock control' | var=AmdSetup+0x231 w=1B range=0..3 step=0 qid=0x0117
+ONEOF 'IOM PerfMon Ctrl - PrbRsp' | var=AmdSetup+0x232 w=1B range=0..3 step=0 qid=0x0118
+ONEOF 'IOM PerfMon Ctrl - TgtSel' | var=AmdSetup+0x233 w=1B range=0..15 step=0 qid=0x0119
+ONEOF 'Watchdog Timer Control' | var=AmdSetup+0x234 w=1B range=0..3 step=0 qid=0x011A
+ONEOF 'Disable I/O bus lock involvement' | var=AmdSetup+0x235 w=1B range=0..3 step=0 qid=0x011B
+ONEOF 'PIE PRQ broadcast limit' | var=AmdSetup+0x236 w=1B range=0..15 step=0 qid=0x011C
+ONEOF 'Limit maximum I/O requests' | var=AmdSetup+0x237 w=1B range=0..3 step=0 qid=0x011D
+NUMERIC 'Max I/O request limit' | var=AmdSetup+0x238 w=1B range=0..63 step=0 qid=0x011E
+ONEOF 'CCM LL thresh control' | var=AmdSetup+0x239 w=1B range=0..1 step=0 qid=0x011F
+NUMERIC 'CCM LL thresh' | var=AmdSetup+0x23A w=1B range=0..15 step=0 qid=0x0120
+ONEOF 'CCM LL cumulative thresh control' | var=AmdSetup+0x23B w=1B range=0..1 step=0 qid=0x0121
+NUMERIC 'CCM LL cumulative thresh' | var=AmdSetup+0x23C w=1B range=0..63 step=0 qid=0x0122
+ONEOF 'CCM LP thresh control' | var=AmdSetup+0x23D w=1B range=0..1 step=0 qid=0x0123
+NUMERIC 'CCM LP thresh' | var=AmdSetup+0x23E w=1B range=0..7 step=0 qid=0x0124
+ONEOF 'CCM LP cumulative thresh control' | var=AmdSetup+0x23F w=1B range=0..1 step=0 qid=0x0125
+NUMERIC 'CCM LP cumulative thresh' | var=AmdSetup+0x240 w=1B range=0..31 step=0 qid=0x0126
+ONEOF 'CCM bypass control' | var=AmdSetup+0x241 w=1B range=0..3 step=0 qid=0x0127
+ONEOF 'IOS resp bypass control' | var=AmdSetup+0x242 w=1B range=0..3 step=0 qid=0x0128
+ONEOF 'CS bypass control' | var=AmdSetup+0x243 w=1B range=0..3 step=0 qid=0x0129
+ONEOF 'TgtStart control' | var=AmdSetup+0x244 w=1B range=0..3 step=0 qid=0x012A
+ONEOF 'PC6 hint FCH GMI prop ctrl' | var=AmdSetup+0x245 w=1B range=0..3 step=0 qid=0x012B
+ONEOF 'DF picker load step control' | var=AmdSetup+0x246 w=1B range=0..3 step=0 qid=0x012C
+ONEOF 'DF clock gating control' | var=AmdSetup+0x247 w=1B range=0..3 step=0 qid=0x012D
+ONEOF 'DF Pstate change quiesce ctrl' | var=AmdSetup+0x248 w=1B range=0..3 step=0 qid=0x012E
+ONEOF 'DF Cstate clk pwr down ctrl' | var=AmdSetup+0x249 w=1B range=0..3 step=0 qid=0x012F
+ONEOF 'DF Cstate self refresh ctrl' | var=AmdSetup+0x24A w=1B range=0..3 step=0 qid=0x0130
+ONEOF 'DF Cstate GMI pwr dn ctrl' | var=AmdSetup+0x24B w=1B range=0..3 step=0 qid=0x0131
+ONEOF 'DF Cstate xGMI pwr dn ctrl' | var=AmdSetup+0x24C w=1B range=0..3 step=0 qid=0x0132
+ONEOF 'GMI / xGMI link error injection' | var=AmdSetup+0x24D w=1B range=0..31 step=0 qid=0x0133
+ONEOF 'Reduce credits - request' | var=AmdSetup+0x24E w=1B range=0..1 step=0 qid=0x0134
+ONEOF 'Reduce credits - probe' | var=AmdSetup+0x24F w=1B range=0..1 step=0 qid=0x0135
+ONEOF 'Reduce credits - response' | var=AmdSetup+0x250 w=1B range=0..1 step=0 qid=0x0136
+ONEOF 'Disable load-step controls' | var=AmdSetup+0x251 w=1B range=0..1 step=0 qid=0x0137
+ONEOF 'DBGU_DF trace to DRAM' | var=AmdSetup+0x252 w=1B range=0..3 step=0 qid=0x0138
+ONEOF 'DF TCB IOMS trace to DRAM' | var=AmdSetup+0x253 w=1B range=0..3 step=0 qid=0x0139
+ONEOF 'DF TCB IOCS trace to DRAM' | var=AmdSetup+0x254 w=1B range=0..3 step=0 qid=0x013A
+ONEOF 'CPU Masters receive probe responses' | var=AmdSetup+0x255 w=1B range=0..3 step=0 qid=0x013B
+ONEOF 'I/O Masters receive probe responses' | var=AmdSetup+0x256 w=1B range=0..3 step=0 qid=0x013C
+ONEOF 'Breakpoint before DF credit release' | var=AmdSetup+0x257 w=1B range=0..15 step=0 qid=0x013D
+ONEOF 'IOM Rogue Mode' | var=AmdSetup+0x258 w=1B range=0..15 step=0 qid=0x013E
+ONEOF 'Instruction Based Sampling Control' | var=AmdSetup+0x259 w=1B range=1..255 step=0 qid=0x013F
+ONEOF 'Local vector table offset valid' | var=AmdSetup+0x25A w=1B range=0..1 step=0 qid=0x0140
+NUMERIC 'Local vector table offset' | var=AmdSetup+0x25B w=1B range=0..15 step=0 qid=0x0141
+ONEOF 'Audio IOs' | var=AmdSetup+0x25C w=1B range=0..15 step=0 qid=0x0145
+ONEOF 'Integrated Graphics Controller' | var=AmdSetup+0x25D w=1B range=0..15 step=0 qid=0x0147
+ONEOF 'UMA Mode' | var=AmdSetup+0x25E w=1B range=1..15 step=0 qid=0x0148
+ONEOF 'UMA Frame buffer Size' | var=AmdSetup+0x25F w=4B range=256..4294967295 step=0 qid=0x0149
+ONEOF 'NB Azalia' | var=AmdSetup+0x263 w=1B range=0..15 step=0 qid=0x014A
+ONEOF 'IOMMU' | var=AmdSetup+0x264 w=1B range=0..15 step=0 qid=0x014B
+ONEOF 'IOMMU Page Table Format' | var=AmdSetup+0x265 w=1B range=0..15 step=0 qid=0x014C
+ONEOF 'IOMMU Smallest Translation Unit Size' | var=AmdSetup+0x266 w=1B range=0..15 step=0 qid=0x014D
+ONEOF 'NB Legacy SB Msg Support' | var=AmdSetup+0x267 w=1B range=0..15 step=0 qid=0x014E
+ONEOF 'XHCI0 controller enable' | var=AmdSetup+0x268 w=1B range=0..15 step=0 qid=0x014F
+ONEOF 'XHCI0 USB31DP port0 SuperSpeed Link Speed Limit' | var=AmdSetup+0x269 w=1B range=0..255 step=0 qid=0x0150
+ONEOF 'XHCI0 USB2.0 Port0 Overcurrent Mapping' | var=AmdSetup+0x26A w=1B range=0..255 step=0 qid=0x0151
+ONEOF 'XHCI0 USB2.0 Port1 Overcurrent Mapping' | var=AmdSetup+0x26B w=1B range=0..255 step=0 qid=0x0152
+ONEOF 'XHCI0 USB31DP port0 Overcurrent Mapping' | var=AmdSetup+0x26C w=1B range=0..255 step=0 qid=0x0153
+ONEOF 'XHCI0 USB2.0 Port0/1 Battery Charging Enable' | var=AmdSetup+0x26D w=1B range=0..255 step=0 qid=0x0154
+ONEOF 'XHCI1 controller enable' | var=AmdSetup+0x26E w=1B range=0..15 step=0 qid=0x0155
+ONEOF 'XHCI1 USB3.1 Port0/1 SuperSpeed Link Speed Limit' | var=AmdSetup+0x26F w=1B range=0..255 step=0 qid=0x0156
+ONEOF 'XHCI1 USB2.0 Port0 Overcurrent Mapping' | var=AmdSetup+0x270 w=1B range=0..255 step=0 qid=0x0157
+ONEOF 'XHCI1 USB2.0 Port1 Overcurrent Mapping' | var=AmdSetup+0x271 w=1B range=0..255 step=0 qid=0x0158
+ONEOF 'XHCI1 USB3.1 port0 Overcurrent Mapping' | var=AmdSetup+0x272 w=1B range=0..255 step=0 qid=0x0159
+ONEOF 'XHCI1 USB3.1 port1 Overcurrent Mapping' | var=AmdSetup+0x273 w=1B range=0..255 step=0 qid=0x015A
+ONEOF 'XHCI1 USB2.0 Port0/1 Battery Charging Enable' | var=AmdSetup+0x274 w=1B range=0..255 step=0 qid=0x015B
+ONEOF 'SOC USB S3 WakeUp' | var=AmdSetup+0x275 w=1B range=0..255 step=0 qid=0x015C
+ONEOF 'USB PHY ref_clk Stop in S3/S4/S5' | var=AmdSetup+0x276 w=1B range=0..255 step=0 qid=0x015D
+ONEOF 'DBGU_NBIO trace to DRAM' | var=AmdSetup+0x277 w=1B range=0..4 step=0 qid=0x0163
+ONEOF 'DBGU_NBIO Port 80 Tracing' | var=AmdSetup+0x278 w=1B range=0..1 step=0 qid=0x0164
+ONEOF 'DBGU_NBIO Port 80 Destination' | var=AmdSetup+0x279 w=1B range=0..1 step=0 qid=0x0165
+ONEOF 'DBGU_NBIO Port 80 Timestamps' | var=AmdSetup+0x27A w=1B range=0..1 step=0 qid=0x0166
+ONEOF 'DBGU_IO trace0 to DRAM' | var=AmdSetup+0x27B w=1B range=0..4 step=0 qid=0x0167
+ONEOF 'DBGU_IO trace1 to DRAM' | var=AmdSetup+0x27C w=1B range=0..4 step=0 qid=0x0168
+ONEOF 'DBGU_IO trace2 to DRAM' | var=AmdSetup+0x27D w=1B range=0..4 step=0 qid=0x0169
+ONEOF 'DBGU_GFX trace to DRAM' | var=AmdSetup+0x27E w=1B range=0..4 step=0 qid=0x016A
+ONEOF 'USB DBGCLK Enable' | var=AmdSetup+0x27F w=1B range=0..15 step=0 qid=0x016B
+ONEOF 'GFX CUs/RB Control' | var=AmdSetup+0x280 w=1B range=0..1 step=0 qid=0x016C
+NUMERIC 'InactiveCUs' | var=AmdSetup+0x281 w=2B range=0..65535 step=0 qid=0x016D
+ONEOF 'PCIe Memory Power Shut Down in L1' | var=AmdSetup+0x283 w=1B range=0..15 step=0 qid=0x016F
+ONEOF 'PCIe Memory Power Deep Sleep in L1' | var=AmdSetup+0x284 w=1B range=0..15 step=0 qid=0x0170
+ONEOF 'PCIe AtomicOps Support' | var=AmdSetup+0x285 w=1B range=0..15 step=0 qid=0x0171
+ONEOF 'GOP Serial Port Log Control' | var=AmdSetup+0x286 w=1B range=0..15 step=0 qid=0x0172
+ONEOF 'Display Spread Spectrum Control' | var=AmdSetup+0x287 w=1B range=0..15 step=0 qid=0x0173
+NUMERIC 'Display Spread Spectrum Percentage' | var=AmdSetup+0x288 w=2B range=0..1000 step=0 qid=0x0174
+ONEOF 'Speed Mode(PCIe Port0)' | var=AmdSetup+0x28A w=1B range=0..15 step=0 qid=0x0179
+ONEOF 'Link ASPM(PCIe Port0)' | var=AmdSetup+0x28B w=1B range=0..15 step=0 qid=0x017A
+ONEOF 'Poweroff Phy Lanes and PLL in L1(Pcie Port0)' | var=AmdSetup+0x28C w=1B range=0..15 step=0 qid=0x017B
+ONEOF 'L1 Immediate ACK(PCIe Port0)' | var=AmdSetup+0x28D w=1B range=0..15 step=0 qid=0x017C
+ONEOF 'TX De-emphasis(PCIe Port0)' | var=AmdSetup+0x28E w=1B range=1..15 step=0 qid=0x017D
+ONEOF 'TX Margin(PCIe Port0)' | var=AmdSetup+0x28F w=1B range=0..15 step=0 qid=0x017E
+ONEOF 'Equalization Search Mode(PCIe Port0)' | var=AmdSetup+0x290 w=1B range=0..15 step=0 qid=0x017F
+ONEOF 'Disable Gen3 EQ Phase2/3 (PCIe Port0)' | var=AmdSetup+0x291 w=1B range=0..15 step=0 qid=0x0180
+ONEOF 'Downstream Tx Preset(PCIe Port0)' | var=AmdSetup+0x292 w=1B range=0..15 step=0 qid=0x0182
+ONEOF 'Upstream Tx Preset(PCIe Port0)' | var=AmdSetup+0x293 w=1B range=0..15 step=0 qid=0x0183
+ONEOF 'Downstream Rx Preset Hint(PCIe Port0)' | var=AmdSetup+0x294 w=1B range=0..15 step=0 qid=0x0184
+ONEOF 'Upstream Rx Preset Hint(PCIe Port0)' | var=AmdSetup+0x295 w=1B range=0..15 step=0 qid=0x0185
+ONEOF 'Bypass Gen3 EQ(PCIe Port0)' | var=AmdSetup+0x296 w=1B range=0..15 step=0 qid=0x0186
+ONEOF 'Enable 3x3 Search(PCIe Port0)' | var=AmdSetup+0x297 w=1B range=0..15 step=0 qid=0x0187
+ONEOF 'Enable Safe Search(PCIe Port0)' | var=AmdSetup+0x298 w=1B range=0..15 step=0 qid=0x0188
+ONEOF 'SRIS_SRNS(PCIe Port0)' | var=AmdSetup+0x299 w=1B range=0..15 step=0 qid=0x0189
+ONEOF 'SRIS_EN(PCIe Port0)' | var=AmdSetup+0x29A w=1B range=0..15 step=0 qid=0x018A
+ONEOF 'SRIS_AUTODETECT_EN(PCIe Port0)' | var=AmdSetup+0x29B w=1B range=0..15 step=0 qid=0x018B
+ONEOF 'SRIS_LOWER_SKP_SUPPORT(PCIe Port0)' | var=AmdSetup+0x29C w=1B range=0..15 step=0 qid=0x018C
+ONEOF 'Max_Payload_Size(Port0)' | var=AmdSetup+0x29D w=1B range=0..15 step=0 qid=0x018D
+ONEOF 'Gen2(PCIe Port0)' | var=AmdSetup+0x29E w=1B range=0..15 step=0 qid=0x018E
+NUMERIC 'RX LOS' | var=AmdSetup+0x29F w=1B range=0..255 step=0 qid=0x0192
+NUMERIC 'txX_eq_pre[5:0] GEN1' | var=AmdSetup+0x2A0 w=1B range=0..255 step=0 qid=0x0195
+NUMERIC 'txX_eq_pre[5:0] GEN2' | var=AmdSetup+0x2A1 w=1B range=0..255 step=0 qid=0x0196
+NUMERIC 'txX_eq_pre[5:0] GEN3' | var=AmdSetup+0x2A2 w=1B range=0..255 step=0 qid=0x0197
+NUMERIC 'txX_eq_main[5:0] GEN1' | var=AmdSetup+0x2A3 w=1B range=0..255 step=0 qid=0x0198
+NUMERIC 'txX_eq_main[5:0] GEN2' | var=AmdSetup+0x2A4 w=1B range=0..255 step=0 qid=0x0199
+NUMERIC 'txX_eq_main[5:0] GEN3' | var=AmdSetup+0x2A5 w=1B range=0..255 step=0 qid=0x019A
+NUMERIC 'txX_eq_post[5:0] GEN1' | var=AmdSetup+0x2A6 w=1B range=0..255 step=0 qid=0x019B
+NUMERIC 'txX_eq_post[5:0] GEN2' | var=AmdSetup+0x2A7 w=1B range=0..255 step=0 qid=0x019C
+NUMERIC 'txX_eq_post[5:0] GEN3' | var=AmdSetup+0x2A8 w=1B range=0..255 step=0 qid=0x019D
+NUMERIC 'txX_iboost_lvl[3:0] GEN1' | var=AmdSetup+0x2A9 w=1B range=0..255 step=0 qid=0x019E
+NUMERIC 'txX_iboost_lvl[3:0] GEN2' | var=AmdSetup+0x2AA w=1B range=0..255 step=0 qid=0x019F
+NUMERIC 'txX_iboost_lvl[3:0] GEN3' | var=AmdSetup+0x2AB w=1B range=0..255 step=0 qid=0x01A0
+ONEOF 'txX_vboost_en GEN1' | var=AmdSetup+0x2AC w=1B range=0..255 step=0 qid=0x01A1
+ONEOF 'txX_vboost_en GEN2' | var=AmdSetup+0x2AD w=1B range=0..255 step=0 qid=0x01A2
+ONEOF 'txX_vboost_en GEN3' | var=AmdSetup+0x2AE w=1B range=0..255 step=0 qid=0x01A3
+NUMERIC 'rxX_eq_att_lvl[2:0] GEN1' | var=AmdSetup+0x2AF w=1B range=0..255 step=0 qid=0x01A4
+NUMERIC 'rxX_eq_att_lvl[2:0] GEN2' | var=AmdSetup+0x2B0 w=1B range=0..255 step=0 qid=0x01A5
+NUMERIC 'rxX_eq_att_lvl[2:0] GEN3' | var=AmdSetup+0x2B1 w=1B range=0..255 step=0 qid=0x01A6
+NUMERIC 'rxX_eq_vga1_gain[3:0] GEN1' | var=AmdSetup+0x2B2 w=1B range=0..255 step=0 qid=0x01A7
+NUMERIC 'rxX_eq_vga1_gain[3:0] GEN2' | var=AmdSetup+0x2B3 w=1B range=0..255 step=0 qid=0x01A8
+NUMERIC 'rxX_eq_vga1_gain[3:0] GEN3' | var=AmdSetup+0x2B4 w=1B range=0..255 step=0 qid=0x01A9
+NUMERIC 'rxX_eq_vga2_gain[3:0] GEN1' | var=AmdSetup+0x2B5 w=1B range=0..255 step=0 qid=0x01AA
+NUMERIC 'rxX_eq_vga2_gain[3:0] GEN2' | var=AmdSetup+0x2B6 w=1B range=0..255 step=0 qid=0x01AB
+NUMERIC 'rxX_eq_vga2_gain[3:0] GEN3' | var=AmdSetup+0x2B7 w=1B range=0..255 step=0 qid=0x01AC
+NUMERIC 'rxX_eq_ctle_pole[2:0] GEN1' | var=AmdSetup+0x2B8 w=1B range=0..255 step=0 qid=0x01AD
+NUMERIC 'rxX_eq_ctle_pole[2:0] GEN2' | var=AmdSetup+0x2B9 w=1B range=0..255 step=0 qid=0x01AE
+NUMERIC 'rxX_eq_ctle_pole[2:0] GEN3' | var=AmdSetup+0x2BA w=1B range=0..255 step=0 qid=0x01AF
+NUMERIC 'rxX_eq_ctle_boost[4:0] GEN1' | var=AmdSetup+0x2BB w=1B range=0..255 step=0 qid=0x01B0
+NUMERIC 'rxX_eq_ctle_boost[4:0] GEN2' | var=AmdSetup+0x2BC w=1B range=0..255 step=0 qid=0x01B1
+NUMERIC 'rxX_eq_ctle_boost[4:0] GEN3' | var=AmdSetup+0x2BD w=1B range=0..255 step=0 qid=0x01B2
+NUMERIC 'rxX_eq_dfe_tap1[7:0] GEN1' | var=AmdSetup+0x2BE w=2B range=0..65535 step=0 qid=0x01B3
+NUMERIC 'rxX_eq_dfe_tap1[7:0] GEN2' | var=AmdSetup+0x2C0 w=2B range=0..65535 step=0 qid=0x01B4
+NUMERIC 'rxX_eq_dfe_tap1[7:0] GEN3' | var=AmdSetup+0x2C2 w=2B range=0..65535 step=0 qid=0x01B5
+NUMERIC 'rx_vref_ctrl[4:0]' | var=AmdSetup+0x2C4 w=1B range=0..255 step=0 qid=0x01B6
+NUMERIC 'tx_vboost_lvl[2:0] for GEN1' | var=AmdSetup+0x2C5 w=1B range=0..255 step=0 qid=0x01B7
+NUMERIC 'tx_vboost_lvl[2:0] for GEN2' | var=AmdSetup+0x2C6 w=1B range=0..255 step=0 qid=0x01B8
+NUMERIC 'tx_vboost_lvl[2:0] for GEN3' | var=AmdSetup+0x2C7 w=1B range=0..255 step=0 qid=0x01B9
+NUMERIC 'SSC_OFF_FRUG1 [2:0]' | var=AmdSetup+0x2C8 w=1B range=0..255 step=0 qid=0x01BA
+NUMERIC 'SSC_OFF_PHUG1 [2:0]' | var=AmdSetup+0x2C9 w=1B range=0..255 step=0 qid=0x01BB
+ONEOF 'AER Dev1Func1' | var=AmdSetup+0x2CA w=1B range=0..15 step=0 qid=0x01BD
+ONEOF 'Bad TLP(Dev1Func1)' | var=AmdSetup+0x2CB w=1B range=0..15 step=0 qid=0x01C0
+ONEOF 'Bad DLLP Status(Dev1Func1)' | var=AmdSetup+0x2CC w=1B range=0..15 step=0 qid=0x01C1
+ONEOF 'Replay Number Rollover Status(Dev1Func1)' | var=AmdSetup+0x2CD w=1B range=0..15 step=0 qid=0x01C2
+ONEOF 'Replay Timer Timeout Status(Dev1Func1)' | var=AmdSetup+0x2CE w=1B range=0..15 step=0 qid=0x01C3
+ONEOF 'Data Link Protocol Error status Mask(Dev1Func1)' | var=AmdSetup+0x2CF w=1B range=0..15 step=0 qid=0x01C4
+ONEOF 'Data Link Protocol Error status Severity(Dev1Func1)' | var=AmdSetup+0x2D0 w=1B range=0..15 step=0 qid=0x01C5
+ONEOF 'Poisoned TLP Status Mask(Dev1Func1)' | var=AmdSetup+0x2D1 w=1B range=0..15 step=0 qid=0x01C6
+ONEOF 'Poisoned TLP Status Severity(Dev1Func1)' | var=AmdSetup+0x2D2 w=1B range=0..15 step=0 qid=0x01C7
+ONEOF 'Completion Timeout Status Mask(Dev1Func1)' | var=AmdSetup+0x2D3 w=1B range=0..15 step=0 qid=0x01C8
+ONEOF 'Completion Timeout Status Severity(Dev1Func1)' | var=AmdSetup+0x2D4 w=1B range=0..15 step=0 qid=0x01C9
+ONEOF 'Completer Abort Status Mask(Dev1Func1)' | var=AmdSetup+0x2D5 w=1B range=0..15 step=0 qid=0x01CA
+ONEOF 'Completer Abort Status Severity(Dev1Func1)' | var=AmdSetup+0x2D6 w=1B range=0..15 step=0 qid=0x01CB
+ONEOF 'Unexpected Completion Status Mask(Dev1Func1)' | var=AmdSetup+0x2D7 w=1B range=0..15 step=0 qid=0x01CC
+ONEOF 'Unexpected Completion Status Severity(Dev1Func1)' | var=AmdSetup+0x2D8 w=1B range=0..15 step=0 qid=0x01CD
+ONEOF 'Malformed TLP Status Mask(Dev1Func1)' | var=AmdSetup+0x2D9 w=1B range=0..15 step=0 qid=0x01CE
+ONEOF 'Malformed TLP Status Severity(Dev1Func1)' | var=AmdSetup+0x2DA w=1B range=0..15 step=0 qid=0x01CF
+ONEOF 'ECRC Error Status Mask(Dev1Func1)' | var=AmdSetup+0x2DB w=1B range=0..15 step=0 qid=0x01D0
+ONEOF 'ECRC Error Status Severity(Dev1Func1)' | var=AmdSetup+0x2DC w=1B range=0..15 step=0 qid=0x01D1
+ONEOF 'Unsupported Request Error Status Mask(Dev1Func1)' | var=AmdSetup+0x2DD w=1B range=0..15 step=0 qid=0x01D2
+ONEOF 'Unsupported Request Error Status Severity(Dev1Func1)' | var=AmdSetup+0x2DE w=1B range=0..15 step=0 qid=0x01D3
+ONEOF 'PCIe lanes topology' | var=AmdSetup+0x2DF w=1B range=0..1 step=0 qid=0x01D4
+ONEOF 'Dev1Func1 Engine type' | var=AmdSetup+0x2E0 w=1B range=0..16 step=0 qid=0x01D5
+NUMERIC 'Dev1Func1 Start Lane ID' | var=AmdSetup+0x2E1 w=1B range=0..255 step=0 qid=0x01D6
+NUMERIC 'Dev1Func1 End Lane ID' | var=AmdSetup+0x2E2 w=1B range=0..255 step=0 qid=0x01D7
+ONEOF 'NBIO Global CG Override' | var=AmdSetup+0x2E3 w=1B range=0..15 step=0 qid=0x01D8
+ONEOF 'MMHUB Light Sleep' | var=AmdSetup+0x2E4 w=1B range=0..15 step=0 qid=0x01D9
+ONEOF 'ATHUB Clock Gating' | var=AmdSetup+0x2E5 w=1B range=0..15 step=0 qid=0x01DA
+ONEOF 'IOHC LCLK Clock Gating' | var=AmdSetup+0x2E6 w=1B range=0..15 step=0 qid=0x01DB
+ONEOF 'IOMMU L1 Clock Gating' | var=AmdSetup+0x2E7 w=1B range=0..15 step=0 qid=0x01DC
+ONEOF 'IOMMU L2 Clock Gating' | var=AmdSetup+0x2E8 w=1B range=0..15 step=0 qid=0x01DD
+ONEOF 'NBIF MGCG' | var=AmdSetup+0x2E9 w=1B range=0..15 step=0 qid=0x01DE
+NUMERIC 'NBIF MGCG Hysteresis' | var=AmdSetup+0x2EA w=1B range=0..255 step=0 qid=0x01DF
+ONEOF 'SHUB MGCG' | var=AmdSetup+0x2EB w=1B range=0..15 step=0 qid=0x01E0
+NUMERIC 'SHUB MGCG Hysteresis' | var=AmdSetup+0x2EC w=1B range=0..255 step=0 qid=0x01E1
+ONEOF 'IOHC Global CG Control' | var=AmdSetup+0x2ED w=1B range=0..15 step=0 qid=0x01E2
+NUMERIC 'IOHC CG Hysteresis' | var=AmdSetup+0x2EE w=1B range=0..255 step=0 qid=0x01E3
+ONEOF 'IOHC CG CTRL0 CLK0' | var=AmdSetup+0x2EF w=1B range=0..1 step=0 qid=0x01E4
+ONEOF 'IOHC CG CTRL0 CLK1' | var=AmdSetup+0x2F0 w=1B range=0..1 step=0 qid=0x01E5
+ONEOF 'IOHC CG CTRL0 CLK2' | var=AmdSetup+0x2F1 w=1B range=0..1 step=0 qid=0x01E6
+ONEOF 'IOHC CG CTRL0 CLK3' | var=AmdSetup+0x2F2 w=1B range=0..1 step=0 qid=0x01E7
+ONEOF 'IOHC CG CTRL0 CLK4' | var=AmdSetup+0x2F3 w=1B range=0..1 step=0 qid=0x01E8
+ONEOF 'IOHC CG CTRL0 CLK5' | var=AmdSetup+0x2F4 w=1B range=0..1 step=0 qid=0x01E9
+ONEOF 'IOHC CG CTRL0 CLK6' | var=AmdSetup+0x2F5 w=1B range=0..1 step=0 qid=0x01EA
+ONEOF 'IOHC CG CTRL0 CLK7' | var=AmdSetup+0x2F6 w=1B range=0..1 step=0 qid=0x01EB
+ONEOF 'IOHC CG CTRL0 CLK8' | var=AmdSetup+0x2F7 w=1B range=0..1 step=0 qid=0x01EC
+ONEOF 'IOHC CG CTRL0 CLK9' | var=AmdSetup+0x2F8 w=1B range=0..1 step=0 qid=0x01ED
+ONEOF 'IOHC CG CTRL1 CLK0' | var=AmdSetup+0x2F9 w=1B range=0..1 step=0 qid=0x01EE
+ONEOF 'IOHC CG CTRL1 CLK1' | var=AmdSetup+0x2FA w=1B range=0..1 step=0 qid=0x01EF
+ONEOF 'IOHC CG CTRL1 CLK2' | var=AmdSetup+0x2FB w=1B range=0..1 step=0 qid=0x01F0
+ONEOF 'IOHC CG CTRL1 CLK3' | var=AmdSetup+0x2FC w=1B range=0..1 step=0 qid=0x01F1
+ONEOF 'IOHC CG CTRL1 CLK4' | var=AmdSetup+0x2FD w=1B range=0..1 step=0 qid=0x01F2
+ONEOF 'IOHC CG CTRL1 CLK5' | var=AmdSetup+0x2FE w=1B range=0..1 step=0 qid=0x01F3
+ONEOF 'IOHC CG CTRL1 CLK6' | var=AmdSetup+0x2FF w=1B range=0..1 step=0 qid=0x01F4
+ONEOF 'IOHC CG CTRL1 CLK7' | var=AmdSetup+0x300 w=1B range=0..1 step=0 qid=0x01F5
+ONEOF 'IOHC CG CTRL1 CLK8' | var=AmdSetup+0x301 w=1B range=0..1 step=0 qid=0x01F6
+ONEOF 'IOHC CG CTRL1 CLK9' | var=AmdSetup+0x302 w=1B range=0..1 step=0 qid=0x01F7
+ONEOF 'IOHC CG CTRL2 CLK0' | var=AmdSetup+0x303 w=1B range=0..1 step=0 qid=0x01F8
+ONEOF 'IOHC CG CTRL2 CLK1' | var=AmdSetup+0x304 w=1B range=0..1 step=0 qid=0x01F9
+ONEOF 'IOHC CG CTRL2 CLK2' | var=AmdSetup+0x305 w=1B range=0..1 step=0 qid=0x01FA
+ONEOF 'IOHC CG CTRL2 CLK3' | var=AmdSetup+0x306 w=1B range=0..1 step=0 qid=0x01FB
+ONEOF 'IOHC CG CTRL2 CLK4' | var=AmdSetup+0x307 w=1B range=0..1 step=0 qid=0x01FC
+ONEOF 'IOHC CG CTRL2 CLK5' | var=AmdSetup+0x308 w=1B range=0..1 step=0 qid=0x01FD
+ONEOF 'IOHC CG CTRL2 CLK6' | var=AmdSetup+0x309 w=1B range=0..1 step=0 qid=0x01FE
+ONEOF 'IOHC CG CTRL2 CLK7' | var=AmdSetup+0x30A w=1B range=0..1 step=0 qid=0x01FF
+ONEOF 'IOHC CG CTRL2 CLK8' | var=AmdSetup+0x30B w=1B range=0..1 step=0 qid=0x0200
+ONEOF 'IOHC CG CTRL2 CLK9' | var=AmdSetup+0x30C w=1B range=0..1 step=0 qid=0x0201
+ONEOF 'SW Device ID Remapping' | var=AmdSetup+0x30D w=1B range=0..1 step=0 qid=0x0202
+ONEOF 'PBr0 DevFnMap' | var=AmdSetup+0x30E w=1B range=9..15 step=0 qid=0x0203
+ONEOF 'Enable VC7 traffic on USB-HC0' | var=AmdSetup+0x30F w=1B range=0..255 step=0 qid=0x0205
+ONEOF 'XHCI0 ComboPHY TX Termination Adjustments' | var=AmdSetup+0x310 w=1B range=0..255 step=0 qid=0x0206
+ONEOF 'XHCI0 ComboPHY RX Termination Adjustments' | var=AmdSetup+0x311 w=1B range=0..255 step=0 qid=0x0207
+ONEOF 'XHCI0 ComboPHY VBOOST Adjustments' | var=AmdSetup+0x312 w=1B range=0..255 step=0 qid=0x0208
+ONEOF 'XHCI1 USB3.1PHY TX Termination Adjustments' | var=AmdSetup+0x313 w=1B range=0..255 step=0 qid=0x0209
+ONEOF 'XHCI1 USB3.1PHY RX Termination Adjustments' | var=AmdSetup+0x314 w=1B range=0..255 step=0 qid=0x020A
+ONEOF 'XHCI1 USB3.1PHY VBOOST Adjustments' | var=AmdSetup+0x315 w=1B range=0..255 step=0 qid=0x020B
+ONEOF 'Memory Clock Speed' | var=AmdSetup+0x316 w=1B range=2..255 step=0 qid=0x020F
+ONEOF 'Tcl' | var=AmdSetup+0x317 w=1B range=8..255 step=0 qid=0x0210
+ONEOF 'Tras' | var=AmdSetup+0x318 w=1B range=21..255 step=0 qid=0x0211
+ONEOF 'Trcdrd' | var=AmdSetup+0x319 w=1B range=8..255 step=0 qid=0x0212
+ONEOF 'Trcdwr' | var=AmdSetup+0x31A w=1B range=8..255 step=0 qid=0x0213
+ONEOF 'TrpAb' | var=AmdSetup+0x31B w=1B range=8..255 step=0 qid=0x0214
+ONEOF 'TrpPb' | var=AmdSetup+0x31C w=1B range=0..255 step=0 qid=0x0215
+ONEOF 'TrcAb' | var=AmdSetup+0x31D w=1B range=40..255 step=0 qid=0x0216
+ONEOF 'TrcPb' | var=AmdSetup+0x31E w=1B range=0..255 step=0 qid=0x0217
+ONEOF 'TrrdL' | var=AmdSetup+0x31F w=1B range=4..255 step=0 qid=0x0218
+ONEOF 'TrrdS' | var=AmdSetup+0x320 w=1B range=4..255 step=0 qid=0x0219
+ONEOF 'Trtp' | var=AmdSetup+0x321 w=1B range=0..255 step=0 qid=0x021A
+ONEOF 'TFaw' | var=AmdSetup+0x322 w=1B range=4..255 step=0 qid=0x021B
+ONEOF 'Tref Control' | var=AmdSetup+0x323 w=1B range=1..255 step=0 qid=0x021C
+NUMERIC 'Tref' | var=AmdSetup+0x324 w=2B range=0..65535 step=0 qid=0x021D
+ONEOF 'TrfcPb Control' | var=AmdSetup+0x326 w=1B range=1..255 step=0 qid=0x021E
+NUMERIC 'TrfcPb' | var=AmdSetup+0x327 w=2B range=1..2047 step=0 qid=0x021F
+ONEOF 'Trfc Control' | var=AmdSetup+0x329 w=1B range=1..255 step=0 qid=0x0220
+NUMERIC 'Trfc' | var=AmdSetup+0x32A w=2B range=1..2047 step=0 qid=0x0221
+ONEOF 'TSME' | var=AmdSetup+0x32C w=1B range=0..255 step=0 qid=0x702D
+ONEOF 'BankGroupSwap' | var=AmdSetup+0x32D w=1B range=0..255 step=0 qid=0x0222
+ONEOF 'Address Hash Bank' | var=AmdSetup+0x32E w=1B range=0..255 step=0 qid=0x0223
+ONEOF 'DRAM Timing User Controls' | var=AmdSetup+0x32F w=1B range=1..255 step=0 qid=0x0228
+ONEOF 'UclkDiv1M0' | var=AmdSetup+0x330 w=1B range=1..255 step=0 qid=0x0229
+ONEOF 'UclkDiv1M1' | var=AmdSetup+0x331 w=1B range=1..255 step=0 qid=0x022A
+ONEOF 'UclkDiv1M2' | var=AmdSetup+0x332 w=1B range=0..1 step=0 qid=0x022B
+ONEOF 'UclkDiv1M3' | var=AmdSetup+0x333 w=1B range=0..1 step=0 qid=0x022C
+ONEOF 'Trdwr' | var=AmdSetup+0x334 w=1B range=1..255 step=0 qid=0x022D
+ONEOF 'Twrrd' | var=AmdSetup+0x335 w=1B range=1..255 step=0 qid=0x022E
+ONEOF 'TwtrL' | var=AmdSetup+0x336 w=1B range=2..255 step=0 qid=0x022F
+ONEOF 'TwtrS' | var=AmdSetup+0x337 w=1B range=2..255 step=0 qid=0x0230
+ONEOF 'TwrwrSc' | var=AmdSetup+0x338 w=1B range=1..255 step=0 qid=0x0231
+ONEOF 'TwrwrSd' | var=AmdSetup+0x339 w=1B range=1..255 step=0 qid=0x0232
+ONEOF 'TwrwrDd' | var=AmdSetup+0x33A w=1B range=1..255 step=0 qid=0x0233
+ONEOF 'TrdrdSc' | var=AmdSetup+0x33B w=1B range=1..255 step=0 qid=0x0234
+ONEOF 'TrdrdSd' | var=AmdSetup+0x33C w=1B range=1..255 step=0 qid=0x0235
+ONEOF 'TrdrdDd' | var=AmdSetup+0x33D w=1B range=1..255 step=0 qid=0x0236
+ONEOF 'Tcksrx Control' | var=AmdSetup+0x33E w=1B range=1..255 step=0 qid=0x0237
+NUMERIC 'Tcksrx' | var=AmdSetup+0x33F w=2B range=0..16383 step=0 qid=0x0238
+ONEOF 'Tcksre Control' | var=AmdSetup+0x341 w=1B range=1..255 step=0 qid=0x0239
+NUMERIC 'Tcksre' | var=AmdSetup+0x342 w=1B range=0..255 step=0 qid=0x023A
+ONEOF 'Tpd Control' | var=AmdSetup+0x343 w=1B range=1..255 step=0 qid=0x023B
+NUMERIC 'Tpd' | var=AmdSetup+0x344 w=1B range=1..15 step=0 qid=0x023C
+ONEOF 'Address Command Tristate Enable' | var=AmdSetup+0x345 w=1B range=0..255 step=0 qid=0x023F
+ONEOF 'Cmd2T' | var=AmdSetup+0x346 w=1B range=0..255 step=0 qid=0x0240
+ONEOF 'Data Scramble' | var=AmdSetup+0x347 w=1B range=0..255 step=0 qid=0x0241
+ONEOF 'On DIMM Temperature Sensor Enable' | var=AmdSetup+0x348 w=1B range=0..255 step=0 qid=0x0242
+ONEOF 'CmdThrottleMode Control' | var=AmdSetup+0x349 w=1B range=0..255 step=0 qid=0x0243
+NUMERIC 'CmdThrottleMode' | var=AmdSetup+0x34A w=1B range=8..255 step=0 qid=0x0244
+ONEOF 'Write CRC Enable' | var=AmdSetup+0x34B w=1B range=0..255 step=0 qid=0x0245
+ONEOF 'Gear Down Mode' | var=AmdSetup+0x34C w=1B range=0..255 step=0 qid=0x0246
+ONEOF 'DRAM Hardware History Mechanism' | var=AmdSetup+0x34D w=1B range=1..255 step=0 qid=0x0247
+ONEOF 'DRAM Parity' | var=AmdSetup+0x34E w=1B range=0..255 step=0 qid=0x0248
+ONEOF 'RCD Parity' | var=AmdSetup+0x34F w=1B range=0..255 step=0 qid=0x0249
+ONEOF 'AddrTweakEn Control' | var=AmdSetup+0x350 w=1B range=1..255 step=0 qid=0x7034
+ONEOF 'AddrTweakTMEn' | var=AmdSetup+0x351 w=2B range=0..1 step=0 qid=0x7035
+ONEOF 'Data Encryption' | var=AmdSetup+0x353 w=1B range=0..255 step=0 qid=0x7036
+ONEOF 'Force Encryption' | var=AmdSetup+0x354 w=1B range=0..255 step=0 qid=0x7037
+ONEOF 'UMC Key 0' | var=AmdSetup+0x355 w=1B range=0..255 step=0 qid=0x024A
+ONEOF 'DRAM Fine Granularity Refresh' | var=AmdSetup+0x356 w=1B range=0..255 step=0 qid=0x024B
+ONEOF 'CABI Enable' | var=AmdSetup+0x357 w=1B range=0..255 step=0 qid=0x024C
+ONEOF 'DBI Enable' | var=AmdSetup+0x358 w=1B range=0..255 step=0 qid=0x024D
+ONEOF 'Disable Data Masking' | var=AmdSetup+0x359 w=1B range=0..255 step=0 qid=0x024E
+ONEOF 'Disable Address Tweak' | var=AmdSetup+0x35A w=1B range=0..255 step=0 qid=0x7038
+ONEOF 'Scramble Control' | var=AmdSetup+0x35B w=1B range=0..1 step=0 qid=0x024F
+ONEOF 'Scramble Enable' | var=AmdSetup+0x35C w=1B range=0..1 step=0 qid=0x0250
+NUMERIC 'Scramble Key' | var=AmdSetup+0x35D w=4B range=0..4294967295 step=0 qid=0x0251
+ONEOF 'Power Down Enable' | var=AmdSetup+0x361 w=1B range=0..255 step=0 qid=0x0252
+ONEOF 'Power Down Mode' | var=AmdSetup+0x362 w=1B range=0..255 step=0 qid=0x0253
+ONEOF 'Power Down Delay Control' | var=AmdSetup+0x363 w=1B range=1..255 step=0 qid=0x0254
+NUMERIC 'Power Down Delay' | var=AmdSetup+0x364 w=1B range=0..255 step=0 qid=0x0255
+ONEOF 'Aggressive Power Down Enable' | var=AmdSetup+0x365 w=1B range=0..255 step=0 qid=0x0256
+ONEOF 'Aggressive Power Down Delay Control' | var=AmdSetup+0x366 w=1B range=1..255 step=0 qid=0x0257
+NUMERIC 'Aggressive Power Down Delay' | var=AmdSetup+0x367 w=1B range=1..63 step=0 qid=0x0258
+ONEOF 'Phy Power Saving' | var=AmdSetup+0x368 w=1B range=0..255 step=0 qid=0x0259
+ONEOF 'Power Down Phy Power Save Disable' | var=AmdSetup+0x369 w=1B range=0..255 step=0 qid=0x025A
+ONEOF 'All Memory Clks Enable' | var=AmdSetup+0x36A w=1B range=0..255 step=0 qid=0x025B
+ONEOF 'All CKE Enable' | var=AmdSetup+0x36B w=1B range=0..255 step=0 qid=0x025C
+ONEOF 'All CS Enable' | var=AmdSetup+0x36C w=1B range=0..255 step=0 qid=0x025D
+ONEOF 'Memory P-state' | var=AmdSetup+0x36D w=1B range=0..255 step=0 qid=0x025E
+ONEOF 'DRAM Address Command Parity Retry' | var=AmdSetup+0x36E w=1B range=0..255 step=0 qid=0x0261
+NUMERIC 'Max Parity Error Replay' | var=AmdSetup+0x36F w=1B range=0..63 step=0 qid=0x0262
+ONEOF 'EDC Enable' | var=AmdSetup+0x370 w=1B range=0..255 step=0 qid=0x0263
+ONEOF 'Enable EDC Replay' | var=AmdSetup+0x371 w=1B range=0..255 step=0 qid=0x0264
+ONEOF 'Inject TX Command Parity Errors' | var=AmdSetup+0x372 w=1B range=0..255 step=0 qid=0x0265
+ONEOF 'Hybrid All-bank/Per-X-bank refresh Control' | var=AmdSetup+0x373 w=1B range=0..255 step=0 qid=0x0269
+ONEOF 'Per-X-bank refresh Control' | var=AmdSetup+0x374 w=1B range=0..255 step=0 qid=0x026A
+NUMERIC 'RefAb insertion period' | var=AmdSetup+0x375 w=2B range=0..2047 step=0 qid=0x026B
+ONEOF 'Auto-Calibration Control' | var=AmdSetup+0x377 w=1B range=0..255 step=0 qid=0x026C
+ONEOF 'Additional CAS-CAS Delay Cycles Control' | var=AmdSetup+0x378 w=1B range=1..255 step=0 qid=0x026D
+NUMERIC 'Additional CAS-CAS Delay Cycles' | var=AmdSetup+0x379 w=1B range=0..255 step=0 qid=0x026E
+ONEOF 'Additional Read to Write Turnaround Cycles Control' | var=AmdSetup+0x37A w=1B range=1..255 step=0 qid=0x026F
+NUMERIC 'Additional Read to Write Turnaround Cycles' | var=AmdSetup+0x37B w=1B range=0..255 step=0 qid=0x0270
+ONEOF 'VMEMP Voltage Control' | var=AmdSetup+0x37C w=1B range=72..255 step=0 qid=0x0271
+ONEOF 'APUDFE Training Control' | var=AmdSetup+0x37D w=1B range=0..255 step=0 qid=0x0272
+ONEOF 'UMCCTRL_MISC Control' | var=AmdSetup+0x37E w=1B range=1..255 step=0 qid=0x0273
+NUMERIC 'UMCCTRL_MISC0 Mask' | var=AmdSetup+0x37F w=4B range=0..4294967295 step=0 qid=0x0274
+NUMERIC 'UMCCTRL_MISC1 Mask' | var=AmdSetup+0x383 w=4B range=0..4294967295 step=0 qid=0x0275
+NUMERIC 'UMCCTRL_MISC2 Mask' | var=AmdSetup+0x387 w=4B range=0..4294967295 step=0 qid=0x0276
+NUMERIC 'UMCCTRL_MISC3 Mask' | var=AmdSetup+0x38B w=4B range=0..4294967295 step=0 qid=0x0277
+NUMERIC 'UMCCTRL_MISC4 Mask' | var=AmdSetup+0x38F w=4B range=0..4294967295 step=0 qid=0x0278
+NUMERIC 'UMCCTRL_MISC5 Mask' | var=AmdSetup+0x393 w=4B range=0..4294967295 step=0 qid=0x0279
+NUMERIC 'UMCCTRL_MISC6 Mask' | var=AmdSetup+0x397 w=4B range=0..4294967295 step=0 qid=0x027A
+NUMERIC 'UMCCTRL_MISC9 Mask' | var=AmdSetup+0x39B w=4B range=0..4294967295 step=0 qid=0x027B
+NUMERIC 'UMCCTRL_MISC0 Value' | var=AmdSetup+0x39F w=4B range=0..4294967295 step=0 qid=0x027C
+NUMERIC 'UMCCTRL_MISC1 Value' | var=AmdSetup+0x3A3 w=4B range=0..4294967295 step=0 qid=0x027D
+NUMERIC 'UMCCTRL_MISC2 Value' | var=AmdSetup+0x3A7 w=4B range=0..4294967295 step=0 qid=0x027E
+NUMERIC 'UMCCTRL_MISC3 Value' | var=AmdSetup+0x3AB w=4B range=0..4294967295 step=0 qid=0x027F
+NUMERIC 'UMCCTRL_MISC4 Value' | var=AmdSetup+0x3AF w=4B range=0..4294967295 step=0 qid=0x0280
+NUMERIC 'UMCCTRL_MISC5 Value' | var=AmdSetup+0x3B3 w=4B range=0..4294967295 step=0 qid=0x0281
+NUMERIC 'UMCCTRL_MISC6 Value' | var=AmdSetup+0x3B7 w=4B range=0..4294967295 step=0 qid=0x0282
+NUMERIC 'UMCCTRL_MISC9 Value' | var=AmdSetup+0x3BB w=4B range=0..4294967295 step=0 qid=0x0283
+ONEOF 'UMCCONFIG0-15 Control' | var=AmdSetup+0x3BF w=1B range=1..255 step=0 qid=0x0284
+NUMERIC 'UMCCONFIG0 Mask' | var=AmdSetup+0x3C0 w=4B range=0..4294967295 step=0 qid=0x0285
+NUMERIC 'UMCCONFIG1 Mask' | var=AmdSetup+0x3C4 w=4B range=0..4294967295 step=0 qid=0x0286
+NUMERIC 'UMCCONFIG2 Mask' | var=AmdSetup+0x3C8 w=4B range=0..4294967295 step=0 qid=0x0287
+NUMERIC 'UMCCONFIG3 Mask' | var=AmdSetup+0x3CC w=4B range=0..4294967295 step=0 qid=0x0288
+NUMERIC 'UMCCONFIG4 Mask' | var=AmdSetup+0x3D0 w=4B range=0..4294967295 step=0 qid=0x0289
+NUMERIC 'UMCCONFIG5 Mask' | var=AmdSetup+0x3D4 w=4B range=0..4294967295 step=0 qid=0x028A
+NUMERIC 'UMCCONFIG6 Mask' | var=AmdSetup+0x3D8 w=4B range=0..4294967295 step=0 qid=0x028B
+NUMERIC 'UMCCONFIG7 Mask' | var=AmdSetup+0x3DC w=4B range=0..4294967295 step=0 qid=0x028C
+NUMERIC 'UMCCONFIG8 Mask' | var=AmdSetup+0x3E0 w=4B range=0..4294967295 step=0 qid=0x028D
+NUMERIC 'UMCCONFIG9 Mask' | var=AmdSetup+0x3E4 w=4B range=0..4294967295 step=0 qid=0x028E
+NUMERIC 'UMCCONFIG10 Mask' | var=AmdSetup+0x3E8 w=4B range=0..4294967295 step=0 qid=0x028F
+NUMERIC 'UMCCONFIG11 Mask' | var=AmdSetup+0x3EC w=4B range=0..4294967295 step=0 qid=0x0290
+NUMERIC 'UMCCONFIG12 Mask' | var=AmdSetup+0x3F0 w=4B range=0..4294967295 step=0 qid=0x0291
+NUMERIC 'UMCCONFIG13 Mask' | var=AmdSetup+0x3F4 w=4B range=0..4294967295 step=0 qid=0x0292
+NUMERIC 'UMCCONFIG14 Mask' | var=AmdSetup+0x3F8 w=4B range=0..4294967295 step=0 qid=0x0293
+NUMERIC 'UMCCONFIG15 Mask' | var=AmdSetup+0x3FC w=4B range=0..4294967295 step=0 qid=0x0294
+NUMERIC 'UMCCONFIG0 Value' | var=AmdSetup+0x400 w=4B range=0..4294967295 step=0 qid=0x0295
+NUMERIC 'UMCCONFIG1 Value' | var=AmdSetup+0x404 w=4B range=0..4294967295 step=0 qid=0x0296
+NUMERIC 'UMCCONFIG2 Value' | var=AmdSetup+0x408 w=4B range=0..4294967295 step=0 qid=0x0297
+NUMERIC 'UMCCONFIG3 Value' | var=AmdSetup+0x40C w=4B range=0..4294967295 step=0 qid=0x0298
+NUMERIC 'UMCCONFIG4 Value' | var=AmdSetup+0x410 w=4B range=0..4294967295 step=0 qid=0x0299
+NUMERIC 'UMCCONFIG5 Value' | var=AmdSetup+0x414 w=4B range=0..4294967295 step=0 qid=0x029A
+NUMERIC 'UMCCONFIG6 Value' | var=AmdSetup+0x418 w=4B range=0..4294967295 step=0 qid=0x029B
+NUMERIC 'UMCCONFIG7 Value' | var=AmdSetup+0x41C w=4B range=0..4294967295 step=0 qid=0x029C
+NUMERIC 'UMCCONFIG8 Value' | var=AmdSetup+0x420 w=4B range=0..4294967295 step=0 qid=0x029D
+NUMERIC 'UMCCONFIG9 Value' | var=AmdSetup+0x424 w=4B range=0..4294967295 step=0 qid=0x029E
+NUMERIC 'UMCCONFIG10 Value' | var=AmdSetup+0x428 w=4B range=0..4294967295 step=0 qid=0x029F
+NUMERIC 'UMCCONFIG11 Value' | var=AmdSetup+0x42C w=4B range=0..4294967295 step=0 qid=0x02A0
+NUMERIC 'UMCCONFIG12 Value' | var=AmdSetup+0x430 w=4B range=0..4294967295 step=0 qid=0x02A1
+NUMERIC 'UMCCONFIG13 Value' | var=AmdSetup+0x434 w=4B range=0..4294967295 step=0 qid=0x02A2
+NUMERIC 'UMCCONFIG14 Value' | var=AmdSetup+0x438 w=4B range=0..4294967295 step=0 qid=0x02A3
+NUMERIC 'UMCCONFIG15 Value' | var=AmdSetup+0x43C w=4B range=0..4294967295 step=0 qid=0x02A4
+ONEOF 'UMCCONFIG16-3x Control' | var=AmdSetup+0x440 w=1B range=1..255 step=0 qid=0x02A5
+NUMERIC 'UMCCONFIG16 Mask' | var=AmdSetup+0x441 w=4B range=0..4294967295 step=0 qid=0x02A6
+NUMERIC 'UMCCONFIG17 Mask' | var=AmdSetup+0x445 w=4B range=0..4294967295 step=0 qid=0x02A7
+NUMERIC 'UMCCONFIG18 Mask' | var=AmdSetup+0x449 w=4B range=0..4294967295 step=0 qid=0x02A8
+NUMERIC 'UMCCONFIG19 Mask' | var=AmdSetup+0x44D w=4B range=0..4294967295 step=0 qid=0x02A9
+NUMERIC 'UMCCONFIG20 Mask' | var=AmdSetup+0x451 w=4B range=0..4294967295 step=0 qid=0x02AA
+NUMERIC 'UMCCONFIG21 Mask' | var=AmdSetup+0x455 w=4B range=0..4294967295 step=0 qid=0x02AB
+NUMERIC 'UMCCONFIG22 Mask' | var=AmdSetup+0x459 w=4B range=0..4294967295 step=0 qid=0x02AC
+NUMERIC 'UMCCONFIG23 Mask' | var=AmdSetup+0x45D w=4B range=0..4294967295 step=0 qid=0x02AD
+NUMERIC 'UMCCONFIG24 Mask' | var=AmdSetup+0x461 w=4B range=0..4294967295 step=0 qid=0x02AE
+NUMERIC 'UMCCONFIG25 Mask' | var=AmdSetup+0x465 w=4B range=0..4294967295 step=0 qid=0x02AF
+NUMERIC 'UMCCONFIG26 Mask' | var=AmdSetup+0x469 w=4B range=0..4294967295 step=0 qid=0x02B0
+NUMERIC 'UMCCONFIG27 Mask' | var=AmdSetup+0x46D w=4B range=0..4294967295 step=0 qid=0x02B1
+NUMERIC 'UMCCONFIG28 Mask' | var=AmdSetup+0x471 w=4B range=0..4294967295 step=0 qid=0x02B2
+NUMERIC 'UMCCONFIG29 Mask' | var=AmdSetup+0x475 w=4B range=0..4294967295 step=0 qid=0x02B3
+NUMERIC 'UMCCONFIG30 Mask' | var=AmdSetup+0x479 w=4B range=0..4294967295 step=0 qid=0x02B4
+NUMERIC 'UMCCONFIG31 Mask' | var=AmdSetup+0x47D w=4B range=0..4294967295 step=0 qid=0x02B5
+NUMERIC 'UMCCONFIG32 Mask' | var=AmdSetup+0x481 w=4B range=0..4294967295 step=0 qid=0x02B6
+NUMERIC 'UMCCONFIG33 Mask' | var=AmdSetup+0x485 w=4B range=0..4294967295 step=0 qid=0x02B7
+NUMERIC 'UMCCONFIG34 Mask' | var=AmdSetup+0x489 w=4B range=0..4294967295 step=0 qid=0x02B8
+NUMERIC 'UMCCONFIG35 Mask' | var=AmdSetup+0x48D w=4B range=0..4294967295 step=0 qid=0x02B9
+NUMERIC 'UMCCONFIG36 Mask' | var=AmdSetup+0x491 w=4B range=0..4294967295 step=0 qid=0x02BA
+NUMERIC 'UMCCONFIG16 Value' | var=AmdSetup+0x495 w=4B range=0..4294967295 step=0 qid=0x02BB
+NUMERIC 'UMCCONFIG17 Value' | var=AmdSetup+0x499 w=4B range=0..4294967295 step=0 qid=0x02BC
+NUMERIC 'UMCCONFIG18 Value' | var=AmdSetup+0x49D w=4B range=0..4294967295 step=0 qid=0x02BD
+NUMERIC 'UMCCONFIG19 Value' | var=AmdSetup+0x4A1 w=4B range=0..4294967295 step=0 qid=0x02BE
+NUMERIC 'UMCCONFIG20 Value' | var=AmdSetup+0x4A5 w=4B range=0..4294967295 step=0 qid=0x02BF
+NUMERIC 'UMCCONFIG21 Value' | var=AmdSetup+0x4A9 w=4B range=0..4294967295 step=0 qid=0x02C0
+NUMERIC 'UMCCONFIG22 Value' | var=AmdSetup+0x4AD w=4B range=0..4294967295 step=0 qid=0x02C1
+NUMERIC 'UMCCONFIG23 Value' | var=AmdSetup+0x4B1 w=4B range=0..4294967295 step=0 qid=0x02C2
+NUMERIC 'UMCCONFIG24 Value' | var=AmdSetup+0x4B5 w=4B range=0..4294967295 step=0 qid=0x02C3
+NUMERIC 'UMCCONFIG25 Value' | var=AmdSetup+0x4B9 w=4B range=0..4294967295 step=0 qid=0x02C4
+NUMERIC 'UMCCONFIG26 Value' | var=AmdSetup+0x4BD w=4B range=0..4294967295 step=0 qid=0x02C5
+NUMERIC 'UMCCONFIG27 Value' | var=AmdSetup+0x4C1 w=4B range=0..4294967295 step=0 qid=0x02C6
+NUMERIC 'UMCCONFIG28 Value' | var=AmdSetup+0x4C5 w=4B range=0..4294967295 step=0 qid=0x02C7
+NUMERIC 'UMCCONFIG29 Value' | var=AmdSetup+0x4C9 w=4B range=0..4294967295 step=0 qid=0x02C8
+NUMERIC 'UMCCONFIG30 Value' | var=AmdSetup+0x4CD w=4B range=0..4294967295 step=0 qid=0x02C9
+NUMERIC 'UMCCONFIG31 Value' | var=AmdSetup+0x4D1 w=4B range=0..4294967295 step=0 qid=0x02CA
+NUMERIC 'UMCCONFIG32 Value' | var=AmdSetup+0x4D5 w=4B range=0..4294967295 step=0 qid=0x02CB
+NUMERIC 'UMCCONFIG33 Value' | var=AmdSetup+0x4D9 w=4B range=0..4294967295 step=0 qid=0x02CC
+NUMERIC 'UMCCONFIG34 Value' | var=AmdSetup+0x4DD w=4B range=0..4294967295 step=0 qid=0x02CD
+NUMERIC 'UMCCONFIG35 Value' | var=AmdSetup+0x4E1 w=4B range=0..4294967295 step=0 qid=0x02CE
+NUMERIC 'UMCCONFIG36 Value' | var=AmdSetup+0x4E5 w=4B range=0..4294967295 step=0 qid=0x02CF
+ONEOF 'UMCCONFIG19 Control' | var=AmdSetup+0x4E9 w=1B range=1..255 step=0 qid=0x02D0
+ONEOF 'UMCCONFIG19 UMC Select' | var=AmdSetup+0x4EA w=1B range=0..1 step=0 qid=0x02D1
+NUMERIC 'UMCCONFIG19 Mask UMC0' | var=AmdSetup+0x4EB w=4B range=0..4294967295 step=0 qid=0x02D2
+NUMERIC 'UMCCONFIG19 Mask UMC1' | var=AmdSetup+0x4EF w=4B range=0..4294967295 step=0 qid=0x02D3
+NUMERIC 'UMCCONFIG19 Mask UMC2' | var=AmdSetup+0x4F3 w=4B range=0..4294967295 step=0 qid=0x02D4
+NUMERIC 'UMCCONFIG19 Mask UMC3' | var=AmdSetup+0x4F7 w=4B range=0..4294967295 step=0 qid=0x02D5
+NUMERIC 'UMCCONFIG19 Mask UMC4' | var=AmdSetup+0x4FB w=4B range=0..4294967295 step=0 qid=0x02D6
+NUMERIC 'UMCCONFIG19 Mask UMC5' | var=AmdSetup+0x4FF w=4B range=0..4294967295 step=0 qid=0x02D7
+NUMERIC 'UMCCONFIG19 Mask UMC6' | var=AmdSetup+0x503 w=4B range=0..4294967295 step=0 qid=0x02D8
+NUMERIC 'UMCCONFIG19 Mask UMC7' | var=AmdSetup+0x507 w=4B range=0..4294967295 step=0 qid=0x02D9
+NUMERIC 'UMCCONFIG19 Value UMC0' | var=AmdSetup+0x50B w=4B range=0..4294967295 step=0 qid=0x02DA
+NUMERIC 'UMCCONFIG19 Value UMC1' | var=AmdSetup+0x50F w=4B range=0..4294967295 step=0 qid=0x02DB
+NUMERIC 'UMCCONFIG19 Value UMC2' | var=AmdSetup+0x513 w=4B range=0..4294967295 step=0 qid=0x02DC
+NUMERIC 'UMCCONFIG19 Value UMC3' | var=AmdSetup+0x517 w=4B range=0..4294967295 step=0 qid=0x02DD
+NUMERIC 'UMCCONFIG19 Value UMC4' | var=AmdSetup+0x51B w=4B range=0..4294967295 step=0 qid=0x02DE
+NUMERIC 'UMCCONFIG19 Value UMC5' | var=AmdSetup+0x51F w=4B range=0..4294967295 step=0 qid=0x02DF
+NUMERIC 'UMCCONFIG19 Value UMC6' | var=AmdSetup+0x523 w=4B range=0..4294967295 step=0 qid=0x02E0
+NUMERIC 'UMCCONFIG19 Value UMC7' | var=AmdSetup+0x527 w=4B range=0..4294967295 step=0 qid=0x02E1
+ONEOF 'UMCCONFIG20 Control' | var=AmdSetup+0x52B w=1B range=1..255 step=0 qid=0x02E2
+ONEOF 'UMCCONFIG20 UMC Select' | var=AmdSetup+0x52C w=1B range=0..1 step=0 qid=0x02E3
+NUMERIC 'UMCCONFIG20 Mask UMC0' | var=AmdSetup+0x52D w=4B range=0..4294967295 step=0 qid=0x02E4
+NUMERIC 'UMCCONFIG20 Mask UMC1' | var=AmdSetup+0x531 w=4B range=0..4294967295 step=0 qid=0x02E5
+NUMERIC 'UMCCONFIG20 Mask UMC2' | var=AmdSetup+0x535 w=4B range=0..4294967295 step=0 qid=0x02E6
+NUMERIC 'UMCCONFIG20 Mask UMC3' | var=AmdSetup+0x539 w=4B range=0..4294967295 step=0 qid=0x02E7
+NUMERIC 'UMCCONFIG20 Mask UMC4' | var=AmdSetup+0x53D w=4B range=0..4294967295 step=0 qid=0x02E8
+NUMERIC 'UMCCONFIG20 Mask UMC5' | var=AmdSetup+0x541 w=4B range=0..4294967295 step=0 qid=0x02E9
+NUMERIC 'UMCCONFIG20 Mask UMC6' | var=AmdSetup+0x545 w=4B range=0..4294967295 step=0 qid=0x02EA
+NUMERIC 'UMCCONFIG20 Mask UMC7' | var=AmdSetup+0x549 w=4B range=0..4294967295 step=0 qid=0x02EB
+NUMERIC 'UMCCONFIG20 Value UMC0' | var=AmdSetup+0x54D w=4B range=0..4294967295 step=0 qid=0x02EC
+NUMERIC 'UMCCONFIG20 Value UMC1' | var=AmdSetup+0x551 w=4B range=0..4294967295 step=0 qid=0x02ED
+NUMERIC 'UMCCONFIG20 Value UMC2' | var=AmdSetup+0x555 w=4B range=0..4294967295 step=0 qid=0x02EE
+NUMERIC 'UMCCONFIG20 Value UMC3' | var=AmdSetup+0x559 w=4B range=0..4294967295 step=0 qid=0x02EF
+NUMERIC 'UMCCONFIG20 Value UMC4' | var=AmdSetup+0x55D w=4B range=0..4294967295 step=0 qid=0x02F0
+NUMERIC 'UMCCONFIG20 Value UMC5' | var=AmdSetup+0x561 w=4B range=0..4294967295 step=0 qid=0x02F1
+NUMERIC 'UMCCONFIG20 Value UMC6' | var=AmdSetup+0x565 w=4B range=0..4294967295 step=0 qid=0x02F2
+NUMERIC 'UMCCONFIG20 Value UMC7' | var=AmdSetup+0x569 w=4B range=0..4294967295 step=0 qid=0x02F3
+ONEOF 'UMCCONFIG30 Control' | var=AmdSetup+0x56D w=1B range=1..255 step=0 qid=0x02F4
+ONEOF 'UMCCONFIG30 UMC Select' | var=AmdSetup+0x56E w=1B range=0..1 step=0 qid=0x02F5
+NUMERIC 'UMCCONFIG30 Mask UMC0' | var=AmdSetup+0x56F w=4B range=0..4294967295 step=0 qid=0x02F6
+NUMERIC 'UMCCONFIG30 Mask UMC1' | var=AmdSetup+0x573 w=4B range=0..4294967295 step=0 qid=0x02F7
+NUMERIC 'UMCCONFIG30 Mask UMC2' | var=AmdSetup+0x577 w=4B range=0..4294967295 step=0 qid=0x02F8
+NUMERIC 'UMCCONFIG30 Mask UMC3' | var=AmdSetup+0x57B w=4B range=0..4294967295 step=0 qid=0x02F9
+NUMERIC 'UMCCONFIG30 Mask UMC4' | var=AmdSetup+0x57F w=4B range=0..4294967295 step=0 qid=0x02FA
+NUMERIC 'UMCCONFIG30 Mask UMC5' | var=AmdSetup+0x583 w=4B range=0..4294967295 step=0 qid=0x02FB
+NUMERIC 'UMCCONFIG30 Mask UMC6' | var=AmdSetup+0x587 w=4B range=0..4294967295 step=0 qid=0x02FC
+NUMERIC 'UMCCONFIG30 Mask UMC7' | var=AmdSetup+0x58B w=4B range=0..4294967295 step=0 qid=0x02FD
+NUMERIC 'UMCCONFIG30 Value UMC0' | var=AmdSetup+0x58F w=4B range=0..4294967295 step=0 qid=0x02FE
+NUMERIC 'UMCCONFIG30 Value UMC1' | var=AmdSetup+0x593 w=4B range=0..4294967295 step=0 qid=0x02FF
+NUMERIC 'UMCCONFIG30 Value UMC2' | var=AmdSetup+0x597 w=4B range=0..4294967295 step=0 qid=0x0300
+NUMERIC 'UMCCONFIG30 Value UMC3' | var=AmdSetup+0x59B w=4B range=0..4294967295 step=0 qid=0x0301
+NUMERIC 'UMCCONFIG30 Value UMC4' | var=AmdSetup+0x59F w=4B range=0..4294967295 step=0 qid=0x0302
+NUMERIC 'UMCCONFIG30 Value UMC5' | var=AmdSetup+0x5A3 w=4B range=0..4294967295 step=0 qid=0x0303
+NUMERIC 'UMCCONFIG30 Value UMC6' | var=AmdSetup+0x5A7 w=4B range=0..4294967295 step=0 qid=0x0304
+NUMERIC 'UMCCONFIG30 Value UMC7' | var=AmdSetup+0x5AB w=4B range=0..4294967295 step=0 qid=0x0305
+ONEOF 'UMCCONFIG97-107 Control' | var=AmdSetup+0x5AF w=1B range=1..255 step=0 qid=0x0306
+NUMERIC 'UMCCONFIG97 Mask' | var=AmdSetup+0x5B0 w=4B range=0..4294967295 step=0 qid=0x0307
+NUMERIC 'UMCCONFIG98 Mask' | var=AmdSetup+0x5B4 w=4B range=0..4294967295 step=0 qid=0x0308
+NUMERIC 'UMCCONFIG99 Mask' | var=AmdSetup+0x5B8 w=4B range=0..4294967295 step=0 qid=0x0309
+NUMERIC 'UMCCONFIG100 Mask' | var=AmdSetup+0x5BC w=4B range=0..4294967295 step=0 qid=0x030A
+NUMERIC 'UMCCONFIG101 Mask' | var=AmdSetup+0x5C0 w=4B range=0..4294967295 step=0 qid=0x030B
+NUMERIC 'UMCCONFIG102 Mask' | var=AmdSetup+0x5C4 w=4B range=0..4294967295 step=0 qid=0x030C
+NUMERIC 'UMCCONFIG103 Mask' | var=AmdSetup+0x5C8 w=4B range=0..4294967295 step=0 qid=0x030D
+NUMERIC 'UMCCONFIG104 Mask' | var=AmdSetup+0x5CC w=4B range=0..4294967295 step=0 qid=0x030E
+NUMERIC 'UMCCONFIG105 Mask' | var=AmdSetup+0x5D0 w=4B range=0..4294967295 step=0 qid=0x030F
+NUMERIC 'UMCCONFIG106 Mask' | var=AmdSetup+0x5D4 w=4B range=0..4294967295 step=0 qid=0x0310
+NUMERIC 'UMCCONFIG107 Mask' | var=AmdSetup+0x5D8 w=4B range=0..4294967295 step=0 qid=0x0311
+NUMERIC 'UMCCONFIG97 Value' | var=AmdSetup+0x5DC w=4B range=0..4294967295 step=0 qid=0x0312
+NUMERIC 'UMCCONFIG98 Value' | var=AmdSetup+0x5E0 w=4B range=0..4294967295 step=0 qid=0x0313
+NUMERIC 'UMCCONFIG99 Value' | var=AmdSetup+0x5E4 w=4B range=0..4294967295 step=0 qid=0x0314
+NUMERIC 'UMCCONFIG100 Value' | var=AmdSetup+0x5E8 w=4B range=0..4294967295 step=0 qid=0x0315
+NUMERIC 'UMCCONFIG101 Value' | var=AmdSetup+0x5EC w=4B range=0..4294967295 step=0 qid=0x0316
+NUMERIC 'UMCCONFIG102 Value' | var=AmdSetup+0x5F0 w=4B range=0..4294967295 step=0 qid=0x0317
+NUMERIC 'UMCCONFIG103 Value' | var=AmdSetup+0x5F4 w=4B range=0..4294967295 step=0 qid=0x0318
+NUMERIC 'UMCCONFIG104 Value' | var=AmdSetup+0x5F8 w=4B range=0..4294967295 step=0 qid=0x0319
+NUMERIC 'UMCCONFIG105 Value' | var=AmdSetup+0x5FC w=4B range=0..4294967295 step=0 qid=0x031A
+NUMERIC 'UMCCONFIG106 Value' | var=AmdSetup+0x600 w=4B range=0..4294967295 step=0 qid=0x031B
+NUMERIC 'UMCCONFIG107 Value' | var=AmdSetup+0x604 w=4B range=0..4294967295 step=0 qid=0x031C
+ONEOF 'DFE RX Value Control' | var=AmdSetup+0x608 w=1B range=1..255 step=0 qid=0x031D
+NUMERIC 'DFE RX Value UMC0 Channel0' | var=AmdSetup+0x609 w=1B range=0..255 step=0 qid=0x031E
+NUMERIC 'DFE RX Value UMC1 Channel0' | var=AmdSetup+0x60A w=1B range=0..255 step=0 qid=0x031F
+NUMERIC 'DFE RX Value UMC2 Channel0' | var=AmdSetup+0x60B w=1B range=0..255 step=0 qid=0x0320
+NUMERIC 'DFE RX Value UMC3 Channel0' | var=AmdSetup+0x60C w=1B range=0..255 step=0 qid=0x0321
+NUMERIC 'DFE RX Value UMC4 Channel0' | var=AmdSetup+0x60D w=1B range=0..255 step=0 qid=0x0322
+NUMERIC 'DFE RX Value UMC5 Channel0' | var=AmdSetup+0x60E w=1B range=0..255 step=0 qid=0x0323
+NUMERIC 'DFE RX Value UMC6 Channel0' | var=AmdSetup+0x60F w=1B range=0..255 step=0 qid=0x0324
+NUMERIC 'DFE RX Value UMC7 Channel0' | var=AmdSetup+0x610 w=1B range=0..255 step=0 qid=0x0325
+NUMERIC 'DFE RX Value UMC0 Channel1' | var=AmdSetup+0x611 w=1B range=0..255 step=0 qid=0x0326
+NUMERIC 'DFE RX Value UMC1 Channel1' | var=AmdSetup+0x612 w=1B range=0..255 step=0 qid=0x0327
+NUMERIC 'DFE RX Value UMC2 Channel1' | var=AmdSetup+0x613 w=1B range=0..255 step=0 qid=0x0328
+NUMERIC 'DFE RX Value UMC3 Channel1' | var=AmdSetup+0x614 w=1B range=0..255 step=0 qid=0x0329
+NUMERIC 'DFE RX Value UMC4 Channel1' | var=AmdSetup+0x615 w=1B range=0..255 step=0 qid=0x032A
+NUMERIC 'DFE RX Value UMC5 Channel1' | var=AmdSetup+0x616 w=1B range=0..255 step=0 qid=0x032B
+NUMERIC 'DFE RX Value UMC6 Channel1' | var=AmdSetup+0x617 w=1B range=0..255 step=0 qid=0x032C
+NUMERIC 'DFE RX Value UMC7 Channel1' | var=AmdSetup+0x618 w=1B range=0..255 step=0 qid=0x032D
+ONEOF 'MR0 Control' | var=AmdSetup+0x619 w=1B range=1..255 step=0 qid=0x032E
+NUMERIC 'MR0 MP0 Mask' | var=AmdSetup+0x61A w=4B range=0..4294967295 step=0 qid=0x032F
+NUMERIC 'MR0 MP0 Value' | var=AmdSetup+0x61E w=4B range=0..4294967295 step=0 qid=0x0330
+NUMERIC 'MR0 MP1 Mask' | var=AmdSetup+0x622 w=4B range=0..4294967295 step=0 qid=0x0331
+NUMERIC 'MR0 MP1 Value' | var=AmdSetup+0x626 w=4B range=0..4294967295 step=0 qid=0x0332
+NUMERIC 'MR0 MP2 Mask' | var=AmdSetup+0x62A w=4B range=0..4294967295 step=0 qid=0x0333
+NUMERIC 'MR0 MP2 Value' | var=AmdSetup+0x62E w=4B range=0..4294967295 step=0 qid=0x0334
+NUMERIC 'MR0 MP3 Mask' | var=AmdSetup+0x632 w=4B range=0..4294967295 step=0 qid=0x0335
+NUMERIC 'MR0 MP3 Value' | var=AmdSetup+0x636 w=4B range=0..4294967295 step=0 qid=0x0336
+ONEOF 'MR3 Control' | var=AmdSetup+0x63A w=1B range=1..255 step=0 qid=0x0337
+NUMERIC 'MR3 MP0 Mask' | var=AmdSetup+0x63B w=4B range=0..4294967295 step=0 qid=0x0338
+NUMERIC 'MR3 MP0 Value' | var=AmdSetup+0x63F w=4B range=0..4294967295 step=0 qid=0x0339
+NUMERIC 'MR3 MP1 Mask' | var=AmdSetup+0x643 w=4B range=0..4294967295 step=0 qid=0x033A
+NUMERIC 'MR3 MP1 Value' | var=AmdSetup+0x647 w=4B range=0..4294967295 step=0 qid=0x033B
+NUMERIC 'MR3 MP2 Mask' | var=AmdSetup+0x64B w=4B range=0..4294967295 step=0 qid=0x033C
+NUMERIC 'MR3 MP2 Value' | var=AmdSetup+0x64F w=4B range=0..4294967295 step=0 qid=0x033D
+NUMERIC 'MR3 MP3 Mask' | var=AmdSetup+0x653 w=4B range=0..4294967295 step=0 qid=0x033E
+NUMERIC 'MR3 MP3 Value' | var=AmdSetup+0x657 w=4B range=0..4294967295 step=0 qid=0x033F
+ONEOF 'MR4 Control' | var=AmdSetup+0x65B w=1B range=1..255 step=0 qid=0x0340
+NUMERIC 'MR4 MP0 Mask' | var=AmdSetup+0x65C w=4B range=0..4294967295 step=0 qid=0x0341
+NUMERIC 'MR4 MP0 Value' | var=AmdSetup+0x660 w=4B range=0..4294967295 step=0 qid=0x0342
+NUMERIC 'MR4 MP1 Mask' | var=AmdSetup+0x664 w=4B range=0..4294967295 step=0 qid=0x0343
+NUMERIC 'MR4 MP1 Value' | var=AmdSetup+0x668 w=4B range=0..4294967295 step=0 qid=0x0344
+NUMERIC 'MR4 MP2 Mask' | var=AmdSetup+0x66C w=4B range=0..4294967295 step=0 qid=0x0345
+NUMERIC 'MR4 MP2 Value' | var=AmdSetup+0x670 w=4B range=0..4294967295 step=0 qid=0x0346
+NUMERIC 'MR4 MP3 Mask' | var=AmdSetup+0x674 w=4B range=0..4294967295 step=0 qid=0x0347
+NUMERIC 'MR4 MP3 Value' | var=AmdSetup+0x678 w=4B range=0..4294967295 step=0 qid=0x0348
+ONEOF 'MR8 Control' | var=AmdSetup+0x67C w=1B range=1..255 step=0 qid=0x0349
+NUMERIC 'MR8 MP0 Mask' | var=AmdSetup+0x67D w=4B range=0..4294967295 step=0 qid=0x034A
+NUMERIC 'MR8 MP0 Value' | var=AmdSetup+0x681 w=4B range=0..4294967295 step=0 qid=0x034B
+NUMERIC 'MR8 MP1 Mask' | var=AmdSetup+0x685 w=4B range=0..4294967295 step=0 qid=0x034C
+NUMERIC 'MR8 MP1 Value' | var=AmdSetup+0x689 w=4B range=0..4294967295 step=0 qid=0x034D
+NUMERIC 'MR8 MP2 Mask' | var=AmdSetup+0x68D w=4B range=0..4294967295 step=0 qid=0x034E
+NUMERIC 'MR8 MP2 Value' | var=AmdSetup+0x691 w=4B range=0..4294967295 step=0 qid=0x034F
+NUMERIC 'MR8 MP3 Mask' | var=AmdSetup+0x695 w=4B range=0..4294967295 step=0 qid=0x0350
+NUMERIC 'MR8 MP3 Value' | var=AmdSetup+0x699 w=4B range=0..4294967295 step=0 qid=0x0351
+ONEOF 'Slew Rate Control' | var=AmdSetup+0x69D w=1B range=0..255 step=0 qid=0x0352
+ONEOF 'CCLK_CONTROLLER' | var=AmdSetup+0x69E w=1B range=0..15 step=0 qid=0x7040
+ONEOF 'GFXCLK_EFFECTIVE_FREQ' | var=AmdSetup+0x69F w=1B range=0..15 step=0 qid=0x7041
+ONEOF 'DATA_CALCULATION' | var=AmdSetup+0x6A0 w=1B range=0..15 step=0 qid=0x7042
+ONEOF 'THERMAL' | var=AmdSetup+0x6A1 w=1B range=0..15 step=0 qid=0x7043
+ONEOF 'PLL_POWER_DOWN' | var=AmdSetup+0x6A2 w=1B range=0..15 step=0 qid=0x7044
+ONEOF 'FCLK_DPM' | var=AmdSetup+0x6A3 w=1B range=0..15 step=0 qid=0x7045
+ONEOF 'GFX_DPM' | var=AmdSetup+0x6A4 w=1B range=0..15 step=0 qid=0x7046
+ONEOF 'DS_GFXCLK' | var=AmdSetup+0x6A5 w=1B range=0..15 step=0 qid=0x7047
+ONEOF 'DS_SOCCLK' | var=AmdSetup+0x6A6 w=1B range=0..15 step=0 qid=0x7048
+ONEOF 'DS_LCLK' | var=AmdSetup+0x6A7 w=1B range=0..15 step=0 qid=0x7049
+ONEOF 'CORE_CSTATES' | var=AmdSetup+0x6A8 w=1B range=0..15 step=0 qid=0x704A
+ONEOF 'G6_SSC' | var=AmdSetup+0x6A9 w=1B range=0..15 step=0 qid=0x704B
+ONEOF 'RM' | var=AmdSetup+0x6AA w=1B range=0..15 step=0 qid=0x704C
+ONEOF 'SOC_DPM' | var=AmdSetup+0x6AB w=1B range=0..15 step=0 qid=0x704D
+ONEOF 'DS_SMNCLK' | var=AmdSetup+0x6AC w=1B range=0..15 step=0 qid=0x704E
+ONEOF 'DS_MP1CLK' | var=AmdSetup+0x6AD w=1B range=0..15 step=0 qid=0x704F
+ONEOF 'DS_MP0CLK' | var=AmdSetup+0x6AE w=1B range=0..15 step=0 qid=0x7050
+ONEOF 'SMU CG' | var=AmdSetup+0x6AF w=1B range=0..15 step=0 qid=0x7051
+ONEOF 'DS_FUSE_SRAM' | var=AmdSetup+0x6B0 w=1B range=0..15 step=0 qid=0x7052
+ONEOF 'GFX_CKS' | var=AmdSetup+0x6B1 w=1B range=0..15 step=0 qid=0x7053
+ONEOF 'FP_THROTTLING' | var=AmdSetup+0x6B2 w=1B range=0..15 step=0 qid=0x7054
+ONEOF 'PROCHOT' | var=AmdSetup+0x6B3 w=1B range=0..15 step=0 qid=0x7055
+ONEOF 'CPUOFF' | var=AmdSetup+0x6B4 w=1B range=0..15 step=0 qid=0x7056
+ONEOF 'UMC_THROTTLE' | var=AmdSetup+0x6B5 w=1B range=0..15 step=0 qid=0x7057
+ONEOF 'DF_THROTTLE' | var=AmdSetup+0x6B6 w=1B range=0..15 step=0 qid=0x7058
+ONEOF 'DS_MP3FCLK' | var=AmdSetup+0x6B7 w=1B range=0..15 step=0 qid=0x7059
+ONEOF 'DS_SHUBCLK' | var=AmdSetup+0x6B8 w=1B range=0..15 step=0 qid=0x705A
+ONEOF 'TDC' | var=AmdSetup+0x6B9 w=1B range=0..15 step=0 qid=0x705B
+ONEOF 'UMC_CAL_SHARING' | var=AmdSetup+0x6BA w=1B range=0..15 step=0 qid=0x705C
+ONEOF 'DFLL_BTC_CALIBRATION' | var=AmdSetup+0x6BB w=1B range=0..15 step=0 qid=0x705D
+ONEOF 'EDC' | var=AmdSetup+0x6BC w=1B range=0..15 step=0 qid=0x705E
+ONEOF 'DLDO' | var=AmdSetup+0x6BD w=1B range=0..15 step=0 qid=0x705F
+ONEOF 'MEAS_DRAM_BLACKOUT' | var=AmdSetup+0x6BE w=1B range=0..15 step=0 qid=0x7060
+ONEOF 'PPT' | var=AmdSetup+0x6BF w=1B range=0..15 step=0 qid=0x7061
+ONEOF 'STAPM' | var=AmdSetup+0x6C0 w=1B range=0..15 step=0 qid=0x7062
+ONEOF 'CSTATE_BOOST' | var=AmdSetup+0x6C1 w=1B range=0..15 step=0 qid=0x7063
+ONEOF 'Thermal Control' | var=AmdSetup+0x6C2 w=1B range=0..1 step=0 qid=0x0359
+NUMERIC 'TctlMax' | var=AmdSetup+0x6C3 w=4B range=0..4294967295 step=0 qid=0x035A
+NUMERIC 'TctlMax_Core' | var=AmdSetup+0x6C7 w=2B range=0..65535 step=0 qid=0x035B
+NUMERIC 'TctlMax_Gfx' | var=AmdSetup+0x6C9 w=2B range=0..65535 step=0 qid=0x035C
+ONEOF 'PROCHOT Control' | var=AmdSetup+0x6CB w=1B range=0..1 step=0 qid=0x035D
+NUMERIC 'PROCHOT Deassertion Ramp Time' | var=AmdSetup+0x6CC w=4B range=0..4294967295 step=0 qid=0x035E
+ONEOF 'GfxAvfsFtoVMargin Control' | var=AmdSetup+0x6D0 w=1B range=0..1 step=0 qid=0x035F
+NUMERIC 'GfxAvfsFtoVMargin' | var=AmdSetup+0x6D1 w=2B range=0..65535 step=0 qid=0x0360
+ONEOF 'Core Dldo Psm Margin Control' | var=AmdSetup+0x6D3 w=1B range=0..1 step=0 qid=0x0361
+NUMERIC 'Core Dldo Psm Margin' | var=AmdSetup+0x6D4 w=2B range=0..65535 step=0 qid=0x0362
+ONEOF 'Core DLDO Bypass' | var=AmdSetup+0x6D6 w=1B range=0..15 step=0 qid=0x0363
+ONEOF 'Gfx Stretch Thresh Control' | var=AmdSetup+0x6D7 w=1B range=0..1 step=0 qid=0x0364
+NUMERIC 'Gfx Stretch Thresh' | var=AmdSetup+0x6D8 w=1B range=0..7 step=0 qid=0x0365
+ONEOF 'Gfx Stretch Amount Control' | var=AmdSetup+0x6D9 w=1B range=0..1 step=0 qid=0x0366
+NUMERIC 'Gfx Stretch Amount' | var=AmdSetup+0x6DA w=1B range=0..5 step=0 qid=0x0367
+ONEOF 'AvfsCoeffTable_Override' | var=AmdSetup+0x6DB w=4B range=0..15 step=0 qid=0x0368
+ONEOF 'FcwSlewFrac Control' | var=AmdSetup+0x6DF w=1B range=0..1 step=0 qid=0x0369
+NUMERIC 'FcwSlewFrac' | var=AmdSetup+0x6E0 w=4B range=0..4294967295 step=0 qid=0x036A
+ONEOF 'CC1Dis' | var=AmdSetup+0x6E4 w=1B range=0..1 step=0 qid=0x7068
+ONEOF 'VDDCR_VDD Voltage Offset Control' | var=AmdSetup+0x6E5 w=1B range=0..1 step=0 qid=0x036B
+NUMERIC 'VDDCR_VDD Voltage Offset' | var=AmdSetup+0x6E6 w=4B range=0..4294967295 step=0 qid=0x036C
+ONEOF 'VDDCR_GFX Voltage Offset Control' | var=AmdSetup+0x6EA w=1B range=0..1 step=0 qid=0x036D
+NUMERIC 'VDDCR_GFX Voltage Offset' | var=AmdSetup+0x6EB w=4B range=0..4294967295 step=0 qid=0x036E
+ONEOF 'HTC' | var=AmdSetup+0x6EF w=1B range=0..255 step=0 qid=0x036F
+ONEOF 'ThermTrip' | var=AmdSetup+0x6F0 w=1B range=0..255 step=0 qid=0x0370
+ONEOF 'AllocateDramBuffer Control' | var=AmdSetup+0x6F1 w=1B range=0..1 step=0 qid=0x0371
+NUMERIC 'AllocateDramBuffer' | var=AmdSetup+0x6F2 w=4B range=0..4294967295 step=0 qid=0x0372
+ONEOF 'CPU DC BTC' | var=AmdSetup+0x6F6 w=1B range=0..15 step=0 qid=0x0375
+NUMERIC 'CPU DC BTC Set voltage in mV' | var=AmdSetup+0x6F7 w=2B range=0..65535 step=0 qid=0x0376
+NUMERIC 'CPU DC BTC error offset in mV' | var=AmdSetup+0x6F9 w=2B range=0..65535 step=0 qid=0x0377
+ONEOF 'GFX DC BTC' | var=AmdSetup+0x6FB w=1B range=0..15 step=0 qid=0x0378
+NUMERIC 'GFX DC BTC Set voltage in mV' | var=AmdSetup+0x6FC w=2B range=0..65535 step=0 qid=0x0379
+NUMERIC 'GFX DC BTC error offset in mV' | var=AmdSetup+0x6FE w=2B range=0..65535 step=0 qid=0x037A
+ONEOF 'CPU Clock Override Control' | var=AmdSetup+0x700 w=1B range=1..255 step=0 qid=0x037B
+NUMERIC 'Force CPU Frequency' | var=AmdSetup+0x701 w=2B range=0..4000 step=0 qid=0x037C
+ONEOF 'DF Clock Override Control' | var=AmdSetup+0x703 w=1B range=1..255 step=0 qid=0x037D
+NUMERIC 'DF Clock Override' | var=AmdSetup+0x704 w=2B range=0..2000 step=0 qid=0x037E
+ONEOF 'Spread Spectrum for PLL0' | var=AmdSetup+0x706 w=1B range=0..255 step=0 qid=0x037F
+ONEOF 'Spread Spectrum for PLL1' | var=AmdSetup+0x707 w=1B range=0..255 step=0 qid=0x0380
+ONEOF 'Spread Spectrum for PLL6' | var=AmdSetup+0x708 w=1B range=0..255 step=0 qid=0x0381
+ONEOF 'Spread Spectrum for PLL7' | var=AmdSetup+0x709 w=1B range=0..255 step=0 qid=0x0382
+ONEOF 'CpuCksDisable' | var=AmdSetup+0x70A w=1B range=0..255 step=0 qid=0x0383
+ONEOF 'C0ResidencyCtrl' | var=AmdSetup+0x70B w=1B range=0..255 step=0 qid=0x0384
+NUMERIC 'FAST_PPT_LIMIT' | var=AmdSetup+0x70C w=4B range=0..4294967295 step=0 qid=0x0385
+NUMERIC 'SLOW_PPT_LIMIT' | var=AmdSetup+0x710 w=4B range=0..4294967295 step=0 qid=0x0386
+NUMERIC 'SLOW_PPT_TIME_CONSTANT' | var=AmdSetup+0x714 w=4B range=0..4294967295 step=0 qid=0x0387
+NUMERIC 'VRM_CURRENT_LIMIT' | var=AmdSetup+0x718 w=4B range=0..4294967295 step=0 qid=0x0388
+NUMERIC 'VRM_MAXIMUM_CURRENT_LIMIT' | var=AmdSetup+0x71C w=4B range=0..4294967295 step=0 qid=0x0389
+ONEOF 'Enable Async mode for CCX-DF VDCI' | var=AmdSetup+0x720 w=1B range=0..255 step=0 qid=0x038A
+ONEOF 'GfxCLKFreq Control' | var=AmdSetup+0x721 w=1B range=1..255 step=0 qid=0x038B
+NUMERIC 'Native Mode GfxCLKFreq' | var=AmdSetup+0x722 w=2B range=0..65535 step=0 qid=0x038C
+NUMERIC 'Native Split GL Mode GfxCLKFreq' | var=AmdSetup+0x724 w=2B range=0..65535 step=0 qid=0x038D
+NUMERIC 'Native Split PVL Mode GfxCLKFreq' | var=AmdSetup+0x726 w=2B range=0..65535 step=0 qid=0x038E
+NUMERIC 'Multimedia 4K Mode GfxCLKFreq' | var=AmdSetup+0x728 w=2B range=0..65535 step=0 qid=0x038F
+NUMERIC 'Multimedia 2K Mode GfxCLKFreq' | var=AmdSetup+0x72A w=2B range=0..65535 step=0 qid=0x0390
+NUMERIC 'Navigation 4K Mode GfxCLKFreq' | var=AmdSetup+0x72C w=2B range=0..65535 step=0 qid=0x0391
+NUMERIC 'Navigation 2K Mode GfxCLKFreq' | var=AmdSetup+0x72E w=2B range=0..65535 step=0 qid=0x0392
+ONEOF 'GfxClkDfll' | var=AmdSetup+0x730 w=1B range=0..255 step=0 qid=0x0393
+ONEOF 'GfxDfllApccEn' | var=AmdSetup+0x731 w=1B range=0..255 step=0 qid=0x0394
+NUMERIC 'GfxDfllApccTrig' | var=AmdSetup+0x732 w=2B range=0..510 step=0 qid=0x0395
+ONEOF 'GfxDfllFreq Control' | var=AmdSetup+0x734 w=1B range=1..255 step=0 qid=0x0396
+NUMERIC 'GfxDfllFreqMeasInRefClkCycles' | var=AmdSetup+0x735 w=4B range=0..4294967295 step=0 qid=0x0397
+NUMERIC 'GfxDfllFDelta' | var=AmdSetup+0x739 w=4B range=0..4294967295 step=0 qid=0x0398
+ONEOF 'AC Vol margin Control' | var=AmdSetup+0x73D w=1B range=1..255 step=0 qid=0x0399
+NUMERIC 'MaxAcmarg' | var=AmdSetup+0x73E w=4B range=0..4294967295 step=0 qid=0x039A
+NUMERIC 'MinAcmarg' | var=AmdSetup+0x742 w=4B range=0..4294967295 step=0 qid=0x039B
+ONEOF 'G6 Mem SS Cfg Control' | var=AmdSetup+0x746 w=1B range=1..255 step=0 qid=0x039C
+NUMERIC 'Uclk Spread Percentage' | var=AmdSetup+0x747 w=1B range=0..255 step=0 qid=0x039D
+NUMERIC 'Umc Auto Cal Interval' | var=AmdSetup+0x748 w=4B range=0..4294967295 step=0 qid=0x039E
+ONEOF 'AVFS Control' | var=AmdSetup+0x74C w=1B range=0..1 step=0 qid=0x039F
+NUMERIC 'CorePsfTemp' | var=AmdSetup+0x74D w=4B range=0..4294967295 step=0 qid=0x03A0
+NUMERIC 'CorePsfFreq2' | var=AmdSetup+0x751 w=4B range=0..4294967295 step=0 qid=0x03A1
+NUMERIC 'CorePsfFreq' | var=AmdSetup+0x755 w=4B range=0..4294967295 step=0 qid=0x03A2
+NUMERIC 'CorePsfConst' | var=AmdSetup+0x759 w=4B range=0..4294967295 step=0 qid=0x03A3
+NUMERIC 'GfxPsfTemp' | var=AmdSetup+0x75D w=4B range=0..4294967295 step=0 qid=0x03A4
+NUMERIC 'GfxPsfFreq2' | var=AmdSetup+0x761 w=4B range=0..4294967295 step=0 qid=0x03A5
+NUMERIC 'GfxPsfFreq' | var=AmdSetup+0x765 w=4B range=0..4294967295 step=0 qid=0x03A6
+NUMERIC 'GfxPsfConst' | var=AmdSetup+0x769 w=4B range=0..4294967295 step=0 qid=0x03A7
+ONEOF 'Telemetry Control' | var=AmdSetup+0x76D w=1B range=0..1 step=0 qid=0x03A8
+NUMERIC 'VDDCR_VDD Telemetry slope' | var=AmdSetup+0x76E w=4B range=0..4294967295 step=0 qid=0x03A9
+ONEOF 'VDDCR_VDD Telemetry Offset Sign (positive/negative)' | var=AmdSetup+0x772 w=1B range=0..1 step=0 qid=0x03AA
+NUMERIC 'VDDCR_VDD Telemetry Offset Value (mA)' | var=AmdSetup+0x773 w=4B range=0..4294967295 step=0 qid=0x03AB
+NUMERIC 'VDDCR_SOC Telemetry slope' | var=AmdSetup+0x777 w=4B range=0..4294967295 step=0 qid=0x03AC
+ONEOF 'VDDCR_SOC Telemetry Offset Sign (positive/negative)' | var=AmdSetup+0x77B w=1B range=0..1 step=0 qid=0x03AD
+NUMERIC 'VDDCR_SOC Telemetry Offset Value (mA)' | var=AmdSetup+0x77C w=4B range=0..4294967295 step=0 qid=0x03AE
+NUMERIC 'VDDCR_GFX Telemetry slope' | var=AmdSetup+0x780 w=4B range=0..4294967295 step=0 qid=0x03AF
+ONEOF 'VDDCR_GFX Telemetry Offset Sign (positive/negative)' | var=AmdSetup+0x784 w=1B range=0..1 step=0 qid=0x03B0
+NUMERIC 'VDDCR_GFX Telemetry Offset Value (mA)' | var=AmdSetup+0x785 w=4B range=0..4294967295 step=0 qid=0x03B1
+ONEOF 'GRA Group 1' | var=AmdSetup+0x789 w=1B range=0..1 step=0 qid=0x03B9
+ONEOF 'GRA Register Type' | var=AmdSetup+0x78A w=1B range=0..6 step=0 qid=0x03BA
+ONEOF 'GRA When to Write' | var=AmdSetup+0x78B w=1B range=0..3 step=0 qid=0x03BB
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x78C w=1B range=0..1 step=0 qid=0x03BC
+NUMERIC 'GRA Bus' | var=AmdSetup+0x78D w=1B range=0..255 step=0 qid=0x03BD
+NUMERIC 'GRA Bus' | var=AmdSetup+0x78D w=1B range=0..255 step=0 qid=0x03BE
+NUMERIC 'GRA Device' | var=AmdSetup+0x78E w=1B range=0..31 step=0 qid=0x03BF
+NUMERIC 'GRA Device' | var=AmdSetup+0x78E w=1B range=0..31 step=0 qid=0x03C0
+NUMERIC 'GRA Function' | var=AmdSetup+0x78F w=1B range=0..7 step=0 qid=0x03C1
+NUMERIC 'GRA Offset' | var=AmdSetup+0x790 w=2B range=0..4095 step=0 qid=0x03C2
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x792 w=1B range=0..1 step=0 qid=0x03C3
+NUMERIC 'GRA Node' | var=AmdSetup+0x793 w=1B range=0..255 step=0 qid=0x03C4
+NUMERIC 'GRA Core' | var=AmdSetup+0x794 w=1B range=0..127 step=0 qid=0x03C5
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x795 w=2B range=0..65535 step=0 qid=0x03C6
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x797 w=2B range=0..65535 step=0 qid=0x03C7
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x799 w=2B range=0..65535 step=0 qid=0x03C8
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x79B w=2B range=0..65535 step=0 qid=0x03C9
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x79D w=2B range=0..65535 step=0 qid=0x03CA
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x79F w=2B range=0..65535 step=0 qid=0x03CB
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x7A1 w=1B range=0..255 step=0 qid=0x03CC
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x7A2 w=2B range=0..65535 step=0 qid=0x03CD
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x7A4 w=2B range=0..65535 step=0 qid=0x03CE
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x7A6 w=2B range=0..65535 step=0 qid=0x03CF
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x7A8 w=2B range=0..65535 step=0 qid=0x03D0
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x7AA w=1B range=0..255 step=0 qid=0x03D1
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x7AB w=2B range=0..65535 step=0 qid=0x03D2
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x7AD w=2B range=0..65535 step=0 qid=0x03D3
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x7AF w=2B range=0..65535 step=0 qid=0x03D4
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x7B1 w=2B range=0..65535 step=0 qid=0x03D5
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x7B3 w=2B range=0..65535 step=0 qid=0x03D6
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x7B5 w=2B range=0..65535 step=0 qid=0x03D7
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x7B7 w=2B range=0..65535 step=0 qid=0x03D8
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x7B9 w=2B range=0..65535 step=0 qid=0x03D9
+ONEOF 'GRA Group 2' | var=AmdSetup+0x7BB w=1B range=0..1 step=0 qid=0x03DA
+ONEOF 'GRA Register Type' | var=AmdSetup+0x7BC w=1B range=0..6 step=0 qid=0x03DB
+ONEOF 'GRA When to Write' | var=AmdSetup+0x7BD w=1B range=0..3 step=0 qid=0x03DC
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x7BE w=1B range=0..1 step=0 qid=0x03DD
+NUMERIC 'GRA Bus' | var=AmdSetup+0x7BF w=1B range=0..255 step=0 qid=0x03DE
+NUMERIC 'GRA Bus' | var=AmdSetup+0x7BF w=1B range=0..255 step=0 qid=0x03DF
+NUMERIC 'GRA Device' | var=AmdSetup+0x7C0 w=1B range=0..31 step=0 qid=0x03E0
+NUMERIC 'GRA Device' | var=AmdSetup+0x7C0 w=1B range=0..31 step=0 qid=0x03E1
+NUMERIC 'GRA Function' | var=AmdSetup+0x7C1 w=1B range=0..7 step=0 qid=0x03E2
+NUMERIC 'GRA Offset' | var=AmdSetup+0x7C2 w=2B range=0..4095 step=0 qid=0x03E3
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x7C4 w=1B range=0..1 step=0 qid=0x03E4
+NUMERIC 'GRA Node' | var=AmdSetup+0x7C5 w=1B range=0..255 step=0 qid=0x03E5
+NUMERIC 'GRA Core' | var=AmdSetup+0x7C6 w=1B range=0..127 step=0 qid=0x03E6
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x7C7 w=2B range=0..65535 step=0 qid=0x03E7
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x7C9 w=2B range=0..65535 step=0 qid=0x03E8
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x7CB w=2B range=0..65535 step=0 qid=0x03E9
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x7CD w=2B range=0..65535 step=0 qid=0x03EA
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x7CF w=2B range=0..65535 step=0 qid=0x03EB
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x7D1 w=2B range=0..65535 step=0 qid=0x03EC
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x7D3 w=1B range=0..255 step=0 qid=0x03ED
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x7D4 w=2B range=0..65535 step=0 qid=0x03EE
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x7D6 w=2B range=0..65535 step=0 qid=0x03EF
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x7D8 w=2B range=0..65535 step=0 qid=0x03F0
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x7DA w=2B range=0..65535 step=0 qid=0x03F1
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x7DC w=1B range=0..255 step=0 qid=0x03F2
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x7DD w=2B range=0..65535 step=0 qid=0x03F3
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x7DF w=2B range=0..65535 step=0 qid=0x03F4
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x7E1 w=2B range=0..65535 step=0 qid=0x03F5
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x7E3 w=2B range=0..65535 step=0 qid=0x03F6
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x7E5 w=2B range=0..65535 step=0 qid=0x03F7
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x7E7 w=2B range=0..65535 step=0 qid=0x03F8
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x7E9 w=2B range=0..65535 step=0 qid=0x03F9
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x7EB w=2B range=0..65535 step=0 qid=0x03FA
+ONEOF 'GRA Group 3' | var=AmdSetup+0x7ED w=1B range=0..1 step=0 qid=0x03FB
+ONEOF 'GRA Register Type' | var=AmdSetup+0x7EE w=1B range=0..6 step=0 qid=0x03FC
+ONEOF 'GRA When to Write' | var=AmdSetup+0x7EF w=1B range=0..3 step=0 qid=0x03FD
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x7F0 w=1B range=0..1 step=0 qid=0x03FE
+NUMERIC 'GRA Bus' | var=AmdSetup+0x7F1 w=1B range=0..255 step=0 qid=0x03FF
+NUMERIC 'GRA Bus' | var=AmdSetup+0x7F1 w=1B range=0..255 step=0 qid=0x0400
+NUMERIC 'GRA Device' | var=AmdSetup+0x7F2 w=1B range=0..31 step=0 qid=0x0401
+NUMERIC 'GRA Device' | var=AmdSetup+0x7F2 w=1B range=0..31 step=0 qid=0x0402
+NUMERIC 'GRA Function' | var=AmdSetup+0x7F3 w=1B range=0..7 step=0 qid=0x0403
+NUMERIC 'GRA Offset' | var=AmdSetup+0x7F4 w=2B range=0..4095 step=0 qid=0x0404
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x7F6 w=1B range=0..1 step=0 qid=0x0405
+NUMERIC 'GRA Node' | var=AmdSetup+0x7F7 w=1B range=0..255 step=0 qid=0x0406
+NUMERIC 'GRA Core' | var=AmdSetup+0x7F8 w=1B range=0..127 step=0 qid=0x0407
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x7F9 w=2B range=0..65535 step=0 qid=0x0408
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x7FB w=2B range=0..65535 step=0 qid=0x0409
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x7FD w=2B range=0..65535 step=0 qid=0x040A
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x7FF w=2B range=0..65535 step=0 qid=0x040B
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x801 w=2B range=0..65535 step=0 qid=0x040C
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x803 w=2B range=0..65535 step=0 qid=0x040D
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x805 w=1B range=0..255 step=0 qid=0x040E
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x806 w=2B range=0..65535 step=0 qid=0x040F
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x808 w=2B range=0..65535 step=0 qid=0x0410
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x80A w=2B range=0..65535 step=0 qid=0x0411
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x80C w=2B range=0..65535 step=0 qid=0x0412
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x80E w=1B range=0..255 step=0 qid=0x0413
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x80F w=2B range=0..65535 step=0 qid=0x0414
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x811 w=2B range=0..65535 step=0 qid=0x0415
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x813 w=2B range=0..65535 step=0 qid=0x0416
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x815 w=2B range=0..65535 step=0 qid=0x0417
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x817 w=2B range=0..65535 step=0 qid=0x0418
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x819 w=2B range=0..65535 step=0 qid=0x0419
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x81B w=2B range=0..65535 step=0 qid=0x041A
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x81D w=2B range=0..65535 step=0 qid=0x041B
+ONEOF 'GRA Group 4' | var=AmdSetup+0x81F w=1B range=0..1 step=0 qid=0x041C
+ONEOF 'GRA Register Type' | var=AmdSetup+0x820 w=1B range=0..6 step=0 qid=0x041D
+ONEOF 'GRA When to Write' | var=AmdSetup+0x821 w=1B range=0..3 step=0 qid=0x041E
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x822 w=1B range=0..1 step=0 qid=0x041F
+NUMERIC 'GRA Bus' | var=AmdSetup+0x823 w=1B range=0..255 step=0 qid=0x0420
+NUMERIC 'GRA Bus' | var=AmdSetup+0x823 w=1B range=0..255 step=0 qid=0x0421
+NUMERIC 'GRA Device' | var=AmdSetup+0x824 w=1B range=0..31 step=0 qid=0x0422
+NUMERIC 'GRA Device' | var=AmdSetup+0x824 w=1B range=0..31 step=0 qid=0x0423
+NUMERIC 'GRA Function' | var=AmdSetup+0x825 w=1B range=0..7 step=0 qid=0x0424
+NUMERIC 'GRA Offset' | var=AmdSetup+0x826 w=2B range=0..4095 step=0 qid=0x0425
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x828 w=1B range=0..1 step=0 qid=0x0426
+NUMERIC 'GRA Node' | var=AmdSetup+0x829 w=1B range=0..255 step=0 qid=0x0427
+NUMERIC 'GRA Core' | var=AmdSetup+0x82A w=1B range=0..127 step=0 qid=0x0428
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x82B w=2B range=0..65535 step=0 qid=0x0429
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x82D w=2B range=0..65535 step=0 qid=0x042A
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x82F w=2B range=0..65535 step=0 qid=0x042B
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x831 w=2B range=0..65535 step=0 qid=0x042C
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x833 w=2B range=0..65535 step=0 qid=0x042D
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x835 w=2B range=0..65535 step=0 qid=0x042E
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x837 w=1B range=0..255 step=0 qid=0x042F
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x838 w=2B range=0..65535 step=0 qid=0x0430
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x83A w=2B range=0..65535 step=0 qid=0x0431
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x83C w=2B range=0..65535 step=0 qid=0x0432
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x83E w=2B range=0..65535 step=0 qid=0x0433
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x840 w=1B range=0..255 step=0 qid=0x0434
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x841 w=2B range=0..65535 step=0 qid=0x0435
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x843 w=2B range=0..65535 step=0 qid=0x0436
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x845 w=2B range=0..65535 step=0 qid=0x0437
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x847 w=2B range=0..65535 step=0 qid=0x0438
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x849 w=2B range=0..65535 step=0 qid=0x0439
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x84B w=2B range=0..65535 step=0 qid=0x043A
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x84D w=2B range=0..65535 step=0 qid=0x043B
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x84F w=2B range=0..65535 step=0 qid=0x043C
+ONEOF 'GRA Group 5' | var=AmdSetup+0x851 w=1B range=0..1 step=0 qid=0x043D
+ONEOF 'GRA Register Type' | var=AmdSetup+0x852 w=1B range=0..6 step=0 qid=0x043E
+ONEOF 'GRA When to Write' | var=AmdSetup+0x853 w=1B range=0..3 step=0 qid=0x043F
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x854 w=1B range=0..1 step=0 qid=0x0440
+NUMERIC 'GRA Bus' | var=AmdSetup+0x855 w=1B range=0..255 step=0 qid=0x0441
+NUMERIC 'GRA Bus' | var=AmdSetup+0x855 w=1B range=0..255 step=0 qid=0x0442
+NUMERIC 'GRA Device' | var=AmdSetup+0x856 w=1B range=0..31 step=0 qid=0x0443
+NUMERIC 'GRA Device' | var=AmdSetup+0x856 w=1B range=0..31 step=0 qid=0x0444
+NUMERIC 'GRA Function' | var=AmdSetup+0x857 w=1B range=0..7 step=0 qid=0x0445
+NUMERIC 'GRA Offset' | var=AmdSetup+0x858 w=2B range=0..4095 step=0 qid=0x0446
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x85A w=1B range=0..1 step=0 qid=0x0447
+NUMERIC 'GRA Node' | var=AmdSetup+0x85B w=1B range=0..255 step=0 qid=0x0448
+NUMERIC 'GRA Core' | var=AmdSetup+0x85C w=1B range=0..127 step=0 qid=0x0449
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x85D w=2B range=0..65535 step=0 qid=0x044A
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x85F w=2B range=0..65535 step=0 qid=0x044B
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x861 w=2B range=0..65535 step=0 qid=0x044C
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x863 w=2B range=0..65535 step=0 qid=0x044D
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x865 w=2B range=0..65535 step=0 qid=0x044E
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x867 w=2B range=0..65535 step=0 qid=0x044F
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x869 w=1B range=0..255 step=0 qid=0x0450
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x86A w=2B range=0..65535 step=0 qid=0x0451
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x86C w=2B range=0..65535 step=0 qid=0x0452
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x86E w=2B range=0..65535 step=0 qid=0x0453
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x870 w=2B range=0..65535 step=0 qid=0x0454
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x872 w=1B range=0..255 step=0 qid=0x0455
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x873 w=2B range=0..65535 step=0 qid=0x0456
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x875 w=2B range=0..65535 step=0 qid=0x0457
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x877 w=2B range=0..65535 step=0 qid=0x0458
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x879 w=2B range=0..65535 step=0 qid=0x0459
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x87B w=2B range=0..65535 step=0 qid=0x045A
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x87D w=2B range=0..65535 step=0 qid=0x045B
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x87F w=2B range=0..65535 step=0 qid=0x045C
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x881 w=2B range=0..65535 step=0 qid=0x045D
+ONEOF 'GRA Group 6' | var=AmdSetup+0x883 w=1B range=0..1 step=0 qid=0x045E
+ONEOF 'GRA Register Type' | var=AmdSetup+0x884 w=1B range=0..6 step=0 qid=0x045F
+ONEOF 'GRA When to Write' | var=AmdSetup+0x885 w=1B range=0..3 step=0 qid=0x0460
+ONEOF 'GRA Gen Reg Node' | var=AmdSetup+0x886 w=1B range=0..1 step=0 qid=0x0461
+NUMERIC 'GRA Bus' | var=AmdSetup+0x887 w=1B range=0..255 step=0 qid=0x0462
+NUMERIC 'GRA Bus' | var=AmdSetup+0x887 w=1B range=0..255 step=0 qid=0x0463
+NUMERIC 'GRA Device' | var=AmdSetup+0x888 w=1B range=0..31 step=0 qid=0x0464
+NUMERIC 'GRA Device' | var=AmdSetup+0x888 w=1B range=0..31 step=0 qid=0x0465
+NUMERIC 'GRA Function' | var=AmdSetup+0x889 w=1B range=0..7 step=0 qid=0x0466
+NUMERIC 'GRA Offset' | var=AmdSetup+0x88A w=2B range=0..4095 step=0 qid=0x0467
+ONEOF 'GRA Gen Reg Core' | var=AmdSetup+0x88C w=1B range=0..1 step=0 qid=0x0468
+NUMERIC 'GRA Node' | var=AmdSetup+0x88D w=1B range=0..255 step=0 qid=0x0469
+NUMERIC 'GRA Core' | var=AmdSetup+0x88E w=1B range=0..127 step=0 qid=0x046A
+NUMERIC 'GRA MSR Address High' | var=AmdSetup+0x88F w=2B range=0..65535 step=0 qid=0x046B
+NUMERIC 'GRA MSR Address Low' | var=AmdSetup+0x891 w=2B range=0..65535 step=0 qid=0x046C
+NUMERIC 'GRA MMIO Address High' | var=AmdSetup+0x893 w=2B range=0..65535 step=0 qid=0x046D
+NUMERIC 'GRA MMIO Address Low' | var=AmdSetup+0x895 w=2B range=0..65535 step=0 qid=0x046E
+NUMERIC 'GRA PCI Indirect Register Offset[31:16]' | var=AmdSetup+0x897 w=2B range=0..65535 step=0 qid=0x046F
+NUMERIC 'GRA PCI Indirect Register Offset[15:0]' | var=AmdSetup+0x899 w=2B range=0..65535 step=0 qid=0x0470
+ONEOF 'GRA PCI Indirect Register Write Enable Bit' | var=AmdSetup+0x89B w=1B range=0..255 step=0 qid=0x0471
+NUMERIC 'GRA GMMX Offset[31:16]' | var=AmdSetup+0x89C w=2B range=0..65535 step=0 qid=0x0472
+NUMERIC 'GRA GMMX Offset[15:0]' | var=AmdSetup+0x89E w=2B range=0..65535 step=0 qid=0x0473
+NUMERIC 'GRA SMN Address High' | var=AmdSetup+0x8A0 w=2B range=0..65535 step=0 qid=0x0474
+NUMERIC 'GRA SMN Address Low' | var=AmdSetup+0x8A2 w=2B range=0..65535 step=0 qid=0x0475
+NUMERIC 'GRA DF Instance' | var=AmdSetup+0x8A4 w=1B range=0..255 step=0 qid=0x0476
+NUMERIC 'GRA Mask Value [63:48]' | var=AmdSetup+0x8A5 w=2B range=0..65535 step=0 qid=0x0477
+NUMERIC 'GRA Mask Value [47:32]' | var=AmdSetup+0x8A7 w=2B range=0..65535 step=0 qid=0x0478
+NUMERIC 'GRA Mask Value [31:16]' | var=AmdSetup+0x8A9 w=2B range=0..65535 step=0 qid=0x0479
+NUMERIC 'GRA Mask Value [15:0]' | var=AmdSetup+0x8AB w=2B range=0..65535 step=0 qid=0x047A
+NUMERIC 'GRA Or Value [63:48]' | var=AmdSetup+0x8AD w=2B range=0..65535 step=0 qid=0x047B
+NUMERIC 'GRA Or Value [47:32]' | var=AmdSetup+0x8AF w=2B range=0..65535 step=0 qid=0x047C
+NUMERIC 'GRA Or Value [31:16]' | var=AmdSetup+0x8B1 w=2B range=0..65535 step=0 qid=0x047D
+NUMERIC 'GRA Or Value [15:0]' | var=AmdSetup+0x8B3 w=2B range=0..65535 step=0 qid=0x047E

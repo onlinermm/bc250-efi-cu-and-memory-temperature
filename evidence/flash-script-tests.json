@@ -1,0 +1,43 @@
+{
+  "real_pinned_shell": true,
+  "real_AFU_executed": false,
+  "mock_firmware_bytes_only": true,
+  "cases": [
+    {
+      "case": "PASS",
+      "passed": true,
+      "mocked_calls": 2,
+      "reset_path": true
+    },
+    {
+      "case": "FLASH_FAIL",
+      "passed": true,
+      "mocked_calls": 2,
+      "reset_path": false
+    },
+    {
+      "case": "BACKUP_FAIL",
+      "passed": true,
+      "mocked_calls": 1,
+      "reset_path": false
+    },
+    {
+      "case": "MISSING_IMAGE",
+      "passed": true,
+      "mocked_calls": 0,
+      "reset_path": false
+    },
+    {
+      "case": "BACKUP_EXISTS",
+      "passed": true,
+      "mocked_calls": 0,
+      "reset_path": false
+    },
+    {
+      "case": "NO_AFU",
+      "passed": true,
+      "mocked_calls": 0,
+      "reset_path": false
+    }
+  ]
+}

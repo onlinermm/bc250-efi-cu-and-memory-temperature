@@ -1,0 +1,9 @@
+PASS seed enabled preferences before reset/missing-HOB boot
+PASS install synthetic AMI reset HOB for OVMF test
+PASS read real DXE test firmware volume
+PASS ProcessFirmwareVolume accepts generated FFS/FV
+PASS DXE dispatcher starts BEFORE capture, mock Nvram and native HII
+PASS negative control: original APRIORI bypasses BEFORE-only capture
+PASS negative control: Nvram ran without capture and consumed flag
+PASS negative control: native apply never ran without capture protocol
+RESULT: 8 checks, 0 failures

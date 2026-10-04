@@ -1,0 +1,42 @@
+BC250_RESET_PROBE 0.1.0 MODE=1 (0=report 1=arm 2=delete)
+RTC 2026-10-03 19:58:13
+HOB_TABLE status=Success present=1
+HOB_VALID=1 boot_mode=00000000 AMI_nv_count=1 AMI_nv_flags=00000000
+HOB_NOTE: AMI NvramDxe clears reset flag 0x2 before this application; flags=0 does NOT prove no CMOS clear.
+MEIMEI name=MeiMeiDXEv3SmuUnlockVar status=Success size=1 attr=7 value=1
+MEIMEI name=MeiMeiDXEv3SmuPatchVar status=Success size=1 attr=7 value=1
+MEIMEI name=MeiMeiDXEv3AcpiVar status=Success size=1 attr=7 value=1
+CANARY name=Bc250ResetProbe3 status=Not Found size=16 attr=0 state=0 (0=absent 1=valid -1=unexpected)
+CANARY name=Bc250ResetProbe7 status=Not Found size=16 attr=0 state=0 (0=absent 1=valid -1=unexpected)
+CANARY name=Bc250ResetProbe3 status=Success size=16 attr=3 state=1 (0=absent 1=valid -1=unexpected)
+CANARY_ARM name=Bc250ResetProbe3 status=Success readback=1
+CANARY name=Bc250ResetProbe7 status=Success size=16 attr=7 state=1 (0=absent 1=valid -1=unexpected)
+CANARY_ARM name=Bc250ResetProbe7 status=Success readback=1
+OS_VARIABLE name=BootNext status=Not Found size=0
+OS_VARIABLE name=BootOrder status=Success size=8 attributes=7
+OS_VARIABLE name=Boot0003 status=Success size=236 attributes=7
+OS_OPTION_RAW name=Boot0003 attr=1 path_bytes=134 size=236
+OS_OPTION_SKIP name=Boot0003 reason=invalid, legacy BBS, or unsupported multi-instance path
+OS_VARIABLE name=Boot0001 status=Success size=120 attributes=7
+OS_OPTION_RAW name=Boot0001 attr=1 path_bytes=94 size=120
+OS_PATH_HEAD name=Boot0001 type=04 subtype=01 node_bytes=42
+OS_HD_SHORT matches=1
+OS_FOUND index=0 source=Boot variable option=0001 name=UEFI OS path=\EFI\BOOT\BOOTX64.EFI
+OS_VARIABLE name=Boot0002 status=Success size=124 attributes=7
+OS_OPTION_RAW name=Boot0002 attr=1 path_bytes=104 size=124
+OS_PATH_HEAD name=Boot0002 type=04 subtype=01 node_bytes=42
+OS_HD_SHORT matches=1
+OS_FOUND index=1 source=Boot variable option=0002 name=Limine path=\EFI\LIMINE\LIMINE_X64.EFI
+OS_VARIABLE name=Boot0000 status=Success size=144 attributes=7
+OS_OPTION_RAW name=Boot0000 attr=9 path_bytes=122 size=144
+OS_OPTION_SKIP name=Boot0000 reason=invalid, legacy BBS, or unsupported multi-instance path
+OS_FILESYSTEMS status=Success count=2
+OS_FS index=0 fixed_nonself=0
+OS_FS index=1 fixed_nonself=1
+OS_FOUND index=2 source=Filesystem option=0000 name=Disk EFI loader path=\EFI\limine\limine_x64.efi
+OS_CHOICES=3
+OS_SELECTED index=1 path=\EFI\LIMINE\LIMINE_X64.EFI
+OS_LOAD=Success
+OS_VARIABLE name=BootCurrent status=Success size=2 attributes=6
+OS_BOOTCURRENT_SET=Success
+OS_START option=0002

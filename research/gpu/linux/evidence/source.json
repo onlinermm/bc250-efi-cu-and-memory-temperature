@@ -1,0 +1,22 @@
+{
+  "url": "https://cdn.cachyos.org/repo/x86_64_v3/cachyos-v3/linux-cachyos-7.2.8-2-x86_64_v3.pkg.tar.zst",
+  "package_sha256": "ce323cf8721198a5d2774fb64dc09106bf6ae600ffb3ad7fa5d9ac69be546b02",
+  "members": [
+    {
+      "member": ".BUILDINFO",
+      "bytes": 9011,
+      "sha256": "8c3c1ea51e86f2f926754b86a9bc8f2831538a84b1445f2a674fbfb97b74ca5c"
+    },
+    {
+      "member": ".PKGINFO",
+      "bytes": 1541,
+      "sha256": "cf6f04d971424f8e1403f3bba55c08d90d097f245ad497af3850e7b9085cb0df"
+    },
+    {
+      "member": "usr/lib/modules/7.2.8-2-cachyos/kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst",
+      "bytes": 5839159,
+      "sha256": "04289b83bc55841776cf76bd071bb6052a67f6ff8bf2f926423bf2d7af60fda3"
+    }
+  ],
+  "amdgpu_decompressed_sha256": "a2b40bb45711f49113d8b16751613a467fa2ea72f621afb208c5338769af42ec"
+}

@@ -1,0 +1,27 @@
+{
+  "format": "PE",
+  "machine": 34404,
+  "architecture": "X64",
+  "bytes": 12288,
+  "sha256": "2bf4e0ab7de83ce84b089b0487b8c4172379dba258db3556dd62c1dfaa41a91a",
+  "entry_rva": 5069,
+  "image_base": 0,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "raw_offset": 4096,
+      "raw_bytes": 4096,
+      "virtual_bytes": 4096,
+      "executable": true
+    },
+    {
+      "name": ".data",
+      "rva": 8192,
+      "raw_offset": 8192,
+      "raw_bytes": 4096,
+      "virtual_bytes": 4096,
+      "executable": false
+    }
+  ]
+}
